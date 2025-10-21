@@ -1,0 +1,100 @@
+\hbadness=10000   % unterdrückt Underfull \hbox
+\vbadness=10000   % unterdrückt Underfull \vbox
+\hfuzz=\maxdimen  % meldet Overfull \hbox nicht mehr
+\vfuzz=\maxdimen  % meldet Overfull \vbox nicht mehr
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% TYPESETTING & CO. %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- siunitx ---
+\sisetup{detect-weight=true, detect-family=true,locale=DE,range-phrase={\,bis\,},list-final-separator ={\,\linebreak[0] \text{und}\,},separate-uncertainty=true,per-mode = symbol-or-fraction}
+\DeclareSIUnit\curie{Ci}
+\DeclareSIUnit\angstrom{\text {Å}}
+\DeclareSIUnit\debye{D}
+
+% --- vectors and tensors ---
+%\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\tensor}[1]{\tilde{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% NUMBERING %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- equations, figures, tables
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\captionsetup[figure]{name=Abb., labelsep=colon}
+\numberwithin{table}{section}
+% --- sections ---
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand*{\chapterformat}{\Huge Kapitel \thechapter:\enskip}
+% --- TOC ---
+\setcounter{tocdepth}{1}
+
+
+\RedeclareSectionCommand[
+  beforeskip=.8\baselineskip plus .2\baselineskip,
+  afterskip=.4\baselineskip
+]{subsubsection}
+\setcounter{secnumdepth}{3}
+
+
+% --- bib ---
+\addbibresource{literature.bib}
+
+% --- absätze und co ---
+\KOMAoptions{parskip=half}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% HEADERS %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\automark[subsection]{section}
+% --- default headers ---
+\setkomafont{pagehead}{\scriptsize\normalfont\upshape\textsc}
+\setkomafont{pagefoot}{\small\normalfont\upshape}
+\ihead{\thechapter. Molekülphysik | \leftmark}
+\ohead{\LectureTitle}
+\ofoot{Seite \pagemark}
+% --- special Vorwort header ---
+\newpairofpagestyles{vorwort}{
+    \ihead{Vorwort}
+    \ohead{\LectureTitle}
+\ofoot{Seite \pagemark}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% ITEMIZE %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- gloabl itemize setting ---
+\setlist[itemize]{
+  itemsep=0.25em,   % Abstand zwischen Items
+  topsep=0.0em,     % Abstand Liste <-> Text davor/danach
+  parsep=0pt,       % Absatzabstand innerhalb eines Items
+  partopsep=0pt,
+  label={\raisebox{0.25ex}{\tiny$\bullet$}},
+  labelsep=0.5em % Symbol
+}
+% --- 1st indent itemize setting ---
+\setlist[itemize,2]{
+    label = {\raisebox{0.4ex}{\tiny$\blacktriangleright$}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% HREF %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{LinkColor}{HTML}{BC2323}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=LinkColor,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=LinkColor,
+    %pdftitle={Exphys V Skript},
+    %pdfpagemode=FullScreen,
+}

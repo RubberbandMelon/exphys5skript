@@ -1,0 +1,11 @@
+% Figure support as explained in my blog post.
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    %\import{}{#1.pdf_tex}
+    \subimport{figures/}{#1.pdf_tex} % --- original version from Maksym
+}

@@ -1,0 +1,47 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Trage hier deinen Namen, Versuch, etc. ein
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name, date of the lecture
+\newcommand{\LectureTitle}{Experimentalphysik V}
+\newcommand{\LectureSubtitle}{Molekül- und Festkörperphysik}
+\newcommand{\LectureSemester}{WS 2025/26}
+% Name of lecturer
+\newcommand{\LecturerTitle}{Prof. Dr.}
+\newcommand{\LecturerName}{Peter Michler}
+
+% Date of latest update
+\newcommand{\LatestUpdate}{\today}
+
+% Authors
+\newcommand{\AuthorOne}{Maksym Glavatski}
+\newcommand{\AuthorTwo}{Simon Kloos}
+\newcommand{\ContactEmail}{\href{mailto:st189361@stud.uni-stuttgart.de}{st189361@stud.uni-stuttgart.de}}
+
+
+% Font für hervorgehobene Elemente auf der Titlepage
+\newcommand{\ttpgfont}{\fontfamily{phv}\selectfont}
+\renewcommand{\ttpgfont}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Formatierung der titlepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+    \centering
+
+    \Large \textbf{\ttpgfont Skript zur Vorlesung}\\
+    \Huge \textbf{\ttpgfont\LectureTitle~-~\LectureSubtitle}\\[2ex]
+    \textbf{\ttpgfont \LecturerTitle~\LecturerName}\\[0.5ex] 
+    \Large \textbf{\ttpgfont\LectureSemester}\\[2ex]
+
+    \Large Stuttgart, den \LatestUpdate\\
+    \vspace{\fill}
+
+    \Large\centering
+    \begin{tabular}{r l}
+    \textbf{Autoren:}&\AuthorOne\\
+    &\AuthorTwo\\
+    \textbf{Korrekturen an:}&\ContactEmail
+    \end{tabular}
+    
+
+\end{titlepage}
