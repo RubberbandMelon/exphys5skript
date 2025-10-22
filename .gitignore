@@ -1,0 +1,67 @@
+# === LaTeX/latexmk build artefacts ===
+# Allgemein
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.dvi
+*.ps
+*-eps-converted-to.pdf
+
+# biber / biblatex
+*.bcf
+*.blg
+*.run.xml
+*.bbl
+
+# glossaries / nomencl
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.nlo
+*.nls
+*.nlg
+*.ilg
+
+# pdf (main.pdf)
+*.pdf
+
+# listings/minted
+_minted*/
+*.pyg
+
+# TikZ externalization (falls genutzt)
+tikzexternalize/
+tikztemp/
+tikzcache/
+
+# tcolorbox (externe Tempverzeichnisse, falls verwendet)
+tcbtemp/
+
+# LaTeX Workshop/Editor-spezifisch
+.vscode/
+*.latexmk
+
+# Komplettes latexmk-Ausgabeverzeichnis
+/build/
+**/build/
+
+# OS-Kleinkram
+.DS_Store
+Thumbs.db
+Icon?
+
