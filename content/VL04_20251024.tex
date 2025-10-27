@@ -20,17 +20,30 @@
     bildet eine homöopolare Bindung aus zwei neutralen Wasserstoffatomen.
     Die Ursache dafür ist quantenmechanisch: 
     Die Wellenfunktionen der Protonen (der Atomkerne) interferieren konstruktiv.
-    Das führt zur einer Kompensation der Coulomb-Abstoßung und einer Energieabsenkung des gebundenen Zustandes.
-    \textcolor{red}{destruktive interferenz????}
+    Das führt zur einer Kompensation der Coulomb-Abstoßung und einer Energieabsenkung des gebundenen Zustandes.\\
+
+    Interferieren die Wellenfunktionen der Protonen jedoch destruktiv, dominiert die Coulomb'sche Abstoßung und es kommt zur Energieanhebung in einen anti-gebundenen Zustand.
 
 \subsection{Das Wasserstoff-Molekülion \ce{H2+}}
-    Das \ce{H2+}-Ion tritt z.B. in Gasentladungen auf und besitzt eine Bindungsnergie von $E_\text{B}= \SI{2,65}{\electronvolt}$.
-    \textcolor{red}{grafik}\\[1ex]
-    \begin{tikzpicture}
-        \node[draw, circle, minimum size = 0.7cm, line width=0.5pt, fill = black!10] at (0,0) {+};
-        \node[draw, circle, minimum size = 0.6cm, line width=0.5pt, fill = black!10] at (1.5,-0.3) {+};
-    \end{tikzpicture}\\
+    \begin{minipage}{0.3\linewidth}
+        Das \ce{H2+}-Ion tritt z.B. in Gasentladungen auf und besitzt eine Bindungsnergie von $E_\text{B}= \SI{2,65}{\electronvolt}$.
+        In \autoref{fig:1.3_H2+_ion} ist das Ion schematisch dargestellt.
+    \end{minipage}
+    \hspace{0.05\linewidth}
+    \begin{minipage}{0.65\linewidth}
+        \centering
+        \begin{tikzpicture}
+            \node[draw, circle, minimum size = 1cm, line width=0.5pt, fill = black!10] at (0,0) {$+$};
+            \node[draw, circle, minimum size = 1cm, line width=0.5pt, fill = black!10] at (3,-0.3) {$+$};
+            \node[draw, circle, minimum size = 0.3cm, line width=0.5pt, fill = red!10] at (1,1.5) {$-$};
 
+            \draw[|<->|, thick] (0.55,-0.05) --node[midway, above] {$R_\mathrm{a,b}$} (2.45,-0.25) ;
+            \draw[|<->|, thick] (0.3,0.45) --node[midway, anchor=south east] {$r_\mathrm a$} (0.75, 1.15);
+            \draw[|<->|, thick] (2.6,0.1) --node[midway, above] {$r_\mathrm b$} (1.35, 1.2);
+        \end{tikzpicture}
+        \captionof{figure}{Schematische Darstellung des Wasserstoff-Molekülions \ce{H2+}. Eingezeichnet sind die Abstände $r_i$, zwischen den Teilchen.}
+        \label{fig:1.3_H2+_ion}
+    \end{minipage}\\
 
     Die Wellenfunktionen der Elektronen bei $a$, bzw. $b$ heißen $\phi_\text a$ und $\phi_\text b$, falls die Kerne weit voneinander entfernt sind und sich die Wellenfunktionen nicht gegenseitig beeinflussen.
     Sie befinden sich dann jeweils im Wasserstoffgrundzustand, sind also reele Funktionen.\\
@@ -43,14 +56,14 @@
     \begin{figure}[H]
         \centering
         \includegraphics[width=10cm]{figures/vl04/wavefn_two_electrons.png}
-        \caption{Wellenfunktionen $\varphi_i$ zweier Elektronen im Wasserstoffgrundzustand an entfernten Positionen $a$ und $b$. Aufgrund des großen Abstandes wechselwirken die beiden Teilchen nicht miteinander.}
+        \caption{Wellenfunktionen $\varphi_i$ zweier Elektronen im Wasserstoffgrundzustand an entfernten Positionen $a$ und $b$. Aufgrund des großen Abstandes wechselwirken die beiden Wellenfunktionen nicht miteinander.}
         \label{fig:I.3_wellenfkt_zwei_elektronen_fern}
     \end{figure}
 
     Da beide Wasserstoffatome gleiche sind, ist
     \begin{equation}
         \label{eq:3.2}
-        E_{a}^{(0)} = E_{a}^{(0)} = E^{(0)}.
+        E_\mathrm{a}^{(0)} = E_\mathrm{b}^{(0)} = E^{(0)}.
     \end{equation}
     Nähern sich die Kerne an, können die Wasserstoffatome nicht länger als Superposition beider Einzel-Wellenfunktionen betrachtet werden.
     Stattdessen wird die gemeinsame Wellenfunktion $\Psi$ im gemeinsamen Coulombpotential betrachtet. Die neue Schrödingergleichung des Zweiteilchensystems lautet
@@ -58,12 +71,13 @@
         \label{eq:3.3}
         \left( - \frac{\hbar ^2}{2 m_0} \Delta - \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{a}} -\frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{b}} + \underbrace{\frac{\mathrm{e}^2}{4 \pi \varepsilon_0 R_{ab}}}_{(*)} \right) \psi = E \psi
     \end{equation}
-    Der letzte Coulombterm $(*)$ bezieht sich  nicht auf das Elektron und bewirkt lediglich eine Verschiebung der Energieniveaus um einen konstanten Betrag. 
-    Dieser Term wird fürs Erste weggelassen und dann später wieder berücksichtigt.\\
+    Der letzte Coulombterm $(*)$ beschreibt die Wechselwirkung der beiden Protonen im Abstand $R_\mathrm{a,b}$.
+    Er bewirkt lediglich eine Verschiebung der Energieniveaus des Elektrons um einen konstanten Betrag. 
+    Dieser Term wird deshalb fürs Erste weggelassen und dann später wieder berücksichtigt.\\
 
     \paragraph{Störungstheorie und LCAO-Methode}
     Zur Lösung dieses Problems wird die {Störungstheorie} verwendet. 
-    $\phi_a$ ist weiterhin die ungestörte Wellenfunktion des Elektrons bei $a$.
+    $\varphi_a$ ist weiterhin die ungestörte Wellenfunktion des Elektrons bei $a$.
     Das Coulombpotential von Kern $b$ stört $ \varphi_\text{a} $ und damit $E_\text{a}^{(0)}$ etwas. 
     Das selbe gilt analog für $ \varphi_\text{b}$ und $E^{(0)}_\text{b}$. 
     Die Störung hebt die Entartung der beiden Energiezustände auf.\\
@@ -83,12 +97,12 @@
         \end{aligned}
     \end{equation}
 
-    Mit \eqref{eq:3.1}, $H_\text{a} \varphi_\text{a}= E_\text{a}^{(0)} \varphi_\text{a}$, $H_\text{b} \varphi_\text{b}= E_\text{b}^{(0)} \varphi_\text{b}$ und $E^{(0)}_\text{a} = E^{(0)}$ gilt
+    Mit \eqref{eq:3.1}, $H_\text{a} \varphi_\text{a}= E_\text{a}^{(0)} \varphi_\text{a}$, $H_\text{b} \varphi_\text{b}= E_\text{b}^{(0)} \varphi_\text{b}$ und $E^{(0)}_\text{a} = E^{(0)}_\text{b} = E^{(0)}$ gilt
     \begin{equation}
         \label{eq:3.6}
         \Big( \underbrace{E^{0} -E}_{ \Delta E} - \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_\text{b}}  \Big) c_1 \varphi_\text a + \Big( \underbrace{E^{0} -E}_{ \Delta E} - \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_\text{a}} \Big) c_2 \varphi_\text{b} =0
     \end{equation}
-    $\varphi_\text{a}$ und $\varphi_\text{b}$ sind Funktionen des Orts $r_\text{a,b}$, $c_1$ und $c_2$ sind ortsunabhängige komplexe Konstanten.
+    $\varphi_\text{a}$ und $\varphi_\text{b}$ sind Funktionen des Orts $r_i$. $c_1$ und $c_2$ sind ortsunabhängige komplexe Konstanten.
     Durch Multiplikation mit $\varphi^*_\text a$ und $\varphi^*_\text b$ und Integration über die Elektronenkoordinate $\mathrm d^3r = \text dV$ erhält man aus Gleichung \eqref{eq:3.6} vier unterschiedliche Integrale:
     
     \stepcounter{equation}
@@ -103,21 +117,21 @@
         &\int \varphi_\text{a} \left( r_\text{a} \right) \left( - \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_\text{a}}  \right) \varphi_\text{b}\left( r_\text{b} \right) \mathrm{d}V = D &&\text{(Austauschintegral)}
     \end{align}
     Beachte: $ \varphi_\text{a}$ und $ \varphi_\text{b}$ sind nicht orthogonal, also $ S\neq 0$. 
-    Die physikalische Bedeutung des Coulombintegrals \eqref{eq:3.8} ist in \autoref{fig:I.3_wellenfkt_zwei_elektronen_fern} dargestellt.\\
+    Die physikalische Bedeutung des Coulombintegrals \eqref{eq:3.8} ist in \autoref{fig:I.3_wellenfkt_zwei_elektronen_fern} erklärt.\\
     
     \begin{figure}[H]
         \centering
         \includegraphics[width=10cm]{figures/vl04/wavefn_coulomb_integral.png}
-        \caption{Coulomb'sche Wechselwirkung zwischen $e\varphi_\text a^2$ und dem Coulombfeld von Teilchen $b$. $-e\phi^2_\text a$ hat dabei die Bedeutung der Ladungsdichte des Elektrons.}
+        \caption{Coulomb'sche Wechselwirkung zwischen $e\varphi_\text a^2$ und dem Coulombfeld von Teilchen $b$. $-e\varphi^2_\text a$ ist die Ladungsdichte des Elektrons.}
         \label{fig:I.3_wavefn_coulomb_integral}
     \end{figure}
 
-    Die physikalische Bedeutung des Austauschintegrals \eqref{eq:3.9} ist in \autoref{fig:I.3_wavefn_exchange_integral} dargestellt.
+    Die physikalische Bedeutung des Austauschintegrals \eqref{eq:3.9} ist in \autoref{fig:I.3_wavefn_exchange_integral} erklärt.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=10cm]{figures/vl04/wavefn_exchange_integral.png}   
-        \caption{Wellenfunktionen $\varphi_i$ zweier Teilchen an $a$ und $b$ im Coulomb-Potential (blau). $e\varphi_\text a\varphi_\text b$ bedeutet, dass das Elektron sich gewissermaßen teilweise im Zustand $\phi_\text a$, teilweise im Zustand $\phi_\text b$ aufhält, oder mit anderen Worten ein \textbf{Austausch} zwischen diesen beiden Zuständen vorkommt.}     
+        \caption{Wellenfunktionen $\varphi_i$ zweier Teilchen an $a$ und $b$ im Coulomb-Potential (blau). $e\varphi_\text a\varphi_\text b$ bedeutet, dass das Elektron sich teilweise im Zustand $\varphi_\text a$, teilweise im Zustand $\varphi_\text b$ aufhält, oder mit anderen Worten ein \textbf{Austausch} zwischen diesen beiden Zuständen vorkommt.}     
         \label{fig:I.3_wavefn_exchange_integral}
     \end{figure}
 
@@ -125,46 +139,47 @@
     \eqref{eq:3.6} geht über in
     \begin{align}
         \label{eq:3.10}
-        \left( \Delta E + C \right) C_1 + \left( \Delta E S + D \right) C_2 &= 0, \\
+        \left( \Delta E ~~+ C \right) C_1 + \left( \Delta E S + D \right) C_2 &= 0, \\
         \label{eq:3.11}
-        \left( \Delta E S + D \right) C_1 + \left( \Delta E + C \right) C_2 &= 0.
+        \left( \Delta E S + D \right) C_1+ \left( \Delta E ~~+ C \right) C_2 &= 0.
     \end{align}
-    Es handelt sich hierbei um 2 Gleichungen mit 2 Unbekannten, d.h. die Determinante muss verschwinden:
+    Es handelt sich hierbei um ein lineares Gleichungssystem mit 2 Gleichungen und 2 Unbekannten, d.h. die Determinante muss verschwinden:
     \begin{equation}
         \label{eq:3.12}
         \left( \Delta E + C \right) ^2 - \left( \Delta ES + D \right) ^2 = 0
     \end{equation}
+    Durch Umstellen und Wurzelziehen erhalten wir
     \begin{equation}
         \label{eq:3.13}
-        \Rightarrow \left( \Delta E + C  \right) = \pm \left( \Delta ES + D \right) 
+        \left( \Delta E + C  \right) = \pm \left( \Delta ES + D \right).
     \end{equation}
-    Setze \eqref{eq:3.13} in \eqref{eq:3.10} bzw. \eqref{eq:3.11} ein:
+    Setzt man diesen Ausdruck \eqref{eq:3.13} in das LGS \big(\eqref{eq:3.10} und \eqref{eq:3.11}\big) ein, erhält man die Lösung
     \begin{equation}
         \label{eq:3.14}
-        C_2 = - C_1 = -C
+        C_2 = - C_1 \eqqcolon -c
     \end{equation}
     Somit erhalten wir die Gesamtwellenfunktionen
     \begin{align}
         \label{eq:3.15}
-        \Rightarrow \psi_{-} &= c\left( \varphi_\mathrm{a} - \varphi_\mathrm{b} \right) \qquad\text{antisymmetrisch und} \\
+        \psi_{-} &= c\left( \varphi_\mathrm{a} - \varphi_\mathrm{b} \right) \qquad\text{(antisymmetrisch) und} \\
         \label{eq:3.16}
-        \psi_{+} &= c\left( \varphi_\mathrm{a} + \varphi_\mathrm{b} \right) \qquad\text{symmetrisch,}
+        \psi_{+} &= c\left( \varphi_\mathrm{a} + \varphi_\mathrm{b} \right) \qquad\text{(symmetrisch),}
     \end{align}
     welche in \autoref{fig:I.3_wavefn_Psi_plus_minus} skizziert sind.
 
     \begin{figure}[H]
         \centering
         \includegraphics[width=8cm]{figures/vl04/wavefn_Psi_plus_minus.png}
-        \caption{Gesamtwellenfunktionen $\Psi_-$ nach \eqref{eq:3.15} und $\Psi_+$ nach \eqref{eq:3.16} als antisymmetrische, bzw. symmetrische Überlappung der Einzelzustände $\varphi_\mathrm a$ und $\varphi_\mathrm b$.}
+        \caption{Gesamtwellenfunktionen $\Psi_-$ nach \eqref{eq:3.15} und $\Psi_+$ nach \eqref{eq:3.16} als antisymmetrische, bzw. symmetrische Addition der Einzelzustände $\varphi_\mathrm a$ (dunkelgrau gestrichelt) und $\varphi_\mathrm b$ (hellgraue Strichpunktlinie).}
         \label{fig:I.3_wavefn_Psi_plus_minus}
     \end{figure}
 
     Die Energien in diesen Zuständen sind
     \begin{align}
         \label{eq:3.17}
-        E^{(-)} &= E_{0} + \frac{C-D}{1-S} \quad 0 < S < 1 \\
+        E^{(-)} &= E^{(0)} + \frac{C-D}{1-S} \quad 0 < S < 1\qquad\text{und} \\
         \label{eq:3.18}
-        E^{(+)} &= E_0 + \frac{C+D}{1+S}\quad C, D \le 0.
+        E^{(+)} &= E^{(0)} + \frac{C+D}{1+S}\quad C, D \le 0.
     \end{align}
     Um zu entscheiden ob eine Bindung zustandekommt, muss man die Energie bei endlichem Abstand mit der bei unendlichem Abstand $\left( C= D = 0 \right) $ vergleichen und noch die Coulomb-Abstoßungsenergie der Kerne mit $ E^{+}$ und $E^{-}$ berücksichtigen, womit 
     $$
@@ -188,7 +203,7 @@
 
     Auch $D$ lässt sich als Funktion von $R_\mathrm{a,b}$ analysieren:
     \begin{itemize}
-        \item Für $R_\mathrm{a,b}\to 0 $ geht $ \varphi_\mathrm{a}$ in $ \varphi_\mathrm{b}$ über, d.h. es gilt $ D= C$. Somit kann die Coulomb'sche Abstoßungsenergieder der Kerne nicht kompensiert werden.
+        \item Für $R_\mathrm{a,b}\to 0 $ geht $ \varphi_\mathrm{a}$ in $ \varphi_\mathrm{b}$ über, d.h. es gilt $ D= C$. Somit kann die Coulomb'sche Abstoßungsenergie der der Kerne nicht kompensiert werden.
         \item Für wachsendes $R_\mathrm{a,b}$ nehmen sohwohl
             $$
             \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 R_\mathrm{a,b}}, 
@@ -203,6 +218,7 @@
         Es handelt sich um einen \textbf{quantenmechanischen Effekt}!
     \end{important}
 
+\paragraph{Vergleich Modell - Experiment}
     Nach diesem Modell beträgt die Bindungsenergie im Wasserstoffion \ce{H2+} 
     $$E^\mathrm{Modell}_\mathrm{bind}=\SI{1.7}{\electronvolt}.$$
     Experimentell wird jedoch ein Wert von 
@@ -213,7 +229,8 @@
     gewählt werden, mit dem Bohr'schen Radius $a_0$ und dem Variationsparameter $\alpha$, welcher für $\alpha=1,24$ die besten Vorhersagen trifft.
     
     \begin{minipage}{0.4\linewidth}
-         Durch den Variationsparameter wird ein effektiv kleinerer Bohrradius gewählt und die Elektronenwelle senkrecht zur Verbindungslinie zwischen den Kernen zusammengedrückt.
+         Durch den Variationsparameter wird ein effektiv kleinerer Bohrradius gewählt und die Elektronenwelle senkrecht zur Verbindungslinie zwischen den Kernen zusammengedrückt 
+         - betrachte dafür \autoref{fig:I.3_zusammengedrueckte_elektronenwelle}.
     \end{minipage}
     \hspace{0.8cm}
     \begin{minipage}{0.52\linewidth}
@@ -244,6 +261,7 @@
             };
         \end{tikzpicture}
         \captionof{figure}{Zusammengedrückte Elektronenwelle im \ce{H2}-Molekül durch Wahl eines Variationsparameters $\alpha>1$.}
+        \label{fig:I.3_zusammengedrueckte_elektronenwelle}
     \end{minipage}
 
 
