@@ -1,0 +1,181 @@
+\setcounter{section}{3}
+\setcounter{subsection}{2}
+\setcounter{equation}{20}
+
+\subsection{Das Wasserstoffmolekül \ce{H2}}
+\subsubsection{Das Variationsprinzip}
+Die Schrödingergleichung lautet
+\begin{equation}
+	\label{3.21}
+	H \psi = E \psi.
+\end{equation}
+Diese Gleichung mit $ \psi^{*}$ multipliziert und über alle Elektronenkoordinaten integriert ergibt
+\begin{equation}
+	E = \frac{ \int \psi^{*} \psi \mathrm{d} V_1 \ldots \mathrm{d} V_n}{ \int \psi^{*} \psi \mathrm{d} V_1 \ldots\mathrm{d}V_{n}}
+\end{equation}
+mit der Anzahl der Elektronen $n$ und dem Erwartungswert der Energie $E$, der mit dem Energieeigenwert der Schrödingergleichung \ref{3.21} identisch ist, falls $ \psi$ die Eigenfunktion ist. Ist $ \psi$ nicht die Eigenfunktion der Schrödingergleichung dann wird der Energieerwartungswert höher als der Eigenwert der Lösung sein. Damit ergibt sich ein Kriterium für eine gültige Näherung (Beweis im Atkins S183).
+Einige Ansätze für die Bestimmung der Wellenfunktionen der Elektronen im \ce{H2} Molekül sind
+ \begin{itemize}
+	\item Heitler London
+	\item Hund-Mulliken-Bloch (LCAO) 
+	\item Kovalent-Ionische Resonanz
+\end{itemize}
+welche alle von physikalischer Intuition getragen werden.
+
+\subsubsection{Heitler-London-Methode für \ce{H2} (Valence-Bond-Methode)}
+\begin{figure}[H]
+    \centering
+    \incfig{vl05_abb1_kerne_u_elek}
+    \label{fig:vl05_abb1_kerne_u_elek}
+\end{figure}
+
+\begin{equation}
+	\label{3.23}
+	\begin{split}
+		H &= \underbrace{- \frac{\hbar ^2}{2 m_0} \Delta_1 - \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{a_1}}}_{H_1}  \underbrace{- \frac{\hbar ^2}{2 m_0} \Delta_2 - \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{b_2}}}_{H_2}\\
+	  &= \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{b1}} - \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{a 2}} + \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 R_{ab}}+ \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{12}} \\
+	\end{split}
+\end{equation}
+unter der Annahme $m_{\text{Kern}} \to  \infty$. Wir lösen jetzt die Schrödignergleichung
+\begin{equation}
+	\label{3.24}
+	H \psi\left( \underline{r}_{1}, \underline{r}_{2} \right) = E \psi \left( \underline{r}_{1}, \underline{r}_{2} \right).
+\end{equation} 
+
+\begin{enumerate}
+	\item Wir betrachten die Kerne als $\infty$-weit voneinander entfernt. Es folgt
+		\begin{align}
+			\label{3.25}
+			H_1 \varphi_{a} \left( \underline{r}_{1} \right) &= E_0 \varphi_{a} \left( \underline{r}_{1} \right)  \\
+			\label{3.26}
+			H_2 \varphi_{b}\left( \underline{r}_{2} \right) &= E_0 \varphi_{b} \left( \underline{r}_{2} \right)  
+		\end{align}
+		Auch $ \varphi = \varphi_{a}\left( \underline{r}_{1} \right) \varphi_{b} \left( \underline{r}_{2} \right) $ ist eine Lösung der Schrödingergleichung mit dem Hamiltonoperator $H_1 +H_2$.\\
+Bisher wurde der Spin vernachlässigt, jedoch muss nach dem Pauli-Prinzip die Gesamtwellenfunktion antisymmetrisch sein.\\
+Funktion für Spin nach dem $\uparrow$ für $e_{1}$: $ \alpha \left( 1 \right) $, $ \beta\left( 1 \right) \equiv \downarrow$ \\
+Funktion für Spin nach dem $\downarrow$ für $e_{2}$: $ \beta \left( 2 \right) $, $ \alpha \left( 2 \right) \equiv \uparrow$\\
+fehlt was\\
+Diese Wellenfunktion genügt aber nicht dem Pauliprinzip\\
+\item Wir führen eine neue Wellenfunktion 
+\begin{equation}
+	\label{3.28}
+	\psi = \varphi_{a} \left( \underline{r}_{1} \right) \alpha\left( 1 \right) \varphi_{b} \left( \underline{r}_{2} \right) \alpha\left( 2 \right) - \varphi_{a} \left( \underline{r}_{2} \right) \alpha\left( 2 \right) \varphi_{b} \left( \underline{r}_{1} \right) \alpha\left( 1 \right) 
+\end{equation}
+ein, welche antisymmetrisch bezüglich Vertauschungsoperation $ 1 \leftrightarrow 2$ der Ortswellenfunktion und Spin-Wellenfunktion ist.\\
+Umformen: Schreibe \ref{3.28}
+\begin{equation}
+	\label{3.29}
+	\psi = \alpha \left( 1 \right) \alpha \left( 2 \right) \left[ \varphi_{a} \left( \underline{r}_{1} \right) \varphi_{b} \left( \underline{r}_{2} \right) - \varphi_{a} \left( \underline{r}_{2}  \right) \varphi_{b}\left( \underline{r}_{1} \right)  \right] 
+\end{equation}
+wobei das Produkt der $ \alpha$ der symmetrischen Spin-WF und der Inhalt der Inhalt der Klammer der antisymmetrischen Orts-WF $ \psi_{\text{u}}$ entspricht.
+Wir können \ref{3.28} im Hinblick auf Mehrelektronensystem als Determinante schreiben
+$$
+D = \begin{vmatrix}
+	\varphi_{a}\left( \underline{r}_{1} \right)  \alpha \left( 1 \right)  & \varphi_{a} \left( \underline{r}_{2} \right) \alpha\left( 2 \right) \\
+	\varphi_{b}\left( \underline{r}_{1} \right) \alpha\left( 1 \right) & \varphi_{b} \left( \underline{r}_{2} \right) \alpha\left( 2 \right) 
+\end{vmatrix}
+$$ 
+mit $D = \text{Produkt der Haupdiagonale}-\text{Produkt der Nebendiagonale}$.\\
+Konstruire Gesamt-Wellenfunktion mit parallelen Spins nach unten $\downarrow \downarrow$ 
+\begin{equation}
+	\label{3.32}
+	\psi = \beta\left( 1 \right) \beta\left( 2 \right) \psi_{u}
+\end{equation}
+
+Es gibt noch eine weitere Wellenfunktion, die eine ungerade Orts-Wellenfunktion hat 
+$$
+\psi = \underbrace{\left[ \alpha\left( 1 \right) \beta\left( 2 \right)  + \alpha\left( 2 \right) \beta\left( 1 \right)  \right]}_{z\text{-Komp. des Gesamtspins}=0} \psi_{n}
+$$ 
+Konstruire symmetrische Orts-Wellenfunktion mit antisymmetrischer Spin-Wellenfunktion z.B.
+\begin{equation}
+	\label{3.34}
+	\psi = \varphi_{a} \left( \underline{r}_{1} \right) \varphi_{b} \left( \underline{r}_{2} \right) \alpha\left( 1 \right) \beta\left( 2 \right) \quad \text{\textbf{nicht} antisymmetrisch}
+\end{equation}
+Besser in Analogie zu \ref{3.29}
+ \begin{equation}
+	 \label{3.35}
+	 \psi = \underbrace{\left[ \varphi_{a} \left( \underline{r}_{1} \right) \varphi_{b}\left( \underline{r}_{2} \right) + \varphi_{a}\left( \underline{r}_{2} \right) \varphi_{b}\left( \underline{r}_{1} \right)  \right]}_{ \psi_{\text{g}}} \left[ \alpha\left( 1 \right) \beta\left( 2 \right) - \alpha\left( 2 \right) \beta\left( 1 \right)  \right] 
+\end{equation}
+\item Im Hamiltonoperator kommen keine Operatoren vor, die auf den Spin wirken\\
+$\to $ Spinfunktionen können fürs weitere vernachlässigt werden.\\
+Bemerkung: Wir vernachlässigen hier also Spin-Spin und Spin-Bahn-Wechselwirkung!\\
+
+\end{enumerate}
+
+
+Benutze $ \psi_{\text{u}}$ und $ \psi_{\text{g}}$ in Schrödingergleichung \ref{3.24} und berechne Energiewechselwirkungswerte nach dem Variationsprinzip \ref{3.24} (Die volle Rechnung ist im Hagen-Wolf auf S.63-67 zu finden)\\
+Neue Integrale, die bei \ce{H_2^{+}}-Problem nicht auftauchen, sind
+\begin{enumerate}
+	\item $$
+		\iint \varphi_{a}^2\left( \underline{r}_{1} \right) \varphi_{b}^{2} \left( \underline{r}_{2} \right) \frac{ \mathrm{e}^2}{4 \pi \varepsilon_0 r_{12}} \mathrm{d} V_1 \mathrm{d} V_2 = E_{\text{WW}}
+	$$ 
+	$\to $ Abstoßende Coulomb-Wechselwirkungsenergie der beiden $\mathrm{e}^{-}$-Wolken
+\item 
+	$$
+	\iint \varphi_{b} \left( \underline{r}_{1} \right) \varphi_{a} \left( \underline{r}_{2} \right) \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{12}} \varphi_{a} \left( \underline{r}_{1} \right) \varphi_{b}\left( \underline{r}_{2} \right) \mathrm{d} V_1 \mathrm{d} V_2 = E_{\text{AW}}
+	$$ 
+	$\to $ stellt die Coulomb'sche-Wechselwirkung zwischen den Elektronen dar, wobei nicht die normale Ladungsdichte auftritt sondern die Austauschdichte \\ 
+	$\to $ Coulomb'sche Austausch-Wechselwirkung
+\end{enumerate}
+
+Endergebnis für $ \psi_{\text{g}}$ und $ \psi_{\text{u}}$:
+\begin{align}
+	\label{3.51}
+	E_{g} &= 2E_0 + \frac{2C + E_{\text{WW}}}{1 + S^2} + \frac{2DS + E_{\text{AW}}}{1 + S^2} + \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 R_{a,b}} \\
+	\label{3.52}
+	E_{u} &= 2E_0 + \frac{2C + E_{WW}}{1- S^2}- \frac{2DS + E_{\text{AW}}}{1-S^2} + \frac{\mathrm{e}^2}{4 \pi \varepsilon_{0} R_{a,b}} 
+\end{align}
+Nur wenn die Energie tiefer liegt als $2 E_0$, was unendlich weit entfernt liegen Kernen entspricht, kommt es zu einer chemischen Bindung.\\
+Es konkurieren verschiedene Effekte 
+\begin{itemize}
+	\item $C$ ist negativ, $E_{\text{WW}}$ und Kernabstoßung positiv
+	\item Typ. QM-Effekte
+		$$
+		K = \underbrace{2DS}_{<0} + \underbrace{E_{\text{AW}}}_{>0} 
+		$$ 
+		Integrale müssen numerisch gelöst werden $\to $ $K < 0$
+ $$
+\implies E\left( \psi_{g} \right) < E\left( \psi_{u} \right) 
+$$ 
+Außerdem zeigt sich, dass $E \left( \psi_{g} \right) < 2 E_0 \implies$ bindend
+\begin{figure}[H]
+    \centering
+    \incfig{vl05_abb2_bind_abind}
+    \label{fig:vl05_abb2_bind_abind}
+\end{figure}
+\end{itemize}
+Die Energieabsenkung kommt neben den Austauscheffekten dadurch zustande, dass die Elektronen, wie schon bei $\ce{H2+}$, sich gleichzeitig zwischen den Kernen aufhalten können, und so von dem Coulomb'schen Anziehungspotential beider Kerne profitieren.\\
+$E_{\text{Bdg}}$ ist nach Heitler-London-Rechnung \SI{3,14}{\electronvolt}, nach Messung hingegen \SI{4,48}{\electronvolt}.\\
+Die Heitler-London Rechnung kann also die Bindung zumindest erklären, muss aber noch quantitativ verbessert werden.
+
+\subsubsection{Kovalent-Ionische Resonanz}
+Bisher hatten wir angenommen, dass das eine Elektron jeweils gerade am anderen Kernort ist als das Andere.\\
+%\begin{figure}[H]
+%    \centering
+%    \incfig{vl05_abb3_kernort}
+%    \label{fig:vl05_abb3_kernort}
+%\end{figure}
+\begin{equation}
+	\label{3.54}
+	\psi_{\text{cov}} = N\left[ \varphi_{a} \left( \underline{r}_{1} \right) \varphi_{b} \left( \underline{r}_{2} \right) + \varphi_{a} \left( \underline{r}_{2} \right) \varphi_{b} \left( \underline{r}_{1} \right)  \right] 
+\end{equation} 
+Auch möglich\\
+\textcolor{red}{Grafik}
+Die Wellenfunktion wäre dann
+\begin{align}
+	\label{3.55}
+	\psi&= \varphi_{a} \left( \underline{r}_{1} \right) \varphi_{a}\left( \underline{r}_{2} \right) \\
+	\psi&= \varphi_{b}\left( \underline{r}_{1} \right) \varphi_{b}\left( \underline{r}_{2} \right) 
+\end{align}
+
+In symmetrischer Form:
+\begin{equation}
+	\psi_{\text{ion}} = N' \left[ \varphi_{a}\left( \underline{r}_{1} \right) \varphi_{a}\left( \underline{r}_{2} \right) + \varphi_{b} \left( \underline{r}_{1} \right) \varphi_{b} \left( \underline{r}_{2} \right)  \right] 
+\end{equation}
+
+Idealerweise verwendet man beide Möglichkeiten als Linearkombination
+\begin{equation}
+	\label{3.58}
+	\psi = \psi_{\text{cov}} + c \psi_{\text{ion}} 
+\end{equation}
+wobei $c$ so zu bestimmen ist, dass der Eigenwert der Energie minimal wird $\left( E_{B} \sim \SI{3,4}{\electronvolt} \text{ bis } \SI{3,5}{\electronvolt} \right) $
