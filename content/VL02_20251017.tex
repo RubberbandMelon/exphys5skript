@@ -12,7 +12,9 @@
     \end{equation}
     mit der \textbf{dielektrischen Verschiebung} ${\vec{D}_\text{m}}$ im Medium m, und der \textbf{dielektrischen Funktion} ${\tensor \epsilon}$. \\
     
-    Üblicherweise ist die dielektrische Funktion $\tensor\epsilon$ ein 3x3-Tensor. In vielen Stoffen vereinfacht sich die dielektrische Funktion sogar zu einem Skalar $\epsilon$, welcher häufig \textbf{relative Dielektrizitätskonstante} genannt wird. In paralektrischen Stoffen erreicht dieser große Werte $\epsilon\gg1$, aufgrund der permanenten elektrischen Dipole. Beispielwerte für die relative Dielektrizitätskonstante sind in \autoref{tab:I.2_epsilon_bsp_paraelektrisch} eingetragen.
+    Üblicherweise ist die dielektrische Funktion $\tensor\epsilon$ ein 3x3-Tensor. In vielen Stoffen vereinfacht sich die dielektrische Funktion sogar zu einem Skalar $\epsilon$, welcher häufig \textbf{relative Dielektrizitätskonstante} genannt wird. 
+    In paralektrischen Stoffen erreicht dieser große Werte $\epsilon\gg1$, aufgrund der permanenten elektrischen Dipole. 
+    Beispielwerte für die relative Dielektrizitätskonstanten sind in \autoref{tab:I.2_epsilon_bsp_paraelektrisch} eingetragen.
     \begin{table}[H]
         \centering
         \caption{Beispielwerte der relativen Dielektrizitätskonstante.}
@@ -69,7 +71,9 @@
     \end{equation}
     mit der Anzahldichte $N = N_{z}/V$.\\
     
-    Eine weitere Einheit für $\vec{p}$ ist das \textbf{Debye} \si{\debye}: zwei Ladungen e im Abstand \SI{1}{\angstrom} ein Dipolmoment von $ \vec{p} = \SI{4,8}{\debye}$. Beispielwerte der Polarisation lauten
+    Eine weitere Einheit für $\vec{p}$ ist das \textbf{Debye} \si{\debye}: 
+    zwei Ladungen e im Abstand \SI{1}{\angstrom} besitzen ein Dipolmoment von $ \vec{p} = \SI{4,8}{\debye}$. 
+    Beispielwerte für Dipolomomente:
     \begin{center}
         H${}_2$O: $\vec p=\SI{1,85}{\debye}$\quad und \quad HCl: $\vec p=\SI{1,08}{\debye}$.
     \end{center}
@@ -88,15 +92,15 @@
         	\bm{\vec{p}\,_{\textbf{ind}} = \alpha \vec{E}_{\textbf{lok}}}
         \end{equation}
     \end{important}
-    mit der lokalen Feldstärke $\vec{E}_{\text{lok}}$ und der {Polarisierbarkeit} $\alpha$. Diese ist ein Maß für die Verschiebbarkeit von positiver zu negativer Ladung in einem Molekül und hat die Einheit $\left[ \alpha \right] = \si{\ampere \second \meter \squared  \per \volt}$.\\
+    mit der lokalen Feldstärke $\vec{E}_{\text{lok}}$ und der {Polarisierbsteht aucharkeit} $\alpha$. Diese ist ein Maß für die Verschiebbarkeit von positiver zu negativer Ladung in einem Molekül und hat die Einheit $\left[ \alpha \right] = \si{\ampere \second \meter \squared  \per \volt}$.\\
     
-    In manchen Lehrbüchern steht auch
+    In manchen Lehrbüchern definiert man
     $$
-    \vec{P}_{\text{ind}} = \alpha \varepsilon_0 \vec{E}_{\text{lok}}
+    \vec{p}_{\text{ind}} = \alpha \varepsilon_0 \vec{E}_{\text{lok}}
     $$ 
     wodurch kein $ \varepsilon_0$ in der Clausius-Mossoti-Beziehung \eqref{eq:clausius_mossotti} auftaucht.\\
     
-    Die durch Ladungsverschiebung entstehende Polarisation heißt \enquote{Verschiebungspolarisation}. Bei Verschiebung von Elektronen $\mathrm{e}^{-}$ gegen positiven Kern spricht man von Elektronenpolarisation, bei positiven Ionen (Kathionen) gegen negativen Ionen (Anionen) von Ionenpolarisation.
+    Die durch Ladungsverschiebung entstehende Polarisation heißt \enquote{Verschiebungspolarisation}. Bei Verschiebung von Elektronen $\mathrm{e}^{-}$ gegen den positiven Kern spricht man von Elektronenpolarisation, bei positiven Ionen (Kathionen) gegen negativen Ionen (Anionen) von Ionenpolarisation.
 
 \paragraph{Bemerkung}
     \begin{itemize}
@@ -142,7 +146,7 @@ p
     \begin{figure}[H]
         \centering
         \incfig{vl2-kristall}
-        \caption{Dipole im externen elektrischen Feld $E_\text{ext}$. An der Stelle X im Zentrum wirken die Dipole, wodurch das lokale Feld ungleich dem externen Feld ist.}
+        \caption{Dipole im externen elektrischen Feld $E_\text{ext}$. An der Stelle X im Zentrum wirken auch die Dipolfelder, wodurch das lokale Feld ungleich dem externen Feld ist.}
         \label{fig:vl2-kristall}
     \end{figure} 
     \begin{verbal}
@@ -150,7 +154,7 @@ p
     \end{verbal}
     Die $z$-Komponente des lokalen elektrischen Feldes eines Dipoles beträgt
     $$
-    E_{z, \text{lok}} = E_{z, \text{ext}} + \frac{1}{4 \pi \varepsilon_{0}} \sum_{i}^{} p_{i} \frac{3 z_{i}^2 - v_{i}^2}{v_{i}^{5}}.
+    E_{z, \text{lok}} = E_{z, \text{ext}} + \frac{1}{4 \pi \varepsilon_{0}} \sum_{i}^{} p_{i} \frac{3 z_{i}^2 - r_{i}^2}{r_{i}^{5}}.
     $$
     Das lokale Feld folgt additiv aus den Teilfeldern
     \begin{align}\nonumber
@@ -162,7 +166,7 @@ p
             + \frac{1}{3 \varepsilon_0} \vec{P} \\
     	&= \vec{E} + \frac{1}{3 \varepsilon_0} \vec{P}.\label{eq:2.12}
     \end{align}
-    mit dem probenabhängigen \quickdef{Depolarisationsfaktor $\bm N$} ist.
+    mit dem probenabhängigen \quickdef{Depolarisationsfaktor $\bm N$}.
     
     Damit folgt aus \ref{2.8}
     \begin{equation}
@@ -184,13 +188,13 @@ p
     mit der \quickdef{molaren Polarisierbarkeit $\bm P_{\text{mol}}$}. Diese Gleichung verknüpft die makroskopischen Größen $ \varepsilon$, $ M$, $ \rho$ mit der mikroskopischen Größe $ \alpha$.
 
 \paragraph{Lorentz-Lorenz-Gleichung}
-    Bisher war das gegebene Feld statisch. Jetzt wird die die Wechselwirkung mit Licht, also einem sich mit einer Frequenz von $ \omega > \si{10^{14} \hertz}$ änderndem Feld, betrachtet. Die charakteristische Zeit für die Umpolarisation von \textbf{Ionen} entspricht derjenigen Zeit einer Molekülschwingung ($\sim \si{10^{13}\hertz}$)
+    Bisher war das gegebene Feld statisch. Jetzt wird die Wechselwirkung mit Licht, also einem sich mit einer Frequenz von $ \omega > \si{10^{14} \hertz}$ änderndem Feld, betrachtet. Die charakteristische Zeit für die Umpolarisation von \textbf{Ionen} entspricht derjenigen Zeit einer Molekülschwingung ($\sim \si{10^{13}\hertz}$)
     \begin{itemize}[label= $\to$]
     	\item Ionen können dem Wechselfeld nicht folgen
-    	\item $ \alpha \left( \omega_{\text{Licht}} \right) \ll \alpha \left( 0 \right)$: die Polarisation ist Frequenzabhängig; bei Lichtfrequenzen ist sie erheblich niedriger als bei keiner elektromagnetischen Strahlung.
+    	\item $ \alpha \left( \omega_{\text{Licht}} \right) \ll \alpha \left( 0 \right)$: die Polarisation ist frequenzabhängig; bei Lichtfrequenzen ist sie erheblich niedriger als bei statischen Feldern.
     	\item Für Licht im sichtbaren Spektralbereich kommt es nur zur Verschiebungspolarisation der Elektronen.
     \end{itemize}
-    Mit dem Brechungsindex $n^2 = \varepsilon \mu$ und $ \mu = 1$ bei hohen Frequenzen gilt die 
+    Mit dem Brechungsindex $n^2 = \varepsilon \mu$ und $ \mu = 1$ folgt bei hohen Frequenzen 
     \begin{important}
         \textbf{Lorentz-Lorenz-Gleichung}\\
         \begin{equation}
@@ -201,17 +205,18 @@ p
 
 \subsection{Polare Moleküle}
 \paragraph{Orientierungspolarisation}
-    Bisher wurde nur die temperaturunabhängige Verschiebungspolarisation betrachtet. Nun soll die temperaturabhängige Orientierungspolarisation untersucht werden. Dazu illustriert \autoref{fig:vl2_orientierungspolarisation}, wie ausgerichtete polare Moleküle ein $\vec E$-Feld erzeugen. Beispiele für polare Moleküle mit permanenten Dipolmomenten sind in \autoref{tab:I.2_dipolmom_bsp_polare_mol} aufgelistet.
+    Bisher wurde nur die temperaturunabhängige Verschiebungspolarisation betrachtet. Nun soll die temperaturabhängige Orientierungspolarisation untersucht werden. 
+    Dazu illustriert \autoref{fig:vl2_orientierungspolarisation}, wie ein elektrisches Feld $\vec E$ die Moleküle nur teilweise ausrichtet. Beispiele für polare Moleküle mit permanenten Dipolmomenten sind in \autoref{tab:I.2_dipolmom_bsp_polare_mol} aufgelistet.
     \begin{figure}[H]
         \centering
         \incfig{vl2_orientierungspolarisation}
-        \caption{Polare Moleküle richten sich ähnlich aus und bilden dadurch ein permanentes $\vec E$-Feld.}
+        \caption{Polare Moleküle richten sich im elektrischen Feld bei einer endlichen Temperatur nur teilweise aus.}
         \label{fig:vl2_orientierungspolarisation}
     \end{figure}
     \vspace{-0.5cm}
     \begin{table}[H]
         \centering
-        \caption{Permanentes Dipolmoment $p$ polarer Moleküle. Diese sind drei Größenordnungen größer als induzierte Dipolmomente und erzeugen $\vec E$-Felder der Ordnung $\sim\SI{e5}{\volt\per\coulomb\per\meter}$.}
+        \caption{Permanentes Dipolmoment $p$ polarer Moleküle. Diese sind drei Größenordnungen größer als induzierte Dipolmomente in $\vec E$-Feldern der Ordnung $\sim\SI{e5}{\volt\per\coulomb\per\meter}$.}
         \begin{tabular}{|l||ccc|}\hline
              &HF&H${}_2$O&CO${}_2$  \\\hline
              $p$ / $\SI{e-30}{Asm}$&6,0&3,17&0 \\\hline
@@ -220,19 +225,24 @@ p
     \end{table}
     Der Zusammenhang zwischen Orientierungspolarisation $\vec P_\text{or}$ und permanentem Dipolmoment $\vec P_\text{p}$ lautet
     $$
-    \vec{P}_{\text{or}} = \frac{ \varepsilon \vec{P}_{\text{p}}}{ V} = N \vec{P}_\text{p}'.
+    \vec{P}_{\text{or}} = \frac{ \sum\vec{p}_{\text{p}}}{ V} = N \vec{p_\text{p}'}.
     $$ 
-    Die Temperaturabhängigkeit rührt daher, dass die Orientierungsenergie $W_{\text{or}}= - \vec{p}_\text{p}\cdot\vec{E}$ in Konkurrenz mit der thermischen Energie $ \sim \mathrm{k}_{\mathrm{B}} T$ steht. Je heißer das Medium, desto weniger Moleküle sind im äußeren Feld ausgerichtet und tragen zur Gesamtpolarisation bei. Das Gleichgewicht wird annähernd durch die Boltzmannverteilung beschrieben. Die genaue Rechnung wurde 1900 von Langevin gemacht und ist auf Blatt 2 der Gruppenübungen.\\
+    Die Temperaturabhängigkeit rührt daher, dass die Orientierungsenergie $W_{\text{or}}= - \vec{p}_\text{p}\cdot\vec{E}$ in Konkurrenz mit der thermischen Energie $ \sim \mathrm{k}_{\mathrm{B}} T$ steht. Je heißer das Medium, desto weniger Moleküle sind im äußeren Feld ausgerichtet und tragen zur Gesamtpolarisation bei. Das Gleichgewicht wird annähernd durch die Boltzmannverteilung beschrieben. 
+    Die genaue Rechnung wurde 1900 von Langevin gemacht und wird auf Blatt 2 der Gruppenübungen behandelt.\\
     
-    Bei hohen Temperaturen gilt $\mathrm{k}_{\mathrm{B}}T\gg \vec{P}_{\text{p}}\cdot\vec{E} = P_\text{p} E \cos\left( \theta \right) $ mit $P'_{\text{p}}= P_{p} \overline{\cos\left( \theta \right) }$.
+    Bei hohen Temperaturen gilt $\mathrm{k}_{\mathrm{B}}T\gg \vec{p}_{\text{p}}\cdot\vec{E} = p_\text{p} E \cos\left( \theta \right) $ mit $p'_{\text{p}}= p_\mathrm{p} \overline{\cos\left( \theta \right) }$.
     \begin{verbal}
-        $\theta$ beschreibt den Winkel zwischen der Polarisation eines Moleküls $\vec P_\text p$ und dem kontinuierlich erzeugten $\vec E$-Feld. Da dieser Winkel für jedes Molekül im Ensemble anders ist, wird der Mittelwert $\overline\theta$ und die daraus entstehende mittlere Polarisation $P_\text P'$ betrachtet.
+        $\theta$ beschreibt den Winkel zwischen dem Dipolmoment $\vec p_\text p$ eines Moleküls und dem $\vec E$-Feld. Da dieser Winkel für jedes Molekül im Ensemble anders ist, wird der Mittelwert $\overline\theta$ und das daraus entstehende mittlere Dipolmoment $\vec{p'_\mathrm p}$ betrachtet.
     \end{verbal}
-    Einsetzen und umformen liefert $$\overline{\cos\left( \theta \right) }= \frac{P_{p} E}{ 3 \mathrm{k}_{\mathrm{B}}T}.$$ Daraus folgt die Näherung für die 
+    Einsetzen und umformen liefert 
+    $$
+        \overline{\cos\left( \theta \right) }= \frac{p_{\mathrm p} E}{ 3 \mathrm{k}_{\mathrm{B}}T}.
+    $$ 
+    Daraus folgt die Näherung für die 
     \begin{important}
         \textbf{orientierte Polarisation}\\
         \begin{equation}
-        	\bm{\vec{P}_{\textbf{or}}= N \frac{P_\textbf{p}^2 \vec{E}}{3 \mathrm{k}_{\textbf{B}}}}
+        	\bm{\vec{P}_{\textbf{or}}= N \frac{\vec p_\mathrm p\cdot\vec{E}}{3 \mathrm{k}_{\textbf{B}}}}
         	\label{eq:2.16}
         \end{equation}
         für hohe Temperaturen $T$.
@@ -250,7 +260,7 @@ p
     		L\left( x \right) = \frac{e^{x} + e^{-x}}{ e^{x} - e^{-x}}  - \frac{1}{x}
     		$$
             \begin{verbal_sidebyside}[7cm]
-                In Vergleich mit \autoref{fig:vl2_langevin} ist die lineare Approximation der
+                Nach \autoref{fig:vl2_langevin} ist die lineare Approximation der
                 Langevin-Funktion für $x\gg1$ eine gute Näherung.\\
                 
                 Für hohe Temperaturen $T$ wird das Argument klein und somit
@@ -259,7 +269,7 @@ p
                 \tcblower
                 \centering
                 \includegraphics[width=\linewidth]{figures/vl2_langevin.jpg}
-                \captionof{figure}{Langevin-Funktion $L(x)$ und gestrichelte lineare Approximation.}
+                \captionof{figure}{Langevin-Funktion $L(x)$ und gestrichelte lineare Approximation. Eigene Darstellung.}
                 \label{fig:vl2_langevin}
             \end{verbal_sidebyside}
         
