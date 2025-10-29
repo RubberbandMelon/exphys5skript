@@ -37,8 +37,8 @@
 *.nlg
 *.ilg
 
-# pdf (main.pdf)
-*.pdf
+# main.pdf
+main.pdf
 
 # listings/minted
 _minted*/
