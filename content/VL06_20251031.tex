@@ -1,0 +1,127 @@
+\subsubsection{Wasserstoffbindung nach Hund-Mulliken-Bloch: Die Molekülorbitalmethode}
+Die Molekülorbitalmethode (abgekürzt MO), auch linearkombination von atomaren Wellenfunktionen (abgekürzt LCAO), baut auf der Annahme auf, dass ein Gesamtmolekül Orbitale besitzt, die genau wie Atomorbitale aufgefüllt werden. Diese Methode liefert vorallem bei delokalisierten Elektronen (wie z.B. bei den $ \pi$-Bindungen des Benzols) gute Ergebnisse. Sie eignet sich gut um z.B. Änderungen des Molekülzustands durch ein Elektron (z.B. bei Spektroskopie) zu beschreiben.\\
+\textbf{Ausgangspunkt}: Lösung des \ce{H2+}-Ion:
+\begin{equation}
+	\label{3.59}
+	\psi_{\mathrm{g}} \left( \Vec{r} \right) = N\left[ \varphi_{a}\left( \Vec{r} \right) + \varphi_{b} \left( \Vec{r} \right)  \right] 
+\end{equation}
+wobei die Summe in der Klammer dem Molekülorbital als Summe der 1s-Orbitale des \ce{H}-Atoms entspricht.\\
+\textbf{Idee}: Nacheinander die beiden Elektronen des \ce{H2} in diesen Zustand setzen\\
+\textbf{Ansatz}:
+\begin{equation}
+	\label{3.60}
+	\begin{split}
+		\psi &=  N \psi_{\mathrm{g}} \left( \Vec{r}_{1} \right) \psi_{\mathrm{g}} \left( \Vec{r}_{2}\right) \cdot \text{Spinfunktion}  \\
+		     &= N \psi_{\mathrm{g}} \left( \Vec{r}_{1} \right) \psi_{\mathrm{g}} \left( \Vec{r}_{2} \right) \left[ \alpha ( 1 ) \beta(2) - \alpha(2) \beta (1)  \right]  \\
+	\end{split}
+\end{equation}
+Die Anwendeung des Variationsprinzip \ref{3.22} auf die Wellenfunktion liefert \textcolor{red}{hier fehlt was}
+
+\subsubsection{Vergleich der verschiedenen Ansätze für die Wellenfunktion}
+Struktur WF:
+\begin{itemize}
+	\item Heitler-London:
+		\begin{equation}
+			\label{3.61}
+			\psi_{\mathrm{g}} = \varphi_{a}(1) \varphi_{b}(2) + \varphi_{a}(2) \varphi_{b}(1)
+		\end{equation}
+	\item Heitler-London + ionisch:
+		\begin{equation}
+			\label{3.62}
+			\psi_{\mathrm{g}} = \varphi_{a} (1) \varphi_{b}(2) + \varphi_{a}(2) \varphi_{b}(1) + c\left[ \varphi_{a}(1) \varphi_{b}(2) + \varphi_{b}(1) \varphi_{b}(2) \right] 
+		\end{equation}
+	\item Hund-Mullikan Bloch:
+		\begin{equation}
+			\label{3.63}	
+			\textcolor{red}{hier fehlt was}
+		\end{equation}
+\end{itemize}
+
+Alle Ansätze sind Spezialfälle eines einzigen Ansatzes! Konstruire Wellenfunktion aus lokalisierten Anteil (1 bie $a$ und 2 bei $b$ ) und nehme noch einen delokalisierten Teil, der von der jeweils anderen WF (z.B. $ \varphi_{b}(1)$ bzw. $ \varphi_{a}(2)$ ) berührt:
+\textcolor{red}{Plot hier}
+\begin{align}
+	\label{3.64}
+	\varphi_{a} &\to \varphi_{a} + d \varphi_{b} \\
+	\label{3.65}
+	\varphi_{b} &\to \varphi_{b} + d \varphi_{b}
+\end{align}
+mit $d < 1$. Somit lautet der allgemeine Ansatz:
+\begin{align}
+	\label{3.66}
+	\psi_{g}(1,2) &= \left[ \varphi_{a} (1) + d \varphi_{b}(1) \right] \left[ \varphi_{b} (2) + d \varphi_{a}(2) \right] + \left[ \varphi_{a}(2) + d \varphi_{b}(2) \right] \left[ \varphi_{b}(1) + d\varphi_{a}(1) \right]  \\
+	\label{3.67}
+	&= \left( 1 + d^2 \right) \left[ \varphi_{a}(1) \varphi_{b}(2) + \varphi_{a}(2) \varphi_{b}(1) \right] + 2d \left[ \varphi_{a}(1) \varphi_{a}(2) + \varphi_{b}(1) \varphi_{b}(2) \right] 
+\end{align}
+
+Die verschiedenen Ansätze entsprechen verschiedenen verschiedenen Werten für $d $:
+\begin{itemize}
+	\item $d = 0$ $\to $ Heitler London Ansatz (VB)
+	\item $d=1$ $\to $ Hund-Mulliken-Bloch (MO)
+	\item Ausklammern von $\left( 1+d^2 \right) $ bei \ref{3.67} und $ C = 2d / \left( 1+d^2 \right) $ $\to $ Heitler-London + ionisch
+\end{itemize}
+
+\textbf{Bemerkung}: Ansatz \ref{3.67} kann noch weiter verbessert werden, wenn man auch noch angeregte Atomzustände (p-, d-Orbitale) in die LCAO mit aufnimmt.
+
+\subsection{Hybridisierung}
+Hybridisierung ist von besonderer Bedeutung für die Kohlenstoffchemie (organische Chemie). Aufgrund der Wechselwirkung zwischen den an der Bindung beteiligten Atome werden die Elektronenhüllen verformt. Einige Beispiele für verschiedene Kohlenstoffverbindungen bzw. Modifikationen und die dazugehörige Hybridisierung des Kohlenstoffs lauten:
+\begin{table}[htpb]
+	\centering
+	\caption{Beispiele verschiedener Kohlenstoffverbindungen/-modifikationen mit den zugehörigen Hybridisierungen des Kohlenstoffs.}
+	\label{tab:label}
+	\begin{tabular}{|l|c|}
+		\hline
+		Verbindung/Modifikation & Hybridisierung \\
+		\hline
+		Diamant & $\mathrm{sp}^{3}$ \\
+		Graphit, Graphen (einzelne Graphitschicht) & \mathrm{sp}^{2} \\
+		Fulleren \ce{C60} & $\mathrm{sp}^{2}$\\
+		Methan (\ce{CH4}) & $\mathrm{sp}^{3}$ \\
+		Ethen (\ce{C2H4}) & $\mathrm{sp}^{2}$ \\
+		Ethin (\ce{C2H2}) & $\mathrm{sp}$ \\
+		\hline
+	\end{tabular}
+\end{table}
+\textcolor{red}{MO-diagramm}\\
+\textcolor{red}{AO darstellung}\\
+Ein Wasserstoffatom mit einer Bindungsenergie von $E_{\text{Bdg}}^{\mathrm{1s}} = \SI{13,6}{\electronvolt}$ verursacht eine Störung bei den Energieniveaus des Kohlenstoffs und kann durch Coulombkräfte somit gewissermaßen die 2s-2p Aufspaltung beim Kohlenstoff aufheben, was praktisch zu einer Entartung führt. Kommt ein Wasserstoffatom also in die Nähe eines Kohlenstoffatoms so können die neuen Orbitale als Linearkombinationen der alten Wellenfunktionen ausgedrückt werden mit bspw.
+\begin{align}
+	\label{3.68}
+	\psi_{+}&= \psi_{\mathrm{2s}} + \psi_{\mathrm{2p}_{\mathrm{x}}} \\
+	\label{3.69}
+	\psi_{-}&= \psi_{\mathrm{2s}} - \psi_{\mathrm{2p}_{\mathrm{x}}}
+\end{align}
+\textcolor{red}{psiplots}
+
+\textbf{Beispiel}: Methan \ce{CH4}
+\begin{figure}[H]
+    \centering
+    \incfig{vl06_abb2_kohlenstoff_hybridisiert}
+    \label{fig:vl06_abb2_kohlenstoff_hybridisiert}
+\end{figure}
+
+$$
+\begin{rcases}
+	\psi_1 = N \left( \psi_{\mathrm{2s}} + \psi_{\mathrm{2p}_\mathrm{x}} + \psi_{\mathrm{2p}_\mathrm{y}} + \psi_{\mathrm{2p}_\mathrm{z}} \right)  \\
+	\psi_2 = N \left( \psi_{\mathrm{2s}} + \psi_{\mathrm{2p}_\mathrm{x}} - \psi_{\mathrm{2p}_\mathrm{y}} - \psi_{\mathrm{2p}_\mathrm{z}} \right)  \\
+	\psi_3 = N \left( \psi_{\mathrm{2s}} - \psi_{\mathrm{2p}_\mathrm{x}} + \psi_{\mathrm{2p}_\mathrm{y}} - \psi_{\mathrm{2p}_\mathrm{z}} \right)  \\
+	\psi_4 = N \left( \psi_{\mathrm{2s}} - \psi_{\mathrm{2p}_\mathrm{x}} - \psi_{\mathrm{2p}_\mathrm{y}} + \psi_{\mathrm{2p}_\mathrm{z}} \right)  \\
+\end{rcases}
+\begin{array}{c}
+	\text{verschiebt die} \\
+	\text{Ladungsschwerpunkte}\\
+	\text{in die 4 Ecken eines Tetraeders}
+\end{array}
+$$
+Die Wellenfunktionen $ \psi_{1}$ - $ \psi_{4}$ sind quantenmechannich orthogonal, d.h.
+\begin{equation}
+	\label{3.71}
+	\int \psi_{i} \psi_{j} \mathrm{d}V = \delta_{ij}.
+\end{equation}
+Die Orbitale des Kohlenstoffs können sich, dank Hybridisierung, nun unter größerer Energieminimierung mit den 1s-Orbitalen des Wasserstoffs überlagern.
+
+Nach der LCAO-Methode lauten die Ansätze für die Molekülorbitale daher
+\begin{equation}
+	\label{3.72}
+	\psi( \Vec{r}) = \psi_{\mathrm{C1}} (\Vec{r}) + c \psi_{\mathrm{H1}}(\Vec{r})
+\end{equation}
+mit der Konstante $ c \neq 1 $ da die Bindung unsymmetrisch ist.
