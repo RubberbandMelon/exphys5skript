@@ -1,4 +1,3 @@
-
 \begin{verbal}
 	Die Covalent-Bonds-Methode und die Kovalent-ionische Resonanz verwenden Wellenfunktionen des Grundzustandes von Wasserstoff.
 	Sie sind deshalb ungeeignet, um angeregte Zustände zu beschreiben.
@@ -23,8 +22,7 @@
 		\psi_{\mathrm{g}} \left( \Vec{r} \right) = N\left[ \varphi_\text{a}\left( \Vec{r} \right) + \varphi_\text{b} \left( \Vec{r} \right)  \right] 
 	\end{equation}
 	aus. Die Linearkombination der Wellenfunktionen $\varphi_\text a$ und $\varphi_\text b$ gibt der LCAO-Methode ihren Namen, \textit{linear combination of atomic orbitals}. 
-	$N$ ist eine Normierungskonstante
-	wobei die Summe in der Klammer dem Molekülorbital als Summe der 1s-Orbitale des \ce{H}-Atoms entspricht.
+	$N$ ist eine Normierungskonstante.
 \paragraph{Idee} 
 	Nacheinander werden die beiden Elektronen des Wasserstoffmoleküls in diesen Zustand $\psi_\text g$ gesetzt.
 \paragraph{Ansatz} 
@@ -40,7 +38,10 @@
 	Durch numerische Integration erhalten wir die Bindungsenergie.
 
 \paragraph{Ergebnis}
-	Die nach MO-Methode berechnet Energieeigenwerte liegen höher als bei der Heitler-London-Methode.
+	Die nach MO-Methode berechneten Energieeigenwerte liegen höher als bei der Heitler-London-Methode.
+
+\paragraph{Bemerkung}
+	Dieses Verfahren lässt sich auf beliebig komplizierte Moleküle ausweiten.
 
 \subsubsection{Vergleich der verschiedenen Ansätze für die Wellenfunktion}
 	Für die Wellenfunktion des Wasserstoffmoleküls haben wir bisher drei Ansätze betrachtet:
@@ -53,7 +54,7 @@
 		\item Kovalent-ionische Resonanz:
 			\begin{equation}
 				\label{eq:3.62}
-				\psi_{\mathrm{g}} = \varphi_\mathrm{a} (1) \varphi_\mathrm{b}(2) + \varphi_\mathrm{a}(2) \varphi_\mathrm{b}(1) + c\left[ \varphi_\mathrm{a}(1) \varphi_\mathrm{b}(2) + \varphi_\mathrm{b}(1) \varphi_\mathrm{b}(2) \right] 
+				\psi_{\mathrm{g}} = \varphi_\mathrm{a} (1) \varphi_\mathrm{b}(2) + \varphi_\mathrm{a}(2) \varphi_\mathrm{b}(1) + c\big[ \varphi_\mathrm{a}(1) \varphi_\mathrm{b}(2) + \varphi_\mathrm{b}(1) \varphi_\mathrm{b}(2) \big] 
 			\end{equation}
 		\item Hund-Mulliken-Bloch:
 			\begin{equation}
@@ -64,7 +65,7 @@
 
 	Diese Ansätze sind alle Spezialfälle eines einzigen Ansatzes. 
 \paragraph{Verallgemeinerter Ansatz}
-	Wir konstruieren die Wellenfunktion aus lokalisierten Anteilen (1 bei $a$ und 2 bei $b$) und nehmen einen delokalisierten Teil dazu, der von der jeweils anderen WF (z.B. $ \varphi_\mathrm{b}(1)$ bzw. $ \varphi_\mathrm{a}(2)$ ) kommt:
+	Wir konstruieren die Wellenfunktion aus lokalisierten Anteilen (zB. 1 bei $a$ und 2 bei $b$) und nehmen einen delokalisierten Teil dazu, der von der jeweils anderen WF (z.B. $ \varphi_\mathrm{b}(1)$ bzw. $ \varphi_\mathrm{a}(2)$ ) kommt:
 	\begin{align}
 		\label{eq:3.64}
 		\varphi_\mathrm{a} &\to \varphi_\mathrm{a} + d \varphi_\mathrm{b} \\
@@ -79,7 +80,6 @@
 		 \label{fig:vl06_wellenfn_allg_ansatz}
 	\end{figure}
 	
-	
 	Die Kombination all dieser Funktionen liefert den Verallgemeinerten Ansatz
 	\begin{align}
 		\label{eq:3.66}
@@ -88,7 +88,7 @@
 		&= \left( 1 + d^2 \right) \left[ \varphi_\mathrm{a}(1) \varphi_\mathrm{b}(2) + \varphi_\mathrm{a}(2) \varphi_\mathrm{b}(1) \right] + 2d \left[ \varphi_\mathrm{a}(1) \varphi_\mathrm{a}(2) + \varphi_\mathrm{b}(1) \varphi_\mathrm{b}(2) \right] 
 	\end{align}
 
-	Die verschiedenen Ansätze entsprechen verschiedenen verschiedenen Werten für $d $:
+	Die verschiedenen Ansätze entsprechen verschiedenen Werten für $d$:
 	\begin{itemize}
 		\item $d = 0$: Heitler London Ansatz (VB)
 		\item $d=1$: Hund-Mulliken-Bloch (MO)
@@ -98,9 +98,9 @@
 	\paragraph{Bemerkung} Ansatz \eqref{eq:3.67} kann noch weiter verbessert werden, wenn man auch noch angeregte Atomzustände (p-, d-Orbitale) in die LCAO mit aufnimmt.
 
 \subsection{Hybridisierung}
-	Hybridisierung ist von besonderer Bedeutung für die Kohlenstoffchemie (organische Chemie). 
-	Aufgrund der Wechselwirkung zwischen den an der Bindung beteiligten Atome werden die Elektronenhüllen verformt. 
-	Einige Beispiele für verschiedene Kohlenstoffverbindungen bzw. Modifikationen und die dazugehörige Hybridisierung des Kohlenstoffs sind in \autoref{tab:vl06_kohlenstoff_hybridisierungen} aufgelistet.
+	Hybridisierung ist von besonderer Bedeutung für die Kohlenstoffchemie, also die organische Chemie. 
+	Aufgrund der Wechselwirkungen zwischen den an der Bindung beteiligten Atome werden die Elektronenhüllen verformt. 
+	Einige Beispiele für verschiedene Kohlenstoffverbindungen und -modifikationen und die dazugehörige Hybridisierung des Kohlenstoffs sind in \autoref{tab:vl06_kohlenstoff_hybridisierungen} aufgelistet.
 	\begin{table}[htpb]
 		\centering
 		\caption{Beispiele von Kohlenstoffverbindungen/-modifikationen mit den zugehörigen Hybridisierungen des Kohlenstoffs.}
@@ -130,23 +130,23 @@
 		\tcblower
 		\centering
 		\begin{tikzpicture}
-			\draw[thick](1,0)--(0,0) node[anchor = east] {1s};
+			\draw[thick, black](1,0)--(0,0) node[anchor = east] {1s};
 			\draw[ultra thick, ->, red] (0.3,-0.3) -- (0.3,0.3);
 			\draw[ultra thick, <-, red] (0.7,-0.3) -- (0.7,0.3);
-			\draw[thick](1,1)--(0,1) node[anchor = east] {2s};
+			\draw[thick, black](1,1)--(0,1) node[anchor = east] {2s};
 			\draw[ultra thick, ->, red] (0.3,0.7) -- (0.3,1.3);
 			\draw[ultra thick, <-, red!30] (0.7,0.7) -- (0.7,1.3);
-			\draw[thick](1.5,2) -- (2.5,2) node[anchor = north] {2p${}_\text x$};
+			\draw[thick, black](1.5,2) -- (2.5,2) node[anchor = north] {2p${}_\text x$};
 			\draw[ultra thick, ->, red] (1.8,1.7) -- (1.8,2.3);
-			\draw[thick](3,2) -- (4,2) node[anchor = north] {2p${}_\text y$};
+			\draw[thick, black] (3,2) -- (4,2) node[anchor = north] {2p${}_\text y$};
 			\draw[ultra thick, ->, red] (3.3,1.7) -- (3.3,2.3);
-			\draw[thick](4.5,2) -- (5.5,2)  node[anchor = north] {2p${}_\text z$};
+			\draw[thick, black](4.5,2) -- (5.5,2)  node[anchor = north] {2p${}_\text z$};
 			\draw[ultra thick, ->, blue] (4.8,1.7) -- (4.8,2.3);
 
-			\draw[ultra thick, ->, blue] (0.9,0.75) .. controls (4.7,0.5) .. (4.8,1.5);
+			\draw[thick, ->, blue] (0.9,0.75) .. controls (4.8,0.5) .. (4.8,1.5);
 			\node[blue] at (3.5,0.2) {angeregter Zustand};
 		\end{tikzpicture}
-		\captionof{figure}{Molekülorbital-Diagramm des Kohlenstoffs.}
+		\captionof{figure}{Molekülorbital-Diagramm des Kohlenstoffs. Ein Elektron kann vom 2s- in einen 2p-Zustand angeregt werden.}
 		\label{fig:vl06_kohlenstoff_MO_diagramm}
 	\end{verbal_sidebyside}
 
@@ -158,11 +158,11 @@
 		\label{eq:3.69}
 		\psi_{-}&= \psi_{\mathrm{2s}} - \psi_{\mathrm{2p}_{\mathrm{x}}}
 	\end{align}
-	Die Linearkombination zum $\psi_+$-Zustand ist in \autoref{fig:vl06_hybridisierung_wellenfn} dargestellt.
+	Die Linearkombination zum $\psi_+/2$-Zustand ist in \autoref{fig:vl06_hybridisierung_wellenfn} dargestellt.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{figures/vl06/vl06_hybridisierung_wellenfn.png}
-		\caption{Hybridisierte Wellenfunktion $\psi_+=\psi_\text{2s}+\psi_\text{2p}$.}
+		\caption{Hybridisierte Wellenfunktion $\psi=(\varphi_\text{2s}+\varphi_\text{2p})/2$.}
 		\label{fig:vl06_hybridisierung_wellenfn}
 	\end{figure}
 
@@ -197,7 +197,7 @@
 		}
 		\label{fig:vl06_hybrid_orbital_hanteln}
 	\end{figure}
-	Die Wellenfunktionen $ \psi_{1}$ - $ \psi_{4}$ sind quantenmechanisch orthogonal, d.h.
+	Die Wellenfunktionen $ \psi_{1}$ bia $ \psi_{4}$ sind quantenmechanisch orthogonal, d.h.
 	\begin{equation}
 		\label{eq:3.71}
 		\int \psi_{i} \psi_{j} \mathrm{d}V = \delta_{ij}.
