@@ -1,0 +1,178 @@
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+\section{Molekülspektroskopie}
+\subsection{Born-Oppenheimer Näherung}
+Separation von Kern- und Elektronenbewegung am Beispiel des zweiatomigen Moleküls 
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics{./figures/VL07_Abbildung_1.tikz}
+	\label{}
+	\caption{}
+\end{figure}
+
+Schrödingergleichung:
+\begin{equation}
+	\label{4.1}
+\hat{H} \psi( \Vec{r}_{\mathrm{A}}, \Vec{r}_{\mathrm{B}}, \Vec{r}_{i}) = W \psi(\mathrm{A}, \Vec{r}_{\mathrm{B}}, \Vec{r}_{i})
+\end{equation} 
+
+Hamiltonoperator:
+\begin{align}
+	\label{4.2}
+	\hat{H} &= \hat{H}_{\text{kin}} + \hat{H}_{\text{pot}} \\
+	\label{4.3}
+	\hat{H}_{\text{kin} } &= \frac{ \hat{p}_{\mathrm{A}}^2}{2m_{\mathrm{A}}} + \frac{\hat{p}_{\mathrm{B}}^2}{2 m_{\mathrm{B}}} \sum_{i} \frac{ \hat{p}_{i}^2}{2 m_{\mathrm{e}}} 
+\end{align}
+
+\begin{equation}
+	\label{4.4}
+	\hat{H}_{\text{pot}} = \hat{H}_{\text{coul}} = \frac{Z_{\mathrm{A} }Z_{\mathrm{B}} \mathrm{e}^2}{4 \pi \varepsilon_0 r_{\mathrm{AB}}} + \sum_{i>j}^{N} \sum_{j = 1}^{N} \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{ij}} -
+	\sum_{i = 1}^{N} \frac{\mathrm{e}^2}{4 \pi \varepsilon_0} \left( \frac{Z_{\mathrm{A}}}{r_{\mathrm{A}i}} + \frac{Z_{\mathrm{B}}}{r_{\mathrm{B}i}} \right)  
+\end{equation}
+
+Die Schrödingergleichung kann nicht exakt gelöst werden. Aber: Wegen ihrer viel größeren Masse bewegen sich die Kerne sehr viel langsamer als die Elektronen. Es eignen sich dadurch folgende Näherungen:\\
+
+\underline{1 Näherung}: Vernachlässigung der Kernbewegung \\
+Man denkt sich den Kernabstand in einem willkürlichen Abstand fixiert:
+$$
+\Vec{r} = \Vec{r}_{\mathrm{AB}} = \Vec{r}_{\mathrm{A}} - \Vec{r}_{\mathrm{B}}
+$$
+Damit folgt
+\begin{equation}
+	\label{4.5}
+	\sum_{i} \left( \frac{\hat{p}_{i}^2}{2 m_{\e}} + \hat{H}_{\text{coul}} \right) \psi^{\text{el}} ( \Vec{r}, \Vec{r}_{i}) = W^{\text{el}}(r) \psi^{\text{el}}(\Vec{r}, \Vec{r}_{i})
+\end{equation}
+$r$=Kernabstand  $\to $ Parameter in der Näherung, $W^{\text{el}}(r)$ = Elektronenenergie beim Kernabstand $r = P(r)$
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl07_abbildung_2}
+    \label{fig:vl07_abbildung_2}
+\end{figure}
+
+Die elektronische Energie $W^{\text{el}} (r) $ wirkt als Potential für die Schwingung des Moleküls um den Gleichgewichtsabstand $r_{\mathrm{e}}$ 
+\begin{equation}
+	\label{4.6}
+	\left[  \frac{\hat{p}_{\mathrm{A}}^2}{2 m_{\mathrm{A}}} + \frac{\hat{p}_{\mathrm{B}}^2}{2 m_{\mathrm{B}}} + P(r)  \right] \psi^{\mathrm{AB}} ( \Vec{r}_{\mathrm{A}}, \Vec{r}_{\mathrm{B}}) = W^{\mathrm{AB}} \psi^{\mathrm{AB}} (\Vec{r}_{\mathrm{A}}, \Vec{r}_{\mathrm{B}})
+\end{equation}
+mit den Relativkoordinaten $\Vec{r} = \Vec{r}_{\mathrm{AB}} = \Vec{r}_{\mathrm{B}} - \Vec{r}_{\mathrm{A}}$, $ r = \left| \Vec{r}_{\mathrm{A}} - \Vec{r}_{\mathrm{B}} \right| $. Mit der Transformation auf Schwerpunkt- und Relativkoordinaten ergibt sich 
+$$
+\Vec{r}_{\mathrm{S}} = \frac{m_{\mathrm{A}} \Vec{r}_{\mathrm{A}} - m_{\mathrm{B}} \Vec{r}_{\mathrm{B}}}{m_{\mathrm{A}} + m_{\mathrm{B}}}
+$$ 
+mit der reduzierten Masse 
+$$
+m = \frac{m_{\mathrm{A}} m_{\mathrm{B}}}{m_{\mathrm{A}} + m_{\mathrm{b}}}
+$$ 
+
+Es folgt ein aus der klassischen Mechanik bekanntes Ergebnis mit
+\begin{itemize}
+	\item Schwingung der kernen gegeneinander unter Einfluss des Potentials $P(r)$
+	\item Rotation um den Schwerpunkt $S$
+	\item Translation des Schwerpunktes
+\end{itemize}
+die Gesamtenergie ergibt sich somit aus der Summe der einzelnen Komponenten mit
+\begin{equation}
+	\label{4.7}
+	W = W^{\text{el}} (r_{\mathrm{e}}) + W^{\text{vibr}} + W^{\text{rot}} + W^{\text{trans}}
+\end{equation}
+
+Eigenzustände: $W^{\text{trans}} =0$ gesetzt
+\begin{equation}
+	\label{4.8}
+	\psi = \psi^{\text{el}} (\Vec{r}, \Vec{r}_{i}) \psi^{\mathrm{AB}} (\Vec{r}_{\mathrm{A}}, \Vec{r}_{\mathrm{B}}) = \psi^{\text{el}} (\Vec{r}, \Vec{r}_{i}) \frac{1}{r} \psi^{\text{vibr}} (r) \psi^{\text{rot}} ( \vartheta, \varphi)
+\end{equation}
+
+Bemerkung: Vorraussetzung war, dass die Elektronenbewegung (halbklassisches Bild) sehr viel schneller als Rotations- und Schwingungsfrequenzen sind.
+
+\subsection{Spektralbereiche der Molekülspektroskopie}
+Durch ihre Wechselwirkung mit elektromagnetischer Strahlung von Radiofrequenzen bis in den Röntgenbereich lassen sich Moleküle sehr gut untersuchen. Wir behandeln:
+\begin{itemize}
+	\item Rotationsübergänge
+	\item Rotations- Schwingungsübergänge
+	\item Elektronische Übergänge
+\end{itemize}
+und die Methoden dazu sind:
+\begin{itemize}
+	\item Absorptions- und Emissionsspektroskopie
+	\item Ramanspektroskopie (behandelt im MSc.)
+	\item Photoelektronenspektroskopie (behandelt im MSc.)
+	\item NMR (behandelt im MSc.)
+	\item ESR (behandelt im MSc.)
+\end{itemize}
+Bei den verschiedenen Frequenzbereichen handelt es sich um
+\begin{itemize}
+	\item Radiofrequenze: \unit{\kilo \hertz} bis mehrere \SI{100}{\mega \hertz}
+		\begin{itemize}[label=$ \to$]
+			\item Kern-Spin-Resonanzübergänge
+		\end{itemize}
+	\item Mikrowellen: etwa \SI{1}{\giga \hertz} bis \SI{100}{\giga \hertz}
+		\begin{itemize}[label=$ \to$ ]
+			\item Elektronenspin-Resonanz
+			\item Rotation von kleinen Molekülen
+		\end{itemize}
+	\item Ferninfrarot/Nah- IR und \unit{\terra \hertz}-Bereich:
+		\begin{itemize}[label=$ \to$]
+			\item Rotationsspektren
+			\item Rotationsschwingungsspektrum
+		\end{itemize}
+	\item IR, Sichtbares Licht, UV: etwa $\SI{100}{\tera \hertz} - \SI{500}{\tera \hertz}$\\
+		\begin{itemize}[label=$ \to$]
+			\item elektronische Übergänge der Valenzelektronen in Molekülen mit Bandenspektren (bestehend aus Rotations- u. Schwingungsbanden)
+		\end{itemize} 
+	\item jenseits UV
+		\begin{itemize}[label=$\to$]
+			\item Photoelektronenspektroskopie, X-Ray
+			\item innere Elektronenübergänge
+		\end{itemize}
+\end{itemize}
+Einige beliebte Einheiten der Molekülphysik sind
+$$
+\SI{1}{ \per \centi \meter } = \SI{29,9}{ \giga \hertz} = \SI{0,1239}{\milli \electronvolt}
+$$
+Wellenzahl
+$$
+\Vec{ \nu} = \frac{1}{ \lambda} = \frac{ \nu}{c}
+$$ 
+
+\subsection{Übersicht über optische Molekülspektren (schematisch)}
+Gesamte Anregungsenergie eines Moleküls:
+\begin{equation}
+	\label{4.9}
+	E = E_{\text{el}} + E_{\text{vib}} + E_{\text{rot}} 
+\end{equation}
+Definitionen:
+$$
+F(J) = \frac{E_{\text{rot}}}{\mathrm{h} \mathrm{c}}; \quad G( \nu) = \frac{E_{\text{vib}}}{\mathrm{h} \mathrm{c}}; \quad T_{\mathrm{e}} = \frac{E_{\text{el}}}{\mathrm{h} \mathrm{c}}
+$$
+mit den Quantenzahlen $J$ und $ \nu$ und in der Einheit \unit{\per \centi \meter}.\\
+
+\textcolor{red}{energieviveauschema}
+
+Rotationspektren sind Übergänge zwischen den Rotationsniveaus eines gegebenen Schwingungsniveaus in einem gegebenen elektronischen Zustand
+
+\begin{equation}
+	\label{4.11}
+	\Vec{ \nu} = F(J') - F(J'')
+\end{equation}
+
+\textcolor{red}{energieviveauschema 2}
+
+Rotationsschwingungsspektren bestehen aus Übergängen von den Rotationsniveaus eines bestimmten Schwingungsübergangs zu den Rotationsniveaus eines anderen Schwingungsniveaus im gleichen Elektronenzustand.
+
+\textcolor{red}{energieviveauschema 2}
+
+\begin{equation}
+	\label{4.13}
+	\bar{ \nu} = \left\{ G( \nu') + F( J' ) \right\} - \left\{ G( \nu'') \neq F(J'') \right\} 
+\end{equation}
+
+Elektronenspektren sind Übergänge zwischen den Rotationsniveaus der verschiedenen Schwingungsniveaus eines Elektronenzustands und den Rotationsniveaus eines \textbf{anderen} Elektronenzustandes. Jeder Elektronenübergang hat ein bandensystem zur Folge
+
+\begin{equation}
+	\label{4.14}
+	\bar{ \nu} = T' - T'' = \left\{ T_{\mathrm{e}}' + G( \nu') F(J') \right\} - \left\{ T_{\mathrm{e}}'' + G( \nu'') + F(J '') \right\} 
+\end{equation} 
+mit $ \mathrm{h} \nu = \SI{1}{\electronvolt}\text{ bis }\SI{10}{\electronvolt}$.\\
+
+Bemerkung: Laserspektroskopie erlaubt die ultimative Präzession bei der Bestimmung der Molekülspektren. Zeitaufgelöste Experimente mit gepulsten Lasern erlauben heutzutage auch die Dynamik molekularer Zustände und Prozesse zu studieren (NP: A. Zewail: Femtochemistry 1999)
