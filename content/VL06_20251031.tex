@@ -13,10 +13,10 @@
 
 \subsubsection{Wasserstoffbindung nach Hund-Mulliken-Bloch: Die Molekülorbitalmethode}
 	Die Molekülorbitalmethode (MO), auch Linearkombination von atomaren Wellenfunktionen (kurz LCAO), baut auf der Annahme auf, dass ein Gesamtmolekül Orbitale besitzt, die genau wie Atomorbitale aufgefüllt werden. 
-	Diese Methode liefert vorallem bei delokalisierten Elektronen (wie z.B. bei den $ \pi$-Bindungen des Benzols) gute Ergebnisse. 
+	Diese Methode liefert vor Allem bei delokalisierten Elektronen (wie z.B. bei den $ \pi$-Bindungen des Benzols) gute Ergebnisse. 
 	Sie eignet sich gut um z.B. Änderungen des Molekülzustands durch ein Elektron zu beschreiben, wie etwa bei der Spektroskopie.
 \paragraph{Ausgangspunkt} 
-	Wir gehen von der symmetrischen Lösung des Wasserstoffatoms
+	Wir gehen von der symmetrischen Lösung des Wasserstoffmolekülions (\ce{H2+})
 	\begin{equation}
 		\label{eq:3.59}
 		\psi_{\mathrm{g}} \left( \Vec{r} \right) = N\left[ \varphi_\text{a}\left( \Vec{r} \right) + \varphi_\text{b} \left( \Vec{r} \right)  \right] 
@@ -34,7 +34,7 @@
 				&= N \psi_{\mathrm{g}} \left( \Vec{r}_{1} \right) \psi_{\mathrm{g}} \left( \Vec{r}_{2} \right) \left[ \alpha ( 1 ) \beta(2) - \alpha(2) \beta (1)  \right].  \\
 		\end{split}
 	\end{equation}
-	Diese Wellenfunktion wird auf das Variationsprinzip \eqref{eq:3.22} angewendet. 
+	Diese Wellenfunktion wird in das Variationsprinzip \eqref{eq:3.22} eingesetzt. 
 	Durch numerische Integration erhalten wir die Bindungsenergie.
 
 \paragraph{Ergebnis}
@@ -70,7 +70,7 @@
 		\label{eq:3.64}
 		\varphi_\mathrm{a} &\to \varphi_\mathrm{a} + d \varphi_\mathrm{b} \\
 		\label{eq:3.65}
-		\varphi_\mathrm{b} &\to \varphi_\mathrm{b} + d \varphi_\mathrm{b}
+		\varphi_\mathrm{b} &\to \varphi_\mathrm{b} + d \varphi_\mathrm{a}
 	\end{align}
 	mit $d < 1$. Die erhaltene Wellenfunktion ist in \autoref{fig:vl06_wellenfn_allg_ansatz} dargestellt.
 	\begin{figure}[H]
@@ -122,7 +122,7 @@
 	\begin{verbal_sidebyside}[7cm]
 		\textbf{Wdh.: Elektronische Struktur des Kohlenstoffs}\\
 
-		Kohlenstoff hat im Grundzustand 12 Elektronen, welche die Schalen von niedriger zu hoher Energie auffüllen.
+		Kohlenstoff hat im Grundzustand 6 Elektronen, welche die Schalen von niedriger zu hoher Energie auffüllen.
 		Um ein 2s-Elektron in den angeregten Zustand 2p zu bringen, muss etwa $\SI{4}{\electronvolt}$ aufgebracht werden.\\
 
 		Ein externes Wasserstoffmolekül hat genug Bindungsenergie ($\sim \SI{13.6}{\electronvolt}$) , um ein 2s Elektron in den angeregten Zustand 2p${}_\mathrm z$ zu heben.
@@ -162,7 +162,10 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{figures/vl06/vl06_hybridisierung_wellenfn.png}
-		\caption{Hybridisierte Wellenfunktion $\psi=(\varphi_\text{2s}+\varphi_\text{2p})/2$.}
+		\caption{
+			Hybridisierte Wellenfunktion $\psi=(\varphi_\text{2s}+\varphi_\text{2p})/2$.
+			Die Ladungsschwerpunkte der Elektronenwellenfunktion $\psi$ ist gegenüber der s- und p-Wellenfunktion verschoben.
+			Eine solche diagonale sp${}^1$ = sp Hybridisierung exisitert zum Beispiel in Ethin \chemfig{H-C~C-H}.}
 		\label{fig:vl06_hybridisierung_wellenfn}
 	\end{figure}
 
