@@ -1,0 +1,206 @@
+\setcounter{section}{4}
+\setcounter{subsection}{4}
+\setcounter{equation}{14}
+
+\subsubsection{Mikrowellenspektroskopie}
+Wird fast nur in Absorbtion eingesetzt, weil die Übergangswahrscheinlichkeit für eine spontane Emission sehr klein ist (Einsteinkoeffiezient $A_{21} \sim \omega^3$)\\
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl08_abbildung_1}
+    \label{fig:vl08_abbildung_1}
+\end{figure}
+
+Reine Rotationsspektren sind nur für polare Moleküle mit \textbf{permanenten elektrischen Dipolmomenten} beobachtbar.
+Ein Molekül hat dann für einen ortsfesten Beobachter eine veränderliches Dipolmoment: klassisch gilt
+$ \omega_{\text{rot}} \hat{=}$ abgestrahlte Frequenzen, quantenmechanisch gilt Fermi's goldene Regel
+$$
+\left| \bra{ \psi_{\text{final }}} \vec{d} \vec{E} \ket{ \psi_{\text{initial }}} \right|^2 \sim f    
+$$
+mit den Kugelflächenfunktionen $ \psi_{\text{final}}$ und $ \psi_{\text{initial}}$, dem Dipolmoment $ \vec{d}$, dem EM-Feld $\vec{E}$ und
+der Übergangswahrscheinlichkeit $f$. Beispiele für sollche polaren Moleküle sind \ce{HCl} und \ce{HBr}. Gegenbeispiele sind
+\ce{H2}, \ce{O2} und \ce{N2}, welche Raman-aktiv sind und im MSc-Kurs behandelt werden.
+
+\subsubsection{Zweiatomige Moleküle}
+\paragraph{Starrer Rotator (Hantel-Modell)}
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.5\textwidth]{./figures/VL08_Abbildung_2.tikz}
+	\caption{}
+	\label{fig:Abbildung_2_starrer_rotator}
+\end{figure}
+$$
+\begin{aligned}
+	m_1 R_1 &= m_2 R_2 \\
+	R &= R_1 + R_2 \\
+	\Theta &= m_1 R_1^2 + m_2 R_2^2 = m_{r}R^2.
+\end{aligned}
+$$ 
+mit der reduzierten Masse
+$$
+m_{r} = \frac{m_1m_2}{m_1 + m_2}
+$$ 
+Rotationsenergie:
+\begin{equation}
+	\label{4.15}
+	E_{\text{rot}} = \frac{1}{2} \Theta \omega^2 = \frac{L^2}{2 \Theta}
+\end{equation} 
+
+Drehimpuls:
+\begin{equation}
+	\label{4.16}
+	\left| \Vec{L} \right| = \Theta \omega
+\end{equation}
+
+Drehimpuls QM:
+\begin{equation}
+	\label{4.17}
+	\left| \Vec{L} \right| = \sqrt{ J(J+1)} \hbar 
+\end{equation}
+\begin{equation}
+	\label{4.18}
+	E_{\text{rot}} = \frac{ \hbar ^2}{2 \Theta} J(J+1), \quad J = 0,1,2,3,\ldots
+\end{equation}
+
+In der Spektroskopie:
+\begin{equation}
+	\label{4.19}
+	F(J) = \frac{E_{\text{rot }}}{ \mathrm{h} \mathrm{c}} = B J(J+1)
+\end{equation}
+mit der Molekülspezifischen Rotationskonstante
+$$
+B = \frac{\mathrm{h}}{8 \pi^2 c \theta}.
+$$ 
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.5\textwidth]{./figures/VL08_Abbildung_3.tikz}
+	\caption{}
+	\label{fig:Abbildung_2_starrer_rotator}
+\end{figure}
+
+\begin{itemize}
+	\item Entartung: $ 2J+1$-fach
+	\item Rotation um Verbindungsachse kann nicht angeregt werden da $ \Theta$ sehr klein ist $\to $ $ F(J) \gg \unit{\electronvolt}$ $\to $ Molekül zerstört
+\end{itemize}
+Messungen ergeben für verschiedene $B$ die Werte aus Tabelle \ref{tab:verschiedene_B}.
+\begin{table}[htpb]
+	\centering
+	\caption{Molekülspezifische Rotationskonstanten verschiedener Stoffe.}
+	\label{tab:verschiedene_B}
+	\begin{tabular}{|l|c|}
+		\hline
+		Stoff & $2B$ in $\unit{\centi\meter ^{-1}}$ \\
+		\hline
+		\ce{HCl} & \num{20,79}\\
+		\ce{CO} & \num{3,84}\\
+		\ce{HBr}& \num{14,9}\\
+		\hline
+	\end{tabular}
+\end{table}
+
+Die Intensitäten der Rotationslinien ergeben sich bei konstantem Übergangsmatrixelement aus
+\begin{itemize}
+	\item Den Entartungsgrad der Terme $F_{J}$: $g_{J}= 2J+1$ 
+	\item Auswahlregel: $ \Delta J = \pm 1$  
+	\item thermische Besetzung der Rotationsniveaus $\to $ Boltzmanverteilung (thermische Energie bei Raumtemperatur entspricht ca. $\frac{1}{40}\unit{\electronvolt} \simeq \SI{200}{\centi \meter ^{-1}}\gg B$ $\implies$ viele Niveaus besetzt) 
+\end{itemize}
+
+Es gilt
+\begin{equation}
+	\label{4.21}
+	\frac{N_{J}}{N_0} = \frac{g_{J}}{g_0} e^{- \frac{E_{g} - E_0}{\mathrm{k}_{\mathrm{B} } T}} = (2J+1) e^{- \frac{ B \mathrm{h} \mathrm{c} J(J+1)}{\mathrm{k}_{\mathrm{B}} T}}
+\end{equation}
+
+\textcolor{red}{Abbildung hier}
+
+\textbf{Bemerkung}: Auch das Übergangsmatrixelement hängt von $J$ abd wegen den zugehörigen Wellenfunktionen
+$$
+\left| \bra{ \psi_{\text{i}}}  \Vec{d} \Vec{E} \ket{ \psi_{\text{f}}}  \right|^2 
+$$ 
+$\to $ i.A. kleine Korrektur\\
+Bedeutung: aus Messung: 
+$$
+\frac{N_{J}}{N_0}, J, B \to \text{Temp.}
+$$ 
+
+\paragraph{Nichtstarrer Rotator}
+
+Aus Beobachtungen ergibt sich, dass für große $J$ die Distanz der Linien im Rotationsspektrum enger wird. Die Ursache dafür der wachsende Kernabstand für große $J$ aufgrund der Zentrifugaldehnung
+
+\textcolor{red}{Abbildung hier}\\
+mit 
+$$
+E_{\text{rot}} = \frac{L^2}{2 \theta}
+$$ 
+Dieser Effekt sit besonders wichtig, wenn zur Rotation auch noch Schwingungen hinzukommen. Klassisch gilt mit der Zentrifugalkraft und der Federkraft
+\begin{equation}
+	\label{4.22}
+	m_{r}R \omega^2 = K\left( R-R_{e} \right) 
+\end{equation}
+mit dem Gleichgewichtsabstand $e$. Es ist
+\begin{equation}
+	\label{4.23}
+	\Delta R = R - R_{e} = \frac{m_{r} R \omega^2}{K} = \frac{m_{r}^2 R^{4} \omega^2}{K m_{r} R^3} = \frac{\left( \Theta \omega \right) ^2}{K m_{r} R^3} 
+\end{equation}
+womit
+\begin{equation}
+	\label{4.24}
+	(R - R_{e} ) = \frac{L^2}{k m_{r} R^3} \simeq \frac{L^2}{km_{r} R_{e}^3}		
+\end{equation}
+folgt, da
+$$
+R^3 = (R + \Delta R)^3 = R_{e} ^3 \left( 1 + \frac{ 3 \Delta R}{R_{e}}+ \ldots \right).
+$$  
+Die Rotationsenergie ist dann $ E_{\text{rot}} = E_{\text{rot}} + E_{\text{spann}}$. Nach klassischer Betrachtung folgt
+$$
+E_{\text{rot}} = \frac{L^2}{2m_{r} R_{e}^2} - \frac{1}{2} K\left( R - R_{e} \right) ^2 = \frac{L^2}{2 m_{r} R_{e}^2} - \frac{L^{4}}{2Km_{r}^2 R_{e}^{6}}
+$$ 
+und nach quantenmechanischer $(L^2 \to  J(J+1) \hbar ^2)$ Betrachtung ergibt sich 
+\begin{equation}
+	\label{4.27}
+	E_{\text{rot}} = \frac{\hbar ^2}{2 m_{r}R_{e}^2} J\left( J+1 \right) - \frac{\hbar ^{4}}{2 k m_{r}^2 R_{e}^{6}} J^2\left( J+1 \right) ^2 
+\end{equation}
+
+Für Rotationsterme in \unit{\centi\meter ^{-1}}:
+\begin{equation}
+	\label{4.28}
+	F(J) = \frac{ E_{\text{rot}}}{\mathrm{hc}} = B J\left( J+1 \right) - DJ^2 \left( J+1 \right) ^2			
+\end{equation}
+
+Bemerkung:
+$$
+\frac{D}{B} \approx 10^{-4} \text{ bis } 10^{-3} 
+$$
+womit der Dehnungsterm für kleine $J$ vernachlässigbar ist.\\
+Für große $J$ kann man die Federkonstante $k$ der Bindung bestimmen.
+
+\textcolor{red}{Abbildung hier}
+
+Auswahlregeln bleiben unverändert $\left( \Delta J = \pm 1 \right) $ da die Symmetrien der Rotationszustände nicht geändert werden
+\begin{equation}
+	\label{4.29}
+	F(J) - F(J+1) = 2B(J+1) - 4D(J+1)^3
+\end{equation}
+
+\paragraph{Isotropie-[Effekte}
+$$
+B \sim  \frac{1}{ \Theta}, \quad \Theta = m_{r} R^2
+$$ 
+$\to $ Linienverschiebung für Isotope.
+Bsp. \ce{H2} und schwerer Wasserstoff  $\ce{^1H} \to  \ce{^2H}$. Für das Protium ($\ce{^1H}$ Molekül gilt  $2B = \SI{121,61}{\centi \meter ^{-1}}$, für das Deuterium Molekül hingegen $ 2B = \SI{60,86}{\centi \meter^{-1}}$.
+Bsp.
+$$
+\begin{aligned}
+	&\ce{H^{35}Cl} \quad \left( \SI{75}{\percent} \right) \\
+	&\ce{H^{37}Cl} \quad \left( \SI{25}{\percent} \right) 
+\end{aligned} \quad
+\frac{ \Delta \nu}{ \nu} = \frac{1}{670} \approx 1\,\text{\textperthousand}
+$$
+d.h. jede Rotationslinie tritt doppelt auf.\\
+Bemerkung:
+\begin{itemize}
+	\item Aus $ \Delta \nu$ $ \to $ Isotopenmassen
+	\item aus Intensität  $\to $ Isotopenmischung
+\item Bindungsabstände von komplexen Molekülen können bestimmt werden, bspw \ce{OCS} (Kohlenstoffoxysulfid)
+\end{itemize}
