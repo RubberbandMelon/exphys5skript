@@ -1,0 +1,140 @@
+\setcounter{section}{4}
+\setcounter{subsection}{4}
+\setcounter{subsubsection}{2}
+\setcounter{equation}{29}
+
+\subsubsection{Mehratomige Moleküle und ihre Rotationsspektren}
+Wesentlich zur Beschreibung der Rotationsspektren sind die drei Hauptträgheitsmomente: $ \Theta_{\mathrm{A}}$, $ \Theta_{\mathrm{B}}$, $ \Theta_{\mathrm{C}}$. Symmetrieachsen sind Hauptträgheitsachsen.\\
+
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.25\textwidth]{./figures/VL09_Abbildung_1.tikz}
+		\caption{}
+		\label{fig:vl08_starrer_koerper}
+\end{figure}
+
+Man unterscheidet zwischen dem
+\begin{itemize}
+	\item Unsymmetrischen Kreisel, bei dem alle drei Hauptträgheitsachsen verschieden sind
+	\item dem symmetrischen Kreisel, bei dem zwei der drei Hauptträgheitsmomente gleich sind, bspw. \ce{CH3Cl}, \ce{NH3}
+	\item Kugelkreisel, bei dem alle drei Hauptträgheitsmomente gleich sind, bspw. \ce{CCl4}, \ce{CH4}
+\end{itemize}
+
+Die Berechnung der Rotationsenergien benötigt eine quantenmechanische Behandlung (siehe Haken-Wolf Kapitel 11.2).\\
+
+\subsubsection{Anwendung der Molekülrotation}
+Ein weit bekannter Anwendungsfall der Molekülrotation ist die Mikrowelle, in welcher \ce{H2O}-Moleküle bei $ \nu = \SI{2,45}{\giga \hertz}$ ($ \lambda \sim \SI{12}{\centi \meter}$) zur Rotation angeregt werden. Zusätzlich erwärmt dielektrische Relaxation das Präparat weiter (vertiefendes Lesen: Physik Journal 11/2005).\\
+Eine weitere interessante Anwendung findet sich in der radiowellen Astrophysik. Dabei werden über Emissionen von Rotationsspektren \textcolor{red}{??} verschiedene Moleküle im Universum identifiziert, wie z.B. \ce{H2O}, Ammoniak, Formaldehyd, Methanol etc. Die Suche nach diesen Molekülen geht direkt einher mit der Suche nach fremden Leben.
+
+\subsection{Schwingungsspektren von Molekülen}
+Schwingungen geben grundlegende Auskunft über die Kopplungen der verschiedenen Atome.
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl09_abbildung_2}
+    \label{fig:vl09_abbildung_2}
+\end{figure}
+
+Zu den Licht-/Laserquellen die bei der Spektroskopie angewendet werden gehören thermische Strahler wie der Nernst-Stift, Gaslampen wie Quecksilber oder \ce{Xe}-Hochdrucklampen und Quantenkaskadenlaser. Nachdem das Licht das Präparat passiert ist gelangt es entweder in Gitter- oder Fourierspektrometer welches entweder eine Photodiode oder ein Bolometer als Detektor besitzt.
+
+\subsubsection{Zweiatomige Moleküle, harmonische Näherung}
+\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.25\textwidth]{./figures/VL09_Abbildung_3.tikz}
+		\caption{}
+		\label{fig:vl08_starrer_koerper}
+\end{figure}
+Es gilt das harmonische Parabelpotential mit
+\begin{equation}
+	\label{4.30}
+	V = \frac{1}{2} K \left( R-R_{\mathrm{r}} \right) ^2
+\end{equation}
+mit der Eigenfrequenz
+$$
+\omega_{\mathrm{e}} = \sqrt{ \frac{K}{m_{ \nu}}}.
+$$ 
+Für die Energie gilt
+\begin{equation}
+	\label{4.31}
+	E_{\text{vib}} = \hbar \omega_{\mathrm{e}} \left( \nu +\frac{1}{2} \right) \quad \text{mit}\quad \nu = 0,1,2,3\ldots
+\end{equation}
+
+Die Rotationsstruktur wird zunächst vernachlässigt, es gilt üblicherweise
+\begin{equation}
+	\label{4.32}
+	G_{ \nu}= \frac{ E_{\text{vib}}}{\mathrm{h} \mathrm{c}} = \overline{ \nu}_{\mathrm{e}} \left( \nu + \frac{1}{2} \right) 
+\end{equation}
+mit der Schwingungskonstante $ \overline{ \nu}_{\mathrm{e}}$. Die Auswahlregel für Übergänge ist $ \Delta \nu = \pm 1$. Ein Übergang ist erlaubt, wenn mit der Schwingung ein elektrisches Dipolmoment verbunden ist, dass sich bei Übergang ändert, also $ \partial_{r} \Vec{p} \neq 0$! Schwingungsübergänge in \ce{H2}, \ce{O2}, \ce{N2} etc. sind nicht beobachtbar.
+
+\subsubsection{Der anharmonische Oszillator}
+In Wirklichkeit ist das Potential eines 2-atomigen Moleküls anharmonisch.
+\begin{figure}[H]
+    \centering
+    \incfig{vl09_abbildung_4}
+    \label{fig:vl09_abbildung_4}
+\end{figure}
+
+Eine gute Näherung ist das Morse-Potential 
+\begin{equation}
+	\label{4.33}
+	V(R) = D_{\mathrm{e}} \left[ 1 - e^{-a (R-R_{\mathrm{e}})} \right] ^2 
+\end{equation}
+mit
+$$
+a = \sqrt{ \frac{m_{r}}{2 D_{\mathrm{e}}}} \omega_{e} \quad \text{in}\quad \unit{\centi \meter ^{-1}}.
+$$ 
+Bei großen Auslenkungen muss man die Schwingungsleichung für den anharmonischen Oszillator  (Morsepotential) lösen.
+\begin{equation}
+	\label{4.34}
+	E_{ \nu} = \hbar \omega_{\mathrm{e}} \left( \nu + \frac{1}{2} \right) - X_{\mathrm{e}} \hbar \omega_{\mathrm{e}} \left( \nu + \frac{1}{2} \right)^2 \ldots
+\end{equation}
+oder
+$$
+G_{ \nu} = \overline{ \nu}_{\mathrm{e}} \left( \nu + \frac{1}{2} \right) - X_{\mathrm{e}} \overline{ \nu}_{\mathrm{e}} \left( \nu + \frac{1}{2} \right) ^2  + \ldots
+$$ 
+
+$X_{\mathrm{e}}$ heißt Anharmonizitätskonstante und ist
+$$
+X_{\mathrm{e}} = \frac{\hbar  \omega_{\mathrm{e}}}{ 4 \mathrm{D}_{\mathrm{e}}} \approx \num{0,01} \quad \text{mit} \quad \omega_{\mathrm{e}} = 2 \pi \nu_{\mathrm{e}}.
+$$
+Es folgt
+$$
+E_{ \nu} = \hbar  \omega_{\mathrm{e}} \left( \nu + \frac{1}{2} \right) \left[ 1 - X_{\mathrm{e}} \left( \nu_{\mathrm{e}} + \frac{1}{2} \right)  \right] = \hbar  \omega_{ \nu} \left( \nu + \frac{1}{2} \right) 
+$$
+$$
+\to \omega_{ \nu} = \omega_{ \mathrm{e}} \left[ 1- X_{\mathrm{e}} \left( \nu + \frac{1}{2} \right)  \right] 
+$$ 
+$ \omega_{ \nu}$ nimmt mit steigender Quantenzahl $ \nu$ also ab!
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl09_abbildung_5}
+    \label{fig:vl09_abbildung_5}
+\end{figure}
+
+Einige typische Grundschwingungen ($ \nu : 0 \to 1$) sind
+\begin{itemize}
+	\item \ce{H2}: $ \overline{ \nu} = \SI{4159}{\centi \meter ^{-1}}$
+	\item \ce{CO}: $ \overline{ \nu} = \SI{2143}{\centi \meter ^{-1}}$
+	\item \ce{HCl}: $ \overline{ \nu} = \SI{2885}{\centi \meter ^{-1}}$
+\end{itemize}
+Für die Auswahlregeln
+$$
+\Delta \nu = \pm 1 , \underbrace{ \pm 2, \pm 3 \ldots}_{\text{Obertöne}}
+$$ 
+gelten die Intensitäten
+$$
+I = 1, X_{\mathrm{e}}, X_{\mathrm{e}}^2, \ldots
+$$ 
+
+\subsubsection{Rotations- Schwingungsspektren zweiatomiger Moleküle}
+Vernachlässigung der Kopplung zwischen Schwingung und Rotation. Man kombiniert die Modelle des starren Rotators und des harmonischen Oszillators
+\begin{equation}
+	\label{4.36}
+	E( \nu , J) = E_{\text{vib}} ( \nu) + E_{\text{rot}} (J) = \hbar  \omega \left( \nu + \frac{1}{2} \right) + B \mathrm{h} \mathrm{c} J(J+1)
+\end{equation} 
+Die Auswahlregeln sind $ \Delta \nu = \pm 1$, $ \Delta J = \pm 1$, ebenfalls erlaubt sind reine Rotationsübergänge $ \Delta \nu = 0$, $ \Delta J = \pm 1$. Verboten hingegen ist ein Rotationsübergang mit $ \Delta J =0$. Anschaulich entspräche ein sollcher Übergang der plötzlichen Änderung der Bindungslänge und soomit einer Änderung des Drehimpulses.\\
+
+\textcolor{red}{zwei abbildungen}\\
+
+Aus den Abständen der Linien gewinnt man $ 2B$ und somit Information über die Struktur des Moleküls. Aufgrund von $\mathrm{k}_{\mathrm{B}}T = \SI{200}{\centi \meter ^{-1}}$ bei Raumtemperatur und $ \mathrm{h} \nu_{\text{vib}} = \SI{1000}{ \centi \meter ^{-1}}$ ist $ \nu =1 $ fast immer thermisch unbesetzt und die Intensitäten in Absorbtionsspektren können durch die Entartung ( $2J +1$) gemeinsam mit dem Boltzmannfaktor bestimmt werden.
