@@ -1,0 +1,20 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [short] (7.5,13.5) -- (12.5,13.5);
+\draw [short] (7.75,13.75) -- (8.5,14.5);
+\draw [short] (8.5,13.75) -- (9.25,14.5);
+\draw [short] (9.25,13.75) -- (10,14.5);
+\draw [short] (10,13.75) -- (10.75,14.5);
+\draw [short] (10.75,13.75) -- (11.5,14.5);
+\draw [short] (11.5,13.75) -- (12.25,14.5);
+\draw [short] (12.25,13.75) -- (12.5,14);
+\draw [short] (9,13.5) -- (7.75,10.75);
+\draw [short] (11,13.5) -- (12.25,10.75);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (7.75,10.5) circle (0.25cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (12.25,10.5) circle (0.25cm);
+\draw[decorate, decoration={coil, aspect=0.7, segment length=9pt, amplitude=4pt}]
+    (8, 10.5) -- (12, 10.5);
+\draw [short] (7.5,14.25) -- (7.75,14.5);
+\draw [->, >=Stealth] (8,10) -- (7.5,10);
+\draw [->, >=Stealth] (12,10) -- (12.5,10);
+\end{circuitikz}
