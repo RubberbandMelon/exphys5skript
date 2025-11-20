@@ -1,0 +1,21 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\node [font=\LARGE] at (17.5,12.25) {};
+\draw [short] (8.75,13.5) -- (8.75,16.5);
+\node [font=\LARGE] at (17.5,12.25) {};
+
+\node at (8.75,16.5) [circ] {};
+\node at (8.75,13.5) [circ] {};
+\node [font=\normalsize] at (8.25,13.5) {$A$};
+\node [font=\normalsize] at (8.25,16.5) {$B$};
+\draw [short] (6.5,13.75) -- (6.5,13.75);
+\node at (8.75,15) [circ] {};
+\node [font=\normalsize] at (8.25,15) {$Z$};
+\draw [dashed] (7.5,12.25) -- (7.5,16.5);
+\draw [dashed] (10,13.5) -- (10,17.75);
+\draw [dashed] (7.5,12.25) -- (10,13.5);
+\draw [dashed] (7.5,16.5) -- (10,17.75);
+\draw [dashed] (9.5,12.75) -- (9.5,12.75);
+\draw [dashed] (9,13.25) -- (9,13.25);
+\node [font=\normalsize] at (11.35,17.25) {$E$=Ebene};
+\end{circuitikz}
