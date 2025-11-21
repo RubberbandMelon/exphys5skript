@@ -1,0 +1,132 @@
+\clearpage
+\textbf{5. Auswahlregeln}\\
+Aus Betrachtung der Symmetrieeigenschaften des Dipol-Übergangsmatrixelements (QM)
+
+$$
+\begin{aligned}
+	\Delta \Lambda &= 0, \pm 1 \\
+	\Delta S &= 0 \\
+	\Delta \Omega &= 0, \pm 1 
+\end{aligned} 
+\qquad
+\begin{aligned}
++ &\to + \\
+- &\to - \\
+\mathrm{u} &\to \mathrm{g}
+\end{aligned}
+$$
+
+\textbf{6. Potentialkurven}\\
+Die Elektronenanordnung beeinflusst die Bindungsverhältnisse zwischen den Atomkernen. Daraus folgt, dass zu jedem Elektronenzustand des Moleküls eine Potentialkurve, also ein Morsepotential, gehört.
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl12_abbildung_1}
+    \label{fig:vl12_abbildung_1}
+\end{figure}
+
+\section{Elektronenspektren von Molekülen}
+$$
+\Delta T = \Delta T_{\mathrm{e}} + \Delta G(\nu) + \Delta F(J)
+$$ 
+$$
+\begin{aligned}
+	\Delta T_{\mathrm{e}} &\gg \Delta G(\nu) &&> \Delta F(J) \\
+	\unit{\electronvolt}& \phantom{ \gg}\si{10^{-1} \electronvolt} - \si{10^{-2} \electronvolt} && \quad \si{10^{-3} \electronvolt}
+\end{aligned}
+$$ 
+\begin{itemize}
+	\item Elektronenübergang holt das Rotationsschwingungsspektrum in den sichtbaren Spektralbereich 
+	\item auch für homonukleare Moleküle (da sich beim Elektronenübergang auch das Dipolmoment ändern kann)
+\end{itemize}
+
+\textbf{a. Elektronenübergang und Schwingungsänderung}
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl12_abbildung_2}
+    \label{fig:vl12_abbildung_2}
+\end{figure}
+Die alte Auswahlregel
+$$
+\Delta \nu = \pm 1, \pm 2, \pm 3
+$$ 
+ist \textbf{nicht} mehr gültig! Das \textbf{Franck-Condon Prinzip} macht jetzt Aussagen:\\
+Klassisch erfolgt ein Elektronenübergang schnell gegenüber der Schwingung, da die Elektronenmasse sehr viel geringer ist als die Kernmasse.
+Daher muss der Abstand der Kerne der gleiche sein, da sich der Schwingungszustand nicht ändert.
+\begin{enumerate}
+	\item $r = \text{const}$ $\implies$ Übergang muss in der Abbildung \textbf{senkrecht} sein
+	\item Von Umkehrpunkt zu Umkehrpunkt, da die Aufenthaltswahrscheinlichkeit an den Umkehrpunkten am größten ist. Die Ausnahme hierbei bildet der Grundzustand.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl12_abbildung_3}
+    \label{fig:vl12_abbildung_3}
+\end{figure}
+
+Quantentheorie:
+$$
+W \sim \int \chi_{\nu'} (r) \xi_{\nu''}(r) \mathrm{d}V
+$$ 
+Überlappintegral der Kernschwingungsfunktion $\chi_{\nu'}$ und $\chi_{\nu''}$, bei der Auslenkung $r$, integriert über das Molekülvolumen.\\
+Wegen der endlichen Breite der Wahrscheinlichkeitsbereiche gibt es nicht nur einen Übergang sondern man erhält mit unterschiedlichen Wahrscheinlichkeiten Übergänge zu benachbarten Schwingungsniveaus.\\
+
+\textbf{Aussehen der Spektren (Absorbtion)}\\
+\textbf{Fall 1}: $r_{\mathrm{e}}' \simeq r_{\mathrm{e}}''$ \\
+\begin{figure}[H]
+    \centering
+    \incfig{vl12_abbildung_4}
+    \label{fig:vl12_abbildung_4}
+\end{figure}
+
+
+\textbf{Fall 2}: $r_{\mathrm{e}}'=r_{\mathrm{e}}''$\\
+\begin{figure}[H]
+    \centering
+    \incfig{vl12_abbildung_5}
+    \label{fig:vl12_abbildung_5}
+\end{figure}
+
+\textbf{c. Emissionspektren}\\
+Im Prinzip die gleichen Bandenspektren wie in Absorbtion.\\
+Bsp. $r_{\mathrm{e}}' \neq r_{\mathrm{e}}''$ \\
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl12_abbildung_6}
+    \label{fig:vl12_abbildung_6}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.35\columnwidth}
+    \subimport{./figures}{vl12_abbildung_7.pdf_tex}
+    \label{fig:vl12_abbildung_7}
+\end{figure}
+
+Strahlungslose Übergänge durch Stöße! \\
+Konkurenzprozess zu strahlenden Übergängen $W_{\mathrm{opt}} \sim (h \nu)^3$
+im Infrarot bereich klein $\implies$ Relaxation strahlungslos in den Grundzustand\\
+
+Anwendung: Farbstofflaser (4 Niveaus)
+
+\textbf{d. Rotationsstruktur}
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.31\columnwidth}
+    \subimport{./figures}{vl12_abbildung_9.pdf_tex}
+    \label{fig:vl12_abbildung_7}
+\end{figure}
+
+$$
+\overline{\nu} = T' - T'' = T' ^{\text{el}} G_{\nu'}' + F'_{\nu', J'} - \left( T''^{\text{el}} + G_{\nu''}'' + F_{\nu'', J''}'' \right) 
+$$ 
+Vernachlässigung des Zentrifugalterms $(D_{\nu}J^2(J+1)^2)$
+
+$$
+\begin{aligned}
+	F_{\nu', J'}' &= B_{\nu'}J'(J'+1)\\
+	F_{\nu'', J''}'' &= B_{\nu''}J'' (J''+1)
+\end{aligned}
+$$ 
