@@ -5,29 +5,29 @@
 
 \section{Elektronenzustände}
 \subsection{Elektronenzustände beim Atom (Wiederholung)}
-Ein Atom ist ein kugelsymmetrisches Gebilde, da der Kern ein kugelsymmetrisches Coulombfeld generiert.
+Ein Atom wird als kugelsymmetrisches Gebilde betrachtet, da der Kern ein kugelsymmetrisches Coulombfeld generiert.
 
 \paragraph{Einzelelektron}
 Zur Beschreibung eines Elektrons in einem Atom werden Quantenzahlen verwendet:
 \begin{itemize}
-	\item $n=1,2,3 \ldots$ grob die Energie
-	\item $l=0,1,2,\ldots, n-1$ den Bahndrehimpuls $\sqrt{l(l+1)} \hbar $ 
-	\item $s=\frac{1}{2}$ den Spin $\sqrt{s(s+1)} \hbar $ 
-	\item $j= l \pm s$ den Gesamtdrehimpuls $\sqrt{j(j+1)} \hbar $
-	\item $m_{i} = i\ldots -i$ mit $i=l,s,j$ die Projektion auf eine Vorzugsrichtung $m_{i} \hbar $
+	\item $n=1,2,3 \ldots$ ergibt grob die Energie
+	\item $l=0,1,2,\ldots, n-1$ ergibt den Bahndrehimpuls $\sqrt{l(l+1)} \hbar $ 
+	\item $s=\frac{1}{2}$ ergibt den Spin $\sqrt{s(s+1)} \hbar $ 
+	\item $j= l \pm s$ ergibt den Gesamtdrehimpuls $\sqrt{j(j+1)} \hbar $
+	\item $m_{i} = i\ldots -i$ mit $i=l,s,j$ ergibt die Projektion auf eine Vorzugsrichtung $m_{i} \hbar $
 \end{itemize}
 
 \paragraph{Mehrere Elektronen}
 Atome mit mehreren Elektronen werden folgendermaßen beschrieben: 
 \begin{itemize}
-	\item $L = 0,1,2$ den Gesamtdrehimpuls $\Vec{L} = \sum_{i}^{} \Vec{l}_{i} $ $S,P,D$ 
-	\item $S = 0,\frac{1}{2},1$ den Gesamtspin $\Vec{S} = \sum_{i}^{} \Vec{s}_{i} $ 
-	\item $J= L+S , \ldots, L-S$ den Gesamtdrehimpuls $\Vec{J} = \Vec{L} + \Vec{S}$ 
-	\item $m_{i} = i, \ldots, -i$ die Projektion $m_{i} \hbar $ mit $i= L, S, J$
+	\item $L = 0,1,2,\ldots2$ ergibt den Gesamtdrehimpuls $\Vec{L} = \sum_{i}^{} \Vec{l}_{i} $ $S,P,D$ 
+	\item $S = 0,\frac{1}{2},1$ ergibt den Gesamtspin $\Vec{S} = \sum_{i}^{} \Vec{s}_{i} $ 
+	\item $J= L+S , \ldots, L-S$ ergibt den Gesamtdrehimpuls $\Vec{J} = \Vec{L} + \Vec{S}$ 
+	\item $m_{i} = i, \ldots, -i$ ergibt die Projektion $m_{i} \hbar $ mit $i= L, S, J$
 \end{itemize}
-Bei leichten Atomen gilt die Spin-Bahn-Kopplung.
+Bei leichten Atomen gilt die Spin-Bahn-Kopplung. 
 
-\paragraph{Hund'sche Regeln}
+\paragraph{Hund'sche Regeln} Die Auffüllung der Elektronenzustände werden in \autoref{fig:vl11_abbildung_1} anhand des Sauerstoffes gezeigt.
 \begin{figure}[H]
     \centering
     \incfig{vl11_abbildung_1}
@@ -40,10 +40,12 @@ Die Hund'schen Regeln lauten
 	\item Volle Schalen und Unterschalen tragen zu allen Drehimpulsen nicht bei
 	\item Der Spin $S$ nimmt sein Maximum an. $S = \frac{1}{2} + \frac{1}{2} = 1$ bedeutet einen {Triplett-Zustand}.
 	\item Der Drehimpuls $L = \left| \sum_{l}^{} m_{l}  \right|$ nimmt sein Maximum an. $L=1$ bedeutet, das Atom hat einen Dipol $\Vec{P}$. 
-	\item $J= L+S$ falls Unterschale mehr als halb voll $\implies$ $J=2$. 
-			${J}= L-S$ falls Unterschale weniger als halb voll\\
-			$\implies$ Der Grundzustand des Sauerstoffs ist $^3\text{P}_{2}$. Die Notation folgt dem Schema $^{\text{2S + 1}} L_{J}$.
+	\item $J= L\,+\,S$, falls die Unterschale mehr als halb voll ist $\implies$ $J=2$. \\
+		  $J= L-S$, falls die Unterschale weniger als halb voll ist $\implies$ Der Grundzustand des Sauerstoffs ist $^3\text{P}_{2}$. 
 \end{enumerate}
+\begin{important}
+	Elektronenzustände werden nach dem Schema $^{\text{2S + 1}} L_{J}$ beschrieben.
+\end{important}
 
 \subsection{Elektronenzustände beim Molekül}
 
@@ -68,17 +70,17 @@ Die Hund'schen Regeln lauten
 		\draw[thick, blue] (-1.8, -0.2) -- (-1,-1);
 		\draw[thick, blue] (1.8, 0.2) -- (1,1);
 		\draw[thick, blue] (1.8, -0.2) -- (1,-1);
-		\node[white] at (-2,0) {\huge\textbf{-}};
-		\node[white] at (2,0) {\huge\textbf{-}};
+		\node[white] at (-2,0) {\huge\textbf{\hspace{1pt}-}};
+		\node[white] at (2,0) {\huge\textbf{\hspace{1pt}-}};
 		\node at (4.8,0) {axiale Symmetrie};
 	\end{tikzpicture}
 \end{figure}
 \begin{itemize}
 	\item Aus der Linearkombination von Atomorbitalen bildet man Molekülorbitale.
-	\item Die verfügbaren Elektronen werden in die Molekülorbitale so eingebaut, dass diese ihrer energetischen Reihenfolge nach aufgefüllt werden unter Berücksichtigung des Pauli-Prinzips
+	\item Die verfügbaren Elektronen werden in die Molekülorbitale so eingebaut, dass diese ihrer energetischen Reihenfolge nach aufgefüllt werden unter Berücksichtigung des Pauli-Prinzips.
 	\item Hund'sche Regeln: Bei der Besetzung energetisch entarteter Orbitale wird zunächst jedes Molekülorbital einfach besetzt, bevor Zweifachbesetzung erfolgt. Dabei ist die Anordnung mit parallelen Spins bevorzugt.
 \end{itemize}
-Vernachlässigt wird Schwingung und Rotation.
+Nachfolgend wird die Schwingung und Rotation der Moleküle vernachlässigt.
 
 \textbf{Quantenzahlen}
 \begin{itemize}
@@ -86,8 +88,8 @@ Vernachlässigt wird Schwingung und Rotation.
 	\item Aufgrund der Abweichung von der Zentralsymmetrie ist die Drehimpulsquantenzahl $l$ keine gute Quantenzahl mehr, jedoch gibt es noch $m_{l}$ bezogen auf die Kernverbindungslinie $l_{z} = m_{l} \hbar $
 		\begin{itemize}
 			\item $m_{l} = l, l-1 ,\ldots, -l$ 
-			\item $m_{l} $ positiv $\to $ Elektron läuft rechts herum
-			\item $m_{l} $ negativ $\to $ Elektron läuft links herum
+			\item $m_{l} $ positiv: Elektron läuft rechts herum.
+			\item $m_{l} $ negativ: Elektron läuft links herum.
 		\end{itemize}
 		Die Wirkung des elektrischen Feldes auf ein präzedierendes Elektron ist unabhängig von dessen Umlaufsinn.
 		\begin{itemize}[label= $\to$]
@@ -113,7 +115,7 @@ Vernachlässigt wird Schwingung und Rotation.
 \end{table}
 Es gilt $m_{s}= \pm \frac{1}{2}$ relativ zur Vorzugsachse. Damit können $ \sigma$-Zustände zwei Elektronen aufnehmen und alle anderen vier.\\
 
-\paragraph{\thesubsubsection.a) Getrennte Atome $A$ und $B$}~\\
+\paragraph{Getrennte Atome $A$ und $B$}~\\
 Man benutzt die Quantenzahlen, die in völlig getrennten Atomen gelten.
 
 
@@ -139,8 +141,8 @@ Die Markierung $*$ steht für antibindende Zustände.
 \subsubsection{Mehrelektronenzustände und elektrische Gesamtzustände}
 Die Molekülachse entspricht der starken Vorzugsrichtung der elektronischen Achse.
 \begin{itemize}
-	\item Gegenseitige Kopplung der Elektronen muss beachtet werden um zu einer Charakterisierung des Gesamtzustandes zu kommen
-	\item Drehimpulse der inneren Elektronen in abgeschlossenen Schalen kompensieren sich
+	\item Die gegenseitige Kopplung der Elektronen muss beachtet werden um zu einer Charakterisierung des Gesamtzustandes zu kommen.
+	\item Die Drehimpulse der inneren Elektronen in abgeschlossenen Schalen kompensieren sich.
 \end{itemize}
 
 \paragraph{1. Bahndrehimpulse}~\\
@@ -151,10 +153,10 @@ Die Molekülachse entspricht der starken Vorzugsrichtung der elektronischen Achs
 	\label{fig:vl11_bahndrehimpulse}
 \end{minipage}
 \begin{minipage}{0.5\linewidth}
-	Kopplung der $l_{i}$ untereinander zu $L$ ist meistens schwächer als der einzelnen Elektronen an das axiale Feld der Kerne. 
+	Die Kopplung der Einzeldrehimpulse $l_{i}$ untereinander zum Gesamtdrehimpuls $L$ ist meistens schwächer als die Kopplung der einzelnen Elektronen an das axiale Feld der Kerne. 
 	$$
 	\begin{aligned}
-		\Lambda &= \left| \Sigma_{i} \lambda_{i}  \right| = 0,1,2,\ldots \quad \Sigma, \Pi, \Delta \\
+		\Lambda &= \left| \Sigma_{i} \lambda_{i}  \right| = 0,1,2,\ldots = \Sigma, \Pi, \Delta \\
 		L_{z} &= \pm \Lambda \hbar  
 	\end{aligned}
 	$$ 
@@ -174,10 +176,10 @@ Die Molekülachse entspricht der starken Vorzugsrichtung der elektronischen Achs
 	$$
 	S_{z} = \Sigma \hbar \quad \text{mit} \quad \Sigma = S, S-1, \ldots, -S.
 	$$ 
-	Er hat Multiplizität $2S + 1 $.\\
-	Durch die Orientierung der Bahndrehimpulse längs der Molekülachse wird die Molekülachse auch zu einer \textbf{magnetischen Achse}.
+	Der Gesamtspin hat Multiplizität $2S + 1 $.
+	Durch die Orientierung der Bahndrehimpulse längs der Molekülachse wird die Molekülachse auch zu einer \textbf{magnetischen Achse}.\\
 
-	Der Gesamtspin präzediert. Die Projektion des Spins hat also eine physikalische Bedeutung.
+	Der Gesamtspin präzediert um die magnetische Achse. Die Projektion des Spins hat also eine physikalische Bedeutung.
 
 \end{minipage}
 
@@ -190,10 +192,11 @@ Die Molekülachse entspricht der starken Vorzugsrichtung der elektronischen Achs
 \end{minipage}
 \hfill
 \begin{minipage}{0.5\linewidth}
-	$ \Omega$ entspricht dem Gesamtdrehimpuls der Elektronenhülle (nicht des Gesamtmoleküls). $ \Sigma$ und $ \Lambda$ können gleich oder entgegengesetzt gerichtet sein
+	$ \Omega$ entspricht dem Gesamtdrehimpuls der Elektronenhülle (nicht des Gesamtmoleküls)
 	$$
-	\Omega = \left| \Lambda + \Sigma \right|, \quad \Sigma= S, S-1, \ldots , -S
+	\Omega = \left| \Lambda + \Sigma \right|, \quad \Sigma= S, S-1, \ldots , -S.
 	$$
+	$ \Sigma$ und $ \Lambda$ können gleich oder entgegengesetzt gerichtet sein.
 	Infolge der Spin-Bahn-Kopplung zwischen $\Vec{L}$ und $\Vec{S}$ spaltet also jeder zu einem bestimmten Wert von $ \Lambda$ gehörende Term in ein Multiplett von $ 2S + 1$ Termen auf.
 	\begin{important}
 		\textbf{Nomenklatur:} $ ^{2S+1}\Lambda_{ \Omega}$\\
@@ -206,15 +209,15 @@ Die Molekülachse entspricht der starken Vorzugsrichtung der elektronischen Achs
 	Mit drei 3 Valenzelektronen ist ein Zustand bspw. $$(2\mathrm{p} \pi) (3\mathrm{s}\sigma)(3\mathrm{d}\pi)~^{4}\Delta_{3 /2}.$$
 
 \begin{itemize}
-	\item für den Bahndrehimpuls gilt $ \Lambda =2$ da $ \Delta$.
-	\item für den resultierenden Spin $2S +1 = 4$ $\to $ $S = \frac{3}{2}$ .
-	\item $\Omega = \left| \Lambda + \Sigma \right| = \frac{3}{2}$, es folgt der Zustand $^{4}\Delta_{3 /2}$ mit $\Sigma= -\frac{1}{2}$. Andere mögliche Zustände je nach Spinstellung ($\Sigma = \frac{3}{2}, \frac{1}{2}, -\frac{1}{2}, -\frac{3}{2}$) sind
+	\item für den Bahndrehimpuls gilt $ \Lambda =2$, da $ \Delta$.
+	\item für den resultierenden Spin ist die Multiplizität $2S +1 = 4$ $\to $ $S = \frac{3}{2}$ .
+	\item $\Omega = \left| \Lambda + \Sigma \right| = \frac{3}{2}$, es folgt der Zustand $^{4}\Delta_{3 /2}$ mit $\Sigma= -\frac{1}{2}$. Andere mögliche Zustände sind je nach Spinstellung ($\Sigma = \frac{3}{2}, \frac{1}{2}, -\frac{1}{2}, -\frac{3}{2}$)
 		$$
 		^{4}\Delta_{7 /2},~^{4}\Delta_{5 /2},~^{4}\Delta_{3 /2},~^{4}\Delta_{1/2}
 		$$
 		\begin{itemize}
-			\item Die meisten Moleküle haben $^{1}\Sigma_{0}$ $\to $ diamagnetisch
-			\item Beachte: Der Gesamtdrehimpuls $J$ setzt sich aus den Elektronendrehimpulsen $\Omega$ und dem Hanteldrehimpuls $N$ zusammen: $\Vec{J} = \Vec{N} + \Vec{\Omega}$. Bei allgemeinen konkurierenden Magnetfeldern gibt es verschiedene Kopplungsfälle, nach Hund gibt es die A,B,C,D,E-Fälle. Hier wurde Fall A besprochen.
+			\item Die meisten Moleküle haben $^{1}\Sigma_{0}$ und sind damit diamagnetisch.
+			\item Beachte: Der Gesamtdrehimpuls $J$ setzt sich aus den Elektronendrehimpulsen $\Omega$ und dem Hanteldrehimpuls $N$ zusammen: $\Vec{J} = \Vec{N} + \Vec{\Omega}$. Bei allgemeinen konkurierenden Magnetfeldern gibt es verschiedene Kopplungsfälle. Nach Hund gibt es die A,B,C,D,E-Fälle. Hier wurde Fall A besprochen.
 		\end{itemize}
 \end{itemize}
 
@@ -229,10 +232,10 @@ Die Molekülachse entspricht der starken Vorzugsrichtung der elektronischen Achs
 \hfill
 \begin{minipage}{0.5\linewidth}
 	\begin{enumerate}
-		\item $ \Sigma^{+}$ und $\Sigma^{-}$ \\
+		\item \textbf{$\bm\Sigma^{+}$ und $\bm\Sigma^{-}$:}
 			'$+$' bedeutet, dass die Elektronen-Wellenfunktion ihr Vorzeichen bei Spiegelung an der Ebene $E$ beibehält
-		\item $\Sigma_{\text{g}}$ und $\Sigma_{\text{u}}$ g,u $\to $ Parität\\
-			'g' bedeutet Elektronen-Wellenfunktion behält ihr Vorzeichen bei Spiegelung am Zentrum $Z$
+		\item \textbf{$\bm\Sigma_{\text{g}}$ und $\bm\Sigma_{\text{u}}$:} g und u beschreiben die Parität.
+			'g' bedeutet, dass die Elektronen-Wellenfunktion ihr Vorzeichen bei Spiegelung am Zentrum $Z$ behält.
 	\end{enumerate}
 \end{minipage}
 
