@@ -1,0 +1,110 @@
+\clearpage
+Bemerkung: Bei Rotationsschwingungsspektrum fast gleich große $B_{\nu'}$ und $B_{\nu''}$\\
+unterschied von $F$-Abhängigkeit\\
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.3\columnwidth}
+    \subimport{./figures}{vl13_abbildung_0.pdf_tex}
+    \label{fig:vl13_abbildung_0}
+\end{figure}
+
+Jetzt: Aufgrund unterschiedlicher Potentialkurven und $\overline{r}_{\mathrm{e}}' \neq \overline{r}_{\mathrm{e}}''$ sind sehr verschiedene $B_{\nu'}$ und $B_{\nu''}$ möglich.\\
+
+Die Auswahlregeln für $J$ hängen von der Art des elektronischen Übergangs ab. So ist $\Delta J = 0$ möglich falls sich der elektronsiche Drehimpuls ändert, da bei der Emission oder Absorptio eines Photons mit Drehimpuls $\hbar $ der Gesamtdrehimpuls erhalten bleiben muss. Beispiele einiger Übergänge sind
+\begin{itemize}
+	\item $\Sigma \to \Sigma$-Übergang: $\Delta J = \pm 1$ P-, R-Zweige
+	\item $\Sigma \to \Pi$-Übergang: $\Delta J = 0, \pm 1$ P-, R-, Q-Zweige
+\end{itemize}
+Für einen Übergang gilt
+$$
+\begin{aligned}
+	\Delta E_{\text{Ges}} &= \Delta \left( E_{\text{el}} + E_{\text{vib}} \right) + \Delta E_{\text{rot}} \\
+	\overline{\nu} &= \overline{\nu}_{(\nu', \nu'')} + \overline{\nu}_{(J', J'')} \\
+	\overline{\nu} &= \overline{\nu}_{(\nu', \nu'')} + B'J'(J'+1) - B''J''(J''+1) \\
+\end{aligned}
+$$ 
+mit dem Bandenursprung $(\nu', \nu'')$. Es gilt für den
+\begin{itemize}
+	\item P-Zweig: $\Delta J = -1$, $J'' = J' +1$
+		$$
+		\overline{\nu}_{\text{P}} = \overline{\nu}_{\nu', \nu''} - (B' + B'')(J'+1) + (B' - B'')(J'+ 1)^2 
+		$$ 
+		mit $J'= 0,1,2,\ldots$.
+	\item R-Zweig: $\Delta J = + 1$, $J' = J'' +$
+		$$
+		\overline{\nu}_{\text{R}} = \overline{\nu}_{\nu', \nu''}+ (B' + B'') (J''+1) + (B' - B'') (J'' +1)^2
+		$$
+		mit $J'' = 0,1,2,\ldots$.
+	\item Q-Zweig: $\Delta J = 0$, $J' = J''$
+		$$
+		\overline{\nu}_{\text{Q}} = \overline{\nu}_{\nu', \nu''} + (B' - B'') J'' + (B' - B'')J''^2.
+		$$ 
+		Diese Gleichung beschreibt die Fortrat-Parabeln.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl13_abbildung_1}
+    \label{fig:vl13_abbildung_1}
+\end{figure}
+
+Bemerkungen:
+\begin{enumerate}
+	\item aus dem Charakter des Spektrums ergeben sich Aussagen über die relativen Lagen der $r_{\mathrm{e}}$
+	\item aus Spektrum-Parabeln $\to $ $B_{\nu'}, B_{\nu''} \to r_{\mathrm{e}}' , r_{\mathrm{e}}''$
+	\item alles im sichtbaren Spektralbereich, auch homonukleare Moleküle
+	\item Auswahlregen zum Teil anders
+\end{enumerate}
+
+\textbf{e) Gesamtspektrum}\\
+$r_{\mathrm{e}}' > r_{\mathrm{e}}'' \implies B' < B''$, Reihenspektrum\\
+\textcolor{red}{bandengrafik}\\
+
+\textbf{f. Dissoziation}
+Eine Dissoziation ohne Elektronenübergang $\Delta \nu = \pm 1, \pm 2$ \\
+ $$
+ (AB) + h \nu(\text{IR}) \to  A+B
+$$ 
+\textbf{geht nicht}, da eine sollche gegen das Franck-Condon-Prinzip verstößen würde.
+\begin{figure}[H]
+    \centering
+    \incfig{vl13_abbildung_3}
+    \label{fig:vl13_abbildung_3}
+\end{figure}
+
+Eine Dissoziation \textbf{mit} Elektronenübergang, also
+$$
+(AB) + h \nu \text{(sichtbar)} \to  A+B^{*}
+$$ 
+ist möglich.
+\begin{figure}[H]
+    \centering
+    \incfig{vl13_abbildung_4}
+    \label{fig:vl13_abbildung_4}
+\end{figure}
+
+mit der Konvergenzstelle $K$, der Dissoziationsenergie des Grundzustands $D''$, der Dissoziationsenergie des angeregten Zustand $D'$, der Anregungsenergie des bei der Dissoziation entstehenden angeregten Atoms $E_{\text{At}}$ und der molekularen Anregungsenergie $E_{\text{Mol}}$. Diese Konstante wurden experimentell für das Jodmolekül \ce{J2} bestimmt mit $K = \SI{2,48}{\electronvolt}$, $E_{\text{At}} = \SI{0,94}{\electronvolt}$ und $D'' = \SI{1,54}{\electronvolt}$.\\
+
+\textbf{g) Prädissoziation} 
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl13_abbildung_5}
+    \label{fig:vl13_abbildung_5}
+\end{figure}
+
+für $K_{\text{b}}< h\nu < K_{\mathrm{a}}$ gibt es 2 Möglichkeiten
+\begin{enumerate}
+	\item Innerhalb von $a$ kommt es zu Abregung
+	\item Beim Übergang von $a \to b$ kommt es zur Dissoziation unter einem umbau der Elektronenhülle
+\end{enumerate}
+Es kommt zu einer Lebensdauerverkürzung, $\Delta E$ nimmt zu woraus Linienverbreiterung folgt. Hohe Wahrscheinlichkeit für $h\nu = K_{B}$. \\
+
+\textbf{h) Entstehung von kont. Spektren (\ce{H2}-Lampe)}
+\begin{figure}[H]
+    \centering
+    \incfig{vl13_abbildung_6}
+    \label{fig:vl13_abbildung_6}
+\end{figure}
+Anregungen durch Stöße sind beim \ce{H2} erlaubt, wobei Singulett-Triplett übergänge verboten sind. Wasserstofflampen werden oft als UV-Quellen verwendet. Das Prinzip funktioniert analog für UV-Lampen die Edelgasdimere wie \ce{Xe2} oder \ce{Kr2} verwenden.
