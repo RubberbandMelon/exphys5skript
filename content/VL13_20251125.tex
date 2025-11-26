@@ -1,110 +1,186 @@
-\clearpage
-Bemerkung: Bei Rotationsschwingungsspektrum fast gleich große $B_{\nu'}$ und $B_{\nu''}$\\
-unterschied von $F$-Abhängigkeit\\
+\setcounter{section}{6}
+\setcounter{subsection}{4}
+\setcounter{figure}{5}
 
-\begin{figure}[H]
-    \centering
-    \def\svgwidth{.3\columnwidth}
-    \subimport{./figures}{vl13_abbildung_0.pdf_tex}
-    \label{fig:vl13_abbildung_0}
-\end{figure}
 
-Jetzt: Aufgrund unterschiedlicher Potentialkurven und $\overline{r}_{\mathrm{e}}' \neq \overline{r}_{\mathrm{e}}''$ sind sehr verschiedene $B_{\nu'}$ und $B_{\nu''}$ möglich.\\
+	\paragraph{Erinnerung:} Beim Rotationsschwingungsspektrum sind die Rotationskonstanten $B_{\nu'}$ und $B_{\nu''}$ fast gleich groß. 
+	Unterschiede werden hauptsächlich durch $F$ und damit vom mittleren Kernabstand $\vec r$ diktiert. 
+	Der Verlauf von $r$ für steigende Quantenzahlen $\nu$ ist in \autoref{fig:vl13_abbildung_0} skizziert.
 
-Die Auswahlregeln für $J$ hängen von der Art des elektronischen Übergangs ab. So ist $\Delta J = 0$ möglich falls sich der elektronsiche Drehimpuls ändert, da bei der Emission oder Absorptio eines Photons mit Drehimpuls $\hbar $ der Gesamtdrehimpuls erhalten bleiben muss. Beispiele einiger Übergänge sind
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{.3\columnwidth}
+		\subimport{./figures}{vl13_abbildung_0.pdf_tex}
+		\caption{Im Rotationsschwingungsspektrum ist der mittlere Kernabstand $\overline r$ abhängig vom Schwingungszustand $\nu$. Für größere $\nu$ steigt $\overline r$.}
+		\label{fig:vl13_abbildung_0}
+	\end{figure}
+
+	\paragraph{Jetzt:} Im Elektronenspektrum sind aufgrund unterschiedlicher Potentialkurven und $\overline{r}_{\mathrm{e}}' \neq \overline{r}_{\mathrm{e}}''$ sehr verschiedene $B_{\nu'}$ und $B_{\nu''}$ möglich.
+
+	Die Auswahlregeln der Drehimpulsquantenzahl $J$ hängen von der Art des elektronischen Übergangs ab. So ist $\Delta J = 0$ möglich, falls sich der elektronsiche Drehimpuls ändert,	 da bei der Emission oder Absorption eines Photons mit Drehimpuls $\hbar $ der Gesamtdrehimpuls erhalten bleiben muss. Beispiele einiger Übergänge sind
+	\begin{itemize}
+		\item $\Sigma \to \Sigma$-Übergang: $\Delta J = \pm 1$ und der  P- und R-Zweig sind im Spektrum sichtbar
+		\item $\Sigma \to \Pi$-Übergang: $\Delta J = 0, \pm 1$ und der P-, R- und Q-Zweig ist sichtbar
+	\end{itemize}
+	Für die Gesamtenergie bei einem elektronischen Übergang gilt
+	$$
+	\begin{aligned}
+		\Delta E_{\text{Ges}} &= \Delta \left( E_{\text{el}} + E_{\text{vib}} \right) + \Delta E_{\text{rot}} \\
+		\overline{\nu} &= \overline{\nu}_{(\nu', \nu'')} + \overline{\nu}_{(J', J'')} \\
+		\overline{\nu} &= \overline{\nu}_{(\nu', \nu'')} + B'J'(J'+1) - B''J''(J''+1), \\
+	\end{aligned}
+	$$ 
+	$\overline\nu(\nu', \nu'')$ ist Wellenzahl eines Bandensprunges von $\nu'$ nach $\nu''$.
+
+	Damit werden die Wellenzahlen der Übergänge in den Zweigen berechnet:
+	\begin{itemize}
+		\item Im \textbf{P-Zweig} finden Übergange mit $\Delta J = -1$, also $J'' = J' +1$ statt. Sie haben die Wellenzahl
+			$$
+			\overline{\nu}_{\text{P}} = \overline{\nu}_{\nu', \nu''} - (B' + B'')(J'+1) + (B' - B'')(J'+ 1)^2 
+			$$ 
+			mit $J'= 0,1,2,\ldots$.
+		\item Im \textbf{R-Zweig} finden Übergänge mit $\Delta J = + 1$, also $J' = J'' + 1$ statt. Sie haben die Wellenzahl
+			$$
+			\overline{\nu}_{\text{R}} = \overline{\nu}_{\nu', \nu''}+ (B' + B'') (J''+1) + (B' - B'') (J'' +1)^2
+			$$
+			mit $J'' = 0,1,2,\ldots$.
+		\item Im \textbf{Q-Zweig} finden Übergänge mit $\Delta J = 0$, also $J' = J''$ statt. Sie haben die Wellenzahl
+			$$
+			\overline{\nu}_{\text{Q}} = \overline{\nu}_{\nu', \nu''} + (B' - B'') J'' + (B' - B'')J''^2.
+			$$
+	\end{itemize}
+	Diese drei Gleichung beschreiben die Fortrat-Parabeln. Diese sind in \autoref{fig:vl13_abbildung_1} dargestellt.
+
+	\begin{figure}[H]
+		\centering
+		\incfig{vl13_abbildung_1}
+		\caption{Fortrat-Parabeln für die drei Fälle $B'<B''$, $B'>B''$, $B'=B''$.}
+		\label{fig:vl13_abbildung_1}
+	\end{figure}
+
+	\textbf{Bemerkungen:}
+	\begin{enumerate}
+		\item Aus dem Charakter des Spektrums ergeben sich Aussagen über die relativen Lagen der $r_{\mathrm{e}}$.
+		\item Durch Messung der Parabeln im Spektrum lassen sich die Rotationskonstanten $B_{\nu'}$ und $B_{\nu''}$ bestimmen. Damit erhält man Rückschlüsse auf $r_{\mathrm{e}}'$ und $r_{\mathrm{e}}''$
+		\item Alle Spektrallinien sind im sichtbaren Bereich, auch für homonukleare Moleküle.
+		\item Die Auswahlregeln sind in einigen Fällen anders. Deshalb ist oft eine genaue Betrachtung des jeweiligen Moleküls notwendig.
+	\end{enumerate}
+
+\subsection{Gesamtspektrum}
+Sei bei einem Übergang $r_{\mathrm{e}}'' < r_{\mathrm{e}}'$, dann ist $B' < B''$. \autoref{fig:vl13_bandenspektrum} zeigt ein Bandenspektrum für solche Übergänge.
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+		\draw[black, fill=black!4] (-4.5,-0.75) rectangle (4.5,0.75);
+		\draw[thick, ->] (3.5,1) -- (5,1) node[anchor=north west] {$\overline\nu$};
+		% drei bänder nebeneinander
+		\foreach \y/\lbl in {
+				0/$0\to2$,
+				3/$0\to3$,
+				-3.2/$0\to1$
+			}{%
+			\begin{scope}[xshift=\y cm]
+				\draw[red, line width = 0.5pt] (0.00,-0.6) -- (0.00,0.6);
+				\foreach \x/\w in {
+					0.20/0.5pt,
+					0.35/0.5pt,
+					0.50/0.5pt,
+					0.60/0.5pt,
+					0.65/0.5pt,
+					0.69/0.55pt,
+					0.73/0.6pt,
+					-0.20/0.5pt,
+					-0.43/0.5pt,
+					-0.71/0.5pt,
+					-1.05/0.5pt
+				}
+				{
+					\draw[red, line width=\w] (\x,-0.5) -- (\x,0.5);
+				}
+				\node[red] at (0,-1) {\lbl};
+			\end{scope}
+		}
+		\draw[blue, thick, <-] (0,0.7) -- (0,1.5) node[anchor = south] {Bandenursprung};
+		\draw[blue, thick, <-] (0.8,-0.5) -- (2,-1.7) node[anchor = north west] {Bandenkopf};
+		\draw[blue, thick, <-] (-1.2,-0.5) -- (-2,-1.7) node[anchor = north east] {rot abschattiert};
+		\end{tikzpicture}
+		\caption{
+			Schematisches Gesamtspektrum eines Moleküls. Sichtbar sind drei Banden der Übergänge $0\to i$, jeweils mit Rotationsübergängen in P-, Q- und R-Zweig. 
+			Die Spektrallinien der Zweige überlagen sich gegenseitig (vgl. Fortrat-Parabeln \autoref{fig:vl13_abbildung_1}).
+		}
+		\label{fig:vl13_bandenspektrum}
+	\end{figure}
+
+\subsection{Dissoziation}
+\paragraph{Ohne Elektronenübergang}
+	Die Dissoziation eines Moleküls $(AB)$ zu zwei Atomen $A$ und $B$ durch Infrarotlicht $\nu(\mathrm{IR})$
+	$$
+	(AB) + h \nu(\text{IR}) \to  A+B
+	$$ 
+	ohne Elektronenübergang $\Delta \nu = \pm 1, \pm 2$ ist \textbf{nicht erlaubt}, da sie gegen das Franck-Condon-Prinzip verstößen würde.
+	\autoref{fig:vl13_abbildung_3} verdeutlich das im Energiediagramm.
+	\begin{figure}[H]
+		\centering
+		\incfig{vl13_abbildung_3}
+		\caption{Energiediagramm. 
+			Der Übergang (rot) aus einem gebundenen Zustand (blaue Wellenfunktion) in einen dissozierten Zustand (schwarze Wellenfunktion) ist nicht erlaubt.
+			Der Übergang würde den Kernabstand $r$ spontan verändern, was wegen des Franck-Condon Prinzips nicht möglich ist. 
+		}
+		\label{fig:vl13_abbildung_3}
+	\end{figure}
+
+\paragraph{Mit Elektronenübergang}
+	Eine Dissoziation \textbf{mit} Elektronenübergang, also
+	$$
+	(AB) + h \nu \text{(sichtbar)} \to  A+B^{*}
+	$$ 
+	ist möglich. \autoref{fig:vl13_abbildung_4} zeigt einen solchen Übergang.
+	\begin{figure}[H]
+		\centering
+		\incfig{vl13_abbildung_4}
+		\caption{In rot ist ein Elektronenübergang eingezeichnet, bei dem das Molekül $(AB)$ zu $(AB)*$ übergeht. 
+			Von dort kann das Molekül in den ungebundenen Zustand $A+B^*$ gehen.
+			In blau sind weitere Übergänge in den angeregten Zustand $(AB)^*$ eingezeichnet, die jedoch nicht zur Dissoziation führen.
+		}
+		\label{fig:vl13_abbildung_4}
+	\end{figure}
+In \autoref{fig:vl13_abbildung_4} werden folgende Größen verwendet:
 \begin{itemize}
-	\item $\Sigma \to \Sigma$-Übergang: $\Delta J = \pm 1$ P-, R-Zweige
-	\item $\Sigma \to \Pi$-Übergang: $\Delta J = 0, \pm 1$ P-, R-, Q-Zweige
+	\item die \quickdef{Konvergenzstelle $\bm K$},
+	\item Dissoziationsenergie des Grundzustands $D''$,
+	\item Dissoziationsenergie des angeregten Zustand $D'$
+	\item Anregungsenergie des bei der Dissoziation entstehenden angeregten Atoms $E_{\text{At}}$ und
+	\item die molekulare Anregungsenergie $E_{\text{Mol}}$.
 \end{itemize}
-Für einen Übergang gilt
-$$
-\begin{aligned}
-	\Delta E_{\text{Ges}} &= \Delta \left( E_{\text{el}} + E_{\text{vib}} \right) + \Delta E_{\text{rot}} \\
-	\overline{\nu} &= \overline{\nu}_{(\nu', \nu'')} + \overline{\nu}_{(J', J'')} \\
-	\overline{\nu} &= \overline{\nu}_{(\nu', \nu'')} + B'J'(J'+1) - B''J''(J''+1) \\
-\end{aligned}
-$$ 
-mit dem Bandenursprung $(\nu', \nu'')$. Es gilt für den
-\begin{itemize}
-	\item P-Zweig: $\Delta J = -1$, $J'' = J' +1$
-		$$
-		\overline{\nu}_{\text{P}} = \overline{\nu}_{\nu', \nu''} - (B' + B'')(J'+1) + (B' - B'')(J'+ 1)^2 
-		$$ 
-		mit $J'= 0,1,2,\ldots$.
-	\item R-Zweig: $\Delta J = + 1$, $J' = J'' +$
-		$$
-		\overline{\nu}_{\text{R}} = \overline{\nu}_{\nu', \nu''}+ (B' + B'') (J''+1) + (B' - B'') (J'' +1)^2
-		$$
-		mit $J'' = 0,1,2,\ldots$.
-	\item Q-Zweig: $\Delta J = 0$, $J' = J''$
-		$$
-		\overline{\nu}_{\text{Q}} = \overline{\nu}_{\nu', \nu''} + (B' - B'') J'' + (B' - B'')J''^2.
-		$$ 
-		Diese Gleichung beschreibt die Fortrat-Parabeln.
-\end{itemize}
+Beispielwerte für das Jodmolekül \ce{J2} sind $$K = \SI{2,48}{\electronvolt},\quad E_{\text{At}} = \SI{0,94}{\electronvolt} \quad\text{und}\quad D'' = \SI{1,54}{\electronvolt}.$$
 
-\begin{figure}[H]
-    \centering
-    \incfig{vl13_abbildung_1}
-    \label{fig:vl13_abbildung_1}
-\end{figure}
+\subsection{Prädissoziation} 
+	Wir betrachten zwei Elektronenzustände $a$ und $b$ eines Moleküls mit überlappenden Energieniveaus. 
+	\autoref{fig:vl13_abbildung_5} zeigt das Energieschema eines solchen Moleküls.
 
-Bemerkungen:
-\begin{enumerate}
-	\item aus dem Charakter des Spektrums ergeben sich Aussagen über die relativen Lagen der $r_{\mathrm{e}}$
-	\item aus Spektrum-Parabeln $\to $ $B_{\nu'}, B_{\nu''} \to r_{\mathrm{e}}' , r_{\mathrm{e}}''$
-	\item alles im sichtbaren Spektralbereich, auch homonukleare Moleküle
-	\item Auswahlregen zum Teil anders
-\end{enumerate}
+	\begin{figure}[H]
+		\centering
+		\incfig{vl13_abbildung_5}
+		\caption{Energieschema eines Moleküls mit überlappenden Elektronenzuständen $a$ und $b$. }
+		\label{fig:vl13_abbildung_5}
+	\end{figure}
 
-\textbf{e) Gesamtspektrum}\\
-$r_{\mathrm{e}}' > r_{\mathrm{e}}'' \implies B' < B''$, Reihenspektrum\\
-\textcolor{red}{bandengrafik}\\
+	
+	Absorbiert das Molekül Licht mit $K_{\text{b}}< h\nu < K_{\mathrm{a}}$, gibt es 2 Möglichkeiten:
+	\begin{enumerate}
+		\item Innerhalb von $a$ kommt es zu Abregung.
+		\item Beim Übergang von $a$ nach $b$ kommt es zur Dissoziation. Dabei wird die Elektronenhülle umgebaut. 
+	\end{enumerate}
+	Die Lebensdauer dieses Moleküls ist verkürzt und $\Delta E$ nimmt zu, wodurch die Linien im Spektrum breiter werden. Eine besonders hohe Wahrscheinlichkeit zur Dissoziation gibt es für $h\nu = k_{B}$.
 
-\textbf{f. Dissoziation}
-Eine Dissoziation ohne Elektronenübergang $\Delta \nu = \pm 1, \pm 2$ \\
- $$
- (AB) + h \nu(\text{IR}) \to  A+B
-$$ 
-\textbf{geht nicht}, da eine sollche gegen das Franck-Condon-Prinzip verstößen würde.
-\begin{figure}[H]
-    \centering
-    \incfig{vl13_abbildung_3}
-    \label{fig:vl13_abbildung_3}
-\end{figure}
-
-Eine Dissoziation \textbf{mit} Elektronenübergang, also
-$$
-(AB) + h \nu \text{(sichtbar)} \to  A+B^{*}
-$$ 
-ist möglich.
-\begin{figure}[H]
-    \centering
-    \incfig{vl13_abbildung_4}
-    \label{fig:vl13_abbildung_4}
-\end{figure}
-
-mit der Konvergenzstelle $K$, der Dissoziationsenergie des Grundzustands $D''$, der Dissoziationsenergie des angeregten Zustand $D'$, der Anregungsenergie des bei der Dissoziation entstehenden angeregten Atoms $E_{\text{At}}$ und der molekularen Anregungsenergie $E_{\text{Mol}}$. Diese Konstante wurden experimentell für das Jodmolekül \ce{J2} bestimmt mit $K = \SI{2,48}{\electronvolt}$, $E_{\text{At}} = \SI{0,94}{\electronvolt}$ und $D'' = \SI{1,54}{\electronvolt}$.\\
-
-\textbf{g) Prädissoziation} 
-
-\begin{figure}[H]
-    \centering
-    \incfig{vl13_abbildung_5}
-    \label{fig:vl13_abbildung_5}
-\end{figure}
-
-für $K_{\text{b}}< h\nu < K_{\mathrm{a}}$ gibt es 2 Möglichkeiten
-\begin{enumerate}
-	\item Innerhalb von $a$ kommt es zu Abregung
-	\item Beim Übergang von $a \to b$ kommt es zur Dissoziation unter einem umbau der Elektronenhülle
-\end{enumerate}
-Es kommt zu einer Lebensdauerverkürzung, $\Delta E$ nimmt zu woraus Linienverbreiterung folgt. Hohe Wahrscheinlichkeit für $h\nu = K_{B}$. \\
-
-\textbf{h) Entstehung von kont. Spektren (\ce{H2}-Lampe)}
+\subsection{Entstehung von kontinuierlichen Spektren (\ce{H2}-Lampe)}
+\autoref{fig:vl13_abbildung_6} erklärt die Entstehung kontinuierlichen Spektren.
 \begin{figure}[H]
     \centering
     \incfig{vl13_abbildung_6}
+	\caption{Elektronen werden durch Stöße vom Grundzustand $^1\Sigma_\mathrm g^+$ nach $^3\Sigma_\mathrm g^+$ angeregt. 
+		Von dort fallen sie in den Zustand $^3\Sigma_\mathrm u ^+$ und erzeugen dabei ein kontinuierliches Spektrum.
+	}
     \label{fig:vl13_abbildung_6}
 \end{figure}
-Anregungen durch Stöße sind beim \ce{H2} erlaubt, wobei Singulett-Triplett übergänge verboten sind. Wasserstofflampen werden oft als UV-Quellen verwendet. Das Prinzip funktioniert analog für UV-Lampen die Edelgasdimere wie \ce{Xe2} oder \ce{Kr2} verwenden.
+Eine gängige Anwendung ist die Wasserstofflampe, welche als UV-Quelle verwendet wird. Analog sind auch Lampen mit Xenon, Krypton und anderen Edelgasdimeren möglich.
