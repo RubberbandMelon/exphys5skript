@@ -1,0 +1,185 @@
+\clearpage
+\chapter{Festkörperphysik}
+\label{chap:festkoerperphysik}
+\clearpage
+
+\section{Einführung}
+Die Festkörperphysik umfässt die Betrachtung von Systemen mit einer großen Anzahl chemischer Bindungen. In der Festkörperphysik definiert und beschreibt man feste, zusammengesetzte Zustände, d.h. man analysiert viel-Teilchen Systeme ($\sim \SI{1e23}{Teilchen}$, also \SI{1}{\mol}) und findet heraus welche Interaktionen es zwischen den Teilchen gibt und welche physikalischen Eigenschaften sich daraus ergeben. Diese Analyse bzw. diese Beschreibung erfolgt mit den Werkzeugen der Quantenphysik und der statistischen Physik, oft unter der Annahme gewisser idealer Bedingungen. Experimentell stellt man jedoch fest, dass solche idealen Systeme in der Wirklichkeit nicht existieren:
+\begin{enumerate}
+	\item In jedem Gitter gibt es Abweichungen von einer perfekt periodischen Gitterstruktur
+	\item Jedes System weißt Defekte und/oder atomare Unreinheiten auf
+\end{enumerate}
+Die Forschung in der Festkörperphysik ist heutzutage eines der faszinierendsten und fortschrittlichsten Forschungsgebiete der Physik und bildet die Grundlage der 
+\begin{itemize}
+	\item Halbleitertechnologie (Mikro- und Nanoelektronik, Nanophotonik),
+	\item Kommunikationstechnologie,
+	\item und Quantentechnologie.
+\end{itemize}
+
+Die Charakterisierung eines Festkörpers findet über sein strukturellen, mechanischeln, thermischen, elektrischen, magnetischen und optischen Eigenschaften statt.\\
+
+\textbf{Vorläufige Anmerkungen}
+Bei Normalbedingungen bzw. bei nicht-hochenergetischer Physik gibt es drei Aggregatzustände: fest, flüssig und gasförmig, wobei sich Festkörper in kristlline und amorphe Festkörper unterteilen lassen können:
+\begin{itemize}
+	\item kristalline Festkörper sind periodische Anordnungen kleiner 'Bauklötze'
+	\item amorphe Festkörper besitzen eine feste, nicht periodische, dafür aber statistisch isotrope Anordnung, wobei bestimmte lokale Ordnungen herrschen. 
+\end{itemize}
+Kristalline Festkörper lassen sich weiter unterscheiden in
+\begin{itemize}
+	\item Polykristalline Festkörper, welche kleine kristalline Regionen beinhalten welche irregulär zueinander Orientiert sind,
+	\item Monokristalline Festkörper, in welchen die periodische Struktur über den gesamten Körper hinweg existiert,
+	\item Molekulare Kristalle, bei welchen die molekulare Struktur während der Kristallisation erhalten bleibt.
+\end{itemize}
+
+Zum verstehen der Festkörperphysik ist es elementar zu wissen welche Kräfte Atome zusammenhalten und welche strukturelle Ordnung dadurch realisiert wird.
+
+\section{Kristalline Bindung}
+Fundamental ist die Ursache der Kohässion von Feststoffen die Interaktion zwischen der negativen Ladung des Elektrons und der positiven Ladung des Kerns. Dabei gibt es verschiedene Arten der Interaktion
+\begin{itemize}
+	\item Van der Waals
+	\item Kovalente Bindung
+	\item metallische Bindung
+	\item ionische Bindung
+	\item Wasserstoffbrücken
+\end{itemize}
+
+\subsubsection{Ionische Bindungen}
+Die Differenz in der Elektronegativität zwischen zwei Elementen ist ein Maß dafür wie stark die ionische Bindung welche sie eingehen ist. Die Ionisierungsenergie $I$ gitb an wie viel Energie nötig ist um ein Elektron von einem Atom zu entfernen 
+$$
+\ce{Na} + I \to \ce{Na+} +  \ce{e-}
+$$ 
+und die Elektronenaffinität $A$ gibt an wie viel Energie bei der Aufnahme eines Elektrons von einem Atom freigegeben wird
+$$
+\ce{e-} + \ce{Cl} \to \ce{Cl-}+ A.
+$$ 
+Daraus ergibt sich Paulings Elektronegativitätsskala
+$$
+K = \num{0,184} (I+A) \quad \text{in}\quad \si{\electronvolt}.
+$$ 
+
+\textbf{Berechnung der Bindungsenergie}\\
+Die Bindungsenergie zwischen zwei einfach geladenen Ionen berechnet sich mit
+$$
+E_{ij} = \pm \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{ij}}
+$$ 
+mit dem Abstand zwischen den beiden Ionen $r_{ij}$, wobei das Vorzeichen davon abhängt ob es sich um gleichnamige oder ungleichnamige Ladungen handelt.\\
+Echte Ionen bestehen aus räumlich ausgedehnten Kernen und Orbitalen. Eine Verkleinerung des Abstands zwischen zwei Ionen führt zu einer zu einer Überlappung dieser Orbitale, was die Berücksichtigung des Pauli-Prinzips verlangt, nach welchem eine starke Überlappung der Orbitale zu einem Befüllen energetisch hoher Zustände führt, was wiederum mit einer Abstoßung einhergeht.\\
+
+\textbf{Born-Mayer Abstoßungspotential}\\
+Das Born-Mayer Abstoßungspotential lässt sich berechnen durch
+$$
+E_{\text{abs}} (r_{ij})= \frac{B}{r_{ij}^{n}}\quad n = 9\ldots 12
+$$ 
+wobei sich die Parameter $B$ und $n$ entweder aus quantenmachanischen Berechnungen oder experimentellen Befunden, wie den Ergebnissen von Kompressibilitätstests, ergeben. Das Abstoßungspotential lässt sich auch ausdrücken durch
+$$
+W_{\text{abs}} = \lambda e^{ - \frac{r_{ij}}{\rho}} 
+$$ 
+mit der Interaktionsstärke $ \lambda$ und der Interaktionsreichweite $\rho$.Für ein Ion $i$ welches mittels Coulomb-Kräfte mit allen anderen Ionen des Körpers $j$ interagiert ergibt sich die Bindungsenergie
+\begin{align}
+	\label{2.3}
+	W_{B,i} &= \sum_{j \neq i}^{} \left[ W_{ij} + W_{\text{abs}} (r_{ij}) \right]  \\
+	\label{2.4}
+	&= \sum_{j \neq i}^{} \left( \pm \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{ij}} + \frac{B}{r_{ij}^{n}} \right).
+\end{align}
+
+Mit dem Abstand zwischen zwei benachbarter Ionen $r$ lässt sich dies umschreiben zu
+\begin{equation}
+	\label{2.5}
+	W_{B,i} = - \alpha \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r} + A_{n} \frac{B}{r^{n}}
+\end{equation}
+mit
+$$
+A_{n} = \sum_{j \neq i}^{} \frac{1}{P_{ij}^{n}} 
+$$ 
+und der \textbf{Madelung Konstante}
+$$
+\alpha = \sum_{j \neq i}^{} \left( \pm \frac{1}{P_{ij}} \right)
+$$ 
+wobei
+$$
+P_{ij} = \frac{r_{ij}}{r}.
+$$ 
+Das Vorzeichen in der Summe von $\alpha$ hängt wieder davon ob es sich um gleich- oder ungleichnamige Ladungen handelt. Die gesamte Bindungsenergie berechnet sich mittels
+$$
+E_{B} = N W_{B,i}.
+$$ 
+und besitzt ein Minimum im Gleichgewichtszustand 
+$$
+\frac{\mathrm{d} E_{B}}{\mathrm{d} r}  \Big|_{r=r_{\mathrm{e}}} = N \frac{\mathrm{d}E_{B,i}}{\mathrm{d} r}  \Big|_{r= r_{\mathrm{e}}} = 0 
+$$
+mit der Anzahl an Ionenpaaren $N$. Es folgt
+\begin{equation}
+	\label{2.7}
+	A_{n} B = \alpha \frac{\mathrm{e}^2}{4 \pi \varepsilon_0} \frac{r_{\mathrm{e}}^{n-1}}{r}.
+\end{equation} 
+Einsetzen von \ref{2.7} in \ref{2.5} und multiplizieren mit $N$ liefert
+\begin{equation}
+	\label{2.8}
+	E_{B} = - N \alpha \left[ 1 - \frac{1}{n} \right]  \frac{\mathrm{e}^2}{4 \pi \varepsilon_0 r_{\mathrm{e}}}.
+\end{equation}
+Als Beispiel zur Berechnung von $\alpha$ betrachten wir das Natriumchlorid, für welches
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cc} 
+	 $P$ & Anzahl der Nachbarn \\  
+	 $P_{i, i\pm 1}=1        $ & 6 \\ 
+	 $P_{i, i\pm 2}=\sqrt{2}   $ & 12 \\ 
+	 $P_{i, i\pm 3}=\sqrt{3}   $ & 8 \\ 
+	 $P_{i, i\pm 4}=\sqrt{4}=2 $ & 6 \\ 
+	 $\vdots $ &  $\vdots$ 	  
+	\end{tabular}
+\end{table}
+gilt. Es folgt
+$$
+\alpha = \frac{6}{\sqrt{1} } - \frac{12}{\sqrt{2} } + \frac{8}{\sqrt{3} } - \frac{6}{\sqrt{4} } + \ldots \approx \num{1,747}.
+$$
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.393\columnwidth}
+    \subimport{./figures}{vl14_abbildung_1.pdf_tex}
+    \label{fig:vl14_abbildung_1}
+\end{figure}
+
+Weiter Typische $\alpha$ sind in Tabelle \ref{tab:typische_alpha} aufgelistet.
+\begin{table}[H]
+	\centering
+	\caption{$\alpha$ für verschiedene, gängige ionische Bindungen.}
+	\label{tab:typische_alpha}
+	\begin{tabular}{|c|c|}
+		\hline
+		Bindung & $\alpha$ \\
+		\hline
+		\ce{NaCl} & \num{1,747} \\
+		\hline
+		\ce{CsCl} & \num{1,762} \\
+		\hline
+		\ce{ZnS}  & \num{1,638} \\
+	\hline
+	\end{tabular}
+\end{table}
+
+Typische Bindungsenergien sind in Tabelle \ref{tab:Bindungsenergien} aufgelistet.
+
+\begin{table}[H]
+	\centering
+	\caption{caption}
+	\label{tab:Bindungsenergien}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Bindung & \makecell{Bindungsenergie \\ pro Molekül} & \makecell{Bindungsenergie \\ pro \unit{\mol}} \\
+		\hline
+		\ce{NaCl} & \SI{7,95}{\electronvolt} & \SI{764}{\kilo \joule}\\ 
+		\hline
+		\ce{NaI} & \SI{7,10}{\electronvolt} & \SI{683}{\kilo \joule}\\
+		\hline
+		\ce{KBr} & \SI{6,92}{\electronvolt} & \SI{663}{\kilo \joule}\\
+		\hline
+	\end{tabular}
+\end{table}
+
+Solche Bindungen sind nicht-leitend und lösbar in polaren Lösemitteln. Die Bindung ist Richtungsunabhängig.
+
+\subsubsection{Kovalente Bindungen}
+Rein kovalente Bindungen finden sich nur in zwischen Atomen vor die ähnliche bzw. gleiche Elektronegativität besitzen. Eine Bindung wird normalerweise durch ein Elektronenpaar gebildet, welche sich gemeinsam zwischen den beiden Atomen lokalisieren und die Energie des Gesamtsystems dadurch minimieren, wobei ihre Spins \mathrm{antiparallel} sind. Paulis Prinzip modifiziert die Ladungsverteilung gemäß der Spinorientierung. Die Spin-abhängige Coulomb Interaktion liefert die \textbf{Austauschinteraktion} welche für die kovalente Bindung ist. Bei kovalenten Bindungen herrscht, anders als bei ionischen Bindungen, eine starke Richtungsabhängigkeit.\\
+Die Bindungsenergie kovalenter Bindungen beträgt \SI{6}{\electronvolt} bis \SI{10}{\electronvolt}, womit die Bindungen also sehr stark sind. Die leitfähigkeit kovalenter Bindungen hält sich in Grenzen.\\
+Die Unterscheidung zwischen kovalenter und ionischer Bindung ist nicht binär, da es viele verschiedene mögliche Differenzen zwischen den Elektronegativitäten zweier Atome gibt. Rein ionische bzw. rein kovalente Bindungen sind somit Extrema welche mit einer maximalen Differenz bzw. gar keiner Differenz korrespondieren.
