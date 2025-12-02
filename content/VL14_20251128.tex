@@ -7,12 +7,12 @@
 
 Die Festkörperphysik betrachtet große Systeme mit einer großen Zahl chemisch gebundener Atome. 
 
-Diese befinden sich im festen Aggregatzustands, welcher zunächst genauer definiert und beschrieben wird.
-Festkörper werden als Vielteilchen-Systeme mit $\sim\SI{3e23}{Teilchen}$ beschrieben.
+Diese befinden sich im festen Aggregatzustand, welcher zunächst genauer definiert und beschrieben wird.
+Festkörper werden als Vielteilchen-Systeme mit $\sim\SI{e23}{Teilchen}$ beschrieben.
 So können deren physikalischen Eigenschaften, Interaktionen, und zum Beispiel deren Deformation bestimmt werden.
 Mit Methoden der Quantenmechanik und der Statistischen Physik werden die Näherungen und Modelle der Festkörperphysik erarbeitet.
 
-Experimentell zeigt sich, dass es die idealisierten Systeme in der Realität nicht exisitieren:
+Experimentell zeigt sich, dass die idealisierten Systeme in der Realität nicht exisitieren:
 \begin{itemize}
 	\item In jedem Gitter gibt es Abweichungen von einer perfekt periodischen Gitterstruktur.
 	\item Jedes System weißt Defekte und/oder atomare Unreinheiten auf.
@@ -25,11 +25,11 @@ Die Forschung in der Festkörperphysik ist heutzutage eines der faszinierendsten
 	\item und Quantentechnologie.
 \end{itemize}
 
-Die Charakterisierung eines Festkörpers findet über sein strukturellen, mechanischeln, thermischen, elektrischen, magnetischen und optischen Eigenschaften statt.
+Die Charakterisierung eines Festkörpers findet über seine strukturellen, mechanischeln, thermischen, elektrischen, magnetischen und optischen Eigenschaften statt.
 
 \paragraph{Vorläufige Anmerkungen}
 Bei Normalbedingungen bzw. bei nicht-hochenergetischer Physik gibt es drei Aggregatzustände: fest, flüssig und gasförmig. 
-Feste Stoffe lassen sich weiter aufteilen in kristlline und amorphe Festkörper:
+Feste Stoffe lassen sich weiter aufteilen in kristalline und amorphe Festkörper:
 \begin{itemize}
 	\item kristalline Festkörper sind periodische Anordnungen kleiner 'Bauklötze'
 	\item amorphe Festkörper besitzen eine feste, nicht periodische, dafür aber statistisch isotrope Anordnung. Es herrschen bestimmte lokale Ordnungen. 
@@ -46,12 +46,12 @@ Zum Verständnis der Festkörperphysik ist es elementar zu wissen, welche Kräft
 \section{Kristalline Bindung}
 \stepcounter{subsection}
 Die elektrostatische Interaktion zwischen Elektronen und Atomkernen ist fundamental für die Kohäsion von Festkörpern. 
-Die Bindung wird je nach Situation anders benannt, es existieren:
+Die entstehenden Bindungen werden wie folgt unterschieden:
 \begin{itemize}
 	\item Van-der-Waals-Kräfte
 	\item Kovalente Bindungen
-	\item metallische Bindungen
-	\item ionische Bindungen
+	\item Metallische Bindungen
+	\item Ionische Bindungen
 	\item Wasserstoffbrücken
 \end{itemize}
 
@@ -79,16 +79,16 @@ $$
 mit dem Abstand zwischen den beiden Ionen $r_{ij}$.
 Das Vorzeichen hängt davon ab, ob es sich um gleichnamige oder ungleichnamige Ladungen handelt.
 Echte Ionen bestehen aus räumlich ausgedehnten Kernen und Orbitalen. 
-Eine Verkleinerung des Abstands zwischen zwei Ionen führt zu einer zu einer Überlappung dieser Orbitale.
+Eine Verkleinerung des Abstands zwischen zwei Ionen führt zu einer Überlappung dieser Orbitale.
 Nach dem Pauli-Prinzip führt eine starke Überlappung der Orbitale zum Befüllen energetisch hoher Zustände.
 Dadurch entsteht eine abstoßende Kraft zwischen den beiden Atomen.
 
 \paragraph{Born-Mayer Abstoßungspotential}
 Das Born-Mayer Abstoßungspotential lässt sich berechnen mit
 $$
-W_{\text{abs}} (r_{ij})= \frac{B}{r_{ij}^{n}}\quad n = 9\ldots 12
+W_{\text{abs}} (r_{ij})= \frac{B}{r_{ij}^{n}}\quad n = 9\ldots 12,
 $$ 
-wobei sich die Parameter $B$ und $n$ entweder aus quantenmachanischen Berechnungen oder experimentellen Befunden, wie den Ergebnissen von Kompressibilitätstests, ergeben. 
+wobei sich die Parameter $B$ und $n$ entweder aus quantenmechanischen Berechnungen oder experimentellen Befunden, wie den Ergebnissen von Kompressibilitätstests, ergeben. 
 
 Ein alternativer Ansatz für das Abstoßungspotential ist
 $$
@@ -182,7 +182,7 @@ Weiter typische Werte für  $\alpha$ sind in Tabelle \ref{tab:typische_alpha} au
 	\label{tab:typische_alpha}
 	\begin{tabular}{cc}
 		\toprule
-		Bindung & $\alpha$ \\
+		Bindung & $\alpha$ \\\midrule
 		\ce{NaCl} & \num{1,747} \\
 		\ce{CsCl} & \num{1,762} \\
 		\ce{ZnS}  & \num{1,638} \\
@@ -196,20 +196,18 @@ Typische Bindungsenergien sind in Tabelle \ref{tab:Bindungsenergien} aufgelistet
 	\centering
 	\caption{Bindungsenergien gängiger Ionenkristalle.}
 	\label{tab:Bindungsenergien}
-	\begin{tabular}{|c|c|c|}
-		\hline
+	\begin{tabular}{ccc}
+		\toprule
 		Bindung & \makecell{Bindungsenergie \\ pro Molekül} & \makecell{Bindungsenergie \\ pro \unit{\mol}} \\
-		\hline
+		\midrule
 		\ce{NaCl} & \SI{7,95}{\electronvolt} & \SI{764}{\kilo \joule}\\ 
-		\hline
-		\ce{NaI} & \SI{7,10}{\electronvolt} & \SI{683}{\kilo \joule}\\
-		\hline
+		\ce{NaI} & \SI{7,10}{\electronvolt} & \SI{683}{\kilo \joule}\\ 
 		\ce{KBr} & \SI{6,92}{\electronvolt} & \SI{663}{\kilo \joule}\\
-		\hline
+		\bottomrule
 	\end{tabular}
 \end{table}
 
-Solche Bindungen sind nicht-leitend und lösbar in polaren Lösemitteln. Die Bindung ist Richtungsunabhängig.
+Solche Bindungen sind nicht-leitend und lösbar in polaren Lösemitteln. Die Bindung ist 	richtungsunabhängig.
 
 \subsubsection{Kovalente Bindungen}
 Rein kovalente Bindungen finden sich nur zwischen Atomen, die ähnliche bzw. gleiche Elektronegativität besitzen.
@@ -226,7 +224,7 @@ Beispiele stark richtungsabhängiger Bindungen sind Diamanten, Silizium oder Ger
 Die Bindungsenergie kovalenter Bindungen beträgt \SI{6}{\electronvolt} bis \SI{10}{\electronvolt}.
 Die Bindungen sind also sehr stark.
 
-Da Stoffe mit kovalenten Bindungen sind Halbleiter, besitzen also nur ein moderate Leitfähigkeit.
+Stoffe mit kovalenten Bindungen sind Halbleiter, besitzen also nur ein moderate Leitfähigkeit.
 
-Die Unterscheidung zwischen kovalenter und ionischer Bindung ist nicht binär, da die Elektronegativitätdifferenz zwischen verschiedenen Atomen kontinuierlich ist. 
+Die Unterscheidung zwischen kovalenter und ionischer Bindung ist nicht binär, der Übergang ist wie die Elektronegativitätsdifferenz verschiedener Atome fließend. 
 Rein ionische bzw. rein kovalente Bindungen sind somit Extrema, welche mit einer maximalen Differenz, bzw. gar keiner Differenz korrespondieren.
