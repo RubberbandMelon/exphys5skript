@@ -1,0 +1,147 @@
+\setcounter{section}{2}
+\setcounter{subsection}{1}
+\setcounter{subsubsection}{2}
+\setcounter{equation}{8}
+\clearpage
+
+\subsubsection{Die metallische Bindung}
+Die metallische Bindung ist ähnlich zu der kovalenten, da sich durch die Überlappung von den Wellenfunktionen der Elektronen einzelner Atome zustande kommt. Im Gegensatz zur kovalenten Bindung sind die Elektronen jedoch \textbf{nicht} lokalisiert.
+Daraus ergeben sich folgende Eigenschaften für Metalle
+\begin{itemize}
+	\item quasi-freie Elektronen\\
+		Die negativen Elektronen kompensieren die Coulomb-Abstoßung der Metallionen
+	\item hohe Packungsdichte (Koordinationszahlen zwischen 8 und 12)
+	\item $N$ Elektronen wechselwirken mit $N$-Atomen $\to $ $N$-fache Aufteilung der Energieniveaus
+	\item quasi-Kontinuum an Bändern
+\end{itemize}
+
+Die Metalle der verschiedenen chemischen Gruppen besitzen unterschiedlliche Eigenschaften
+\begin{itemize}
+	\item Alkalimetalle: \\
+		halb gefüllte s-Schalen (\ce{Na}, $3\mathrm{s}^{1}$)\\
+		geringe Bindungsenergie von ca. \SI{1}{\electronvolt \per Atom}
+	\item Erdalkalimetalle: (\ce{Be}, \ce{Mg}, \ce{Ca}, \ldots)\\
+		s-Schalen sind vollständig gefüllt, jedoch überlappen sich 3s-Energieniveaus mit p-niveaus
+	\item Übergangsmetalle: (\ce{Fe}, \ce{Co}, \ce{Ni}), Bindungsenergie ca. \SI{4}{\electronvolt \per Atom}\\
+		Überlappen von inneren, teilweise gefüllten 3d Orbitale $3\mathrm{d}^{6,7,8}$ mit den leeren 4er Orbitalen ($4\mathrm{s}^2, 4\mathrm{p}^{6}$), trägt auch bei zu den kovalenten Bindungen der 3d-Orbitale
+		hohe elektrische und thermische Leitfähigkeit, starke Lichtabsorbtion und -reflektion
+\end{itemize}
+
+\subsubsection{Edelgase und Molekülkristalle, Van der Waals Bindungen}
+Atome mit vollen Elektronenschalen, also Edelgasatome, und Moleküle haben keine freien Valenzelektronen welche sie zu einer kovalenten Bindung beitragen könnten und haben keine Tendenz dazu Elektronen für ionische Bindungen aufzunehmen oder abzugeben. Es ist jedoch feststellbar, dass Edelgase in der Lage dazu sind Kristalle zu bilden woraus sich folgende Frage ergibt:\\
+Was hält einen Edelgaskristall zusammen?\\
+Die Antwort ergibt sich aus Ladungsfluktuationen, welche in einem Atom auftreten. Diese führen zu Dipolmomenten innerhalb eines Atoms welche in der Lage dazu sind Dipolmomente in anderen Atomen zu induzieren, wodurch eine anziehende Kraft zustande kommt.\\
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl15_abbildung_1}
+    \label{fig:vl15_abbildung_1}
+\end{figure}
+
+Das Dipolmoment $\Vec{p}_{1}$ eines Moleküls induziert am Ort $\Vec{r}$ das Elektrischen Feld
+\begin{equation}
+	\label{II.2.9}
+	\left| \Vec{E}_{0} \right| \sim \frac{\left| \Vec{p}_{1} \right| }{r^3}
+\end{equation}
+
+und ruft mit der Polarisierbarkeit $\alpha$ des zweiten Moleküls das Dipolmoment 
+\begin{equation}
+	\label{II.2.10}
+	\left| \Vec{p}_{2} \right| \sim \alpha \left| \Vec{E}_{\mathrm{D}} \right| \sim \frac{\alpha\left| \Vec{p}_1 \right| }{r^3}
+\end{equation}
+
+hervor. Die potentielle Energie einer Dipol-Dipol Wechselwirkung lautet
+\begin{equation}
+	\label{II.2.11}
+	E_{\mathrm{Dipol}} \sim - \frac{\left| \Vec{p}_{1}  \right| \left| \Vec{p}_{2} \right| }{r^3}.
+\end{equation}
+\ref{II.2.10} in \ref{II.2.11} eingesetzt liefert
+\begin{equation}
+	\label{II.2.12}
+	E_{\text{Dipol}} \sim - \frac{\alpha \left| \Vec{p}_{1} \right| ^2}{r^{6}}.
+\end{equation}
+
+Durch das Hinzufügen einer repulsiven Interaction $\sim r^{-12}$ (Paulis Prinzip s. ionische Bindung) ergibt sich das Lennard-Jones Potential
+\begin{equation}
+	\label{}
+	W_{\text{pot}} = 4 \gamma \left[ \left( \frac{\sigma}{r} \right) ^{12} - \left( \frac{\sigma}{r} \right) ^{6} \right] 
+\end{equation}
+
+mit $\gamma$ und $\sigma$ als empirische Konstanten. Diese Wechselwirkung ist auch bekannt als Van der Waals Wechselwirkung.
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.364\columnwidth}
+    \subimport{./figures}{vl15_abbildung_2.pdf_tex}
+    \label{fig:vl15_abbildung_2}
+\end{figure}
+Die Bindungsenergie beträgt ca. \SI{0,1}{\electronvolt \per Atom}. Dies entspricht ca. \SI{10}{\percent} der Gesamtenergie in ionischen Kristallen und \SI{20}{\percent} der Gesamtenergie in Metallen.
+
+\subsubsection{Wasserstoffbrücken}
+Bei der Wasserstoffbrücke handelt es sich um eine besondere Art der ionischen Bindung, bei welcher sich zwei Atome mit hoher Elektronegativität und geringer Koordinationszahl, wie bspw. \ce{HF} oder \ce{H2O}, ein Proton, also ein Wasserstoffion, teilen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\textwidth]{./figures/vl15_abbildung_3.tikz}
+	\caption{}
+	\label{fig:}
+\end{figure}
+Die Bindungsenergie einer Wasserstoffbrücke liegt zwischen \SI{0,1}{\electronvolt} und \SI{0,3}{\electronvolt}. 
+
+\subsection{Kristallstruktur und Symmetrie}
+\subsubsection{Translationssymmetrie}
+Kristalle besitzen Symmetrien welche makroskopisch sichtbar sind. Ein idealer Kristall besteht aus sich periodisch wiederholenden, identischen struktureller Einheiten bzw. Gruppen. Eine strukturelle Einheit kann dabei von einem einzelnen oder mehreren Atomen gebildet werden, welche \textbf{Basis} genannt werden. Ein Gitter zusammen mit einer Basis bildet ein Kristallgitter. \\
+\textbf{Gitter-translationvektoren}\\
+Mit Hilfe des Vektors 
+\begin{equation}
+	\label{eq:II.2.14}
+	\Vec{t} = t_1 \Vec{a}_{1} + t_2 \Vec{a}_{2} + t_3 \Vec{a}_{3}
+\end{equation}
+mit den primitiven Translationsvektoren $\Vec{a}_{i}$ und $t_{i} \in \mathbb{N}$ beschreibt man eine Translation, welche bei einem Gitterpunkt startet und bei einem anderen endet.\\
+\textbf{Primitive Gittervektoren}\\
+\textbf{Jeder} Gitterpunkt kann durch eine ganzzahlige Kombination der primitven Gittervektoren erreicht werden
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl15_abbildung_4}
+    \label{fig:vl15_abbildung_4}
+\end{figure}
+
+Eine primitive elementare Zelle ist definiert durch die primitiven Gittervektoren.
+
+\paragraph{Grundlegende Gitter-Typen}
+Ein Kristallgitter kann auf sich selbst abgebildet werden über Gittertransformation $\Vec{t}$ oder Symmetrieoperationen wie Rotatin um Achsen oder Spiegelung an Ebenen.\\
+Eine Gitterpunktgruppe bezeichnet eine Ansammlung von Symmetrieoperationen, welche um einen Gitterpunkt angewenden, das Gitter wieder auf sich selbst zurück führen. Dazu gehören
+\begin{itemize}
+	\item Rotation 
+		$$
+		C = \frac{2\pi}{n}
+		$$ 
+		mit den Rotationsachsen $n = 1,2,3,4,5,6$
+	\item Spiegelung
+	\item Inversion.
+\end{itemize}
+
+In drei Dimensionen gibt es 14 verschiedene Gitterarten aufgeteilt in 7 verschiedene Arten an Zellen, welche sich aus den Symmetrien der Punktgruppe ergeben.
+
+\subsubsection{Punkte, Richtungen und Ebenen in Kristallen}
+Ein \textbf{Punkt} entspricht einem Koeffizient im Translationsgitter.
+Eine \textbf{Richtung} entspricht der kleinsten ganzzahligen Summe an Gittervektoren.
+Eine \textbf{Kristallebene} wird definiert durch die Miller-indexe $(h,k,l)$ definiert, welche sich wie folgt finden lassen:
+\begin{enumerate}
+	\item Finde die Schnittpunkte mit den Achsen angegeben in vielfachen der Gitterkonstanten $a_1, a_2, a_3$ 
+		$$
+		3a_1, \quad 2a_2, \quad 2a_3
+		$$ 
+	\item 
+		\begin{enumerate}
+			\item Nehme den Kehrwert
+				$$
+				\frac{1}{3}, \quad \frac{1}{2}, \quad \frac{1}{2}
+				$$ 
+			\item Multipliziere mit dem kleinst möglichen Faktor welcher die Kehrwerte in ganze Zahlen wieder umwandelt
+				$$
+				(2,3,3)
+				$$ 
+		\end{enumerate}
+\end{enumerate}
