@@ -54,7 +54,7 @@
 		\centering
 		\incfig{vl07_abbildung_2}
 		\label{fig:vl07_abbildung_2}
-		\caption{Die elektronische Energie $W^{\text{el}} (r) $ wirkt als Potential für die Schwingung des Moleküls um den Gleichgewichtsabstand $r_{\mathrm{e}}$.}
+		\caption{Die elektronische Energie $W^{\text{el}} (r) $ wirkt als Potential für die Schwingung des Moleküls um den Gleichgewichtsabstand $W(r)=P(r)$.}
 	\end{figure}
 	Die genäherte Schrödingergleichung lautet dann
 	\begin{equation}
@@ -64,7 +64,7 @@
 	mit den Relativkoordinaten $\Vec{r} = \Vec{r}_{\mathrm{AB}} = \Vec{r}_{\mathrm{B}} - \Vec{r}_{\mathrm{A}}$, $ r = \left| \Vec{r}_{\mathrm{A}} - \Vec{r}_{\mathrm{B}} \right| $. 
 	Die Transformation auf Schwerpunkt- und Relativkoordinaten ergibt 
 	$$
-	\Vec{r}_{\mathrm{S}} = \frac{m_{\mathrm{A}} \Vec{r}_{\mathrm{A}} - m_{\mathrm{B}} \Vec{r}_{\mathrm{B}}}{m_{\mathrm{A}} + m_{\mathrm{B}}}
+	\Vec{r}_{\mathrm{S}} = \frac{m_{\mathrm{A}} \Vec{r}_{\mathrm{A}} + m_{\mathrm{B}} \Vec{r}_{\mathrm{B}}}{m_{\mathrm{A}} + m_{\mathrm{B}}}
 	$$ 
 	mit der reduzierten Masse
 	$$
@@ -86,7 +86,7 @@
 		\end{equation}
 	\end{important}
 	
-	Zur Berechnung der Eigenzustände setzen wir $W^{\text{trans}} =0$. Die Wellenfunktion lautet dann
+	Im Weiteren setzen wir $W^{\text{trans}} =0$. Die Wellenfunktion lautet dann
 	\begin{equation}
 		\label{eq:4.8}\nonumber
 		\psi = \psi^{\text{el}} (\Vec{r}, \Vec{r}_{i}) \psi^{\mathrm{AB}} (\Vec{r}_{\mathrm{A}}, \Vec{r}_{\mathrm{B}}).
@@ -169,6 +169,8 @@
 		\end{equation*}
 	\end{definition}
 	mit den Quantenzahlen $J$ und $ \nu$ und $[F]=[G]=[T_\mathrm e] = \mathrm{cm}^{-1}$.\\
+
+	Vor einer detaillierten Diskussion der einzelnen Energieterme werden zur Übersicht die einzelnen Energieniveaus und Übergänge mit Hilfe von schematischen Energieniveaus kurz vorgestellt.
 
 	\begin{minipage}{8.5cm}
 		\begin{tikzpicture}
@@ -281,7 +283,7 @@
 			\draw[thick] (-2.25,-0.5) -- (-2.25,0.5);
 			\draw[thick] (-3.00,-0.5) -- (-3.00,0.5);
 		\end{tikzpicture}
-		\captionof{figure}{Schematische Darstellung von Spektrallinien des Rotationsspektrums. Sichtbar sind äquidistante, gleich stark ausgeprägte Linien.}
+		\captionof{figure}{Schematische Darstellung von Spektrallinien des Rotationsspektrums nach dem Modell des starren Körpers. Sichtbar sind äquidistante, gleich stark ausgeprägte Linien.}
 	\end{minipage}
 
 	\begin{minipage}{0.45\linewidth}
@@ -326,27 +328,36 @@
 		\centering
 		\begin{tikzpicture}
 			\draw[black, fill = black!4] (-4,-0.75) rectangle (4,0.75);
-			\draw[line width=3pt] (-1,-0.5) --(-1,0.5);
-			\draw[ultra thick] (-0.75,-0.5) -- (-0.75,0.5);
-			\draw[thick] (-0.50,-0.5) -- (-0.50,0.5);
-			\draw[thick] (-0.25,-0.5) -- (-0.25,0.5);
-			\draw[thick] ( 0.00,-0.5) -- ( 0.00,0.5);
-			\draw[ultra thick] (-1.25,-0.5) -- (-1.25,0.5);
-			\draw[thick] (-1.50,-0.5) -- (-1.50,0.5);
-			\draw[thick] (-1.75,-0.5) -- (-1.75,0.5);
-			\draw[thick] (-2.00,-0.5) -- (-2,0.5);
+			\begin{scope}[xshift = -0.9cm]
+				\draw (-1,-0.5) --(-1,0.5);
+				\draw[very thick] (-0.75,-0.5) -- (-0.75,0.5);
+				\draw[ultra thick] (-0.50,-0.5) -- (-0.50,0.5);
+				\draw[line width = 2.5pt] (-0.25,-0.5) -- (-0.25,0.5);
+				\draw[ultra thick] ( 0.00,-0.5) -- ( 0.00,0.5);
+				\draw[very thick] ( 0.25,-0.5) -- ( 0.25,0.5);
+				\draw[very thick] (-1.25,-0.5) -- (-1.25,0.5);
+				\draw[ultra thick] (-1.50,-0.5) -- (-1.50,0.5);
+				\draw[line width = 3pt] (-1.75,-0.5) -- (-1.75,0.5);
+				\draw[ultra thick] (-2.00,-0.5) -- (-2,0.5);
+				\draw[very thick] (-2.25,-0.5) -- (-2.25,0.5);
+			\end{scope}
+			
 
-			\draw[line width=3pt] (3,-0.5) --(3,0.5);
-			\draw[ultra thick] (3.25,-0.5) -- (3.25,0.5);
-			\draw[thick] (3.50,-0.5) -- (3.50,0.5);
-			\draw[thick] (3.75,-0.5) -- (3.75,0.5);
-			\draw[ultra thick] (2.75,-0.5) -- (2.75,0.5);
-			\draw[thick] (2.50,-0.5) -- (2.50,0.5);
-			\draw[thick] (2.25,-0.5) -- (2.25,0.5);
-			\draw[thick] (2.00,-0.5) -- (2.00,0.5);
+			\begin{scope}[xshift = 3.6cm]
+				\draw (-1,-0.5) --(-1,0.5);
+				\draw[very thick] (-0.75,-0.5) -- (-0.75,0.5);
+				\draw[ultra thick] (-0.50,-0.5) -- (-0.50,0.5);
+				\draw[line width = 2.5pt] (-0.25,-0.5) -- (-0.25,0.5);
+				\draw[ultra thick] ( 0.00,-0.5) -- ( 0.00,0.5);
+				\draw[very thick] ( 0.25,-0.5) -- ( 0.25,0.5);
+				\draw[very thick] (-1.25,-0.5) -- (-1.25,0.5);
+				\draw[ultra thick] (-1.50,-0.5) -- (-1.50,0.5);
+				\draw[line width = 3pt] (-1.75,-0.5) -- (-1.75,0.5);
+				\draw[ultra thick] (-2.00,-0.5) -- (-2,0.5);
+			\end{scope}
 		\end{tikzpicture}
 		\captionof{figure}{Schematische Darstellung der Spektrallinien des Rotationsschwingungsspektrums. 
-			Sichtbar sind verschiedene Banden, deren Spektrallinien von innen nach außen dünner werden.
+			Sichtbar sind verschiedene Banden, deren Intensitätsverlauf später diskutiert wird.
 		}
 	\end{minipage}
 	\hrule
