@@ -8,7 +8,9 @@
 		\centering
 		\incfig{vl08_abbildung_1}
 		\caption{Schematische Darstellung einer Vorrichtung zur Mikrowellenspektroskopie. 
-			Als Mikrowellensender dienen z.B. Klystron ($\sim\SI{10}{MHz}$ bis einige \SI{100}{MHz}) oder Gunn Dioden (\SI{1,5}{GHz} bis )}
+			Als Mikrowellensender dienen z.B. Klystron ($\sim\SI{10}{MHz}$ bis einige \SI{100}{MHz}) oder Gunn Dioden (\SI{1,5}{GHz} bis \SI{200}{GHz}).
+			Als Detektoren werden Schottky-Dioden verwendet.
+		}
 		\label{fig:vl08_abbildung_1}
 	\end{figure}
 
@@ -82,7 +84,7 @@
 		definiert mit der \textbf{molekülspezifischen Rotationskonstante} $$B=\frac{h}{8\pi^2c\Theta}$$ des starren Rotators ($[B]=\unit{\per\centi\meter}$).
 	\end{definition}
 	Die Drehimpulsauswahlregel schreibt vor 
-	$$\Delta J = \pm1, \qquad M=J,J-1, \ldots, -J+1, -J.$$
+	$$\Delta J = \pm1.$$
 	Daraus folgt
 	\begin{equation}
 		F(J+1)-F(J) = 2B(J+1) = 2B,~4B,~6B, \ldots
@@ -91,12 +93,12 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.5\textwidth]{./figures/VL08_Abbildung_3.tikz}
-		\caption{Schematisches Energieniveauschema und Spektrum eines zweiatomigen Moleküls, welches als starrer Rotator modelliert wird}
+		\caption{Schematisches Energieniveauschema und Spektrum eines zweiatomigen Moleküls, welches als starrer Rotator modelliert wird. Die Linien im Spektrum haben konstante Abstände $2B$.}
 		\label{fig:spektrum_starrer_rotator}
 	\end{figure}
 	Anmerkungen zum Spektrum:
 	\begin{itemize}
-		\item die Entartung ist $ 2J+1$-fach
+		\item die Entartung ist $ 2J+1$-fach wegen der magnetischen Quantenzahl \\${M=J,J-1, \ldots, -J+1, -J}$.
 		\item die Rotation um die Verbindungsachse kann nicht angeregt werden, da $ \Theta$ sehr klein ist. Um diese Rotation anzuregen, wären Energien im Bereich $F(J)\gg1\unit{\electronvolt}$ notwendig, welche das Molekül davor zerstören.
 		\item Beispielwerte der Rotationskonstante $B$ sind in \autoref{tab:vl08_verschiedene_B} eingetragen.			
 	\end{itemize}
@@ -131,8 +133,8 @@
 	Der Verlauf von $N_J/N_0$ ist in \autoref{fig:vl08_NJ-N0_Verlauf} dargestellt.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=8cm]{figures/vl08/N_verhaeltnis.pdf}
-		\caption{Verlauf von $N_J/N_0$ nach Gleichung \eqref{eq:4.21} bei Raumtemperatur $T=\SI{293,15}{\kelvin}$. Für kleine Drehimpulse $J$ dominiert der lineare Term $(2J+1)$, für große dominiert die Exponentialfunktion}
+		\includegraphics[width=10cm]{figures/vl08/N_verhaeltnis.png}
+		\caption{Verlauf von $N_J/N_0$ \cite{Haken_Wolf_2006}. Für kleine Drehimpulse $J$ dominiert der lineare Term $(2J+1)$, für große dominiert die Exponentialfunktion}
 		\label{fig:vl08_NJ-N0_Verlauf}
 	\end{figure}
 
@@ -142,8 +144,8 @@
 		$$
 		\left| \bra{ \psi_{\text{i}}}  \Vec{d} \Vec{E} \ket{ \psi_{\text{f}}}  \right|^2 
 		$$ 
-		hängt von $J$ ab wegen den zugehörigen Wellenfunktionen
-		Das ist im Allgemeinen jedoch nur eine geringfügige Korrektur.
+		hängt von $J$ ab wegen den zugehörigen Wellenfunktionen.
+		Dies führt im Allgemeinen jedoch nur zu geringfügigen Korrekturen.
 
 		\item Aus Messungen von $N_J/N_0$, $J$, und $B$ lässt sich nach Gleichung \eqref{eq:4.21} die Temperatur $T$ einer Probe bestimmen.
 	\end{itemize}
@@ -164,7 +166,9 @@
 		\begin{tikzpicture}
 			\draw[decorate, decoration = coil, very thick, color = gray] (0.0,0.0) -- (2, -0.5);
 			\node[circle, fill=black, minimum width = 0.5cm] at (0,0){};
+			\node at (-0.6,0) {$m_1$};
 			\node[circle, fill=black, minimum width = 0.5cm] at (2,-0.5){};
+			\node at (2.6,-0.6) {$m_2$};
 			\node[gray] at (1.4,-0.6) {$k$};
 			\draw[blue, very thick, ->] (1,-1) -- (1.5,1) node [anchor=south east] {$\vec\omega$};
 			\draw[->, thick] (1.3,0.7) arc (110:360:0.2) node[anchor = west] {~rotiert um $\vec\omega$};
@@ -174,7 +178,7 @@
 	\end{minipage}
 
 	Dieser Effekt ist besonders wichtig, wenn zur Rotation auch noch Schwingungen hinzukommen. 
-	Klassisch liegen Zentrifugalkraft und Federkraft im Gleichgewicht
+	Klassisch sind Zentrifugalkraft und Federkraft im Gleichgewicht
 	\begin{equation}
 		\label{eq:4.22}
 		m_{r}R \omega^2 = k\left( R-R_{e} \right) 
@@ -193,8 +197,7 @@
 	$$
 	R^3 = (R + \Delta R)^3 = R_{e} ^3 \left( 1 + \frac{ 3 \Delta R}{R_{e}}+ \ldots \right).
 	$$  
-	Die Rotationsenergie ist dann $ E_{\text{rot}} = E_{\text{rot}} + E_{\text{spann}}$. 
-	Nach klassischer Betrachtung folgt
+	Mit Berücksichtigung der Spannenergie ergibt sich die Rotationsenergie zu
 	$$
 	E_{\text{rot}} = \frac{L^2}{2m_{r} R_{e}^2} - \frac{1}{2} K\left( R - R_{e} \right) ^2 = \frac{L^2}{2 m_{r} R_{e}^2} - \frac{L^{4}}{2Km_{r}^2 R_{e}^{6}}.
 	$$ 
@@ -209,6 +212,8 @@
 		\label{eq:4.28}
 		F(J) = \frac{ E_{\text{rot}}}{\mathrm{hc}} = B J\left( J+1 \right) - DJ^2 \left( J+1 \right) ^2.	
 	\end{equation}
+	mit
+	$$D=\frac{\hbar^3}{4\pi k\Theta R_\mathrm e^2c}.$$
 
 \paragraph{Bemerkung}
 	Aus Messungen erhält man
@@ -292,7 +297,7 @@
 	Die Übergänge lassen sich also beschreiben mit
 	\begin{equation}
 		\label{eq:4.29}
-		F(J) - F(J+1) = 2B(J+1) - 4D(J+1)^3.
+		F(J+1) - F(J) = 2B(J+1) - 4D(J+1)^3.
 	\end{equation}
 
 \paragraph{\thesubsubsection.3. Isotropie-Effekte}~\\
@@ -302,9 +307,9 @@
 	B \sim  \frac{1}{ \Theta}\quad\text{mit}\quad\Theta = m_{r} R^2.
 	$$ 
 	Wegen der Massenabhängigkeit der Bindungskonstante gibt es eine unterschiedlich starke Linienverschiebung, wenn mehrere Isotope existieren. 
-	Beispielsweise hat das einfache Wasserstoffstoffmolekül (\ce{1H2}) $2B=\SI{121,62}{\per\centi\meter}$, während bei Deuteriummolekülen (\ce{2H2}) $2B=\SI{60,86}{\per\centi\meter}$ ist.
+	Beispielsweise hat das einfache Wasserstoffstoffmolekül \ce{H2} $2B=\SI{121,62}{\per\centi\meter}$, während bei Deuteriummolekülen \ce{D2} $2B=\SI{60,86}{\per\centi\meter}$ ist.
 
-	Ein anderes Beispiel ist Chlorwasserstoff wegen der zwei Chlor-Isotope:
+	Ein anderes Beispiel ist Chlorwasserstoff mit den zwei Chlor-Isotope:
 	$$
 	\begin{aligned}
 		&\ce{H^{35}Cl} \quad \left( \SI{75}{\percent} \right) \\
