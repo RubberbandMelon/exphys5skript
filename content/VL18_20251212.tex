@@ -1,0 +1,123 @@
+\clearpage
+\setcounter{section}{3}
+\setcounter{subsection}{3}
+
+\subsection{Methoden der Strukturanalyse}
+Zur Erinnerung: die Braggbedingung lautet
+$$
+2d_{hkl} \sin\left( \frac{\vartheta}{2} \right) = m \lambda
+$$ 
+woraus $\lambda \le 2 d_{hkl}$ folgt. Andererseits rücken die Reflexe für abnehmendes $\lambda$ immer dichter zusammen. Es ergibt sich damit der optimale Bereich für die Wellenlänge von \SI{0,01}{\nano \meter} bis \SI{0,1}{\nano \meter}. 
+
+\subsubsection{Röntgenstrukturuntersuchung}
+\paragraph{Laue-Verfahren} Beim Laue-Verfahren besteht der Primärstrahl aus einem Kontinuum an Frequenzen im Röntgenbereich, da die Röntgenstrahlung durch Bremsung von Elektronen erzeugt wird. \textcolor{red}{(der Satz ist bisschen kacke glaub ich, sorry)} Es folgt
+$$
+\big| \Vec{k}_{\text{min}} \big| \le \big| \Vec{k} \big| \le \big| \Vec{k}_{\text{max}} \big| 
+$$ 
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl18_abbildung_1}
+    \label{fig:vl18_abbildung_1}
+\end{figure}
+Jede Netzeben sucht sich die passende Wellenlänge heraus. Dadurch gibt es viele Reflexe mit praktisch nicht zuweisbaren Wellenlängen. Man erhält jedoch Information über die Symmetrie des Kristalls, womit sich seine Struktur durch Reorientierung und erneuter ausleuchtung ermitteln lässt.
+
+\paragraph{Das Bragg'sche Drehkristallverfahren} Statt polychromatischem benutzt man hier monochromatisches Röntgenlicht in welchem man die Probe dreht.
+\begin{figure}[H]
+    \centering
+    \incfig{vl18_abbildung_2}
+    \label{fig:vl18_abbildung_2}
+\end{figure}
+Bei diesem Verfahren wird zuerst nach dem Laue-Verfahren der Kristall so orientiert, dass die kristallographische Achse mit der Drehachse zusammenfällt.Das reziproke Gitter wird durch die feste Ewaldkugel gedreht, womit die Gitterpunkte nacheinander auf der Kugel liegen und Reflexe ergeben. Die für diese Methode notwendigen Geräte sind der Röntgendiffraktometer und ein Monochromator für Röntgenstrahlung.
+
+\paragraph{Debye-Scherer-Methode}
+\begin{figure}[H]
+    \centering
+    \incfig{vl18_abbildung_3}
+    \label{fig:vl18_abbildung_3}
+\end{figure}
+Alle solche Kristalle geben Reflexe, deren $(hkl)$-Ebene zufällig so liegen, dass das einfallende Röntgenlicht im Winkel  $\vartheta/2$ der Bragg-Bedingung auftritt.
+
+\subsubsection{Strukturanalyse mit Teilchenstrahlen}
+
+\paragraph{Elektronen} werden bei Drehkristall und Debye-Scherrer-Techniken eingesetzt. Gegenüber Röntgestrahlen zeigen Elektronen eine ca. $\num{10^4}$-fach stärkere Wechselwirkung mit den Gitterbausteinen als Röntgenlicht auf. Methoden, bei welchen Elektronen eingesetzt werden sind somit sehr Oberflächensensitiv und es müssen sehr dünne Schichten verwendet werden. 
+
+\paragraph{Atomstrahlen} werden ähnlich wie Elektronen eingesetzt, wobei sie noch oberflächensensitiver als Elektronen sind.
+
+\paragraph{Neutronen} wechselwirken mit den Kernen, sodass man ihr magnetisches Moment und das der Kerne beachten muss.
+
+\section{Kristallwachstum}
+Beim Kristallwachstum unterscheidet man zwischen zwei Arten: der Zucht von 3D wachsenden Einkristallen und der Epitaxie, bei welcher es sich um das 2D Wachstum von dünnen Schichten und 0D Wachstum, wie bspw. bei Halbleiter-Quantenpunkten, handelt.
+
+\subsection{Züchtung von Einkristallen}
+\begin{figure}[H]
+    \centering
+    \incfig{vl18-abbildung-4}
+    \label{fig:vl18-abbildung-4}
+\end{figure}
+Bei der Temperatur $T_1$ wird das polykristalline Ausgangsmaterial verdampft. Bei $T_2$ scheiden sich kristalline Plättchen ab.
+
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl18-abbildung-5}
+    \label{fig:vl18-abbildung-5}
+\end{figure}
+
+Das einströmende gasförmige Transportmittel $B$ geht bei $T_1$ eine chemische Bindung mit dem polykristallinen $A$ ein, welche sich dann bei $T_2$ löst, sodass sich $A$ wieder in Form monokristalliner Plättchen abscheidet und $B$ abströmen kann. \\
+Beispiel: kristallines \ce{CdS} mit Jod \ce{J2} als Transportgas
+$$
+\begin{aligned}
+	T_1:\quad & \ce{CdS \text{ (polykristallin)} + J2 -> CdJ2 + \frac{1}{2} S2}\\
+	T_2:\quad & \ce{CdJ2 + \frac{1}{2} S2 -> CdS \text{ (einkristallin)} + J2}
+\end{aligned}
+$$ 
+
+\subsubsection{Züchtung aus der Schmelze}
+\paragraph{Bridgeman oder Gradiententechnik}
+Bei diesem Verfahren befindet sich das Material in einem Tiegel, welcher sich selbst wiederum in einem Temperaturgradienten befindet. 
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl18-abbildung-6}
+    \label{fig:vl18-abbildung-6}
+\end{figure}
+Der Tiegel wird mit einer Geschwindigkeit von \SI{1}{\milli \meter \per \hour} bis \SI{5}{\cm \per \hour} gezogen bei einem Temperaturprofil von \SI{100}{ \celsius \per \centi \meter} und einer Ausgangstemperatur von $T_0 \ge \SI{75}{\celsius}$.
+
+\paragraph{Ziehverfahren} Beim Ziehverfahren wird ein kleiner Einkristall in ein Schmelze getunkt, sodass um ihn herum weiterer Kristall wächst. Der wachsende Kristall wird dabei ständig rotiert und bei geringer Ziehgeschwindigkeit von \SI{10}{\milli \meter \per \hour} bis \SI{100}{\milli \meter \per \hour} raus gezogen.
+\begin{figure}[H]
+    \centering
+    \incfig{vl18-abbildung-7}
+    \label{fig:vl18-abbildung-7}
+\end{figure}
+
+Mit diesem Verfahren können Einkristalle mit einem Durchmesser zwischen \SI{25}{\milli \meter} bis \SI{100}{\milli \meter} und einer Länge zwischen \SI{200}{\milli \meter} und \SI{600}{\milli \meter} gebildet werden. Bei Silizium sind Durchmesser von \SI{300}{\milli \meter} möglich, was große industrielle Bedeutung hat, da somit aus den Kristallen größere Wafer zur Chipproduktion geschnitten werden können.
+
+
+\subsection{Epitaxie}
+Bei der Epitaxie handelt es sich um die Herstellung hochreiner, dünner Schichten unterschiedlicher Materialien aufeinander. Bei diesen Verfahren besteht Atomgenaue Kontrolle und Steuerung der Zucht unter zweidimensionalen Wachstum.\\
+Beim Ausgangspunkt handelt es sich um ein als Substrat wirkenden, konventionell hergestellten, in dünne Plättchen geschnittenen Einkristall. Die Spaltflächen haben die häufig die Indizes $(100)$,  $(001)$,  $(110)$ oder $(111)$.
+
+\paragraph{MOVPE} Metallorganische Gasphasenepitaxie (\textbf{M}etal-\textbf{o}rganic-\textbf{V}apor-\textbf{p}hase-\textbf{e}pitaxy)\\
+Bei diesem Verfahren werden gasförmige Verbindungen, die die Ausgangselemente enthalten, genutzt. Substrat wird geheizt und geht eine chemische Reaktion ein. 
+ $$
+\ce{TMGa + AsH3 -> GaAs + 3CH4}
+$$ 
+mit dem Trimethalgallium \ce{TMGa} (\ce{(CH3)3Ga}) und Arsin \ce{AsH3} (giftig!)
+\begin{itemize}
+	\item Typische Substrattemp. \SI{450}{\celsius} bis \SI{1000}{\celsius}
+	\item Drücke: \SI{e-3}{\bar} bis Atmosphärendruck
+	\item Hintergrundgase: \ce{H2}
+	\item Wachstumsraten: \SI{0,1}{\micro\meter \per \hour} bis einige \unit{\micro\meter \per \hour}
+\end{itemize}
+
+\paragraph{Molekularstrahlepitaxie MBE} (\textbf{M}olecular\textbf{B}eam\textbf{E}pitaxie)
+\begin{itemize}
+	\item Elementare Quellen
+	\item Gerichtete Atome- oder Molekülstrahlen auf das Substrat
+	\item Drücke in den Strahlen \textcolor{red}{?}
+	\item Ultrahochdruckvakuum \textcolor{red}{?}
+	\item Wachtumsraten: \SI{0,1}{\micro \meter \per \hour} bis \SI{0,5}{\micro \meter \per \hour}
+	\item In-situ Wachstumskontrolle möglich\\
+	RHEED (\textbf{R}eflection \textbf{High} \textbf{E}nergy \textbf{E}lectron \textbf{D}eflection)
+\end{itemize}
