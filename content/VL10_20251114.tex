@@ -170,17 +170,73 @@ Generell sind die Frequenzen von Streckschwingungen größer als diejenigen von 
 		\item im inhomogenen Feld läuft $ \varphi_{s} $ in das starke Feld, da es energetisch günstiger liegt. $ \varphi_{a} $ läuft in das schwache Feld.
 	\end{enumerate}
 
-	Es ist $ \Delta \ll \mathrm{k}_{\mathrm{B}} T$. Dadurch wird Trennung von $\varphi_a$ und $\varphi_s$ möglich.
+	Es ist $ \Delta \ll \mathrm{k}_{\mathrm{B}} T$. Dadurch hat man eine Gleichbesetzung von $\varphi_\mathrm a$ und $\varphi_\mathrm s$.
 
-	\autoref{fig:vl10_NH3_maser} zeigt den Aufbau eines Mikrowellen-Masers. 
-	Der Stark-Effekt ermöglicht die Aufspaltung des \ce{NH3}-Strahles aus dem Ofen, sodass nur die antisymmetrischen Teilchen $\varphi_\mathrm a$ in den Mikrowellen-Resonator kommen.
-	Dort fallen sie in den symmetrischen Zustand $\varphi_\mathrm s$, der energetisch niedrigier liegt und emittieren dabei Mikrowellen-Strahlung.
+	\autoref{fig:vl10_NH3_maser} zeigt den Aufbau eines Mikrowellen-Masers.
+	Die Trennung der $\varphi_\mathrm a$- und $\varphi_\mathrm s$-Teilchen ist für die Inversion notwendig.
+	Im Maser wird dies durch ein Fokussierfeld realisiert, welches den \ce{NH3}-Strahl aufspaltet.
+	So gelangen nur die antisymmetrischen Teilchen $\varphi_\mathrm a$ in den Mikrowellen-Resonator. 
+	Dort fallen sie in den symmetrischen Zustand $\varphi_\mathrm s$, der energetisch niedrigier liegt und emittieren dabei Mikrowellen-Strahlung (vgl. \autoref{fig:vl10_emission}).
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.8\linewidth]{figures/vl10/NH3_maser.png}
-		\caption{Schematischer Aufbau eines \ce{NH3}-Masers.}
+		\begin{tikzpicture}
+
+			\begin{scope}[xshift=0.2cm]
+				\draw[very thick] (8,-2) -- (10.5,-2);
+				\draw[very thick] (8,2) -- (9.0,2);
+				\draw[very thick] (9.5,2) -- (10.5,2);
+				\draw[very thick] (10.5,-2) -- (10.5,2);
+				\draw[very thick] (8,-2) -- (8,-0.2);
+				\draw[very thick] (8,0.2) -- (8,2);
+				\node[align = center] at (9.25,-1.5) {MW-\\Resonator};
+				\node[red] at (8.2,0){$\varphi_\mathrm a$};
+
+				\draw[thick, ->, decorate,decoration={coil,aspect=0}, red] (9.15, 1.75) -- (9.15,2.5);
+				\draw[thick, ->, decorate,decoration={coil,aspect=0}, red] (9.35, 1.75) -- (9.35,2.5) node [anchor = north west] {~MW};
+			\end{scope}	
+
+			\filldraw[fill = black!10] (-0.2,-0.5) rectangle (1.8,0.5);
+			\node at (0.8,0) {\ce{NH3}-Ofen};
+			\draw[dashed] (2, 0) -- (8,0);
+			\filldraw[fill = green!10] (3.5,  0.45) rectangle (5.5, 0.7);
+			\filldraw[fill = green!10] (3.5, -0.45) rectangle (5.5, -0.7);
+			\draw[green!50!black, ->, thick] (3.8, -0.4) -- (3.8,0.4);
+			\draw[green!50!black, ->, thick] (5.2, -0.4) -- (5.2,0.4);
+			\draw[green!50!black, ->, thick] (4.5, -0.4) -- (4.5,0.4);
+			\node[green!50!black, align = center] at (4.5,-1.3) {$\vec E$-Feld \\(Quadrupol)};
+
+			\draw[->, red, thick] (1.8,0) .. controls (+3.5,+0.3) and (5.5,+0.3) .. (8,0.05);
+			\draw[->, red, thick] (1.8,0) .. controls (+3.5,-0.3) and (5.5,-0.3) .. (8,-0.05);
+			\draw[->, blue, thick] (1.8,0) .. controls (+3.5,+0.3) and (7,+0.3) .. (8,0.5) node[above] {$\varphi_\mathrm s$};
+			\draw[->, blue, thick] (1.8,0) .. controls (+3.5,-0.3) and (7,-0.3) .. (8,-0.5);
+
+		\end{tikzpicture}
+		\caption{Schematischer Aufbau eines \ce{NH3}-Masers. Das $\vec E$-Feld teilt wegen des Stark-Effekts den Strahl auf. Nur asymmetrische Teilchen $\varphi_\mathrm a$ gelangen in den Resonator und erzeugen dort durch den Übergäng zu $\varphi_\mathrm s$ Mikrowellen.}
 		\label{fig:vl10_NH3_maser}
+	\end{figure}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+			\draw[->, very thick] (0,0)--(0,3) node[anchor= south east] {Energie};
+			\draw[thick] (4.25, 0.5) -- (1,0.5) node[anchor = east] {$\varphi_\mathrm s$};
+			\draw[thick] (4.25, 2.5) -- (1, 2.5) node[anchor = east] {$\varphi_\mathrm a$};
+
+			\filldraw[red] (3.75, 2.5) circle (1.2mm);
+			\filldraw[red] (3.00, 2.5) circle (1.2mm);
+			\filldraw[red] (2.25, 2.5) circle (1.2mm);
+			\filldraw[red] (1.50, 2.5) circle (1.2mm);
+
+			\draw[->, very thick, red] (3.75, 2.3) -- (3.75, 0.6);
+			\draw[->, very thick, red] (3.00, 2.3) -- (3.00, 0.6);
+			\draw[->, very thick, red] (2.25, 2.3) -- (2.25, 0.6);
+			\draw[->, very thick, red] (1.50, 2.3) -- (1.50, 0.6);
+
+			\draw[->, decorate,decoration={coil,aspect=0}, red] (3.9, 1.3) -- (5.7,1.3);
+			\draw[->, decorate,decoration={coil,aspect=0}, red] (3.9, 1.7) -- (5.7,1.7) node[above,midway] {MW};
+		\end{tikzpicture}
+		\caption{Im Mikrowellen-Resonator kommen nur antisymmetrische Teilchen $\varphi_\mathrm a$ an. Dort fallen sie in den symmetrischen Zustand $\varphi_\mathrm s$ und emittieren dabei Mikrowellen-Strahlung. Dieser Prozess wird Inversion genannt.}
+		\label{fig:vl10_emission}
 	\end{figure}
 
 	Der \ce{NH3}-Maser ist somit ein Zwei-Niveau-Maser. 
