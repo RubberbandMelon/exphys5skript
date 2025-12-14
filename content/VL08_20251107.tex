@@ -1,0 +1,328 @@
+\setcounter{section}{4}
+\setcounter{subsection}{3}
+\setcounter{equation}{14}
+\subsection{Rotationsspektren}
+\subsubsection{Mikrowellenspektroskopie}
+	Die Mikrowellenspektroskopie wird fast nur in Absorption eingesetzt, weil die Übergangswahrscheinlichkeit für eine spontane Emission sehr klein ist (Einsteinkoeffizient $A_{21} \sim \omega^3$).
+	\autoref{fig:vl08_abbildung_1} zeigt den schematischen Aufbau einer Messvorrichtung.
+	\begin{figure}[H]
+		\centering
+		\incfig{vl08_abbildung_1}
+		\caption{Schematische Darstellung einer Vorrichtung zur Mikrowellenspektroskopie. 
+			Als Mikrowellensender dienen z.B. Klystron ($\sim\SI{10}{MHz}$ bis einige \SI{100}{MHz}) oder Gunn Dioden (\SI{1,5}{GHz} bis \SI{200}{GHz}).
+			Als Detektoren werden Schottky-Dioden verwendet.
+		}
+		\label{fig:vl08_abbildung_1}
+	\end{figure}
+
+	\begin{verbal}
+		In Demtröders \textit{Molekülphysik} werden die Spektroskopiemethoden und die dabei verwendeten Bauteile genauer erklärt.
+	\end{verbal}
+
+	Reine Rotationsspektren sind nur für polare Moleküle mit \textbf{permanenten elektrischen Dipolmomenten} beobachtbar.
+	Ein Molekül hat dann für einen ortsfesten Beobachter eine veränderliches Dipolmoment: 
+	Klassisch betrachtet entspricht die Rotationsfrequenz $\omega_\mathrm{rot}$ des Moleküls der abgestrahlten Lichtfrequenz.
+	Quantenmechanisch gilt Fermi's goldene Regel
+	$$
+	\left| \bra{ \psi_{\text{final }}} \vec{d} \vec{E} \ket{ \psi_{\text{initial }}} \right|^2 \sim f    
+	$$
+	mit den Kugelflächenfunktionen $ \psi_{\text{final}}$ und $ \psi_{\text{initial}}$, dem Dipolmoment $ \vec{d}$, dem elektrischen Feld $\vec{E}$ und
+	der Übergangswahrscheinlichkeit $f$. Beispiele für solche polaren Moleküle sind \ce{HCl} und \ce{HBr}. Gegenbeispiele sind
+	\ce{H2}, \ce{O2} und \ce{N2}, welche allerdings Raman-aktiv sind.
+
+\subsubsection{Zweiatomige Moleküle}
+	Zunächst soll die Mikrowellenspektroskopie einfacher, zweiatomiger Moleküle betrachtet werden. 
+\paragraph{\thesubsubsection.1. Starrer Rotator (Hantel-Modell)}~\\
+
+	Das Zweiatomige Molekül wird zunächst als starrer Rotator gemäß \autoref{fig:vl08_starrer_koerper} betrachtet.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{./figures/VL08_Abbildung_2.tikz}
+		\caption{Schema eines starren Rotators mit Massen $m_1$, $m_2$ an den Enden. Der Körper rotiert mit Kreisfrequenz $\omega$ um seinen Schwerpunkt (SP).}
+		\label{fig:vl08_starrer_koerper}
+	\end{figure}
+	Aus \autoref{fig:vl08_starrer_koerper} werden die Zusammenhänge
+	$$
+	\begin{aligned}
+		m_1 R_1 = m_2 R_2,\quad
+		R = R_1 + R_2\quad\text{und}\quad
+		\Theta = m_1 R_1^2 + m_2 R_2^2 = m_{r}R^2
+	\end{aligned}
+	$$ 
+	klar. Es wird die reduzierten Masse
+	$$
+	m_{r} = \frac{m_1m_2}{m_1 + m_2}.
+	$$ 
+	verwendet. Die Rotationsenergie beträgt
+	\begin{equation}
+		\label{eq:4.15}
+		E_{\text{rot}} = \frac{1}{2} \Theta \omega^2 = \frac{L^2}{2 \Theta}.
+	\end{equation} 
+
+	Das System hat den klassischen Drehimpuls
+	\begin{equation}
+		\label{eq:4.16}
+		\left| \Vec{L} \right| = \Theta \omega,
+	\end{equation}
+
+	bzw. den quantenmechanischen Drehiumpuls
+	\begin{equation}
+		\label{eq:4.17}
+		\left| \Vec{L} \right| = \sqrt{ J(J+1)} \hbar 
+	\end{equation}
+	Daraus folgt die quantenmechanische Rotationsenergie
+	\begin{equation}
+		\label{eq:4.18}
+		E_{\text{rot}} = \frac{ \hbar ^2}{2 \Theta} J(J+1) \qquad\text{mit } J \in \{0,1,2,3,\ldots\}.
+	\end{equation}
+
+	\begin{definition}{}
+		Um in der Betrachtung mit Wellenzahlen zu bleiben, wird
+		\begin{equation}
+			F(J)=\frac{E_\mathrm{rot}}{hc} = BJ(J+1)
+			\label{eq:4.19}
+		\end{equation}
+		definiert mit der \textbf{molekülspezifischen Rotationskonstante} $$B=\frac{h}{8\pi^2c\Theta}$$ des starren Rotators ($[B]=\unit{\per\centi\meter}$).
+	\end{definition}
+	Die Drehimpulsauswahlregel schreibt vor 
+	$$\Delta J = \pm1.$$
+	Daraus folgt
+	\begin{equation}
+		F(J+1)-F(J) = 2B(J+1) = 2B,~4B,~6B, \ldots
+	\end{equation}
+	\autoref{fig:spektrum_starrer_rotator} zeigt das entsprechende Energieniveauschema und Spektrum.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{./figures/VL08_Abbildung_3.tikz}
+		\caption{Schematisches Energieniveauschema und Spektrum eines zweiatomigen Moleküls, welches als starrer Rotator modelliert wird. Die Linien im Spektrum haben konstante Abstände $2B$.}
+		\label{fig:spektrum_starrer_rotator}
+	\end{figure}
+	Anmerkungen zum Spektrum:
+	\begin{itemize}
+		\item die Entartung ist $ 2J+1$-fach wegen der magnetischen Quantenzahl \\${M=J,J-1, \ldots, -J+1, -J}$.
+		\item die Rotation um die Verbindungsachse kann nicht angeregt werden, da $ \Theta$ sehr klein ist. Um diese Rotation anzuregen, wären Energien im Bereich $F(J)\gg1\unit{\electronvolt}$ notwendig, welche das Molekül davor zerstören.
+		\item Beispielwerte der Rotationskonstante $B$ sind in \autoref{tab:vl08_verschiedene_B} eingetragen.			
+	\end{itemize}
+	\begin{table}[H]
+		\centering
+		\caption{Molekülspezifische Rotationskonstanten $B$ verschiedener Stoffe.}
+		\label{tab:vl08_verschiedene_B}
+		\begin{tabular}{|l|c|}
+			\hline
+			Stoff & $2B$ in $\unit{\centi\meter ^{-1}}$ \\
+			\hline
+			\ce{HCl} & \num{20,79}\\
+			\ce{CO} & \num{3,84}\\
+			\ce{HBr}& \num{14,9}\\
+			\hline
+		\end{tabular}
+	\end{table}
+
+	Die Intensitäten der Rotationslinien ergeben sich bei konstantem Übergangs\-matrix\-element aus
+	\begin{itemize}
+		\item dem Entartungsgrad der Terme $F_{J}$: $g_{J}= 2J+1$ 
+		\item der Auswahlregel $ \Delta J = \pm 1$  
+		\item der thermische Besetzung der Rotationsniveaus. Diese wird von der Boltzmannverteilung beschrieben. Die thermische Energie bei Raumtemperatur entspricht ca. $\frac{1}{40}\unit{\electronvolt} \simeq \SI{200}{\centi \meter ^{-1}}\gg B$. Es sind bei Raumtemperatur also viele Niveaus besetzt. 
+	\end{itemize}
+	Aus der Boltzmanverteilung folgt
+	\begin{important}
+		\begin{equation}
+			\frac{N_J}{N_0} = \frac{g_j}{g_0}\mathrm e^{-\frac{E_J-E_0}{k_\mathrm BT}} = (2J+1)\mathrm e^{-\frac{BhcJ(J+1)}{k_\mathrm BT}}.
+			\label{eq:4.21}
+		\end{equation}
+	\end{important}
+	Der Verlauf von $N_J/N_0$ ist in \autoref{fig:vl08_NJ-N0_Verlauf} dargestellt.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=10cm]{figures/vl08/N_verhaeltnis.png}
+		\caption{Verlauf von $N_J/N_0$ \cite{Haken_Wolf_2006}. Für kleine Drehimpulse $J$ dominiert der lineare Term $(2J+1)$, für große dominiert die Exponentialfunktion}
+		\label{fig:vl08_NJ-N0_Verlauf}
+	\end{figure}
+
+	\paragraph{Bemerkungen}
+	\begin{itemize}
+		\item Auch das Übergangsmatrixelement
+		$$
+		\left| \bra{ \psi_{\text{i}}}  \Vec{d} \Vec{E} \ket{ \psi_{\text{f}}}  \right|^2 
+		$$ 
+		hängt von $J$ ab wegen den zugehörigen Wellenfunktionen.
+		Dies führt im Allgemeinen jedoch nur zu geringfügigen Korrekturen.
+
+		\item Aus Messungen von $N_J/N_0$, $J$, und $B$ lässt sich nach Gleichung \eqref{eq:4.21} die Temperatur $T$ einer Probe bestimmen.
+	\end{itemize}
+
+\paragraph{\thesubsubsection.2. Nichtstarrer Rotator}~\\
+
+	Aus Beobachtungen ergibt sich, dass für große $J$ die Distanz der Linien im Rotationsspektrum enger wird. Die Ursache dafür ist der wachsende Kernabstand für große $J$ aufgrund der Zentrifugaldehnung.\\
+
+	\begin{minipage}{0.35\linewidth}
+		Der nichtstarre Rotator wird mit einer Feder zwischen den zwei rotierenden Massen $m_1$ und $m_2$ modelliert, wie in \autoref{fig:vl08_nichtstarrer_rotator} dargestellt. Das System hat die Rotationsenergie
+		$$
+		E_{\text{rot}} = \frac{L^2}{2 \theta}.
+		$$ 
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.6\linewidth}
+		\centering
+		\begin{tikzpicture}
+			\draw[decorate, decoration = coil, very thick, color = gray] (0.0,0.0) -- (2, -0.5);
+			\node[circle, fill=black, minimum width = 0.5cm] at (0,0){};
+			\node at (-0.6,0) {$m_1$};
+			\node[circle, fill=black, minimum width = 0.5cm] at (2,-0.5){};
+			\node at (2.6,-0.6) {$m_2$};
+			\node[gray] at (1.4,-0.6) {$k$};
+			\draw[blue, very thick, ->] (1,-1) -- (1.5,1) node [anchor=south east] {$\vec\omega$};
+			\draw[->, thick] (1.3,0.7) arc (110:360:0.2) node[anchor = west] {~rotiert um $\vec\omega$};
+		\end{tikzpicture}
+		\captionof{figure}{Eine Feder mit Federkonstante $k$ ist zwichen die Massen $m_1$ und $m_2$ gespannt. Die Massen rotieren um $\omega$, welches senkrecht zur Feder steht.}
+		\label{fig:vl08_nichtstarrer_rotator}
+	\end{minipage}
+
+	Dieser Effekt ist besonders wichtig, wenn zur Rotation auch noch Schwingungen hinzukommen. 
+	Klassisch sind Zentrifugalkraft und Federkraft im Gleichgewicht
+	\begin{equation}
+		\label{eq:4.22}
+		m_{r}R \omega^2 = k\left( R-R_{e} \right) 
+	\end{equation}
+	mit dem Gleichgewichtsabstand $R_e$. Es ist
+	\begin{equation}
+		\label{eq:4.23}
+		\Delta R = R - R_{e} = \frac{m_{r} R \omega^2}{k} = \frac{m_{r}^2 R^{4} \omega^2}{K m_{r} R^3} = \frac{\left( \Theta \omega \right) ^2}{k m_{r} R^3} 
+	\end{equation}
+	womit
+	\begin{equation}
+		\label{eq:4.24}
+		(R - R_{e} ) = \frac{L^2}{k m_{r} R^3} \simeq \frac{L^2}{km_{r} R_\mathrm{e}^3}		
+	\end{equation}
+	folgt, da
+	$$
+	R^3 = (R + \Delta R)^3 = R_{e} ^3 \left( 1 + \frac{ 3 \Delta R}{R_{e}}+ \ldots \right).
+	$$  
+	Mit Berücksichtigung der Spannenergie ergibt sich die Rotationsenergie zu
+	$$
+	E_{\text{rot}} = \frac{L^2}{2m_{r} R_{e}^2} - \frac{1}{2} K\left( R - R_{e} \right) ^2 = \frac{L^2}{2 m_{r} R_{e}^2} - \frac{L^{4}}{2Km_{r}^2 R_{e}^{6}}.
+	$$ 
+	Die quantenmechanischer Betrachtung mit $L^2 \to J(J+1) \hbar ^2$ ergibt
+	\begin{equation}
+		\label{eq:4.27}
+		E_{\text{rot}} = \frac{\hbar ^2}{2 m_{r}R_{e}^2} J\left( J+1 \right) - \frac{\hbar ^{4}}{2 k m_{r}^2 R_{e}^{6}} J^2\left( J+1 \right) ^2.
+	\end{equation}
+
+	Die Rotationsterme werden häufig in \unit{\centi\meter ^{-1}} beschrieben mit
+	\begin{equation}
+		\label{eq:4.28}
+		F(J) = \frac{ E_{\text{rot}}}{\mathrm{hc}} = B J\left( J+1 \right) - DJ^2 \left( J+1 \right) ^2.	
+	\end{equation}
+	mit
+	$$D=\frac{\hbar^3}{4\pi k\Theta R_\mathrm e^2c}.$$
+
+\paragraph{Bemerkung}
+	Aus Messungen erhält man
+	$$
+	\frac{D}{B} \approx 10^{-4} \text{ bis } 10^{-3},
+	$$
+	womit der Dehnungsterm $D$ für kleine $J$ vernachlässigbar ist.
+	Für große $J$ kann man die Federkonstante $k$ der Bindung bestimmen.\\
+
+	\begin{minipage}{0.5\linewidth}
+		\centering
+		\begin{tikzpicture}
+			\draw[very thick, ->] (0,-0.5)--(0,4) node[anchor = west] {~Energie};
+
+			\draw[thick] (0.25,0.0)--(1.75,0.0);
+			\draw[thick] (0.25,0.5)--(1.75,0.5);
+			\draw[thick] (0.25,1.5)--(1.75,1.5);
+			\draw[thick] (0.25,3.0)--(1.75,3.0);
+			\node[align=center] at (1,-0.5) {\footnotesize starrer\\[-1ex]\footnotesize Rotator};
+
+
+			\draw[dotted, thick, blue] (2.25,0.0)--(1.75,0.0);
+			\draw[dotted, thick, blue] (2.25,0.4)--(1.75,0.5);
+			\draw[dotted, thick, blue] (2.25,1.2)--(1.75,1.5);
+			\draw[dotted, thick, blue] (2.25,2.6)--(1.75,3.0);
+			\node[align=center, blue] at (3,-0.7) {\footnotesize nicht-\\[-1ex]\footnotesize starrer\\[-1ex]\footnotesize Rotator};
+
+			\draw[thick, blue] (2.25,0.00)--(3.75,0.00);
+			\draw[thick, blue] (2.25,0.40)--(3.75,0.40);
+			\draw[thick, blue] (2.25,1.20)--(3.75,1.20);
+			\draw[thick, blue] (2.25,2.60)--(3.75,2.60);
+		\end{tikzpicture}
+	\end{minipage}
+	\begin{minipage}{0.5\linewidth}
+		\centering
+		\begin{tikzpicture}\begin{scope}[scale = 0.5]
+				\draw[black, fill = black!4] (-4,-2.0) rectangle (4,-3.5);
+				\draw[thick, blue] (-0.2,-2.25) --(-0.2,-3.25);
+				\draw[thick, blue] (0.45,-2.25) -- (0.45,-3.25);
+				\draw[thick, blue] (1.20,-2.25) -- (1.20,-3.25);
+				\draw[thick, blue] (1.95,-2.25) -- (1.95,-3.25);
+				\draw[thick, blue] (2.60,-2.25) -- (2.6,-3.25);
+				\draw[thick, blue] (-0.95,-2.25) -- (-0.95,-3.25);
+				\draw[thick, blue] (-1.60,-2.25) -- (-1.60,-3.25);
+				\draw[thick, blue] (-2.35,-2.25) -- (-2.35,-3.25);
+				\draw[thick, blue] (-3.00,-2.25) -- (-3.00,-3.25);
+
+				\draw[thick, blue, dotted] (-3.00,-0.7) -- (-3.00,-1.95);
+				\draw[thick, blue, dotted] (-2.25,-0.7) -- (-2.30,-1.95);
+				\draw[thick, blue, dotted] (-1.50,-0.7) -- (-1.60,-1.95);
+				\draw[thick, blue, dotted] (-0.75,-0.7) -- (-0.90,-1.95);
+				\draw[thick, blue, dotted] (-0.00,-0.7) -- (-0.20,-1.95);
+				\draw[thick, blue, dotted] ( 0.75,-0.7) -- ( 0.50,-1.95);
+				\draw[thick, blue, dotted] ( 1.50,-0.7) -- ( 1.20,-1.95);
+				\draw[thick, blue, dotted] ( 2.25,-0.7) -- ( 2.00,-1.95);
+				\draw[thick, blue, dotted] ( 3.00,-0.7) -- ( 2.60,-1.95);
+			
+				\draw[black, fill = black!4] (-4,-0.75) rectangle (4,0.75);
+				\draw[thick] (0,-0.5) --(0,0.5);
+				\draw[thick] (0.75,-0.5) -- (0.75,0.5);
+				\draw[thick] (1.50,-0.5) -- (1.50,0.5);
+				\draw[thick] (2.25,-0.5) -- (2.25,0.5);
+				\draw[thick] (3.00,-0.5) -- (3.00,0.5);
+				\draw[thick] (-0.75,-0.5) -- (-0.75,0.5);
+				\draw[thick] (-1.50,-0.5) -- (-1.50,0.5);
+				\draw[thick] (-2.25,-0.5) -- (-2.25,0.5);
+				\draw[thick] (-3.00,-0.5) -- (-3.00,0.5);
+
+				\node[anchor = west] at (4.5, 0) {\footnotesize starrer Rotator};
+				\node[anchor = west, align = center] at (4.7, -2.75) {\footnotesize nicht-starrer\\[-1ex]\footnotesize Rotator};
+		\end{scope}\end{tikzpicture}
+		
+	\end{minipage}
+	\begin{minipage}{\linewidth}
+		\captionof{figure}{Wird statt eines starren Rotators ein nicht-starrer betrachtet, verschieben sich die Energieniveaus im Termschema und im Spektrum.}
+		\label{fig:vl08_termschema_spektrum_rotatoren}
+	\end{minipage}
+
+
+	Die Auswahlregel bleibt unverändert $\left( \Delta J = \pm 1 \right)$, da die Symmetrien der Rotationszustände nicht geändert werden. 
+	Die Übergänge lassen sich also beschreiben mit
+	\begin{equation}
+		\label{eq:4.29}
+		F(J+1) - F(J) = 2B(J+1) - 4D(J+1)^3.
+	\end{equation}
+
+\paragraph{\thesubsubsection.3. Isotropie-Effekte}~\\
+
+	Nach Gleichung \eqref{eq:4.19} ist
+	$$
+	B \sim  \frac{1}{ \Theta}\quad\text{mit}\quad\Theta = m_{r} R^2.
+	$$ 
+	Wegen der Massenabhängigkeit der Bindungskonstante gibt es eine unterschiedlich starke Linienverschiebung, wenn mehrere Isotope existieren. 
+	Beispielsweise hat das einfache Wasserstoffstoffmolekül \ce{H2} $2B=\SI{121,62}{\per\centi\meter}$, während bei Deuteriummolekülen \ce{D2} $2B=\SI{60,86}{\per\centi\meter}$ ist.
+
+	Ein anderes Beispiel ist Chlorwasserstoff mit den zwei Chlor-Isotope:
+	$$
+	\begin{aligned}
+		&\ce{H^{35}Cl} \quad \left( \SI{75}{\percent} \right) \\
+		&\ce{H^{37}Cl} \quad \left( \SI{25}{\percent} \right) 
+	\end{aligned} \quad
+	\quad\Rightarrow\frac{ \Delta \nu}{ \nu} = \frac{1}{670} \approx 1\,\text{\textperthousand}
+	$$
+	In diesem Falle tritt wegen der Verschiebung jede Rotationslinie doppelt auf.
+
+\paragraph{Bemerkung}
+	\begin{itemize}
+		\item Aus $ \Delta \nu$ lassen sich die Massen der beteiligten Isotope bestimmen.
+		\item Durch Vergleich der Intensität der verschobenen Linien lässt sich das Mischverhältnis der Isotope bestimmen.
+		\item Die Bindungsabstände komplexer Molekülen können bestimmt werden, bspw. Kohlenstoffoxysulfid \ce{OCS}.
+	\end{itemize}
