@@ -128,9 +128,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.6806249"
-     inkscape:cx="265.85159"
-     inkscape:cy="149.56699"
+     inkscape:zoom="5.2051897"
+     inkscape:cx="185.00767"
+     inkscape:cy="156.67056"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -183,19 +183,14 @@
        id="path127" />
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000"
-       d="m 34.003615,181.6919 c 0,0 1.327876,53.85789 14.763536,56.17026 13.163835,2.26558 15.953729,-15.26883 28.317496,-15.26883 h 22.822768"
+       d="m 33.965396,179.69939 c 0,0 0.04329,2.19812 0.05597,2.58447 0.192562,5.86666 2.14027,53.4088 14.745785,55.5783 13.163834,2.26559 15.953729,-15.26883 28.317496,-15.26883 h 22.822768"
        id="path250"
-       sodipodi:nodetypes="cssc" />
+       sodipodi:nodetypes="csssc" />
     <path
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000"
-       d="m 42.544553,179.71466 c 0,0 2.641887,36.34341 15.421368,38.06798 13.237383,1.78636 15.974481,-9.57401 28.33823,-9.5952 l 13.603264,-0.0233"
+       d="m 42.544553,179.71466 c 0,0 2.740754,35.02339 15.412483,37.84067 11.39161,2.53268 15.975851,-9.78048 28.33823,-9.5952 l 13.612149,0.20401"
        id="path250-6"
        sodipodi:nodetypes="cssc" />
-    <path
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000"
-       d="m 58.161477,185.14532 c 0,0 12.036137,12.45727 41.745928,12.45727"
-       id="path326"
-       sodipodi:nodetypes="cc" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-start:url(#marker-arrow-1.5923999999999998);marker-end:url(#marker-arrow-1.5923999999999998);stop-color:#000000;stop-opacity:1"
        d="M 80.343157,237.7718 V 223.0131"
@@ -215,12 +210,12 @@
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
        id="text445"
-       y="210.95285"
+       y="209.06747"
        x="101.46709"><tspan
          sodipodi:role="line"
          id="tspan443"
          x="101.46709"
-         y="210.95285"
+         y="209.06747"
          style="stroke-width:0.264583">$n=2$</tspan></text>
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -248,24 +243,13 @@
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
        id="text583"
-       y="241.15584"
-       x="101.66631"><tspan
+       y="239.95631"
+       x="103.06001"><tspan
          sodipodi:role="line"
          id="tspan581"
-         x="101.66631"
-         y="241.15584"
+         x="103.06001"
+         y="239.95631"
          style="stroke-width:0.264583">$r$</tspan></text>
-    <text
-       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"
-       id="text595"
-       y="184.47275"
-       x="86.059906"><tspan
-         sodipodi:role="line"
-         id="tspan593"
-         x="86.059906"
-         y="184.47275"
-         style="stroke-width:0.264583">Moleküle</tspan></text>
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
@@ -301,8 +285,12 @@
          id="tspan772">$r_{\mathrm{e}}^{n=2}$</tspan></text>
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000;stop-opacity:1"
-       d="m 50.3803,236.72489 v 3"
+       d="m 50.357598,236.5448 v 3"
        id="path629" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000"
+       d="m 59.960652,236.57282 v 3"
+       id="path629-3" />
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
@@ -327,7 +315,7 @@
          style="stroke-width:0.264583">$\left( AB \right) $</tspan></text>
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.05331, 1.05331;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000;stop-opacity:1"
-       d="m 59.960652,218.4287 v 21.66583"
+       d="m 59.960652,217.90699 v 21.66583"
        id="path667" />
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -345,10 +333,10 @@
        xml:space="preserve"
        id="text890"
        y="179.01021"
-       x="25.088364"><tspan
+       x="28.237143"><tspan
          sodipodi:role="line"
          id="tspan888"
-         x="25.088364"
+         x="28.237143"
          y="179.01021"
          style="stroke-width:0.264583">$E$</tspan></text>
     <path
@@ -363,17 +351,6 @@
        style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.421322;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000"
        d="m 18.396711,198.02391 h 8.564784"
        id="path900-1" />
-    <text
-       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"
-       id="text950"
-       y="184.42494"
-       x="17.86285"><tspan
-         sodipodi:role="line"
-         id="tspan948"
-         x="17.86285"
-         y="184.42494"
-         style="stroke-width:0.264583">Atome</tspan></text>
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
@@ -418,5 +395,32 @@
          style="stroke-width:0.421322"
          x="24.456785"
          y="224.28867" /></text>
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;-inkscape-stroke:none;marker-start:none;marker-end:none;stop-color:#000000"
+       d="m 54.680731,179.76786 c 0,0 5.490953,17.91304 45.227045,17.91304"
+       id="path381"
+       sodipodi:nodetypes="cc" />
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1116"
+       y="185.01534"
+       x="16.368225"><tspan
+         sodipodi:role="line"
+         id="tspan1114"
+         x="16.368225"
+         y="185.01534"
+         style="stroke-width:0.264583">\boxed{\textbf{Atome}}</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text1200"
+       y="185.02245"
+       x="85.107361"><tspan
+         sodipodi:role="line"
+         id="tspan1198"
+         x="85.107361"
+         y="185.02245"
+         style="stroke-width:0.264583">\boxed{\textbf{Moleküle}}</tspan></text>
   </g>
 </svg>
