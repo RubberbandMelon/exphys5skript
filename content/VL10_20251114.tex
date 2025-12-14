@@ -1,0 +1,243 @@
+\setcounter{section}{4}
+\setcounter{subsection}{5}
+\setcounter{subsubsection}{3}
+\setcounter{figure}{20}
+\setcounter{equation}{38}
+
+\paragraph{Kopplung zwischen Rotation und Schwingung}
+	Experimentellen Hinweisen zufolge rücken im P-Zweig mit zunehmenden $J$ die Linien auseinander und im R-Zweig zueinander. Die Ursache dessen ist, dass Schwingungen im Mittel 1000 mal schneller als die Rotationen sind. Die Rotation sieht somit den über die Schwingung gemittelten Kernabstand $\left<R \right>$, welcher mit zunehmender Quantenzahl $ \nu$ steigt. Es gilt
+	$$
+	\left< \Theta( \nu +1) \right> > \left< \Theta ( \nu) \right> > \Theta_{\mathrm{e}} 
+	$$ 
+	mit $ B \sim 1 / \Theta$.\\
+	Die korrigierten Terme lauten somit
+	$$
+	\begin{aligned}
+		B_{ \nu} &= B_{\mathrm{e}} - \alpha \left( \nu + \frac{1}{2} \right)  + \text{Glieder höherer Ordnung}, \\
+		D_{ \nu} &= D_{\mathrm{e}} - \beta \left( \nu + \frac{1}{2} \right) +  \text{Glieder höherer Ordnung},\\
+	\end{aligned}
+	$$ 
+	wobei $ \alpha$ und $ \beta$ molekülspezifische Konstanten sind mit $ \alpha \ll B_{\mathrm{e}}$, $ \beta \ll D_{\mathrm{e}}$.\\
+
+	Nun betrachten wir die Schwingungs- und Rotationsdehnung. Für die Rotationsenergie gilt
+	\begin{equation}
+		\label{eq:4.39}
+		E_{ \nu, J} = \hbar \omega_{\mathrm{e}} \left( \nu + \frac{1}{2} \right) - X_{\mathrm{e}} \hbar \omega_{\mathrm{e}} \left( \nu + \frac{1}{2} \right) ^2 + \mathrm{h}\mathrm{c} B_{ \nu} J(J+1) - \mathrm{h} \mathrm{c} D_{ \nu} J^2 (J+1)^2.
+	\end{equation}
+	\autoref{fig:vl10_grundschwingungen_CO} zeigt das korrigierte Energiespektrum am Beispiel von Kohlenstoffmonoxid \ce{CO}.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{figures/vl10/grundschwingungen_CO.png}
+		\caption{Flügelförmiges Schwingungsspektrum des \ce{CO}-Moleküls \cite{Haken_Wolf_2006}. Der linke Flügel ist der P-Zweig, der rechte der R-Zweig.}
+		\label{fig:vl10_grundschwingungen_CO}
+	\end{figure}
+
+	\subsubsection{Schwingungen vielatomiger Moleküle}
+	\paragraph{Wiederholung Normalschwingungen}
+	Bei einer Normalschwingung handelt es sich um ein Schwingen der Massenpunkte mit gleicher Frequenz und fester Phasenbeziehung. Alle andere Schwingungen sind Linearkombinationen der Normalschwingungen.
+	Ein Beispiel dafür ist das gekoppelte Pendel. Deren Normalschwingungen sind die symmetrische (\autoref{fig:vl10_fadenpendel_symmetrisch}) und die antisymmetrische Mode (\autoref{fig:vl10_fadenpendel_antisymmetrisch}).\\
+
+	\begin{minipage}{0.46\linewidth}
+		\centering
+		\includegraphics[width=0.5\textwidth]{./figures/VL10_Abbildung_2.tikz}
+		\captionof{figure}{Symmetrische Mode des gekoppelten Pendels mit Pendelpositionen $x_1$, $x_2$ und der Bedingung $x_1=x_2$.}
+		\label{fig:vl10_fadenpendel_symmetrisch}
+	\end{minipage}
+	\hspace{0.07\linewidth}
+	\begin{minipage}{0.46\linewidth}
+		\centering
+		\includegraphics[width=0.5\textwidth]{./figures/VL10_Abbildung_3.tikz}
+		\captionof{figure}{Antisymmetrische Mode des gekoppelten Pendels mit Pendelpositionen $x_1$, $x_2$ und der Bedingung $x_1=-x_2$.}
+		\label{fig:vl10_fadenpendel_antisymmetrisch}
+	\end{minipage}
+
+	Die Anzahl $f$ der Normalschwingungen eines Systems ist die Zahl der Freiheitsgrade, die noch nicht für andere Bewegungen verbraucht sind. Bei $N$ Massenpunkten gibt es $3N$ Freiheitsgrade, wovon 3 Freiheitsgrade an die Translation des Schwerpunkts und 3 weitere an Rotation um den Schwerpunkt abgehen (2 bei linearen Molekülen).\\
+
+	\begin{important}
+		Die Anzahl $f$ der Normalschwingungen eines mehratomigen Moleküls ist\\
+		\hspace{-1.5cm}\begin{tabular}{ll}
+			allgemein: & $f=3N-6$\\
+			bei linearen Molekülen: & $f=3N-5$
+		\end{tabular} 
+	\end{important}
+
+\paragraph{Beispiel 1: \ce{HCl}}
+	\ce{HCl} ist zweitatomig und linear, also $N =2 $, womit ${f = 3\cdot 2 - 5 = 1}$. Dieser Freiheitsgrad entspricht der Streckschwingung.
+
+\paragraph{Beispiel 2: \ce{CO2}} 
+	Für dreiatomige lineare Moleküle wie \ce{CO2} gilt $f = 3\cdot 3 -5 = 4$. Die Normalschwingungen sind in \autoref{fig:vl10_normalschwingungen_CO2} dargestellt.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{./figures/VL10_Abbildung_4.tikz}
+		\caption{Normalschwingungen von Kohlenstoffdioxid \ce{CO2}.}
+		\label{fig:vl10_normalschwingungen_CO2}
+	\end{figure}
+	Die dargestellten Moden des Kohlenstoffdioxids sind 
+	\begin{itemize}
+		\item{Links:} symmetrische Streckschwingung. Sie ist IR-inaktiv, da $\frac{\partial\vec p}{\partial r}=0$ mit Wellenzahl $\overline\nu_1=\SI{1337}{\centi\meter {}^{-1}}$.
+		\item{Mitte:} unsymmetrische Streckschwingung. Sie ist IR-aktiv mit Wellenzahl $\overline\nu_2=\SI{2349}{\centi\meter {}^{-1}}$.
+		\item Rechts: zwei Knickschwingungen in schwarz und blau. Sie sind IR-aktiv mit Wellenzahl $\overline\nu_3=\overline\nu_4=\SI{667}{\centi\meter {}^{-1}}$.
+	\end{itemize}
+
+Generell sind die Frequenzen von Streckschwingungen größer als diejenigen von Biegeschwingungen.
+
+\paragraph{Beispiel 3: \ce{H2O}}
+	Für dreiatomige gewinkelte Moleküle wie \ce{H2O} gilt $f = 3\cdot 3 - 6 = 3$. Die Schwingungsmoden des Wassermoleküls sind in \autoref{fig:vl10_normalschwingungen_H20} dargestellt.\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{./figures/VL10_Abbildung_5.tikz}
+		\caption{Normalschwingungen von Wasser \ce{H2O}.}
+		\label{fig:vl10_normalschwingungen_H20}
+	\end{figure}
+	Alle Moden von Wasser sind IR-aktiv wegen der freien Elektronenpaare am Sauerstoffatom. Die dargestellten Moden von \ce{H2O} sind 
+	\begin{itemize}
+		\item{Links:} symmetrische Streckschwingung mit Wellenzahl $\overline\nu_1=\SI{3652}{\centi\meter {}^{-1}}$.
+		\item{Mitte:} unsymmetrische Streckschwingung mit Wellenzahl $\overline\nu_2=\SI{3756}{\centi\meter {}^{-1}}$.
+		\item Rechts: Knickschwingung mit Wellenzahl $\overline\nu_3=\SI{1595}{\centi\meter {}^{-1}}$.
+	\end{itemize}
+
+	Die Anharmonizität im Kraftgesetz führt zur Kopplung der Normalschwingungen. Daher kommt es zu
+	\begin{itemize}
+		\item Obertönen $2 \nu_1$, $3 \nu_1$, \ldots
+		\item Kombinationsschwingungen, also der Summe oder Differenz von Schwingungen
+			$$
+			\nu_1 + \nu_2, \quad \nu_2 - \nu_1, \ldots
+			$$ 
+	\end{itemize}
+
+\subsubsection{Anwendungen der Schwingungsspektroskopie}
+	Schwingungsspektroskopie wird verwendet, um Moleküle oder Molekülteile zu identifizieren. Dazu wird z.B. die Valenzschwingung betrachtet, also die Schwingung einer Verbindungsachse zwischen Atomen. So können verschiedene Bindungen identifiziert werden, bspw.
+	\begin{itemize}
+		\item \ce{C-H} hat eine Valenzschwingung mit $\SI{2850}{\centi \meter ^{-1}}$ bis $\SI{3000}{\centi \meter ^{-1}}$
+		\item \ce{C-C} hat eine Valenzschwingung mit $\SI{700}{\centi \meter ^{-1}}$ bis $\SI{1250}{\centi \meter ^{-1}}$
+		\item \ce{C=C} hat eine Valenzschwingung mit $\SI{1600}{\centi \meter ^{-1}}$ bis $\SI{1700}{\centi \meter ^{-1}}$
+	\end{itemize}
+
+	\subsubsection{Infrarot-Laser}
+	In einem Infrarot-Laser, beispielsweise beim CO2-Laser, befindet sich ein Gasgemisch aus Stickstoff \ce{N2}, Kohlenstoffdioxid \ce{CO2} und Helium \ce{He}.\\[2em]
+	\begin{minipage}{0.45\linewidth}
+		\centering
+		\includegraphics[width=6cm]{figures/vl10/CO2_laser.png}
+		\captionof{figure}{Termschema der Prozesse im Infrarot-Laser \cite{Haken_Wolf_2006}.}
+		\label{fig:vl10_CO2_laser}
+	\end{minipage}
+	\hspace{0.05\linewidth}
+	\begin{minipage}{0.5\linewidth}
+		\autoref{fig:vl10_CO2_laser} zeigt die Prozesse eines Infrarot-Lasers im Termschema. 
+		Elektronen werden aus dem Grundzustand in einen erhöhten Zustand im Stickstoff angeregt.
+		Da \ce{N2} und \ce{CO2} nahezu resonant sind, können die Elektronen von dort in den angeregten Zustand $\nu=3$ des Kohlenstoffdioxids übergehen.
+		Dort fallen sie in den $\nu=1$ Zustand des \ce{CO2} und emittieren dabei Licht mit Wellenlänge \SI{10,6}{\micro\meter}, bzw. Wellenzahl $\sim\SI{1000}{\centi\meter {}^{-1}}$.
+		In einem geeigneten Resonator kann dann bei Inversion Laserlicht bei \SI{10,6}{\micro\meter} erzeugt werden.
+		Von dort fallen die Elektronen durch Stöße mit Helium wieder in den Grundzustand.
+	\end{minipage}\\[1em]
+	Der CO2-Laser kann sehr hohe Leistungen aufbringen. Deshalb wird er in der Industrie sehr viel verwendet, u.A. um Metalle zu zerschneiden.
+
+\subsubsection{Mikrowellen-MASER}
+	MASER steht abgekürzt für Microwave Amplification by Stimulated Emission of Radiation. Er wurde im Jahr 1955 von Gordon, Zeiger und Townes entwickelt.
+
+	Das zugrundeliegende Phänomen ist die Inversionsschwingung von Ammoniak \ce{NH3}, wie sie in \autoref{fig:vl10_ammoniak_inversionsschwingung} dargestellt ist.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{figures/vl10/maser_stickstoff_doppelmulde.png}
+		\caption{Links: Ammoniakmolekül.
+			Das Stickstoffatom kann sich über und unter der Ebene aufhalten, welche von den Wasserstoffatomen aufgespannt wird.\\
+			Rechts: Daher kann es in einem Doppelmuldenpotential $V(r)$ modelliert werden, welches vom Abstand $r$ des Stickstoff zur Wasserstoffebene abhängt.
+		}
+		\label{fig:vl10_ammoniak_inversionsschwingung}
+	\end{figure}
+	Durch den Potentialwall der Höhe $V$ kommt es zur Inversionsaufspaltung in eine symmetrische Mode $\varphi_\mathrm s = N(\phi_1+\phi_2)$ und eine antisymmetrische Mode $\varphi_\mathrm a = N(\phi_1-\phi_2)$.
+	Die Wellenfunktionen $\phi_i$ stellen dabei das Teilchen in jeweils einer der beiden Mulden dar.
+	Die beiden Moden haben folgende Eigenschaften:
+	\begin{enumerate}
+		\item zwischen $ \varphi_{a}$ und $ \varphi_{s}$ sind elektromagnetische Übergänge erlaubt (vgl. Wellenfunktionen in \autoref{fig:vl10_muell}).
+		\begin{figure}[H]
+			\centering
+			\includegraphics{figures/vl10/muell.pdf}
+			\caption{Die Wellenfunktionen $\varphi_\mathrm s$ und $\varphi_\mathrm a$ liegen im Abstand von \SI{0,79}{\centi\meter^{-1}}. Zwischen ihnen sind elektromagnetische Übergänge erlaubt.}
+			\label{fig:vl10_muell}
+		\end{figure}
+		\item $ \varphi_{a}$ und $ \varphi_{s}$ haben $ \Vec{p}=0$ wegen der Inversionsschwingung. 
+			Würde man den Tunneleffekt vernachlässigen, wäre $\Vec{p} \neq 0$ aufgrund der Partialladungsverschiebung im Molekül.
+		\item im $\Vec{E}$-Feld kommt es zum Stark-Effekt, also der Aufspaltung der Schwingungsniveaus gemäß \autoref{fig:vl10_stark_effekt}.
+			\begin{figure}[H]
+				\centering
+				\includegraphics{figures/vl10/stark.pdf}
+				\caption{Beim Stark-Effekt kommt es zu Aufspaltung der Schwingungsniveaus.}
+				\label{fig:vl10_stark_effekt}
+			\end{figure}
+		\item im inhomogenen Feld läuft $ \varphi_{s} $ in das starke Feld, da es energetisch günstiger liegt. $ \varphi_{a} $ läuft in das schwache Feld.
+	\end{enumerate}
+
+	Es ist $ \Delta \ll \mathrm{k}_{\mathrm{B}} T$. Dadurch hat man eine Gleichbesetzung von $\varphi_\mathrm a$ und $\varphi_\mathrm s$.
+
+	\autoref{fig:vl10_NH3_maser} zeigt den Aufbau eines Mikrowellen-Masers.
+	Die Trennung der $\varphi_\mathrm a$- und $\varphi_\mathrm s$-Teilchen ist für die Inversion notwendig.
+	Im Maser wird dies durch ein Fokussierfeld realisiert, welches den \ce{NH3}-Strahl aufspaltet.
+	So gelangen nur die antisymmetrischen Teilchen $\varphi_\mathrm a$ in den Mikrowellen-Resonator. 
+	Dort fallen sie in den symmetrischen Zustand $\varphi_\mathrm s$, der energetisch niedrigier liegt und emittieren dabei Mikrowellen-Strahlung (vgl. \autoref{fig:vl10_emission}).
+
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+
+			\begin{scope}[xshift=0.2cm]
+				\draw[very thick] (8,-2) -- (10.5,-2);
+				\draw[very thick] (8,2) -- (9.0,2);
+				\draw[very thick] (9.5,2) -- (10.5,2);
+				\draw[very thick] (10.5,-2) -- (10.5,2);
+				\draw[very thick] (8,-2) -- (8,-0.2);
+				\draw[very thick] (8,0.2) -- (8,2);
+				\node[align = center] at (9.25,-1.5) {MW-\\Resonator};
+				\node[red] at (8.2,0){$\varphi_\mathrm a$};
+
+				\draw[thick, ->, decorate,decoration={coil,aspect=0}, red] (9.15, 1.75) -- (9.15,2.5);
+				\draw[thick, ->, decorate,decoration={coil,aspect=0}, red] (9.35, 1.75) -- (9.35,2.5) node [anchor = north west] {~MW};
+			\end{scope}	
+
+			\filldraw[fill = black!10] (-0.2,-0.5) rectangle (1.8,0.5);
+			\node at (0.8,0) {\ce{NH3}-Ofen};
+			\draw[dashed] (2, 0) -- (8,0);
+			\filldraw[fill = green!10] (3.5,  0.45) rectangle (5.5, 0.7);
+			\filldraw[fill = green!10] (3.5, -0.45) rectangle (5.5, -0.7);
+			\draw[green!50!black, ->, thick] (3.8, -0.4) -- (3.8,0.4);
+			\draw[green!50!black, ->, thick] (5.2, -0.4) -- (5.2,0.4);
+			\draw[green!50!black, ->, thick] (4.5, -0.4) -- (4.5,0.4);
+			\node[green!50!black, align = center] at (4.5,-1.3) {$\vec E$-Feld \\(Quadrupol)};
+
+			\draw[->, red, thick] (1.8,0) .. controls (+3.5,+0.3) and (5.5,+0.3) .. (8,0.05);
+			\draw[->, red, thick] (1.8,0) .. controls (+3.5,-0.3) and (5.5,-0.3) .. (8,-0.05);
+			\draw[->, blue, thick] (1.8,0) .. controls (+3.5,+0.3) and (7,+0.3) .. (8,0.5) node[above] {$\varphi_\mathrm s$};
+			\draw[->, blue, thick] (1.8,0) .. controls (+3.5,-0.3) and (7,-0.3) .. (8,-0.5);
+
+		\end{tikzpicture}
+		\caption{Schematischer Aufbau eines \ce{NH3}-Masers. Das $\vec E$-Feld teilt wegen des Stark-Effekts den Strahl auf. Nur asymmetrische Teilchen $\varphi_\mathrm a$ gelangen in den Resonator und erzeugen dort durch den Übergäng zu $\varphi_\mathrm s$ Mikrowellen.}
+		\label{fig:vl10_NH3_maser}
+	\end{figure}
+	\begin{figure}
+		\centering
+		\begin{tikzpicture}
+			\draw[->, very thick] (0,0)--(0,3) node[anchor= south east] {Energie};
+			\draw[thick] (4.25, 0.5) -- (1,0.5) node[anchor = east] {$\varphi_\mathrm s$};
+			\draw[thick] (4.25, 2.5) -- (1, 2.5) node[anchor = east] {$\varphi_\mathrm a$};
+
+			\filldraw[red] (3.75, 2.5) circle (1.2mm);
+			\filldraw[red] (3.00, 2.5) circle (1.2mm);
+			\filldraw[red] (2.25, 2.5) circle (1.2mm);
+			\filldraw[red] (1.50, 2.5) circle (1.2mm);
+
+			\draw[->, very thick, red] (3.75, 2.3) -- (3.75, 0.6);
+			\draw[->, very thick, red] (3.00, 2.3) -- (3.00, 0.6);
+			\draw[->, very thick, red] (2.25, 2.3) -- (2.25, 0.6);
+			\draw[->, very thick, red] (1.50, 2.3) -- (1.50, 0.6);
+
+			\draw[->, decorate,decoration={coil,aspect=0}, red] (3.9, 1.3) -- (5.7,1.3);
+			\draw[->, decorate,decoration={coil,aspect=0}, red] (3.9, 1.7) -- (5.7,1.7) node[above,midway] {MW};
+		\end{tikzpicture}
+		\caption{Im Mikrowellen-Resonator kommen nur antisymmetrische Teilchen $\varphi_\mathrm a$ an. Dort fallen sie in den symmetrischen Zustand $\varphi_\mathrm s$ und emittieren dabei Mikrowellen-Strahlung. Dieser Prozess wird Inversion genannt.}
+		\label{fig:vl10_emission}
+	\end{figure}
+
+	Der \ce{NH3}-Maser ist somit ein Zwei-Niveau-Maser. 
+	Die Energiebreite ist $\frac{\Delta\nu}{\nu}=\SI{10e10}{}$, also hat der Maser ein sehr schmales Frequenzspektrum.

@@ -1,0 +1,46 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+% Sym. Streckschwingung
+\draw  (6.25,12.25) circle (0.25cm);
+\draw  (8.75,12.25) circle (0.25cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (7.5,12.25) circle (0.25cm);
+\node [font=\normalsize] at (6.25,12.75) {O};
+\node [font=\normalsize] at (8.75,12.75) {O};
+\node [font=\normalsize] at (7.5,12.75) {C};
+\draw [->, >=Stealth] (6.5,11.75) -- (6,11.75);
+\draw [->, >=Stealth] (8.5,11.75) -- (9,11.75);
+\draw[decorate, decoration={coil, aspect=0.7, segment length=6pt, amplitude=4pt}] (6.5, 12.25) -- (7.25, 12.25);
+\draw[decorate, decoration={coil, aspect=0.7, segment length=6pt, amplitude=4pt}] (7.75, 12.25) -- (8.5, 12.25);
+
+
+% antisymm Streckschwingung
+\draw  (10,12.25) circle (0.25cm);
+\draw  (12.5,12.25) circle (0.25cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (11.5,12.25) circle (0.25cm);
+\node [font=\normalsize] at (10,12.75) {O};
+\node [font=\normalsize] at (12.5,12.75) {O};
+\node [font=\normalsize] at (11.5,12.75) {C};
+\draw [->, >=Stealth] (10.25,11.75) -- (9.75,11.75);
+\draw [->, >=Stealth] (11.25,11.75) -- (11.75,11.75);
+\draw [->, >=Stealth] (12.75,11.75) -- (12.25,11.75);
+\draw[decorate, decoration={coil, aspect=0.7, segment length=8pt, amplitude=4pt}] (10.25, 12.25) -- (11.25, 12.25);
+\draw[decorate, decoration={coil, aspect=0.7, segment length=4pt, amplitude=4pt}] (11.75, 12.25) -- (12.25, 12.25);
+
+% Knickschwingung
+\draw  (13.75,12.25) circle (0.25cm);
+\draw  (16.25,12.25) circle (0.25cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (15,12.25) circle (0.25cm);
+\draw  (14,12) circle (0cm);
+\node [font=\normalsize] at (13.75,12.75) {O};
+\node [font=\normalsize] at (16.25,12.75) {O};
+\node [font=\normalsize] at (14.65,12.6) {C};
+\draw [->, >=Stealth] (13.75,11.75) -- (13.75,11.25);
+\draw [->, >=Stealth] (16.25,11.75) -- (16.25,11.25);
+\draw [->, >=Stealth] (15,12.75) -- (15,13.25);
+\draw [ color={rgb,255:red,0; green,0; blue,255}, ->, >=Stealth] (15.25,12.5) -- (15.5,12.75);
+\draw [ color={rgb,255:red,0; green,0; blue,255}, ->, >=Stealth] (13.5,12) -- (13.25,11.75);
+\draw [ color={rgb,255:red,0; green,0; blue,255}, ->, >=Stealth] (16,12) -- (15.75,11.75);
+\draw[decorate, decoration={coil, aspect=0.7, segment length=6pt, amplitude=4pt}] (14, 12.25) -- (14.75, 12.25);
+\draw[decorate, decoration={coil, aspect=0.7, segment length=6pt, amplitude=4pt}] (15.25, 12.25) -- (16, 12.25);
+\end{circuitikz}
