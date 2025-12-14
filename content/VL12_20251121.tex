@@ -1,4 +1,3 @@
-\clearpage
 \setcounter{section}{5}
 \setcounter{subsection}{2}
 \setcounter{subsubsection}{2}
@@ -25,7 +24,7 @@ $$
 	\Delta \Lambda &= 0, \pm 1 \\
 	\Delta S &= 0 \\
 	\Delta \Omega &= 0, \pm 1
-\end{aligned} 2
+\end{aligned}
 \qquad
 \begin{aligned}
 + &\to + \\
@@ -41,8 +40,8 @@ Daraus folgt, dass zu jedem Elektronenzustand des Moleküls eine Potentialkurve,
 \begin{figure}[H]
     \centering
     \incfig{vl12_abbildung_1}
-    \caption{
-        Morsepotentiale eines Moleküls mit Kernen $A$ und $B$ in verschiedenen Zuständen. 
+    \caption{Links: Schematisch sind die Atomzustände $E_i$ eingezeichnet.\\
+        Rechts: Morsepotentiale eines Moleküls mit Kernen $A$ und $B$ in verschiedenen Zuständen. 
         * markiert angeregte Zustände, welche typischerweise bindungslockernd sind.
         Die Gleichgewichtsabstände $r_\mathrm e$ sind in den angeregten Zuständen größer und die Dissozationsenergie $D$ wird kleiner.
     }
@@ -69,7 +68,7 @@ Daraus folgt, dass zu jedem Elektronenzustand des Moleküls eine Potentialkurve,
     \begin{figure}[H]
         \centering
         \incfig{vl12_abbildung_2}
-        \caption{Elektronische Energieniveaus $T''_\mathrm e$ und $T'_\mathrm e$ mit Schwingungsspektren $\nu''$ und $\nu'$. $T'_\mathrm e$ ist ein angeregter Zustand, $T''_\mathrm e$ ist der Grundzustand.}
+        \caption{Elektronische Energieniveaus $T''_\mathrm e$ und $T'_\mathrm e$ mit Schwingungszuständen $\nu''$ und $\nu'$. $T'_\mathrm e$ ist ein angeregter Zustand, $T''_\mathrm e$ ist der Grundzustand.}
         \label{fig:vl12_abbildung_2}
     \end{figure}
     Die alte Auswahlregel
@@ -108,16 +107,13 @@ Daraus folgt, dass zu jedem Elektronenzustand des Moleküls eine Potentialkurve,
         \caption{Spektrum, wenn die Kernabstände in Grundzuständ und angeregtem Zustand ähnlich sind.}
         \label{fig:vl12_abbildung_4}
     \end{figure}
-    Findet kein Rotationsübergang statt ($\delta\nu$), so sind die Übergänge
-    \begin{center}
-        \begin{tabular}{ccc}
-            $\nu''=0$&$\rightarrow$&$\nu'=0$\\\midrule
-            1&$\rightarrow$&1\\
-            2&$\rightarrow$&2\\
-        \end{tabular}
-    \end{center}
-    Diese Überänge sind nur schwach sichtbar im Gruppenspektrum, da die höheren Zustände nahezu nicht besetzt sind.
-
+    Für $r_\mathrm e'\simeq r_\mathrm e''$ sind folgende Übergänge erlaubt:
+    \begin{enumerate}
+        \item $\bm\Delta\nu=0:$ der stärkste Übergang ist $\nu''=0 \to\nu'=0$, da überwiegend nur der Grundzustand besetzt ist. 
+        Die Übergänge $1\to1,~2\to2,  \ldots$ sind nur schwach sichtbar im Gruppenspektrum, da die höheren Zustände nahezu nicht besetzt sind. 
+        \item $\bm \Delta\nu\neq0:$ Die Übergänge $0\to1,~0\to2, \ldots$ sind ebenfalls schwach, da das Überlappintegral klein ist. 
+    \end{enumerate}
+    
     Ändert sich der Rotationsübergang ($\delta\nu$), so sind die Übergänge
     \begin{center}
         \begin{tabular}{ccc}
@@ -140,23 +136,35 @@ Daraus folgt, dass zu jedem Elektronenzustand des Moleküls eine Potentialkurve,
     \end{figure}
 
 \subsection{Emissionspektren}
-    Die Emissionspektren zeigen im Prinzip die gleichen Bandenspektren wie bei der Absorbtion.\\
+    Die Emissionspektren zeigen im Prinzip die gleichen Bandenspektren wie bei der Absorption.\\
     \paragraph{Bsp.: $r_{\mathrm{e}}' \neq r_{\mathrm{e}}''$}~
 
-    \begin{figure}[H]
-        \centering
+    \hspace{3cm}
+    \begin{minipage}{1cm}
+       \textbf{\large{a)}}    
+    \end{minipage}
+    \begin{minipage}{14cm}
+        \hspace{-3cm}
         \incfig{vl12_abbildung_6}
-        \caption{}
-        \label{fig:vl12_abbildung_6}
-    \end{figure}
+    \end{minipage}
 
-    \begin{figure}[H]
-        \centering
+    \hspace{4.5cm}
+    \begin{minipage}{1cm}
+       \textbf{\large{b)}}    
+    \end{minipage}
+    \begin{minipage}{14cm}
+        \hspace{-0.5cm}
         \def\svgwidth{.35\columnwidth}
         \subimport{./figures}{vl12_abbildung_7.pdf_tex}
-        \label{fig:vl12_abbildung_7}
-    \end{figure}
-
+    \end{minipage}
+    \begin{center}
+        \captionof{figure}{\textbf{a)} Durch Stöße finden strahlungslose Übergänge statt, dargestellt als schwarze Pfeile. 
+            Der Konkurrenzprozess, d.h. der strahlungslose Übergang $W_\mathrm{opt}\sim (h\nu)^3$ ist im Infrarotbereich klein. 
+            Deswegen erfolgt die Relaxation strahlungslos in den Grundzustand, von dem aus die Emissionsprozesse stattfinden.\\
+            \textbf{b)} Schematische Absorptions- und Emissionspektren.
+            \label{fig:vl12_abbildung_6}
+        }
+    \end{center}
     Durch Stöße finden strahlungslose Übergänge statt.
     Der Konkurenzprozess zu strahlenden Übergängen $W_{\mathrm{opt}} \sim (h \nu)^3$ ist im Infrarotbereich klein. 
     Deswegen erfolgt die Relaxation strahlungslos in den Grundzustand.
@@ -169,13 +177,14 @@ Daraus folgt, dass zu jedem Elektronenzustand des Moleküls eine Potentialkurve,
     \centering
     \def\svgwidth{.31\columnwidth}
     \subimport{./figures}{vl12_abbildung_9.pdf_tex}
+    \caption{Vereinfachte Darstellung der für die Farbstofflaser relevanten vier Energieniveaus (siehe \autoref{fig:vl12_abbildung_6}). Dieser Vorgang wird Pump-Prozess genannt.}
     \label{fig:vl12_abbildung_9}
 \end{figure}
 
 \subsection{Rotationsstruktur}
 Die Rotationsübergänge haben die Wellenzahl
 $$
-\overline{\nu} = T' - T'' = T^{'(\text{el})} G_{\nu'}' + F'_{\nu', J'} - \left( T''^{(\text{el})} + G_{\nu''}'' + F_{\nu'', J''}'' \right).
+\overline{\nu} = T' - T'' = T^{'(\text{el})}_J + G_{\nu'}' + F'_{\nu', J'} - \left( T''^{(\text{el})} + G_{\nu''}'' + F_{\nu'', J''}'' \right).
 $$ 
 Wird der Zentrifugalterm $(D_{\nu}J^2(J+1)^2)$ vernachlässigt, so gilt für die Übergänge
 $$
