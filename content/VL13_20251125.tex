@@ -4,8 +4,8 @@
 
 
 	\paragraph{Erinnerung:} Beim Rotationsschwingungsspektrum sind die Rotationskonstanten $B_{\nu'}$ und $B_{\nu''}$ fast gleich groß. 
-	Unterschiede werden hauptsächlich durch $F$ und damit vom mittleren Kernabstand $\vec r$ diktiert. 
-	Der Verlauf von $r$ für steigende Quantenzahlen $\nu$ ist in \autoref{fig:vl13_abbildung_0} skizziert.
+	Unterschiede werden hauptsächlich durch den mittleren Kernabstand $\overline r$ diktiert. 
+	Der Verlauf von $\overline r$ für steigende Quantenzahlen $\nu$ ist in \autoref{fig:vl13_abbildung_0} skizziert.
 
 	\begin{figure}[H]
 		\centering
@@ -15,7 +15,7 @@
 		\label{fig:vl13_abbildung_0}
 	\end{figure}
 
-	\paragraph{Jetzt:} Im Elektronenspektrum sind aufgrund unterschiedlicher Potentialkurven und $\overline{r}_{\mathrm{e}}' \neq \overline{r}_{\mathrm{e}}''$ sehr verschiedene $B_{\nu'}$ und $B_{\nu''}$ möglich.
+	\paragraph{Jetzt:} Im Elektronenspektrum sind aufgrund unterschiedlicher Potentialkurven und ${r}_{\mathrm{e}}' \neq {r}_{\mathrm{e}}''$ sehr verschiedene $B_{\nu'}$ und $B_{\nu''}$ möglich.
 
 	Die Auswahlregeln der Drehimpulsquantenzahl $J$ hängen von der Art des elektronischen Übergangs ab. So ist $\Delta J = 0$ möglich, falls sich der elektronsiche Drehimpuls ändert,	 da bei der Emission oder Absorption eines Photons mit Drehimpuls $\hbar $ der Gesamtdrehimpuls erhalten bleiben muss. Beispiele einiger Übergänge sind
 	\begin{itemize}
@@ -30,7 +30,7 @@
 		\overline{\nu} &= \overline{\nu}_{(\nu', \nu'')} + B'J'(J'+1) - B''J''(J''+1), \\
 	\end{aligned}
 	$$ 
-	$\overline\nu(\nu', \nu'')$ ist Wellenzahl eines Bandensprunges von $\nu'$ nach $\nu''$.
+	$\overline\nu(\nu', \nu'')$ ist Wellenzahl eines Bandensprunges von $\nu'$ nach $\nu''$. Der Zentrifugalterm \\${\big(D\nu J^2(J+1)^2\big)}$ wird hier vernachlässigt.
 
 	Damit werden die Wellenzahlen der Übergänge in den Zweigen berechnet:
 	\begin{itemize}
@@ -49,7 +49,7 @@
 			\overline{\nu}_{\text{Q}} = \overline{\nu}_{\nu', \nu''} + (B' - B'') J'' + (B' - B'')J''^2.
 			$$
 	\end{itemize}
-	Diese drei Gleichung beschreiben die Fortrat-Parabeln. Diese sind in \autoref{fig:vl13_abbildung_1} dargestellt.
+	Diese drei Gleichungen beschreiben die Fortrat-Parabeln. Diese sind in \autoref{fig:vl13_abbildung_1} dargestellt.
 
 	\begin{figure}[H]
 		\centering
@@ -67,7 +67,7 @@
 	\end{enumerate}
 
 \subsection{Gesamtspektrum}
-Sei bei einem Übergang $r_{\mathrm{e}}'' < r_{\mathrm{e}}'$, dann ist $B' < B''$. \autoref{fig:vl13_bandenspektrum} zeigt ein Bandenspektrum für solche Übergänge.
+Sei bei einem Übergang $r_{\mathrm{e}}'' < r_{\mathrm{e}}'$, dann ist $B' < B''$. \autoref{fig:vl13_bandenspektrum} zeigt ein schematisches Bandenspektrum für solche Übergänge.
 	\begin{figure}[H]
 		\centering
 		\begin{tikzpicture}
@@ -138,7 +138,7 @@ Sei bei einem Übergang $r_{\mathrm{e}}'' < r_{\mathrm{e}}'$, dann ist $B' < B''
 	\begin{figure}[H]
 		\centering
 		\incfig{vl13_abbildung_4}
-		\caption{In rot ist ein Elektronenübergang eingezeichnet, bei dem das Molekül $(AB)$ zu $(AB)*$ übergeht. 
+		\caption{In rot ist ein Elektronenübergang eingezeichnet, bei dem das Molekül $(AB)$ zu $(AB)^*$ übergeht. 
 			Von dort kann das Molekül in den ungebundenen Zustand $A+B^*$ gehen.
 			In blau sind weitere Übergänge in den angeregten Zustand $(AB)^*$ eingezeichnet, die jedoch nicht zur Dissoziation führen.
 		}
@@ -152,6 +152,13 @@ In \autoref{fig:vl13_abbildung_4} werden folgende Größen verwendet:
 	\item Anregungsenergie des bei der Dissoziation entstehenden angeregten Atoms $E_{\text{At}}$ und
 	\item die molekulare Anregungsenergie $E_{\text{Mol}}$.
 \end{itemize}
+Aus dieser der Skizze in \autoref{fig:vl13_abbildung_4} ergibt sich
+\begin{align*}
+	D'' &= K-E_\mathrm{At}\\
+	D' &= K-E_\mathrm{Mol}.
+\end{align*}
+$K$ erhält man aus einem Reihenspektrum, $E_\mathrm{Mol}$ aus dem Bandensystem und $E_\mathrm{At}$ aus Atomspektren. Somit können die Dissoziationsenergien $D'$ und $D''$ bestimmt werden.
+
 Beispielwerte für das Jodmolekül \ce{J2} sind $$K = \SI{2,48}{\electronvolt},\quad E_{\text{At}} = \SI{0,94}{\electronvolt} \quad\text{und}\quad D'' = \SI{1,54}{\electronvolt}.$$
 
 \subsection{Prädissoziation} 
@@ -161,7 +168,9 @@ Beispielwerte für das Jodmolekül \ce{J2} sind $$K = \SI{2,48}{\electronvolt},\
 	\begin{figure}[H]
 		\centering
 		\incfig{vl13_abbildung_5}
-		\caption{Energieschema eines Moleküls mit überlappenden Elektronenzuständen $a$ und $b$. }
+		\caption{Energieschema eines Moleküls mit überlappenden Elektronenzuständen $a$ und $b$. 
+			Am Schnittpunkt sind die Zustände $a$ und $b$ bzgl. ihrer Gesamtenergie und ihrer Kernkoordinaten gleich.
+		}
 		\label{fig:vl13_abbildung_5}
 	\end{figure}
 
@@ -171,15 +180,15 @@ Beispielwerte für das Jodmolekül \ce{J2} sind $$K = \SI{2,48}{\electronvolt},\
 		\item Innerhalb von $a$ kommt es zu Abregung.
 		\item Beim Übergang von $a$ nach $b$ kommt es zur Dissoziation. Dabei wird die Elektronenhülle umgebaut. 
 	\end{enumerate}
-	Die Lebensdauer dieses Moleküls ist verkürzt und $\Delta E$ nimmt zu, wodurch die Linien im Spektrum breiter werden. Eine besonders hohe Wahrscheinlichkeit zur Dissoziation gibt es für $h\nu = k_{B}$.
+	Die Lebensdauer dieses Moleküls ist verkürzt und $\Delta E$ nimmt zu, wodurch die Linien im Spektrum breiter werden. Eine besonders hohe Wahrscheinlichkeit zur Dissoziation gibt es für $h\nu = K_{B}$.
 
 \subsection{Entstehung von kontinuierlichen Spektren (\ce{H2}-Lampe)}
-\autoref{fig:vl13_abbildung_6} erklärt die Entstehung kontinuierlichen Spektren.
+\autoref{fig:vl13_abbildung_6} erklärt die Entstehung von kontinuierlichen Spektren.
 \begin{figure}[H]
     \centering
     \incfig{vl13_abbildung_6}
 	\caption{Elektronen werden durch Stöße vom Grundzustand $^1\Sigma_\mathrm g^+$ nach $^3\Sigma_\mathrm g^+$ angeregt. 
-		Von dort fallen sie in den Zustand $^3\Sigma_\mathrm u ^+$ und erzeugen dabei ein kontinuierliches Spektrum.
+		Von dort können sie in den Zustand $^3\Sigma_\mathrm u ^+$ übergehen und erzeugen dabei ein kontinuierliches Spektrum.
 	}
     \label{fig:vl13_abbildung_6}
 \end{figure}
