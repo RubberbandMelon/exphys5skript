@@ -1,0 +1,11 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw  (12.5,13.5) circle (0.75cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (8,13.5) circle (0.25cm);
+\node [font=\normalsize] at (7.25,13.5) {H};
+\node [font=\normalsize] at (13.75,13.5) {Cl};
+\draw [<->, >=Stealth] (8,15) -- (12.5,15);
+\node [font=\normalsize] at (10.25,15.5) {$R$};
+\node [font=\normalsize] at (10.25,12.25) {K};
+\draw[decoration={aspect=0.3, segment length=3.2mm, amplitude=3mm,coil},decorate,opacity=0.9] (8.25, 13.5) -- (11.75, 13.5);
+\end{circuitikz}

@@ -1,0 +1,19 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (10,13.5) circle (0.5cm);
+\draw [short] (10,13.5) -- (9,11.5);
+\draw [short] (8,12.75) -- (10,13.5);
+\draw [short] (10,13.5) -- (10,15.25);
+\draw [short] (10,13.5) -- (12.25,12.5);
+\draw  (10,16) circle (0.75cm);
+\draw  (10,13.25) circle (0cm);
+\draw  (10,13.25) circle (0cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (12.25,12.5) circle (0.25cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (9,11.5) circle (0.25cm);
+\draw [ fill={rgb,255:red,0; green,0; blue,0} ] (8,12.75) circle (0.25cm);
+\node [font=\normalsize] at (11,13.5) {C};
+\node [font=\normalsize] at (13,12.5) {H};
+\node [font=\normalsize] at (9.75,11.5) {H};
+\node [font=\normalsize] at (7.25,12.75) {H};
+\node [font=\normalsize] at (11.25,16) {Cl};
+\end{circuitikz}
