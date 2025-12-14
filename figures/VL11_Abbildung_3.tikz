@@ -1,0 +1,15 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\node [font=\LARGE] at (17.5,12.25) {};
+\draw [short] (8.75,13) -- (8.75,16);
+\draw [ color={rgb,255:red,255; green,0; blue,0}, short] (8.75,13.75) -- (8.75,15.25);
+\node [font=\LARGE] at (17.5,12.25) {};
+
+\draw [->, >=Stealth] (8.75,13.75) -- (9.5,15.25);
+\node at (8.75,16) [circ] {};
+\node at (8.75,13) [circ] {};
+\node [font=\normalsize] at (8.25,13) {$A$};
+\node [font=\normalsize] at (8.25,16) {$B$};
+\node [font=\normalsize, color={rgb,255:red,255; green,0; blue,0}] at (8.25,14.5) {$\Sigma \hbar$};
+\draw [ dashed] (8.75,15.25) ellipse (0.75cm and 0.25cm);
+\end{circuitikz}
