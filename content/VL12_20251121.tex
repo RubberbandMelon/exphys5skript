@@ -1,0 +1,183 @@
+\setcounter{section}{5}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{2}
+\setcounter{equation}{20}
+
+\autoref{tab:vl12_bsp_elektronenkonfig} zeigt Beispiele für Elektronenkonfigurationen und deren entsprechenden Molekülorbitale.
+\begin{table}[H]
+    \centering
+    \caption{Beispiele Elektronenkonfiguration.}
+    \begin{tabular}{ccc}\toprule
+        Molekül &Elektronenkonfiguration & Molekülorbitale \\\midrule
+        Wasserstoff \ce{H2} & $(\mathrm 1s\sigma_\mathrm g)^2$ & $^1\Sigma_\mathrm g^+$\\
+        Sauerstoff \ce{O2} & $(2\mathrm p\pi_\mathrm g)^2$ &  $^3\Sigma_\mathrm g^-$, $^1\Delta_\mathrm g$, $^1\Sigma_\mathrm g^+$\\\bottomrule
+    \end{tabular}
+    \label{tab:vl12_bsp_elektronenkonfig}
+\end{table}
+
+
+\paragraph{5. Auswahlregeln}~\\
+Aus Betrachtung der Symmetrieeigenschaften des Dipol-Übergangsmatrixelements (QM) folgen die Auswahlregeln
+
+$$
+\begin{aligned}
+	\Delta \Lambda &= 0, \pm 1 \\
+	\Delta S &= 0 \\
+	\Delta \Omega &= 0, \pm 1
+\end{aligned}
+\qquad
+\begin{aligned}
++ &\to + \\
+- &\to - \\
+\mathrm{u} &\to \mathrm{g}
+\end{aligned}
+$$
+
+\paragraph{6. Potentialkurven}~\\
+Die Elektronenanordnung beeinflusst die Bindungsverhältnisse zwischen den Atomkernen. 
+Daraus folgt, dass zu jedem Elektronenzustand des Moleküls eine Potentialkurve, also ein Morsepotential, gehört (vgl. \autoref{fig:vl12_abbildung_1}).
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl12_abbildung_1}
+    \caption{Links: Schematisch sind die Atomzustände $E_i$ eingezeichnet.\\
+        Rechts: Morsepotentiale eines Moleküls mit Kernen $A$ und $B$ in verschiedenen Zuständen. 
+        * markiert angeregte Zustände, welche typischerweise bindungslockernd sind.
+        Die Gleichgewichtsabstände $r_\mathrm e$ sind in den angeregten Zuständen größer und die Dissozationsenergie $D$ wird kleiner.
+    }
+    \label{fig:vl12_abbildung_1}
+\end{figure}
+
+\section{Elektronenspektren von Molekülen}
+    \begin{important}
+        $$
+        \Delta T = \Delta T_{\mathrm{e}} + \Delta G(\nu) + \Delta F(J)
+        $$     
+    \end{important}
+    \begin{table}[H]
+        \centering
+        \caption{Größenordnung der Spektrallinien}
+        \begin{tabular}{c|c|c}\toprule
+            Elektronenspektren $\Delta T_\mathrm e$ & Schwingungsspektren $\Delta G(\nu)$ & Rotationsspektren $\Delta F(J)$ \\\midrule
+            \SI{1}{\electronvolt} & \SI{e-1}{\electronvolt} bis \SI{e-2}{\electronvolt} & \SI{e-3}{\electronvolt}\\\bottomrule
+        \end{tabular}
+    \end{table}
+    Elektronenübergange holen das Rotationsschwingungsspektrum in den sichtbaren Spektralbereich. Das gilt auch für homonukleare Moleküle, da sich beim Elektronenübergang auch das Dipolmoment ändern kann.
+    
+\subsection{Elektronenübergang und Schwingungsänderung}
+    \begin{figure}[H]
+        \centering
+        \incfig{vl12_abbildung_2}
+        \caption{Elektronische Energieniveaus $T''_\mathrm e$ und $T'_\mathrm e$ mit Schwingungszuständen $\nu''$ und $\nu'$. $T'_\mathrm e$ ist ein angeregter Zustand, $T''_\mathrm e$ ist der Grundzustand.}
+        \label{fig:vl12_abbildung_2}
+    \end{figure}
+    Die alte Auswahlregel
+    $$
+    \Delta \nu = \pm 1, \pm 2, \pm 3
+    $$ 
+    ist \textbf{nicht} mehr gültig!\\
+    
+    Das \quickdef{Franck-Condon Prinzip} macht jetzt Aussagen:
+    Klassisch erfolgt ein Elektronenübergang schnell gegenüber der Schwingung, da die Elektronenmasse sehr viel geringer ist als die Kernmasse.
+    Daher muss der Abstand $r$ der Kerne gleich sein, da sich der Schwingungszustand nicht ändert. 
+    Da $r = \text{const}$, müssen die Übergange in der \autoref{fig:vl12_abbildung_3} \textbf{senkrecht} sein.
+    Die Übergänge sind von Umkehrpunkt zu Umkehrpunkt, da die Aufenthaltswahrscheinlichkeit an den Umkehrpunkten am größten ist. 
+    Die Ausnahme hierbei bildet der Grundzustand.
+
+    \begin{figure}[H]
+        \centering
+        \incfig{vl12_abbildung_3}
+        \caption{Elektronenübergang und Schwingungsänderung. Der Übergang, dargestellt als roter Pfeil, muss senkrecht sein, damit der Kernabstand $r$ konstant bleibt.}
+        \label{fig:vl12_abbildung_3}
+    \end{figure}
+
+    In der Quantentheorie wird für das Franck-Condon Prinzip das Überlappintegral
+    $$
+    W \sim \int \chi_{\nu'} (r) \xi_{\nu''}(r) \mathrm{d}V
+    $$ 
+    betrachtet. In ihm werden die Kernschwingungsfunktion $\chi_{\nu'}(r)$ und $\chi_{\nu''}(r)$ bei der Auslenkung $r$ über das Molekülvolumen integriert.
+    Wegen der endlichen Breite der Wahrscheinlichkeitsbereiche gibt es nicht nur einen Übergang, sondern man erhält mit unterschiedlichen Wahrscheinlichkeiten Übergänge zu benachbarten Schwingungsniveaus.\\
+
+\subsection{Aussehen der Spektren (Absorbtion)}
+\paragraph{Fall 1: $r_{\mathrm{e}}' \simeq r_{\mathrm{e}}''$}~
+
+    \begin{figure}[H]
+        \centering
+        \incfig{vl12_abbildung_4}
+        \caption{Spektrum, wenn die Kernabstände in Grundzuständ und angeregtem Zustand ähnlich sind.}
+        \label{fig:vl12_abbildung_4}
+    \end{figure}
+    Für $r_\mathrm e'\simeq r_\mathrm e''$ sind folgende Übergänge erlaubt:
+    \begin{enumerate}
+        \item $\bm\Delta\nu=0:$ der stärkste Übergang ist $\nu''=0 \to\nu'=0$, da überwiegend nur der Grundzustand besetzt ist. 
+        Die Übergänge $1\to1,~2\to2,  \ldots$ sind nur schwach sichtbar im Gruppenspektrum, da die höheren Zustände nahezu nicht besetzt sind. 
+        \item $\bm \Delta\nu\neq0:$ Die Übergänge $0\to1,~0\to2, \ldots$ sind ebenfalls schwach, da das Überlappintegral klein ist. 
+    \end{enumerate}
+
+\paragraph{Fall 2: $r_{\mathrm{e}}'\neq r_{\mathrm{e}}''$}~\\
+    Überänge sind nur von $\nu''=0$ nach $\nu'=0,1,2,3,\ldots$ möglich (vgl. \autoref{fig:vl12_abbildung_5}). 
+    \begin{figure}[H]
+        \centering
+        \incfig{vl12_abbildung_5}
+        \caption{Spektrum, wenn die Kernabstände in Grundzuständ und angeregtem Zustand sich unterscheiden.}
+        \label{fig:vl12_abbildung_5}
+    \end{figure}
+
+\subsection{Emissionspektren}
+    Die Emissionspektren zeigen im Prinzip die gleichen Bandenspektren wie bei der Absorption.\\
+    \paragraph{Bsp.: $r_{\mathrm{e}}' \neq r_{\mathrm{e}}''$}~
+
+    \hspace{3cm}
+    \begin{minipage}{1cm}
+       \textbf{\large{a)}}    
+    \end{minipage}
+    \begin{minipage}{14cm}
+        \hspace{-3cm}
+        \incfig{vl12_abbildung_6}
+    \end{minipage}
+
+    \hspace{4.5cm}
+    \begin{minipage}{1cm}
+       \textbf{\large{b)}}    
+    \end{minipage}
+    \begin{minipage}{14cm}
+        \hspace{-0.5cm}
+        \def\svgwidth{.35\columnwidth}
+        \subimport{./figures}{vl12_abbildung_7.pdf_tex}
+    \end{minipage}
+    \begin{center}
+        \captionof{figure}{\textbf{a)} Durch Stöße finden strahlungslose Übergänge statt, dargestellt als schwarze Pfeile. 
+            Der Konkurrenzprozess, d.h. der strahlungslose Übergang $W_\mathrm{opt}\sim (h\nu)^3$ ist im Infrarotbereich klein. 
+            Deswegen erfolgt die Relaxation strahlungslos in den Grundzustand, von dem aus die Emissionsprozesse stattfinden.\\
+            \textbf{b)} Schematische Absorptions- und Emissionspektren.
+            \label{fig:vl12_abbildung_6}
+        }
+    \end{center}
+    Durch Stöße finden strahlungslose Übergänge statt.
+    Der Konkurenzprozess zu strahlenden Übergängen $W_{\mathrm{opt}} \sim (h \nu)^3$ ist im Infrarotbereich klein. 
+    Deswegen erfolgt die Relaxation strahlungslos in den Grundzustand.
+
+    \paragraph{Anwendung: Farbstofflaser} Eine typische Anwendung ist der Farbstofflaser, ein 4-Niveau-Laser. 
+    Er ist durchstimmbar, das bedeutet sein Frequenzverhalten kann durch externe Ansteuerung in einem gewissen Rahmen verändert werden.
+    Außerdem hat er eine hohe Verstärkung und kann durch Mode-Locking kurze Laserpulse erzeugen.
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.31\columnwidth}
+    \subimport{./figures}{vl12_abbildung_9.pdf_tex}
+    \caption{Vereinfachte Darstellung der für die Farbstofflaser relevanten vier Energieniveaus (siehe \autoref{fig:vl12_abbildung_6}). Dieser Vorgang wird Pump-Prozess genannt.}
+    \label{fig:vl12_abbildung_9}
+\end{figure}
+
+\subsection{Rotationsstruktur}
+Die Rotationsübergänge haben die Wellenzahl
+$$
+\overline{\nu} = T' - T'' = T^{'(\text{el})}_J + G_{\nu'}' + F'_{\nu', J'} - \left( T''^{(\text{el})} + G_{\nu''}'' + F_{\nu'', J''}'' \right).
+$$ 
+Wird der Zentrifugalterm $(D_{\nu}J^2(J+1)^2)$ vernachlässigt, so gilt für die Übergänge
+$$
+\begin{aligned}
+	F_{\nu', J'}' &= B_{\nu'}J'(J'+1)\qquad\text{und}\\
+	F_{\nu'', J''}'' &= B_{\nu''}J'' (J''+1).
+\end{aligned}
+$$ 
