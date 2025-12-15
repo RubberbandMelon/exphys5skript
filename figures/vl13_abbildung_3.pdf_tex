@@ -55,7 +55,8 @@
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{vl13_abbildung_3.pdf}}%
     \put(0.73154693,0.00299598){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$r$\end{tabular}}}}%
-    \put(0.27015558,0.2680634){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+    \put(0.26554658,0.27028256){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+    \put(0.68836075,0.19447427){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$A+B$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl13_abbildung_3.pdf}}%
   \end{picture}%
 \endgroup%

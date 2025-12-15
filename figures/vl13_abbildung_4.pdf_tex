@@ -69,5 +69,6 @@
     \put(0,0){\includegraphics[width=\unitlength,page=4]{vl13_abbildung_4.pdf}}%
     \put(0.47770835,0.18248546){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$(\mathrm{AB})^{*}$\end{tabular}}}}%
     \put(0.24846194,0.01647371){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$(\mathrm{AB})$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{vl13_abbildung_4.pdf}}%
   \end{picture}%
 \endgroup%
