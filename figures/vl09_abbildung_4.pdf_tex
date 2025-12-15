@@ -57,7 +57,7 @@
     \put(0.11805237,0.4503222){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \overline{ \nu}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl09_abbildung_4.pdf}}%
     \put(0.89299981,0.02520395){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
-    \put(0.31309537,0.00595437){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_{\mathrm{e}} \sim 0.125\, \text{nm}$\end{tabular}}}}%
+    \put(0.31309537,0.00595437){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_{\mathrm{e}} \sim 0.125\, \text{nm}$ (HCl)\end{tabular}}}}%
     \put(0.87468863,0.13355649){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D_{\mathrm{e}}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%

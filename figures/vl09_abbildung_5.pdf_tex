@@ -50,26 +50,26 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.54859018)%
+  \begin{picture}(1,0.36909016)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{vl09_abbildung_5.pdf}}%
-    \put(0.33936535,0.00434507){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_{\mathrm{e}}$\end{tabular}}}}%
-    \put(0.86894251,0.02200174){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
-    \put(0.15094297,0.53134249){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_{ \nu}$\end{tabular}}}}%
+    \put(0.33936535,0.00416471){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R_{\mathrm{e}}$\end{tabular}}}}%
+    \put(0.86894251,0.02182138){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
+    \put(0.15294159,0.35166625){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E_{ \nu}$\end{tabular}}}}%
+    \put(0.85252305,0.15337503){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D_{\mathrm{e}}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl09_abbildung_5.pdf}}%
-    \put(0.85252305,0.15355539){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D_{\mathrm{e}}$\end{tabular}}}}%
+    \put(0.76909913,0.16427443){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D_0$\end{tabular}}}}%
+    \put(0.21920778,0.05442091){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{ \nu = 0}$\end{tabular}}}}%
+    \put(0.24431227,0.08826665){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{1}$\end{tabular}}}}%
+    \put(0.24431227,0.11583616){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{2}$\end{tabular}}}}%
+    \put(0.24431227,0.14359677){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{3}$\end{tabular}}}}%
+    \put(0.24431227,0.16703853){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{4}$\end{tabular}}}}%
+    \put(0.24736662,0.19682131){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{ \vdots}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl09_abbildung_5.pdf}}%
-    \put(0.74264945,0.17396639){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$D_0$\end{tabular}}}}%
-    \put(0.21697459,0.08220666){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{ \nu = 0}$\end{tabular}}}}%
-    \put(0.24020326,0.1170331){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{1}$\end{tabular}}}}%
-    \put(0.24020326,0.14707953){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{2}$\end{tabular}}}}%
-    \put(0.24020326,0.17484602){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{3}$\end{tabular}}}}%
-    \put(0.24020326,0.19905972){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{4}$\end{tabular}}}}%
-    \put(0.24402692,0.23161197){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{red}{ \vdots}$\end{tabular}}}}%
+    \put(0.49974132,0.07133328){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1 /2 \hbar \omega_{ \nu}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{vl09_abbildung_5.pdf}}%
-    \put(0.4914411,0.05933662){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$1 /2 \hbar \omega_{ \nu}$\end{tabular}}}}%
+    \put(0.37361774,0.07121683){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{green}{\overline{r}}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{vl09_abbildung_5.pdf}}%
-    \put(0.50183853,0.29242537){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$ \textcolor{green}{\overline{r}}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
