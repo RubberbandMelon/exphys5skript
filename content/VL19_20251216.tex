@@ -1,0 +1,122 @@
+\clearpage
+\setcounter{section}{4}
+\setcounter{subsection}{2}
+\setcounter{equation}{0}
+
+\subsection{Fehlordnung in Kristallen}
+Viele wichtige Eigenschaften der Kristalle (mechanische, optische, elektrische, magnetische) sind in ebenso starken Maße durch Kristallfehler bestimmt wie durch die Natur des Wirtskristalls selber. Ein Beispiel dafür ist die Leitfähigkeit von Halbleitern, welche durch die Dotierung, also Verunreinigung, mit Fremdatomen ermöglicht wird. Auch die Farbe und Lumineszenz vieler Kristalle kommt so durch Verunreinigungen und Defekten zustande.
+
+\begin{enumerate}
+	\item Nulldimensionale Punktdefekte (atomare Baufehler)
+		\begin{enumerate}
+			\item Eigenfehlstellen
+			\item Fremdstörstellen 
+			\item Fremdstörstellen
+			\item Zwischengitteratome
+		\end{enumerate}
+	\item Eindimensionale (linienförmige) Fehler führen zu Versetzung
+	\item Zweidimensionale (flächenhafte) Fehler führen zu Korngrenzen
+	\item Dreidimensionale Fehler führen zu Clustern aus Fremdatomen
+\end{enumerate}
+
+\subsubsection{Eigenfehlstellen}
+Aus der statistischen Thermodynamik ergibt sich die Erkenntnis, dass der Energieaufwand $W_{D}$ für die Bildung einer Fehlstelle dem Entropiegewinn gegenübersteht.\\
+\textcolor{red}{Grafik}
+\paragraph{Berechnung der Konzentration von Leerstellen im thermodynamischen Gleichgewicht} (bei konstantem Volumen)\,\\
+Dazu ermittelt man die Änderung der \textbf{freien Energie} $F$ bei der Bildung von $N_{D}$ Leerstellen
+\begin{equation}
+	\label{eq:II.4.1}
+	\Delta F = N_{D} W_{D} - T \Delta S_{D}
+\end{equation}
+mit dem insgesamt erzielten Entropiegewinn $\Delta S_{D}$ (Konfiguration). Die Änderung der Schwingungsebene ($\Delta S_{S} = N_{D} \sigma_{\text{sch}}$) wird im weiteren vernachlässigt, da sie nicht Temperaturabhängig ist.
+Die Wahrscheinlichkeit für die Entstehung der Defekte wird durch die Anzahl der Möglichkeien gegeben, $N_{D}$ Teilchen von $N$ Gitteratomen herauszugreifen.
+\begin{equation}
+	\label{eq:II.4.2}
+	G = \frac{N\left( N-1 \right) \ldots \left( N-N_{D}+1 \right) }{N_{D} !} = \frac{N!}{\left( N-N_{D} \right) ! N_{D} !}
+\end{equation}
+wobei das Teilen durch $N_{D}!$ die Realisierungsmöglichkeiten ausschließt, die nur auf unterschiedlichen Reihenfolgen des Herausgreifens von $N_{D}$ Teilchen beruhen.\\
+Mit der aus der statistischen Thermodynamik bekannten Boltzman-Gleichung lässt sich
+$$
+\Delta S_{D} = \mathrm{k}_{\mathrm{B}} \ln\left( G \right) = \mathrm{k}_{\mathrm{B}} \ln\left( \frac{N!}{\left( N-N_{D} \right) ! N_{D} !} \right) 	
+$$ 
+formulieren. Da $N_{D}$ und $N$ sehr groß sind, lässt sich die Stirling'sche Näherung $\ln\left( x! \right) = x\ln(x) - x$ anwenden und es folgt
+$$
+\Delta S_{D} = \mathrm{k}_{\mathrm{B}} \left( N \ln\left( N \right)  - \left( N-N_{D} \right) \ln\left( N-N_{D} \right) - N_{D} \ln\left( N_{D} \right)  \right) .
+$$ 
+Im thermodynamischen Gleichgewicht muss die freie Energie und damit ihr Zuwachs eine Minimum erreichen
+$$
+\left( \frac{\partial \Delta F}{\partial N_{D}}  \right) _{T} = W_{D} - \mathrm{k}_{\mathrm{B}} T \ln\left( \frac{N -N_{D}}{N_{D}} \right) =
+$$ 
+dn $N_{D} \ll N$. Es folgt
+\begin{equation}
+	\label{eq:II.4.3}
+	N_{D} = N e^{- \frac{W_{D}}{\mathrm{k}_{\mathrm{B}} T}}
+\end{equation}
+Die Anzahl der Leerstellen (Lücken) sind im thermodynamischen Gleichgewicht stark temperaturabhängig und Defekte sind natürlich.\\
+Beispiele:
+\begin{itemize}
+	\item $T = \SI{1000}{\kelvin}$, $W_{D} = \SI{1}{\electronvolt}$, $N_{D}\sim \SI{e-5}{N}$ \\
+		mit Berücksichtigung der Schwingungsentropie ist $N_{D}\sim \SI{e-4}{N}$
+	\item $T = \SI{3000}{\kelvin}$, $W_{D} = \SI{1}{\electronvolt}$, $N_{D}\sim \SI{e-17}{N}$ \\
+		mit Berücksichtigung der Schwingungsentropie ist $N_{D}\sim \SI{e-16}{N}$
+\end{itemize}
+
+\paragraph{Schottky-Defekt}\,\\
+\textcolor{red}{grafik}\\
+\begin{itemize}
+	\item $W_{D}^{\text{Sch}} = W_{B} - W_{ob}$ $(W_{D} >0)$ 
+	\item $W_{B}$ entspricht der bindungsenergie des Teilchhens im Kristallverband
+	\item $W_{\text{ob}}$ entspricht der Bindungsenergie and der Oberfläche
+	\item $$
+	N_{D} = N e^{- \frac{-W_{D}^{\text{Sch}}}{\mathrm{k}\mathrm{B}T}}
+	$$ 
+\end{itemize}
+
+\paragraph{Frenkel-Defekt}\,\\
+\textcolor{red}{grafik}
+Lücke und Zwischengitterplatz treten paarweise auf
+\begin{itemize}
+	\item $W_{D}^{\text{Fr}} = W_{B} - W_{Zg}$ 
+	\item $W_{Zg}$ entspricht der Bindungsenergie auf Zwischengitterplatz
+	\item $$
+	N_{D} = N e^{- \frac{W_{D}^{\text{Fr}}}{2 \mathrm{k}_{\mathrm{B}} T}}
+	$$ 
+	mit der $2$ im Exponenten werden verfügbare Zwischengitterplätze in der Statistik miteingezählt
+\end{itemize}
+
+\paragraph{Antiside-Defekt}\,\\
+\textcolor{red}{grafik}\\
+
+In der Praxis ist die tatsächliche Zahl der Baufehler fast immer größer als die berechnete. Dies liegt an äußeren Einflüßen wie Bestrahlung und mechnischen Einflüssen, kann aber auch Resultat rascher Abkühlung sein, bei welcher Defekte mit eingefroren werden.
+
+\subsubsection{Fremdstörstellen}
+Die Klassifizierung von Fremdstörstellen erfolgt durch dem Einbauort. Befindet sich das Fremdatom auf einem regulären Gitterplatz handelt es sich um eine substitutionelle, bei einem Zwischengitterplatz um ein interstitionelle Störstelle. Die typische Konzentration dieser Störstellen beträgt $\sim \SI{e15}{\centi \meter ^{-3}}$
+Fremdatome mit geringem Radius bevorzugen oft Zwischengitterplätze, während ähnliche Atome, d.h. ähnlicher Radius und Struktur der Elektronenhüllen, reguläre Gitterplätze präferieren.
+Man unterscheidet zwischen
+\begin{enumerate}
+	\item Isoelektrischer Fremdstörstelle, welche gleiche Wertigkeit wie das zu substituierende Atom besitzt wie bspw. \ce{Zn^2+} in \ce{Cd^2+S^2-}
+	\item Donator: Fremdatom mit hoher Wertigkeit bspw. \ce{As+} bei vier-wertigem \ce{Si} 
+	\item Akzeptor: geringe Wertigkeit, bspw. \ce{B-} vier-wertigem \ce{Si}
+\end{enumerate}
+
+\paragraph{Einbau von Fremdatomen}\,\\
+Der Einbau von Fremdatomen erfolgt entweder bei der Epitaxie oder mittels Ionenimplantation. Bei diesem Verfahren werden Ionen mit einer kinetischen Energie im \unit{\kilo \electronvolt}- bis \unit{\mega \electronvolt}-Bereich auf die Bereiche geschossen, in welchen Ionen implantiert werden sollen. Der Nachteil an dieser Methode ist, dass die eintretenden Ionen bevor sie zum Stillstand kommen Defekte im Gitter durch Kollision mit Gitteratomen verursachen, wobei die verursachten Schäden mit höherer gewünschter Eindringtiefe zunehmen. Der Kristall muss deshalb in einem Folgeschritt ausgeheilt werden, indem die Temperatur erhöht wird, wodurch die Gitteratome in ihre Ausgangspositionen zurück kehren können.
+
+\subsubsection{Eindimensionale Fehlordnung: Versetzungen}
+Es gibt zwei Arten der Eindimensionalen Fehlordnung. Man unterscheidet zwischen
+\begin{itemize}
+	\item Stufenversetzung
+	\item Schraubenversetzung
+\end{itemize}
+\paragraph{Stufenversetzung}\,\\
+Bei der Stufenversetzung handelt es sich um den Einschub einer Gitterebene.\\
+\textcolor{red}{Grafik}\\
+Senkrecht zur Bildebene setzt sich die \textbf{Versetzungslinie} zur Kristalloberfäche fort. Ursache der Versetzungen sind Druck und Verspannungen im Kristall welcher bspw. durch das Aufwachsen zweier Materialien mit leicht unterschiedlichen Gitterkonstanten zustande kommt.
+
+\paragraph{Schraubenversetzung}\,\\
+\textcolor{red}{Grafik}\\
+In bestimmten Bereichen sind die Gitterebenen um einen oder mehrere Gitterbausteine verschoben. Es kommt zu komplexen Linienversetzungen durch Kombination von Stufen und Schraubenversetzungen.
+
+\subsubsection{Zweidimensionale Fehlordnung: Versetzungen}
+Stapelfehler und Zwillingsbildung\\
+\textcolor{red}{Grafik}
