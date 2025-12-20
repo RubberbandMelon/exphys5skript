@@ -1,0 +1,216 @@
+\clearpage
+\setcounter{section}{4}
+
+\section{Gitterdynamik des Festkörpers}
+Die kollektive Bewegung der Bausteine im Festkörper auf atomischer Grundlage lässt sich als Vielkörperproblem mit $N$ Atomen betrachten.
+
+\paragraph{Adiabatische Näherung}\,\\
+Die Bewegung der Kerne der Atome eines Kristallsgitters ist langsamer als die der Elektronen, da die Kerne weitaus höhere Massen besitzen. Bei einer Verschiebung der Kerne bewegen sich die Elektronen somit instantan mit, wobei der umgekehrte Fall nicht gilt. Es ist somit eine getrennte Betrachtung der Elektronen und Kernbewegung nötig.
+
+\paragraph{Bewegung der Kerne}\,\\
+Die Bewegung der Kerne bestimmt folgende Eigenschaften
+\begin{itemize}
+	\item Schallausbreitung
+	\item thermische Ausdehnung
+	\item Gitteranteil der spezifischen Wärme
+	\item Temperaturabhängigkeit der elektrischen Leitfähigkeit
+	\item Supraleitfähigkeit von Metallen
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{0.375\textwidth}
+    \subimport{figures/}{vl20_abbildung_1.pdf_tex}
+    \label{fig:vl20_abbildung_1}
+\end{figure}
+Atome sind über Bindungskräfte gekoppelt.
+
+\paragraph{Modell des Festkörpers}\,\\
+Beim Modell des Festkörpers werden Atome als Punktmassen angesehen, welche über Federn mit ihren Nachbarn verbunden sind, wobei die Federn die zwischen den Atomen wirkenden Kräfte repräsentieren. Dieses Modell wird auf folgende weise angewendet:
+\begin{enumerate}
+	\item Bei kleinen Auslenkungen eines Atoms wird linear elastisch genähert
+	\item Das Modell ist 'realistisch', was bedeutet, dass ein Atom nicht nur mit seinen direkten Nachbarn über Federn verbunden ist, sondern auch mit dem 2. oder 3. Nachbarn
+	\item Bei dreidimensionaler Betrachtung von Gittern kommt es zu unübersichtlichen Ausdrücken und Mehrfachindizes. Aus diesem Grund beginnt man mit eindimensionalen Betrachtungen welche man versucht auf 3D zu übertragen.
+\end{enumerate}
+
+\subsection{Welle in einer Atomreihe mit Atomen gleicher Massen}
+Die Betrachtung einer Welle in einer Atomreihe entspricht der Betrachtung entlang einer speziellen Richtung eines Kristalls wie bspw. $\left[ 100 \right] $, $\left[ 110 \right] $ und $\left[ 111 \right] $ im kubischen Kristall. Sind die Netzebenen in Phase so reicht eine Koordinate zur Beschreibung der Welle aus.
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl20_abbildung_2}
+    \label{fig:vl20_abbildung_2}
+\end{figure}
+Bei dieser eindimensionalen Betrachtung werden zwei Annahmen gemacht:
+\begin{enumerate}
+	\item Ein Atom hat nur mit seinem nächsten Nachbarn wechselwirkung
+	\item Es besteht ein lineares Kraftgesetz
+\end{enumerate}
+
+Die Kraft auf das $n$-te Atom berechnet sich mittels
+\begin{equation}
+	\label{eq:II.5.1}
+	K_{n} = \beta \left( u_{n+1} - u_{n} \right) + \beta\left( u_{n-1}-u_{n} \right) 
+\end{equation}
+
+womit die Bewegungsgleichung
+\begin{equation}
+	\label{eq:II.5.2}
+	m \frac{\mathrm{d}^2 u_{n}}{\mathrm{d}t^2} = \beta \left( u_{n+1} + u_{n-1} - 2 u_{n} \right) 	
+\end{equation}
+folgt. Der Ansatz der laufenden Welle lautet
+\begin{equation}
+	\label{eq:II.5.3}
+	u_{n} = u_0 e^{i \left| k_{n} a - \omega t \right| }.
+\end{equation}
+\ref{eq:II.5.3} in \ref{eq:II.5.2} eingesetzt liefert
+$$
+- m\omega^2 = \beta\left( e^{ika} + e^{-ika} 2 \right) = - 4\beta \sin^2\left( \frac{ka}{2} \right) .
+$$
+Damit ergibt sich die Dispersionsrelation
+\begin{equation}
+	\label{eq:II.5.4}
+	\omega = \sqrt{ \frac{4 \beta}{m}} \left| \sin\left( \frac{ka}{2} \right)  \right| . 
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl20_abbildung_3}
+    \label{fig:vl20_abbildung_3}
+\end{figure}
+
+Es gibt eine maximale Frequenz 
+$$
+\omega_{\text{max}} = \sqrt{ \frac{4\beta}{m}}.
+$$ 
+Nur $k$-Werte die innerhalb der 1. Bz liegen haben physikalische Bedeutung.\\
+\textcolor{red}{grafik}\\
+
+Das Verhältnis der Auslenkungen benachbarter Atome lautet
+$$
+\frac{u_{n+1}}{u_{n}} = e^{iku}
+$$ 
+wobei der Bereich $\left[ -\pi, \pi \right] $ für die Phase $ka$ umfässt alle unabhängigen Werte der Exponentialfunktion. Es sind somit positive als auch negative Werte von $k$ möglich, wobei die unterschiedlichen Vorzeichen die Ausbreitung der Welle nach links oder rechts repräsentieren.
+
+\paragraph{Bemerkung 1.}\,\\
+Betrachte die Grenzen der Brillouin-Zone bei $k = \pm \pi /a$ 
+$$
+v_{\text{gr}} = \frac{\text{d}\omega}{\text{d}k} = \sqrt{ \frac{\beta}{m}} a \cos\left( \frac{ka}{2} \right) 
+$$ 
+$$
+v_{\text{gr}} \left( \frac{\pi}{a} \right) = 0
+$$
+d.h. es besteht eine stehende Welle, da benachbarte Atome in entgegengesetzer Phase sind. Diese Situation ist der Bragg-Reflexion von Röntgenstrahlen \ref{eq.II.3.22} 
+$$
+2d \sin\left( \frac{\theta}{2} \right) = m \lambda
+$$ 
+mit $d=a$, $\theta = \pi$ und $m=1$, äquivalent. Wenn ein $k$-Vektor auf das Ende der Brillouin-Zone stößt gibt es Braggreflexion, was zu einer stehenden Welle führt. Die gesamte Physik spielt sich somit in der 1. Bz ab!
+\paragraph{Bemerkung 2.}\,\\
+Es sind beliebig große $\lambda \gg a$ mit $ak \ll 1$ möglich, d.h. es gilt gemäß der Kleinwinkelnäherung 
+$$
+\omega \approx \sqrt{\frac{\beta}{m}} ak
+$$ 
+mit der Phasengeschwindigkeit 
+$$
+v_{\text{ph}} = \frac{\omega}{k} = \sqrt{\frac{\beta}{m} a} 
+$$ 
+und der Gruppengeschwindigkeit
+$$
+v_{\text{gr}} = \frac{\text{d} \omega}{\text{d}k} = v_{\text{ph}}.
+$$ 
+Für die Längendichte gilt
+$$
+\rho' = \frac{m}{a} \quad \to \quad v_{\text{ph}} = \sqrt{ \frac{a \beta}{\rho'}} = \sqrt{ \frac{E'}{\rho'}} 
+$$ 
+mit dem linearen Elastizitätsmodul $E'=a \beta$. 
+\begin{itemize}
+	\item $v_{\text{ph}}$ Kontinuumstheorie der elastischen Welle
+	\item Schallgeschwindigkeit von der Frequenz (Kontinuumstheorie) (Steigung bei $k=0$) \\ 
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{0.464\columnwidth}
+    \subimport{figures/}{vl20_abbildung_5.pdf_tex}
+    \label{fig:vl20_abbildung_5}
+\end{figure}
+
+\paragraph{Bemerkung 3}\,\\
+$$
+\omega_{\text{max}} = \sqrt{ \frac{4 \beta}{m}} \quad \to \quad \omega_{\text{max}} = \SI{5e13}{\hertz} \quad \text{(IR)}
+$$ 
+
+\paragraph{Bemerkung 4}\,\\
+Transversale Wellen folgen analog
+$$
+\begin{aligned}
+	\beta_{\text{trans}} &< \beta_{\text{l}}\\
+	\omega_{\text{trans}} (k) &< w_{\text{l}}(k)
+\end{aligned}
+$$ 
+
+\paragraph{Bemerkung 5}\,\\
+In 3D:
+\begin{enumerate}
+	\item Welle in beliebige Richtungen $\Vec{k} = \left( k_{x}, k_{y}, k_{z} \right) $ 
+	\item 1. Bz komplizierter im 3D Körper 
+	\item Aus 3 Freiheitsgrade folgen 3 Polarisationen, davon eine longitudinal und zwei transversal
+	\item $w(k)$ wird richtungsabhängig
+\end{enumerate}
+
+\paragraph{Bemerkung 6}\,\\
+Eigenschwingungen
+\begin{itemize}
+	\item Bei einer unendlich langen Kette an Atomen sind $k$, $\omega$, und $\lambda$ kontinuirlich
+	\item bei enlich langen Ketten folgen aus den Randbedingungen diskrete $k$, $w$ und $\lambda$. Die Länge der kette bei $n=1,\ldots,N$ Atomen ist $L= \left( N-1 \right) a \approx Na$. Die periodischen Randbedingungan lauten
+		$$
+		u\left( na \right)  = u\left( na + L \right)  = u\left( na + Na \right) 
+		$$ 
+		also
+		$$
+		e^{i\left( -\omega t + kna \right) } = e^{i\left( -i\omega t + kna + kL \right) }.
+		$$ 
+		Damit dies gilt wird
+		$$
+		kL = \pm n 2 \pi \quad n \in \mathbb{N}_{0}
+		$$ 
+		gesetzt, da
+		$$
+		e^{ikl} =1
+		$$
+		woraus
+		$$
+		k= \pm \frac{n 2\pi}{L} \quad n = 1,\ldots, \frac{N}{2}
+		$$ 
+		folgt. Es ergibt sich
+		$$
+		k = \pm \frac{2\pi}{L}, \pm \frac{4\pi}{L}, \ldots , \frac{N\pi}{L} =\pm \frac{\pi}{a}
+		$$ 
+		und 
+		$$
+		\lambda_{k} = L, \frac{L}{2},\ldots, 2a.
+		$$ 
+
+\end{itemize}
+
+
+
+\paragraph{Phononen}\,\\
+Aus der Quantenmechanik sind die Energieeigenwerte des harmonsichen Oszillators 
+\begin{equation}
+	\label{eq:II.5.5}
+	E_{r} = \hbar \omega_{k} \left( r +\frac{1}{2} \right) \quad r \in \mathbb{N}
+\end{equation}
+bekannt. Die Energie einer wellenförmigen Gitterschwindungung (Anregung) ist gequantelt mit
+$$
+E = \hbar \omega_{k}.
+$$ 
+Während es sich bei der Hohlraumstrahlung bzw. Schwarzkörperstrahlung um thermisch angeregte Photonen handelt, handelt es sich bei thermischen schwingungen in Kristallen um thermisch angeregt Phononen \textcolor{red}{?}.\\
+Die spezifische Wärme und die Ergebnisse verschiedener Streuexperimente mit Photonen, Neutronen etc. sind Zeugniss der Existenz von Phononen.
+
+\paragraph{Impuls der Phononen}\,\\
+\begin{equation}
+	\label{eq:II.5.6}
+	\Vec{p}_{k} = \hbar \Vec{k}
+\end{equation}
+bezeichnet man als den Quasiimpuls bzw. Kristallimpuls. Ein Phonon mit dem Wellenvektor $\Vec{k}$ tritt mit Teilchen wie Photonen, Neutronen, Elektronen etc. in Wechselwirkung, als hätte es einen Impuls $\hbar  \Vec{k}$. Phonone besizten jedoch \textbf{keinen} physikalischen Impuls.
+
