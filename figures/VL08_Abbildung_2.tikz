@@ -14,7 +14,7 @@
 \node [font=\normalsize] at (14,12.75) {};
 \node [font=\normalsize] at (13.5,12.75) {};
 \node [font=\normalsize] at (10,13) {$m_1$};
-\draw [<->, >=Stealth] (13.75,12.25) -- (10,12.25);
+\draw [->, >=Stealth] (13.75,12.25) -- (10,12.25);
 \node [font=\normalsize] at (12.5,13.25) {$R_2$};
 \node [font=\normalsize] at (10.75,13.25) {$R_1$};
 \node [font=\normalsize] at (11.75,12) {$R$};
