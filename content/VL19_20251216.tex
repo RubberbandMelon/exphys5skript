@@ -1,11 +1,12 @@
 \setcounter{section}{4}
 \setcounter{subsection}{2}
 \setcounter{equation}{0}
+\setcounter{figure}{4}
 
 \subsection{Fehlordnung in Kristallen}
 	Viele wichtige Eigenschaften der Kristalle (mechanische, optische, elektrische, magnetische) sind in ebenso starken Maße durch Kristallfehler bestimmt wie durch die Natur des Wirtskristalls selber. 
 	Ein Beispiel dafür ist die Leitfähigkeit von Halbleitern, welche durch die Dotierung, also Verunreinigung, mit Fremdatomen ermöglicht wird. 
-	Auch die Farbe und Lumineszenz vieler Kristalle kommt so durch Verunreinigungen und Defekten zustande.
+	Auch die Farbe und Lumineszenz vieler Kristalle kommt so durch Verunreinigungen und Defekte zustande.
 
 	Man unterscheidet vier Fehlordnungen von Kristallen:
 	\begin{enumerate}
@@ -56,7 +57,7 @@
 	mit dem insgesamt erzielten Entropiegewinn $\Delta S_\mathrm{D}$ (es wird die Konfigurationsentropie verwendet). 
 	Die Änderung der Schwingungsentropie ($\Delta S_\mathrm{S} = N_\mathrm{D} \sigma_{\text{schw}}$) wird im Weiteren vernachlässigt, da sie nicht temperaturabhängig ist.
 
-	Die Wahrscheinlichkeit für die Entstehung der Defekte wird durch die Anzahl $G$ der Möglichkeien gegeben, $N_\mathrm{D}$ Teilchen von $N$ Gitteratomen herauszugreifen.
+	Die Wahrscheinlichkeit für die Entstehung der Defekte wird durch die Anzahl $G$ der Möglichkeien gegeben, $N_\mathrm{D}$ Teilchen von $N$ Gitteratomen herauszugreifen:
 	\begin{equation}
 		\label{eq:II.4.2}
 		G = \frac{N\left( N-1 \right) \ldots \left( N-N_{D}+1 \right) }{N_\mathrm{D} !} 
@@ -65,11 +66,11 @@
 	wobei das Teilen durch $N_\mathrm{D}!$ die Realisierungsmöglichkeiten ausschließt, die nur auf unterschiedlichen Reihenfolgen des Herausgreifens von $N_\mathrm{D}$ Teilchen beruhen.\\
 	Mit der aus der statistischen Thermodynamik bekannten Boltzman-Gleichung gilt
 	$$
-	\Delta S_{D} = \mathrm{k}_{\mathrm{B}} \ln\left( G \right) = \mathrm{k}_{\mathrm{B}} \ln\left( \frac{N!}{\left( N-N_{D} \right) ! N_{D} !} \right).
+	\Delta S_\mathrm{D} = \mathrm{k}_{\mathrm{B}} \ln\left( G \right) = \mathrm{k}_{\mathrm{B}} \ln\left( \frac{N!}{\left( N-N_\mathrm{D} \right) ! N_\mathrm{D} !} \right).
 	$$ 
 	Da $N_\mathrm{D}$ und $N$ sehr groß sind, lässt sich die Stirling'sche Näherung ${\ln\left( x! \right) = x\ln(x) - x}$ anwenden und es folgt
 	$$
-	\Delta S_\mathrm{D} = \mathrm{k}_{\mathrm{B}} \left( N \ln\left( N \right)  - \left( N-N_\mathrm{D} \right) \ln\left( N-N_\mathrm{D} \right) - N_\mathrm{D} \ln\left( N_\mathrm{D} \right)  \right) .
+	\Delta S_\mathrm{D} = \mathrm{k}_{\mathrm{B}} \Big( N \ln\left( N \right)  - \left( N-N_\mathrm{D} \right) \ln\left( N-N_\mathrm{D} \right) - N_\mathrm{D} \ln\left( N_\mathrm{D} \right)  \Big) .
 	$$ 
 	Im thermodynamischen Gleichgewicht muss die freie Energie und damit ihr Zuwachs eine Minimum erreichen
 	$$
@@ -228,11 +229,11 @@
 	Der Nachteil der Ionenimplantation ist, dass die eintretenden Ionen Defekte im Gitter durch Kollision mit Gitteratomen verursachen bevor sie zum Stillstand kommen.
 	Diese verursachten Schäden nehmen mit höherer gewünschter Eindringtiefe zu. 
 	Der Kristall muss deshalb in einem Folgeschritt ausgeheilt werden, indem die Temperatur erhöht wird und die Gitteratome in ihre Ausgangspositionen zurückkehren.
-	\autoref{fig:vl19_defekterzeugung_implantation} zeigt schematisch, wie Defekte durch den Ionenbeschuß entstehen.
+	\autoref{fig:vl19_defekterzeugung_implantation} zeigt schematisch, wie Defekte durch den Ionenbeschuss entstehen.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width = 0.5\linewidth]{figures/vl19/defekterzeugung_implantation.png}
-		\caption{Defekterzeugung in Festkörpern durch Ionenbeschuß \cite{Hamann}.}
+		\caption{Defekterzeugung in Festkörpern durch Ionenbeschuss \cite{Hamann}.}
 		\label{fig:vl19_defekterzeugung_implantation}
 	\end{figure}
 
@@ -243,7 +244,7 @@
 		\item Schraubenversetzung
 	\end{itemize}
 \paragraph{Stufenversetzung}\,\\
-	Bei der Stufenversetzung handelt es sich um den Einschub einer Gitterebene.\\
+	Bei der Stufenversetzung handelt es sich um den Einschub einer Gitterebene.\\[1ex]
 	\begin{minipage}{0.48\linewidth}
 		\centering
 		\begin{tikzpicture}
@@ -281,12 +282,14 @@
 		\captionof{figure}{Stufenversetzung in einem kubischen Kristall \cite{Hamann}.}
 		\label{fig:vl19_stufenversetzung_3d}
 	\end{minipage}
-	\vspace{1em}
+	\vspace{1ex}
 	
-	Senkrecht zur Bildebene setzt sich die \textbf{Versetzungslinie} zur Kristalloberfäche fort. Ursache der Versetzungen sind Druck und Verspannungen im Kristall welcher bspw. durch das Aufwachsen zweier Materialien mit leicht unterschiedlichen Gitterkonstanten zustande kommt.
+	Senkrecht zur Bildebene setzt sich die \textbf{Versetzungslinie} zur Kristalloberfäche fort. 
+	Ursache der Versetzungen sind Druck und Verspannungen im Kristall, welche bspw. durch das Aufwachsen zweier Materialien mit leicht unterschiedlichen Gitterkonstanten zustande kommt.
 
 \paragraph{Schraubenversetzung}\,\\
-	In bestimmten Bereichen sind die Gitterebenen um einen oder mehrere Gitterbausteine verschoben (vgl \autoref{fig:vl19_schraubenversetzung}). Es kommt zu komplexen Linienversetzungen durch Kombination von Stufen und Schraubenversetzungen.
+	In bestimmten Bereichen sind die Gitterebenen um einen oder mehrere Gitterbausteine verschoben (vgl \autoref{fig:vl19_schraubenversetzung}). 
+	Es kommt zu komplexen Linienversetzungen durch Kombination von Stufen- und Schraubenversetzungen.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width = 0.6\linewidth]{figures/vl19/schraubenversetzung.png}
