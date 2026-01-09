@@ -17,10 +17,8 @@
 		\item Gitteranteil der spezifischen Wärme
 		\item Temperaturabhängigkeit der elektrischen Leitfähigkeit
 		\item Supraleitfähigkeit von Metallen
-	Atome sind über Bindungskräfte gekoppelt.
-
 	\end{itemize}
-
+Atome sind über Bindungskräfte gekoppelt.
 
 
 \paragraph{Modell des Festkörpers}\,\\
@@ -28,12 +26,12 @@
 	Diese Näherung entspricht dem klassischen Potential einer Feder.
 	\begin{figure}[H]
 		\centering
-		\def\svgwidth{0.375\textwidth}
+		\def\svgwidth{0.483\textwidth}
 		\subimport{figures/}{vl20_abbildung_1.pdf_tex}
 		\caption{Bindungspotential (schwarz) mit quadratischer Näherung (rot).}
 		\label{fig:vl20_abbildung_1}
 	\end{figure}
-	Beim Modell des Festkörpers werden Atome als Punktmassen angesehen, welche über Federn mit ihren Nachbarn verbunden sind (vgl. \autoref{fig:vl20_federmodell}).
+	Beim Fehlermodell des Festkörpers werden Atome als Punktmassen angesehen, welche über Federn mit ihren Nachbarn verbunden sind (vgl. \autoref{fig:vl20_federmodell}).
 	Die Federn repräsentieren die Kräfte zwischen den Atomen.
 	\begin{figure}[H]
 		\centering
@@ -41,7 +39,7 @@
 		\caption{Federmodell des Festkörpers.}
 		\label{fig:vl20_federmodell}
 	\end{figure}
-	Dieses Modell wird auf folgende Weise angewendet:
+	Folgende Punkte sind zu beachten:
 	\begin{enumerate}
 		\item Bei kleinen Auslenkungen eines Atoms wird linear elastisch genähert
 		\item Beim realistischen Modell ist ein Atom nicht nur mit seinen direkten Nachbarn über Federn verbunden, sondern auch mit dem 2. oder 3. Nachbarn.
@@ -102,7 +100,7 @@
 		\caption{Wellenzahlabhängigkeit der Schwingungsfrequenz $\omega$ nach der Dispersionsrelation \eqref{eq:II.5.4}.
 			Die Funktion setzt sich periodisch fort.
 			Die Länge $G=\frac{2\pi}{a}$ ist der reziproke Gittervektor.
-			Die erste Brillouinzone (1. Bz) liegt zwischen $-\frac\pi a$ und $\frac\pi a$.	
+			Die erste Brillouinzone (1. BZ) liegt zwischen $-\frac\pi a$ und $\frac\pi a$.	
 		}
 		\label{fig:vl20_abbildung_3}
 	\end{figure}
@@ -111,7 +109,7 @@
 	\omega_{\text{max}} = \sqrt{ \frac{4\beta}{m}}.
 	$$ 
 	Nur $k$-Werte, die innerhalb der ersten Brillouinzone liegen, haben physikalische Bedeutung. 
-	Wellen mit größerer Wellenzahl lassen sich nicht über die Atome übertragen, da die Wellenberge nicht mehr auf dem Großteil der Atome liegen kann (vgl. \autoref{fig:vl20_wellen}).
+	Wellen mit größerer Wellenzahl lassen sich nicht über die Atome übertragen, da die Wellenberge/täler nicht mit Massen belegt sind (vgl. \autoref{fig:vl20_wellen}).
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width = 10cm]{figures/vl20/wellen.pdf}
@@ -124,7 +122,7 @@
 
 	Das Verhältnis der Auslenkungen benachbarter Atome beträgt
 	$$
-	\frac{u_{n+1}}{u_{n}} = e^{iku}.
+	\frac{u_{n+1}}{u_{n}} = e^{ika}.
 	$$ 
 	Der Bereich $\left[ -\pi, \pi \right] $ für die Phase $ka$ umfasst alle unabhängigen Werte der Exponentialfunktion. 
 	Es sind somit positive und negative Werte von $k$ möglich, da sich die Wellen nach rechts oder links ausbreiten können.
@@ -145,7 +143,7 @@
 	$$ 
 	mit $d=a$, $\theta = \pi$ und $m=1$.
 	Wenn ein $k$-Vektor auf das Ende der Brillouin-Zone stößt, gibt es Braggreflexionen und es entsteht eine stehende Welle.
-	Die gesamte Physik spielt sich somit in der 1. Bz ab!
+	Die gesamte Physik spielt sich somit in der 1. BZ ab!
 \paragraph{Bemerkung 2:}
 	Es sind beliebig große $\lambda \gg a$ mit $ak \ll 1$ möglich. Für große $\lambda$ gilt die Kleinwinkelnäherung
 	$$
@@ -182,7 +180,7 @@
 	$$
 	liegt bei den meisten Feststoffen bei
 	$$
-	\omega_{\text{max}} = \SI{5e13}{\hertz}
+	\omega_{\text{max}} \sim  \SI{5e13}{\hertz}
 	$$
 	und ist damit im Infrarot-Bereich.
 
@@ -201,7 +199,7 @@
 	Wird die Betrachtung von einer Dimension auf drei übertragen, müssen folgende Anpassungen getroffen werden:
 	\begin{enumerate}
 		\item Die Welle breitet sich in beliebige Richtungen $\Vec{k} = \left( k_{x}, k_{y}, k_{z} \right) $ aus.
-		\item Die erste Brillouinzone ist komplizierter im dreidimensionalen Körper.
+		\item Die erste Brillouinzone ist komplizierter, d.h. ein dreidimensionalen Körper.
 		\item In den drei Freiheitsgraden gibt es drei Polarisationen, davon eine longitudinal und zwei transversal.
 		\item Die Schallfrequenz $w(k)$ wird richtungsabhängig.
 	\end{enumerate}
@@ -249,12 +247,12 @@
 	\end{equation}
 	bekannt. 
 	\begin{important}
-		Die Energie einer wellenförmigen Gitterschwindungung (Anregung) ist gequantelt mit
+		Die Energie einer wellenförmigen Gitterschwingung (Anregung) ist gequantelt mit
 		$$
 		E = \hbar \omega_{k}.
 		$$ 
 	\end{important}
-	Während es sich bei der Hohlraumstrahlung bzw. Schwarzkörperstrahlung um thermisch angeregte Photonen handelt, handelt es sich bei thermischen Schwingungen in Kristallen um thermisch angeregte Phononen.
+	Analogie: Während es sich bei der Hohlraumstrahlung bzw. Schwarzkörperstrahlung um thermisch angeregte Photonen handelt, handelt es sich bei thermischen Schwingungen in Kristallen um thermisch angeregte Phononen.
 	
 	Die spezifische Wärme und die Ergebnisse verschiedener Streuexperimente mit Photonen, Neutronen etc. sind Zeugniss der Existenz von Phononen.
 	Dennoch sind sie nur Quasiteilchen und keine echten Teilchen.
@@ -266,5 +264,5 @@
 	\end{equation}
 	bezeichnet man als den Quasiimpuls bzw. Kristallimpuls. 
 	Ein Phonon mit dem Wellenvektor $\Vec{k}$ tritt mit Teilchen wie Photonen, Neutronen, Elektronen etc. in Wechselwirkung, als hätte es einen Impuls $\hbar  \Vec{k}$. 
-	Phonone besizten jedoch \textbf{keinen} physikalischen Impuls.
+	Phononen besitzen jedoch \textbf{keinen} physikalischen Impuls (Beweis: siehe Hunklinger, Gross).
 

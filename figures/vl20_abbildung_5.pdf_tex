@@ -57,7 +57,7 @@
     \put(0.73491755,0.00625521){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\pi/a$\end{tabular}}}}%
     \put(0.87612551,0.04859463){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$k$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl20_abbildung_5.pdf}}%
-    \put(0.08078801,0.75970651){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega$\end{tabular}}}}%
+    \put(-0.01956013,0.76315747){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\omega$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl20_abbildung_5.pdf}}%
   \end{picture}%
 \endgroup%
