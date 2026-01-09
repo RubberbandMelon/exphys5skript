@@ -1,0 +1,182 @@
+\clearpage
+\setcounter{section}{5}
+\setcounter{subsection}{1}
+\setcounter{equation}{6}
+
+\subsection{Welle in Atomreihe, 2 Atome mit verschiedenen Massen}
+\begin{figure}[H]
+    \centering
+    \incfig{vl21_abbildung_1}
+    \label{fig:vl21_abbildung_1}
+\end{figure}
+
+Zur Untersuchung dieses Modells werden zwei Annahmen gemacht
+\begin{enumerate}
+	\item Wechselwirkungen bestehen nur mit dem nächsten Nachbarn
+	\item Es gilt das Hook'sche Gesetz
+\end{enumerate}
+Es folgen die Bewegungsgleichungen
+\begin{equation}
+	\label{eq:II.5.7}
+	\begin{split}
+		M_1 \frac{\mathrm{d}^2 u_{n}}{\text{d}t^2} &= \beta \left( v_{n} + v_{n-1} - 2u_{n} \right)  \\
+		M_2 \frac{\mathrm{d}^2 v_{n}}{\mathrm{d}t^2} &= \beta \left( u_{n+1} + u_{n} - 2v_{n}  \right) 
+	\end{split}
+\end{equation}
+
+Wir suchen nach Lösungen in der Form von laufenden Wellen, jedoch mit verschiedenen Amplituden $u$ und $v$. Wir wählen den Ansatz
+\begin{equation}
+	\label{eq:II.5.8}
+	\begin{split}
+		u_{n} &= u_0 e^{inka} e^{-i \omega t} \\
+		v_{n} &= v_0 e^{inka} e^{-i \omega t} .
+	\end{split}
+\end{equation}
+
+Einsetzen des Ansatzes \ref{eq:II.5.8} in \ref{eq:II.5.7} liefert
+\begin{equation}
+	\label{eq:II.5.9}
+	\begin{split}
+		- \omega^2 M_1 u_0 &=  \beta v_0 \left[ 1 + e^{-ika} \right] - 2 \beta u_0 \\
+		- \omega^2 M_2 v_0 &= \beta u_0 \left[ e^{ika} + 1 \right] - 2\beta v_0 .
+	\end{split}
+\end{equation}
+Dieses homogene lineare Gleichungssystem besitzt dann eine nichtlineare Lösung, wenn die Determinante der Koeffizienten $u_0$, $v_0$ verschwindet, also
+$$
+\begin{vmatrix}
+	2 \beta - M_1 \omega^2 & - \beta \left[ 1 + e^{ika} \right] \\
+	-\beta \left[ 1 + e^{ika}\right] & 2 \beta - M_2 \omega^2
+\end{vmatrix} = 0.
+$$
+Es folgt die Lösung
+\begin{equation}
+	\label{eq:II.5.10}
+	\omega_{\pm}^2 (k) = \frac{\beta\left( M_1 + M_2 \right) }{M_1 \cdot M_2} \pm \frac{\beta }{M_1M_2} \sqrt{M_1^2 + M_2^2 + 2M_1M_2 \cos\left( ka \right) } 
+\end{equation}
+
+\paragraph{Bemerkungen}\, \\
+\paragraph{1. Dispersion}\, \\
+Die Dispersion ist periodisch in $k$ 
+$$
+- \frac{\pi}{a} \le k \le \frac{\pi}{a}\quad \text{1. BZ}.
+$$ 
+
+\paragraph{2. Frequenzen}\, \\
+Zu jedem $k$ gehören 2 mögliche Frequenzen.
+
+\paragraph{3. Große $\lambda$}\, \\
+Große $\lambda$, $ak \ll 1$ 
+\begin{align}
+	\label{eq:II.5.11}
+	\omega_{+}^2 &\simeq 2\beta \left( \frac{1}{M_1} + \frac{1}{M_2} \right) \qquad \text{(optischer Ast)}\\
+	\label{eq:II.5.12}
+	\omega_{-}^2 &\simeq \frac{\beta}{2\left( M_1 + M_2 \right) } k^2 a^2 \qquad \text{(akustischer Ast)}
+\end{align}
+
+\paragraph{4. Kleine $\lambda$}\, \\
+Bei $k=\frac{\pi}{a}$, $\lambda = 2a$
+		$$
+		\omega_{+}^2 = \frac{2\beta}{M_2} \qquad \omega_{-}^2 = \frac{2\beta}{M_1} \qquad M_1>M_2
+		$$ 
+\begin{figure}[H]
+    \centering
+    \incfig{vl21_abbildung_2}
+    \label{fig:vl21_abbildung_2}
+\end{figure}
+	
+\paragraph{5. Akustischer Zweig $(-)$}\, \\
+		$ka\ll 1$,  $\omega_{-}\simeq 0$, aus \ref{eq:II.5.9} folgt $u_0 \simeq v_0$
+\begin{figure}[H]
+    \centering
+    \incfig{vl21_abbildung_3}
+    \label{fig:vl21_abbildung_3}
+\end{figure}
+
+\paragraph{6. Optischer Zweig $(+) $}\, \\
+		$k\to 0$, $\omega_{+}^2 = \frac{2\beta}{\mu}$ mit reduzierter Masse $\mu$, aus \ref{eq:II.5.9} folgt $u_0 = - \frac{M_2}{M_1} v_0$ \\
+\begin{figure}[H]
+    \centering
+    \incfig{vl21_abbildung_4}
+    \label{fig:vl21_abbildung_4}
+\end{figure}
+		infrarot anregbar, falls beide Atome ungleiche Ladungen besitzen. Atome schwingen gegeneinander. \textcolor{red}{Beispiel vielleicht?}
+
+\paragraph{7. Normale Temperatur}\, \\
+Bei normaler Temperatur (RT) gilt $k_{\mathrm{B}}T\ll \hbar \omega_{+}$, d.h. es wird nur der akustische Zweig angeregt
+
+\paragraph{8. Randbedingungen}\, \\
+Bei Randbedingungen gilt Eigenschwingungen = Phononen, es werden sowohl der akustische als auch der optische Zweig angeregt
+
+\paragraph{9. Erweiterung auf 3D}\, \\
+Eine 2-atomige Kette hat
+		\begin{itemize}
+			\item 3 akustische Zweige (einen longitudinalen, zwei transversale)
+			\item 3 optische Zweige (einen longitudinalen, zwei transversale)
+		\end{itemize}
+		Eine $p$-atomige Kette hat allgemein
+		\begin{itemize}
+			\item 3 akustische Zweige
+			\item $3p-3$ optische Zweige
+		\end{itemize}
+		\textcolor{red}{zusatzfolien bsp}\\
+		In beliebige Raumrichtungen erbigt sich eine Mischform von Schwingungen und es gelten komplizierte Verhältnisse
+
+\subsection{Anharmonische Anteile, Umklappprozesse} 
+Wären die Gitterschwingungen ideal harmonisch, so würde 
+\begin{itemize}
+	\item es zu idealer Entkopplung kommen
+	\item eine Mode beliebig hoch angeregt werden
+	\item kein thermische Gleichgewicht mit anderen Schwingungsmoden zustande kommen
+\end{itemize}
+In der Realität findet jedoch Kopplung statt! Die Ursache dafür ist das anharmonische Anteile in allen Schwingungen bestehen durch Wechselwirkung mit übernächsten Nachbarn, anharmonizität des Morse-Potentials etc.. Die Kopplung von Schwingungen führt zu Energieübertrag.\\
+Es gelten die Erhaltungssätze
+\begin{align}
+	\label{eq:II.5.23}
+	&\text{Energie:} \quad \hbar \omega_1 \iff \hbar \omega_2 + \hbar \omega_3 \\
+	\label{eq:II.5.24}
+	&\text{Impuls:} \quad \Vec{k}_{1} = \Vec{k}_{2} + \Vec{k}_{3} + m \Vec{g}_{h,k,l} \quad m  \in \mathbb{Z}
+\end{align}
+
+Der Impulserhaltungssatz ist mehrdeutig, da die $\Vec{k}_{i}$ nur bis auf einen beliebigen Vektor $m \Vec{g}_{h,k,l}$ im reziproken Gitter bestimmt sind, der so gewählt werden muss, dass alle $\Vec{k}_{i}$ in der \textbf{ersten BZ} liegen.\\
+Die nichtlinearen Kräfte bedeuten eine asymmetrische Potentialkurve\\
+\begin{figure}[H]
+    \centering
+    \incfig{vl21_abbildung_5}
+    \label{fig:vl21_abbildung_5}
+\end{figure}
+\begin{itemize}
+	\item Thermische Ausdehnung aufgrund der Nichtlinearität der Gitterkräfte
+	\item Wärmeleitung kann nur mit Hilfe der Nichtlinearität erklärt werden (genaures dazu später)
+\end{itemize}
+
+\subsection{Phononenspektroskopie}
+\subsubsection{Spektroskopie mit Licht}
+Wir verwenden folgende Konvention:
+\begin{itemize}
+	\item Photonen haben Frequenz $\omega$ und Wellenvektor $\Vec{k}$ 
+	\item Phononen haben Frequenz $\Omega$ und Wellenvektor $\Vec{K}$
+\end{itemize}
+
+2 Bereiche:
+\begin{enumerate}
+	\item Raman- und Brillouinstreuung\\
+		Bei dieser Untersuchungsform gilt $\omega \gg \Omega$, Streulicht enthält Anteile mit $\omega \pm \Omega$ 
+	\item Ultrarotspektroskopie
+		Hier gilt $\omega = \Omega$ und es besteht ein vollständige Umwandlung zwischen Photonen und Phononen
+\end{enumerate}
+
+\paragraph{Raman- und Brillouinstreuung}
+Stokes Prozess
+\begin{figure}[H]
+    \centering
+    \incfig{vl21_abbildung_6}
+    \label{fig:vl21_abbildung_6}
+\end{figure}
+
+Photon im Festkörper: 
+$$
+\begin{aligned}
+	\omega_0 &= \omega_{0v} \\
+	k_{0} &= \frac{2\pi}{\lambda_0} = n k_{0v} = n \frac{\omega_0}{\mathrm{c}} \\
+\end{aligned}
+$$ 
