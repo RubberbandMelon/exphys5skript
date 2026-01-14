@@ -1,0 +1,85 @@
+%% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'vl22_abbildung_6.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{345.82677165bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.29946721)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{vl22_abbildung_6.pdf}}%
+    \put(0.61803005,0.03605661){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Detektor\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{vl22_abbildung_6.pdf}}%
+    \put(0.45595297,0.11850123){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\theta'$\end{tabular}}}}%
+    \put(0.42547451,0.1353862){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\theta$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vl22_abbildung_6.pdf}}%
+    \put(0.56871408,0.24048536){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Analysator\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{vl22_abbildung_6.pdf}}%
+    \put(0.60806706,0.12683015){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Theta_{\text{A}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{vl22_abbildung_6.pdf}}%
+    \put(0.37459289,0.2829901){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Monochromator\end{tabular}}}}%
+    \put(0.35185745,0.01271492){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Probe\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{vl22_abbildung_6.pdf}}%
+    \put(0.36708851,0.18900321){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Theta_{\text{M}}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{vl22_abbildung_6.pdf}}%
+    \put(0.48741463,0.08850045){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{\Vec{k}'}$\end{tabular}}}}%
+    \put(0.59734788,0.0892894){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{E_{\Vec{k}'}}$\end{tabular}}}}%
+    \put(0.33830458,0.13850525){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Vec{k},\, E_{k}}$\end{tabular}}}}%
+    \put(0.03068977,0.26608936){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Quelle z.B.\end{tabular}}}}%
+    \put(0.04733712,0.23555765){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Reaktor\end{tabular}}}}%
+    \put(0.05051353,0.1674114){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$^{235}\text{U} + \text{n}\,\text{(therm)}$\end{tabular}}}}%
+    \put(0.01263368,0.10727363){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\to\, \text{X} + \text{Y} + \text{n}\,\text{(schnell)}$\end{tabular}}}}%
+    \put(0.01263368,0.13525337){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\to\, ^{236}\text{U}$\end{tabular}}}}%
+    \put(0.01628807,0.22068533){\color[rgb]{1,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l} \end{tabular}}}}%
+    \put(0.0173879,0.07079475){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+ Moderator ($\text{H}_{2}\text{O}$)\end{tabular}}}}%
+    \put(0.05404996,0.03748281){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}zum Bremsen\end{tabular}}}}%
+    \put(0.05122302,0.00831138){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}der Neutronen\end{tabular}}}}%
+    \put(0.61746879,0.00451494){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$^{10}\text{B}(n, \alpha)^{7}\text{Li}$ + Gaszählrohr\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

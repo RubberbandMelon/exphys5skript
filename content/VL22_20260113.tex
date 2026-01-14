@@ -1,0 +1,126 @@
+\clearpage
+\setcounter{equation}{24}
+\setcounter{section}{5}
+\setcounter{subsection}{4}
+\setcounter{subsubsection}{1}
+
+\paragraph{Energieverhältnisse für Lichstreuung (sichtbares Licht)}\,\\
+Optische Phononen: $\omega \simeq \SI{100}{\Omega_{\text{opt}}}$ \\
+Akustische Phonenen: $\omega \simeq \SI{1000}{\Omega_{\text{ak}}}$ bis $\infty\,\si{\Omega_{\text{ak}}}$
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.434\columnwidth}
+    \subimport{figures/}{vl22_abbildung_1.pdf_tex}
+    \label{fig:vl22_abbildung_1}
+\end{figure}
+
+$$
+\begin{aligned}
+	|\Vec{k}|_{\text{Phonon}} &= 2 |\Vec{k}| \sin\left( \frac{\varphi}{2} \right)  \\
+	\to  \lambda_{\text{Photon}} &= 2 \lambda_{\text{Phonon}} \sin\left( \varphi_{2} \right)  \\
+\end{aligned}
+$$ 
+
+Wie groß ist $|\Vec{k}_{\text{Phonon}}|$?\\
+Vorwärtsstreuung: $|\Vec{k}_{\text{Phonon}}| = 2 |\Vec{k}| \sin\left( \varphi /2 \right) =0$, $\varphi=0$\\
+Rückwärtsstreuung: $|\Vec{k}_{\text{Phonon}}| = 2 |\Vec{k}|$, $\varphi=\pi$ 
+$$
+\to 0 \le | \Vec{k}_{\text{Phonon}}| \le 2 |\Vec{k}_{\text{Photon}}|
+$$ 
+\textcolor{red}{text}
+\begin{figure}[H]
+    \centering
+    \incfig{vl22_abbildung_2}
+    \label{fig:vl22_abbildung_2}
+\end{figure}
+
+Man unterscheidet 3 Streuprozesse
+\begin{enumerate}
+	\item Ramanstreuung $\omega_{\text{L}} \pm \Omega_{\text{opt}}$ 
+	\item Brillouinstreuung $\omega_{\text{L}} \pm \Omega_{\text{akust}}$ 
+	\item Rayleigh-Streuung $\omega_{\text{L}}$
+\end{enumerate}
+
+\paragraph{Versuchsanordnung (schematisch)}\,\\
+\begin{figure}[H]
+    \centering
+    \incfig{vl22_abbildung_3}
+    \label{fig:vl22_abbildung_3}
+\end{figure}
+Es gilt $\Delta \omega = \Omega$ unabhängig von der Laserfrequenz
+$$
+\Omega < \omega_{\text{L}} < \omega_{m,n}
+$$ 
+mit der Energie eines elektrischen Übergangs $\omega_{m,n}$.
+
+\paragraph{Schematischer Spektrum}\,\\ 
+\begin{figure}[H]
+    \centering
+    \incfig{vl22_abbildung_4}
+    \label{fig:vl22_abbildung_4}
+\end{figure}
+
+\paragraph{Energieniveau-Schema}\,\\ 
+\begin{figure}[H]
+    \centering
+    \incfig{vl22_abbildung_5}
+    \label{fig:vl22_abbildung_5}
+\end{figure}
+$u_{l,m,n}$: reale stationäre Zustände des Systems\\
+VZ: virtueller Zwischenzustand
+\paragraph{Anforderungen an die Apparaturen}\,\\ 
+\begin{itemize}
+	\item Laseranregung ist optimal
+		\begin{enumerate}
+			\item hohe Intensitäten
+			\item monochromatisch
+			\item Bündelung	
+		\end{enumerate}
+	\item Doppelmonochromator $\to $ Streulichtunterdrückung (Raman)
+	\item Fabry-Pérot bei Brillouinstreuung\\
+		Hohe Auflösung ($\SI{0.1}{\centi\meter^{-1}}$ bei $\SI{20000}{\centi \meter^{-1}}$, $A = \num{200000}$)
+	\item ccd-Kamera, Photonenzählung (APD, Photomultiplier)
+	\item Polarisation: Fk-Raman-Spektren sind polarisiert und hängen von der Orientierung des kristalls ab
+\end{itemize}
+
+\paragraph{Ultrarotspektroskopie}\,\\ 
+Direkter Prozess $\omega = \Omega$, $\Vec{k} = \Vec{K}$ \\
+Bsp. \ce{NaCl}:
+\begin{itemize}
+	\item Stärkste IR-Absorption bei $\lambda_{\text{vak}} = \SI{61}{\micro \meter}$ 
+	\item $K = 2\pi/\lambda = \SI{e3}{\centi \meter ^{-1}}$ 
+	\item $K_{\text{max}} = \pi / a = \SI{0,55e8}{\centi \meter ^{-1}}$
+	\item $K_{\text{ir}} = \SI{2e-5}{\pi \per a}$
+\end{itemize}
+IR-Photonen können nur optische Phononen (TO) bei $K=0$ anregen.
+
+\subsubsection{Neutronenstreuung}
+Thermische Neutronen sind für inelastische Streuung an Phononen bestens geeignet
+\begin{itemize}
+	\item $E = \SI{1}{\milli \electronvolt}$ bis \SI{100}{\milli \electronvolt}
+	\item $|\Vec{k}| = \SI{e7}{\centi \meter ^{-1}}$ bis $\SI{e8}{\centi \meter ^{-1}}$ 
+\end{itemize}
+$\to $ Wechselwirkung mit allen Phononen
+
+\paragraph{Erhaltungssätze}\,\\ 
+Energie:
+$$
+\frac{\hbar ^2 \left( k_{n}^2 - k_{n}'^2 \right) }{2 M_{n}} = \pm \hbar \Omega
+$$ 
+$+$ bei Emissionen eines Phononen, $-$ bei Absorbtion eines Phonons\\
+
+Impuls:
+$$
+\Vec{K}_{n} - \Vec{K}_{n}' = \pm \Vec{K} - G
+$$ 
+$\Vec{G}$ wird so gewählt, dass $\Vec{K}$ in der 1.BZ liegt.
+
+\paragraph{Prinzip des Neutronenspektrometers (Drei-Achsen-Spektrometer)}\,\\ 
+\begin{figure}[H]
+    \centering
+    \incfig{vl22_abbildung_6}
+    \label{fig:vl22_abbildung_6}
+\end{figure}
+
+$\Theta_{\text{M}}$, $\Theta_{\text{A}}$ legen die Energie der eingestrahlten bzw. der gestreuten Neutronen fest, $\theta$ und $\theta'$ die enstsprechenden Wellenvektoren
