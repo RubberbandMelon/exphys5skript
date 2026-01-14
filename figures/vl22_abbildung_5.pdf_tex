@@ -50,24 +50,26 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.26435245)%
+  \begin{picture}(1,0.29874589)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{vl22_abbildung_5.pdf}}%
-    \put(0.1610811,0.24787534){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
+    \put(0.15781754,0.24788059){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$E$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl22_abbildung_5.pdf}}%
-    \put(0.44150937,0.18329552){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{m}$\end{tabular}}}}%
-    \put(0.44150937,0.21036523){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{l}$\end{tabular}}}}%
-    \put(0.44150937,0.00784796){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{n}$\end{tabular}}}}%
-    \put(0.47456422,0.15689293){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}VZ\end{tabular}}}}%
+    \put(0.4382458,0.18330077){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{m}$\end{tabular}}}}%
+    \put(0.4382458,0.21037049){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{l}$\end{tabular}}}}%
+    \put(0.4382458,0.00785321){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{n}$\end{tabular}}}}%
+    \put(0.47130066,0.15689819){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}VZ\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl22_abbildung_5.pdf}}%
-    \put(0.76133484,0.18329539){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{m}$\end{tabular}}}}%
-    \put(0.76133484,0.21036511){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{l}$\end{tabular}}}}%
-    \put(0.76133484,0.00784783){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{n}$\end{tabular}}}}%
-    \put(0.79438976,0.15689281){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}VZ 1\end{tabular}}}}%
-    \put(0.54657276,0.1692069){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}VZ 2\end{tabular}}}}%
+    \put(0.75807127,0.18330064){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{m}$\end{tabular}}}}%
+    \put(0.75807127,0.21037036){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{l}$\end{tabular}}}}%
+    \put(0.75807127,0.00785309){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$u_{n}$\end{tabular}}}}%
+    \put(0.79112619,0.15689806){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}VZ 1\end{tabular}}}}%
+    \put(0.5433092,0.16921215){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}VZ 2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{vl22_abbildung_5.pdf}}%
-    \put(0.35557406,0.03670283){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Omega_{i}$ Phononen\end{tabular}}}}%
-    \put(0.68733134,0.03587072){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Omega_{i}$ \end{tabular}}}}%
+    \put(0.35231049,0.03670808){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Omega_{i}$ Phononen\end{tabular}}}}%
+    \put(0.68406777,0.03587598){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Omega_{i}$ \end{tabular}}}}%
+    \put(0.32386389,0.28226877){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stokes\end{tabular}}}}%
+    \put(0.61421954,0.28226877){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Anti-Stokes\end{tabular}}}}%
   \end{picture}%
 \endgroup%
