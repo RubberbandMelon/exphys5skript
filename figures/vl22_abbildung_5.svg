@@ -157,9 +157,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.812514"
-     inkscape:cx="265.95423"
-     inkscape:cy="75.199625"
+     inkscape:zoom="5.6250279"
+     inkscape:cx="151.64369"
+     inkscape:cy="29.955407"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -267,12 +267,12 @@
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
        id="text472"
-       y="194.30542"
-       x="57.49868"><tspan
+       y="194.41534"
+       x="53.637814"><tspan
          sodipodi:role="line"
          id="tspan470"
-         x="57.49868"
-         y="194.30542"
+         x="53.637814"
+         y="194.41534"
          style="stroke-width:0.264583">VZ</tspan></text>
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none;stop-color:#000000"
@@ -356,22 +356,22 @@
        xml:space="preserve"
        id="text472-2"
        y="194.30544"
-       x="96.517395"><tspan
+       x="92.656517"><tspan
          sodipodi:role="line"
          id="tspan470-3"
-         x="96.517395"
+         x="92.656517"
          y="194.30544"
          style="stroke-width:0.264583">VZ 1</tspan></text>
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
        id="text472-2-6"
-       y="192.80312"
-       x="66.283722"><tspan
+       y="192.69016"
+       x="63.271305"><tspan
          sodipodi:role="line"
          id="tspan470-3-1"
-         x="66.283722"
-         y="192.80312"
+         x="63.271305"
+         y="192.69016"
          style="stroke-width:0.264583">VZ 2</tspan></text>
     <path
        style="display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none;stop-color:#000000"
@@ -436,10 +436,10 @@
        xml:space="preserve"
        id="text231"
        y="179.01021"
-       x="39.511395"><tspan
+       x="38.282497"><tspan
          sodipodi:role="line"
          id="tspan229"
-         x="39.511395"
+         x="38.282497"
          y="179.01021"
          style="stroke-width:0.264583">Stokes</tspan></text>
     <text
@@ -447,10 +447,10 @@
        xml:space="preserve"
        id="text243"
        y="179.01021"
-       x="74.934784"><tspan
+       x="73.622917"><tspan
          sodipodi:role="line"
          id="tspan241"
-         x="74.934784"
+         x="73.622917"
          y="179.01021"
          style="stroke-width:0.264583">Anti-Stokes</tspan></text>
   </g>
