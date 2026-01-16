@@ -1,0 +1,190 @@
+\clearpage
+\setcounter{section}{5}
+
+\section{Spezifische Wärme und Wärmeleitung}
+\subsection{Zustandsdichte in 3D (isotroper Körper $\hat{=}$ BZ $\to $ Kugel)}
+Wir betrachten $N_{i}^3$ primitive Elementarzellen in einem Würfel mit der Kantenlänge $L$. Das Volumen der Probe ist $L^3 = V$ und es gilt die periodische Randbedingung  
+$$
+k_{x},\, k_{y},\, k_{z} = 0, \, \pm \frac{2\pi}{L}, \, \pm \frac{4\pi}{L}, \, \ldots,\, \pm \frac{2\pi N_{i}}{L}.
+$$
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl23_abbildung_1}
+    \label{fig:vl23_abbildung_1}
+\end{figure}
+
+Der Platz für ein $k$ in 3D ist
+$$
+\left( \frac{2\pi}{L} \right) ^3 \quad \text{bzw.} \quad
+\left( \frac{L}{2\pi} \right) ^3 = \frac{V}{8\pi^3}
+$$ 
+erlaubte $k$-Werte pro Einheitsvolumen im $\Vec{k}$-Raum für jede Polarisation und jeden Zweig der Dispersionsrelation.\\
+Wir betrachten eine Kugel mit Radius $k$. Die Gesamtzahl der Zustände mit einem Wellenvektor dessen Betrag kleiner ist als $k$ ergibt sich durch
+$$
+N = \frac{\frac{4\pi k^3}{3}\, \text{(Volumen der Kugel)}}{\left( \frac{2\pi}{L} \right) ^3 \, \text{(Volumen für einen k-Zustand)}} = \left( \frac{L}{2\pi}^3 \right) \frac{4\pi k^3}{3} = \frac{Vk^3}{6\pi^2} = \frac{Vk^3(\omega)}{6\pi^2}
+$$
+
+Die Zustandsdichte ergibt sich daraus mit
+\begin{equation}
+	\label{eq:II.6.1}
+	D(\omega) = \frac{\mathrm{d}N}{\mathrm{d}\omega} = \frac{Vk^2}{2\pi^2} \frac{\mathrm{d} k}{\mathrm{d}\omega}.
+\end{equation}
+
+\subsection{Allgemeine Behandlung von $D(\omega)$}
+Die Anzahl der erlaubten $k$-Werte mit Phononenfrequenzen zwischen $\omega $ und $\omega + \mathrm{d} \omega$ ist
+$$
+D(\omega) \text{d}\omega = \left( \frac{L}{2\pi} \right) ^3 \int_{\omega=\text{const.}}^{\omega+\mathrm{d}\omega=\text{const}} \hspace{-50pt}\mathrm{d}^{3}k,
+$$ 
+wobei sich das Integral über eine Schale erstreckt, die von zwei Oberflächen im $k$-Raum eingeschlossen wird, auf denen die Phononenfrequenz konstant ist ($\omega$ und $\omega + \mathrm{d}\omega$)
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.499\columnwidth}
+    \subimport{figures/}{vl23_abbildung_2.pdf_tex}
+    \label{fig:vl23_abbildung_2}
+\end{figure}
+
+Das Volumenelement zwischen den Schalen ist ein Zylinder mit $\mathrm{d}^3k = \mathrm{d}S_{\omega} \cdot \mathrm{d} k_{\perp}$, es folgt
+$$
+\int_{\text{Schale}} \mathrm{d}^3 k = \int \mathrm{d}S_{\omega} \mathrm{d}k_{\perp}.
+$$
+Mit 
+$$
+\left| \mathrm{grad}_{k}(\omega) \right| = \left| \nabla _{k} (\omega) \right| = \frac{\mathrm{d}\omega}{\mathrm{d} k_{\perp}}
+$$ 
+folgt
+$$
+\mathrm{d} S_{\omega} \cdot \mathrm{d}k_{\perp} = \mathrm{d} S_{\omega} \cdot \frac{\mathrm{d}\omega}{\left| \nabla _{k} (\omega) \right| } = \mathrm{d}S_{\omega} \cdot \frac{\mathrm{d}\omega}{v_\mathrm{g}}
+$$ 
+wobei $v_{\mathrm{g}} = \left| \nabla _{k} (\omega) \right| $ der Betrag der Gruppengeschwindigkeit des Phonons ist. Für die Zustandsdichte ergibt sich der Ausdruck
+$$
+D(\omega) \mathrm{d}\omega = \left( \frac{L}{2\pi} \right) ^3 \int \frac{\mathrm{d}S_{\omega}}{v_{\mathrm{g}}} \mathrm{d} \omega.
+$$ 
+
+\begin{equation}
+	\label{eq:II.6.2}
+	D(\omega) = \left( \frac{L}{2\pi} \right) ^3 \int \frac{\mathrm{d}S_{\omega}}{v_{\mathrm{g}}}
+\end{equation}
+
+Diese Gleichung ermöglicht die Bestimmung der Zustandsdichte aus der Dispersionsrelation und macht erkennbar, dass sich für flache Stellen der Dispersionsrelation hohe Zustandsdichten ergeben, da $\left| \nabla _{k} (\omega) \right| $ klein wird. Es bestehen sogenannte Van-Hove Singularitäten für $\left| \nabla _{k}(\omega) \right| \to 0$.\\
+
+\paragraph{Anmerkung}\,\\ 
+Bei 1D divergiert die Zustandsdichte. Bei 3D hingegen divergiert der Integrand, aber nicht das Integral \ref{eq:II.6.2}, es ergeben sich Spitzen in der Zustandsdichte.\\
+
+Ein Nachteil von Gleichung \ref{eq:II.6.2} ist, dass die Disperionsrelation $\omega(k)$ bekannst sein muss, wobei diese sehr stark systemabhängig ist. Wünschenswert wäre es also aus \ref{eq:II.6.2} allgemeingültige Informationen bzw. Erkenntnisse zu ziehen. Dies ist möglich für niedrige ($T \le \SI{300}{\kelvin}$) Temperaturen. 
+
+\paragraph{Debye'sche Modell der Zustandsdichte}\,\\ 
+Der Kristall befindet sich im thermischen Gleichgewicht, d.h. Phonenen werden nur thermisch angeregt also $k_{\mathrm{B}}T \le \omega_{\text{opt}} (k)$. Es werden also nur akustische Schwingungsmoden im Zentrum der BZ angeregt.\\
+Dort gilt: $\omega(k) = c_{i} k$ mit $i$ = Zweig der Dispersion (1 longitudinal, 2 transversal) und der Schallgeschwindigkeit $c_{i}$. \\
+Daraus folgt
+\begin{enumerate}
+	\item $\left| \nabla _{\Vec{k}} (\omega) \right| = c_{i}$ 
+	\item $\omega$ = konst. ist kugelfläche im $k$-Raum mit Radius
+		 \begin{equation}
+		 	\label{eq:II.6.3}
+		 	k = \omega / c_{i}
+		 \end{equation} 
+\end{enumerate}
+Setzt man Gleichung \ref{eq:II.6.1} oder \ref{eq:II.6.3} in \ref{eq:II.6.2} ein ergibt sich
+$$
+D_{i}(\omega) \mathrm{d}\omega = \frac{V}{\left( 2\pi \right) ^3} \mathrm{d} \omega \frac{1}{c_{i}} 4 \pi k^2
+$$ 
+\begin{equation}
+	\label{eq:II.6.4}
+	D_{i} (\omega) \mathrm{d}\omega = \frac{V}{2\pi^2} \frac{\omega^2}{c_{i}^3} \mathrm{d}\omega
+\end{equation}
+
+Insgesamt ergibt sich für die Zustandsdichte
+$$
+D(\omega) = \frac{V}{2\pi^2} \omega^2 \left( \frac{1}{c_{\mathrm{L}}^3} + \frac{1}{c_{\mathrm{T_1}}^3} + \frac{1}{c_{\mathrm{T_2}}^3} \right).
+$$ 
+Mit der Näherung $c_{\mathrm{L}} = c_{\mathrm{T1}}= c_{\mathrm{T2}} = v_{\mathrm{g}}$ folgt
+
+\begin{equation}
+	\label{eq:II.6.5}
+	D(\omega) = \frac{3v \omega^2}{2 \pi^2 v_{^{g}}^3}
+\end{equation}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.41\columnwidth}
+    \subimport{figures/}{vl23_abbildung_3.pdf_tex}
+    \label{fig:vl23_abbildung_3}
+\end{figure}
+
+Problem:
+$$
+\int_{0}^{\infty} D(\omega) \mathrm{d}\omega = \infty
+$$ 
+Lösung: $D(\omega)$ abschneiden bei der \textbf{Debye-Frequenz} $\mathbf{\omega_{D}}$. Es folgt
+
+\begin{equation}
+	\label{eq:II.6.6}
+	\int_{0}^{\omega_{D}} D(\omega) \mathrm{d}\omega = 3N
+\end{equation} 
+was der Zahl der Freiheitsgrade (Schwingungsmoden) entspricht mit der Zahl der Einheitszellen $N$ bei einatomiger Basis. Die Debye-Frequenz berechnet sich mittels
+\begin{equation}
+	\label{eq:II.6.7}
+	\omega_{D} = v_{\mathrm{g}} \sqrt[3]{ \frac{6\pi^2N}{V}} 
+\end{equation}
+und die Debye-Temperatur $\Theta_{D}$ 
+\begin{equation}
+	\label{eq:II.6.8}
+	\hbar \omega_{D} = k_{\mathrm{B}}\Theta_{D}.
+\end{equation}
+
+\subsection{Spezifische Wärmekapazität des Kristallgitters}
+\paragraph{Klassische Behandlung}\,\\ 
+\begin{itemize}
+	\item Die Molwärme, also die Wärme welche nötig ist um \SI{1}{\mol} um \SI{1}{\kelvin} zu erwärmen, berechnet sich mittels
+		\begin{equation}
+			\label{eq:II.6.9}
+			C_{V} = \left( \frac{\mathrm{d}Q}{\mathrm{d}T} \right) _{V} = \frac{\mathrm{d}U}{\mathrm{d}T}
+		\end{equation}
+		mit der inneren Energie $U$. $C_{V}$ wird berechnet, $C_{p}$ wird gemessen. Im Festkörper gilt $C_{V} \approx C_{p}$ auf eine Genauigkeit von $1\,\text{\textperthousand}$.
+	
+	\item Nach dem Gleichverteilungssatz der klassischen statistischen Mechanik entspricht $k_{\mathrm{B}}T$ der mittleren Energie pro Schwingungsfreiheitsgrad ($E_{\text{kin}} + E_{\text{pot}}$) ($\left( 2 \cdot \frac{1}{2} k_{\mathrm{B}}T =  \right) $)
+	
+	\item Im Festkörper gilt bei $N$ Atomen mit 3 Schwingungsfreiheitsgraden pro Atom $U\left( V,T \right) = 3N k_{\mathrm{B}}T$, und somit die Dulong-Petit'shce Gesetz
+		\begin{equation}
+			\label{eq:II.6.10}
+			C_{V} = \left( \frac{\partial U}{\partial T} \right) _{V} = 3Nk_{\mathrm{B}} 
+		\end{equation}
+		molare Wärmekapazität $N = N_{A}$, $N_{A}k_{\mathrm{B}} = R$ 
+		$$
+		\to C_{V} = 3R = \SI{24,94}{\frac{\joule}{\mol \cdot \kelvin}} = \text{konst.}
+		$$ 
+		Im Experiment werden bei tiefen Temperaturen starke Abweichungen beobachtet!\\
+		Bei Isolatoren: $C_{V}\sim T^3$, d.h. $T \to 0$ folgt $C_{V} \to 0$ (Phononen)\\
+		Bei Metallen: $C_{V} \sim AT + BT^3$, d.h. $T\to 0$ folgt $C_{V} \to 0$ (Phonon Metallelektronen)
+\end{itemize}
+
+\paragraph{QM Behauptung}\,\\
+Ausdruck fúr die innere Energie $U$ 
+\begin{equation}
+	\label{eq:II.6.11}
+	U = \int \mathrm{d} \omega D(\omega) \varepsilon(\omega,T)
+\end{equation}
+\begin{itemize}
+	\item $\varepsilon(\omega,T)$ = mittlere Energie der Schwingungsmode $\omega$ 
+	\item Energie des quantenmechanischen Oszillators 
+		$$
+		E_{n} = \hbar \omega\left( n + \frac{1}{2} \right) 
+		$$ 
+	\item Erwartungswert der Besetzungszahl $\left<n \right>$ 
+		\begin{equation}
+			\label{eq:II.6.12}
+			\varepsilon(\omega,T) = \hbar \omega\left( \left<n \right> + \frac{1}{2} \right) 
+		\end{equation}
+		\begin{equation}
+			\label{}
+			\varepsilon(\omega,T) = \hbar \omega \left( \frac{1}{2} + \frac{1}{e^{\hbar \omega / (k_{\mathrm{B}} T)}-1} \right) 
+		\end{equation}
+		Bose-Statistik
+		\begin{equation}
+			\label{}
+			\left<n \right>_{\text{therm}} = \frac{1}{e^{\hbar \omega / (k_{\mathrm{B}}T) } - 1}
+		\end{equation}
+		Der Erwartungswert der Quantenzahl $n$ für einen Oszillator im thermischen Gleichgewicht enspricht der mittleren Phononenzahl im thermischen Gleichgewicht.
+\end{itemize}
