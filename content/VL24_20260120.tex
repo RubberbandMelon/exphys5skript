@@ -3,276 +3,336 @@
 \setcounter{subsection}{4}
 \setcounter{equation}{17}
 
-Nach dem Debye Modell für die spezifische Wärme gilt für die Energie
-\begin{equation}
-	\label{eq:II.6.18}
-	E_{n} = \hbar  \omega \left( n + \frac{1}{2} \right) = n \hbar  \omega.
-\end{equation}	
+	Nach dem Debye Modell für die spezifische Wärme gilt für die Energie
+	\begin{equation}
+		\label{eq:II.6.18}
+		E_{n} = \hbar  \omega \left( n + \frac{1}{2} \right) \approx n \hbar  \omega.
+	\end{equation}	
 
-\paragraph{Anmerkung} Hierdurch wird die Nullpunktsenergie vernachlässigt. Sie spielt fúr die Berechnung der Wärmekapazität keine Rolle da
-$$
-C_{V} = \frac{\mathrm{d}U}{\mathrm{d}T} 
-$$ 
-gilt.\\
-Es ergibt sich mit \ref{eq:II.6.11}
-\begin{equation}
-	\label{eq:II.6.19}
-	U = \int \mathrm{d} \omega D(\omega) \left< n(\omega) \right> \hbar  \omega = \int_{0}^{\omega_{D}} \mathrm{d} \omega \underbrace{ \frac{3 V \omega^2}{2 \pi^2 v_{\mathrm{g}}^3}}_{D(\omega)} \underbrace{ \frac{\hbar  \omega}{e^{\hbar  \omega /k_{\mathrm{B}} T} - 1}}_{\left<n(\omega) \right> \hbar  \omega}
-\end{equation}
-und mit
-$$
-x = \frac{\hbar  \omega}{k_{\mathrm{B}}T} \quad \text{und}\quad x_{D} = \frac{\hbar \omega_{D}}{k_{\mathrm{B}}T} = \frac{\Theta}{T}	
-$$ 
-folgt
-\begin{equation}
-	\label{eq:II.6.20}
-	U = 9 N k_{\mathrm{B}}T \left( \frac{T}{\Theta} \right) ^3 
-	\int_{0}^{x_{D}} \mathrm{d}x \frac{x^3}{e^{x} -1}
-\end{equation}
-und
-\begin{equation}
-	\label{eq:II.6.21}
-	C_{V} = \left( \frac{\mathrm{d}U}{\mathrm{d}T}\right)_{V} = 9Nk_{B} \left( \frac{T}{\Theta} \right) ^3 \int_{0}^{x_{D}} \mathrm{d} x \frac{x^4 e^{x}}{\left( e^{x} -1  \right) ^2}
-\end{equation}	
+\paragraph{Anmerkung} Durch die Näherung wird die Nullpunktsenergie vernachlässigt. Sie spielt fúr die Berechnung der Wärmekapazität keine Rolle, da
+	$$
+	C_{V} = \frac{\mathrm{d}U}{\mathrm{d}T} 
+	$$ 
+	ist.
 
-\begin{figure}[H]
-    \centering
-    \incfig{vl24_abbildung_1}
-    \label{fig:vl24_abbildung_1}
-\end{figure}
+	Mit Gleichung \eqref{eq:II.6.11} folgt die innere Energie $U$ als
+	\begin{equation}
+		\label{eq:II.6.19}
+		U = \int \mathrm{d} \omega D(\omega) \left< n(\omega) \right> \hbar  \omega = \int_{0}^{\omega_{D}} \mathrm{d} \omega \underbrace{ \frac{3 V \omega^2}{2 \pi^2 v_{\mathrm{g}}^3}}_{D(\omega)} \underbrace{ \frac{\hbar  \omega}{e^{\hbar  \omega /k_{\mathrm{B}} T} - 1}}_{\left<n(\omega) \right> \hbar  \omega}.
+	\end{equation}
+	Wir setzen
+	$$
+	x = \frac{\hbar  \omega}{k_{\mathrm{B}}T} \quad \text{und}\quad x_{D} = \frac{\hbar \omega_{D}}{k_{\mathrm{B}}T} = \frac{\Theta}{T}	
+	$$ 
+	und erhalten
+	\begin{equation}
+		\label{eq:II.6.20}
+		U = 9 N k_{\mathrm{B}}T \left( \frac{T}{\Theta} \right) ^3 
+		\int_{0}^{x_{D}} \mathrm{d}x \frac{x^3}{e^{x} -1}
+	\end{equation}
+	und
+	\begin{equation}
+		\label{eq:II.6.21}
+		C_{V} = \left( \frac{\mathrm{d}U}{\mathrm{d}T}\right)_{V} = 9Nk_{B} \left( \frac{T}{\Theta} \right) ^3 \int_{0}^{x_{D}} \mathrm{d} x \frac{x^4 e^{x}}{\left( e^{x} -1  \right) ^2}.
+	\end{equation}	
 
-\paragraph{Diskussion}\,\\
-\paragraph{Klassisches Resultat}\,\\ 
-Für $T\gg\Theta$, $x_{D} \ll 1$, $e^{x} \approx 1$, $e^{x}-1=x$ gilt
-		$$
-		\int_{0}^{x_{D} x^2 \mathrm{d}x} = \frac{x_{D}^3}{3} = \frac{1}{3} \left( \frac{\Theta}{T} \right) ^3
-		$$ 
-		und es folgt das klassische Resultat
-		\begin{equation}
-			\label{eq:II.6.22}
-			C_{V} = 3R
-		\end{equation}
+	\begin{figure}[H]
+		\centering
+		\incfig{vl24_abbildung_1}
+		\caption{Wärmekapazität $C_V$ über die Temperatur $T$ nach Gleichung \eqref{eq:II.6.21}.}
+		\label{fig:vl24_abbildung_1}
+	\end{figure}
 
-
-\paragraph{Debye'sche $T^3$ Gesetz}\,\\ 
-Für $T \ll \Theta$, $x_{D} \gg 1$, Integrationsgrenze $\to $ $\infty$ 
-		$$
-		\int_{0}^{\infty} \frac{x^{4} e^{x}}{\left( e^{x} -1 \right) ^2} \mathrm{d}x = \frac{4\pi^{4}}{15}
-		$$ 
-		Das Debye'sche $T^3$ Gesetz
-		\begin{equation}
-			\label{eq:II.6.23}
-			C_{V}= \frac{12 \pi^{4}R}{5 \Theta^3} T^3 \quad \left( T\le \num{0,1} \Theta \right) 
-		\end{equation}
-
-
-\paragraph{Experimentelle Bestimmung}\,\\ 
-Bestimmung von $C_{V}(T)$ $\to $ Anpassung mit Theorie $\implies$ $\Theta$
-\begin{table}[htpb]
-	\centering
-	\caption{caption}
-	\label{tab:label}
-	\begin{tabular}{|c|c|c|}
-	\hline
-	 Stoff & $\Theta$ & $\omega_{D}$ \\
-	 \hline
-	 \ce{Na} & \SI{158}{\kelvin} & \SI{2 e13}{\hertz} \\
-	 \hling
-	 \ce{Ca} & \SI{343}{\kelvin} & \SI{4,5 e 13}{\hertz}\\
-	\hline
-	\end{tabular}
-\end{table}
-
-\paragraph{Anpassung}\,\\ 
-Bessere Anpassung and die gesamte Kurve $C_{V}(T)$ mit Dispersionsbeziehung $\omega(k)$.
-
-\paragraph{Abweichung}\,\\
-Abweichung zum $T^3$-Gesetz: Beitrag der Elektronen zur Wärmekapazität
-\paragraph{Proportionalität}\,\\ 
-Es gilt
-$$
-N_{\text{Ph}} \sim \begin{cases}
-	T^3 &\text{für} T\ll \Theta_{D} \\
-	T & \text{für} T\gg \Theta_{D}
-\end{cases}
-$$ 
-was für bei verschiedenen Phänomenen eine Rolle spielt.
-
-\paragraph{$T=\Theta$}\,\\ 
-Für $T=\Theta$ ist $U_{\text{th}}\simeq 2 U_{0}$, wobei $U_0$ der thermischen Energie der Nullpunktsschwankung entspricht.
-
-\paragraph{Klassische und QM Betrachtung}\,\\ 
-Bei $T<\Theta_{D}$ frieren Moden aus und das resultierende Verhalten ist nur quantenmechanisch erklärbar. Bei $T > \Theta_{D}$ werden alle Moden angeregt und das Verhalten ist klassich erklärbar \textcolor{red}{war nicht in der Vorlesung, Satz ist wsl falsch}.
-
-\subsection{Wärmeleitung des Kristallgitters}
-Für die Stromdichte $j$, also die Energie die pro Zeiteinheit durch ein Flächeneinheit hindurch tritt, gilt
-\begin{equation}
-	\label{eq:II.6.24}
-	\frac{\dot{Q}}{F} = j = - k \frac{\mathrm{d}T}{\mathrm{d}x}
-\end{equation}
-mit der Fläche $F$, der Energie pro Zeiteinheit $\dot{Q}$ und dem Wärmeleitvermögen $k$.
-
-\paragraph{Messung}\,\\ 
-Die Messung erfolgt mit der in Abbildung \ref{fig:vl24_abbildung_2} schematisch abgebildeten Apparatur.
-
-\begin{figure}[H]
-    \centering
-    \def\svgwidth{0.59\columnwidth}
-    \subimport{figures/}{vl24_abbildung_2.pdf_tex}
-    \label{fig:vl24_abbildung_2}
-\end{figure}
-
-Dabei wird auf einen stationären Zustand gewartet, bei welchem
-$$
-\dot{Q} = U I = - k F \frac{\Delta T}{l}
-$$ 
-gilt.
-
-\paragraph{Wärmeleitung (Phononen als idealer Glas)}\,\\ 
-Die statistische Natur des Leitungsprozesses bringt den Temperaturgradienten in die Gleichung \ref{eq:II.6.24}, Energie diffundiert durch die Probe. \\
-Phänomenologisch :
-\begin{itemize}
-	\item mittlere Lebensdauer $\tau$
-	\item freie Weglänge $\lambda = v_{\text{g}} \tau$ (Umklappprozesse)
-	\item Energie $\hbar  \omega$
-\end{itemize}
-\begin{figure}[H]
-    \centering
-    \def\svgwidth{0.369\columnwidth}
-    \subimport{figures/}{vl24_abbildung_3.pdf_tex}
-    \label{fig:vl24_abbildung_3}
-\end{figure}
-
-In Stromrichte in Richtung einer Koordinatenachse berechnet sich mit
-$$
-j_{x} = \underbrace{\underbrace{- \frac{1}{V} \Delta \left< n \right>}_{\text{Teilchendichte}} \hbar \omega}_{\text{Energiedichte}} v_{\text{g}x} 
-$$  
-mit
-$$
-\Delta \left<n \right> = \frac{\mathrm{d}\left<n \right>}{\mathrm{d}x} \Delta x \quad \text{und}\quad \Delta x = \lambda = v_{\text{g}} \tau 
-$$
-mit der freien Phononenweglänge $\lambda$, welche sich auf Umklappprozesse bezieht.
-$$
-\begin{aligned}
-	j_{x} &= - \frac{1}{V} \hbar  \omega \frac{\mathrm{d}\left< n \right>}{\mathrm{d}x} v_{\text{g}x}^2 \tau  \\
-	&= \frac{1}{V} \hbar \omega \frac{\mathrm{d} \left< n \right>}{\mathrm{d}T} \frac{\mathrm{d}T}{\mathrm{d}x} v_{\text{g}x}^2 \tau   
-\end{aligned}
-$$ 
-Genauer: Summation über alle Schwingungsmoden: $k_{j}, \omega\left( k_{j} \right) $ der $j$ Äste
-\begin{equation}
-	\label{eq:II.}
-	j_{x} = - \underbrace{\frac{1}{V} \sum_{\Vec{k}, j}^{} \hbar \omega_{j} \left( k_{j} \right) \tau_{j} (k_{j}) v_{\text{g},x,j}^2 (k_{j}) \frac{\mathrm{d} \left<n_{j} (k_{j}) \right>}{\mathrm{d}T}}_{k} \frac{\mathrm{d}T}{\mathrm{d}x} 
-\end{equation}
-Vergleich mit \ref{eq:II.6.24}, für isotrope Materialien
-$$
-\left<v_{x}^2 \right> = \frac{1}{3} v_{\text{g}}^2
-$$ 
-und mit $\lambda = v_{\text{g}} \tau $ folgt
-\begin{equation}
-	\label{eq:II.6.26}
-	k = \frac{1}{3} \sum_{\Vec{k}, j}^{}  v_{\text{g},j} \lambda_{j} \underbrace{\frac{1}{V} \frac{\partial }{\partial T} \varepsilon(\omega_{j}, T)}_{C_{V,j}}
-\end{equation}
-Für die weitere Diskussion berücksichtigt man einen Phononenast (Debye-Näherung) und wendet die \textbf{dominante Phononennäherung} an, d.h. das Frequenzspektrum wird vernachlässigt und man betrachtet nur Phononen, die am meisten zum Wärmetransport beitragen ($\hbar \overline{\omega} \simeq p k_{\mathrm{B}} T$ wobei $1 \le p \le 3$)
-
-\begin{equation}
-	\label{eq:II.6.27}
-	k = \frac{1}{3} v_{\mathrm{g}} \lambda C_{V}
-\end{equation}
-
-\paragraph{Phononen machen Stöße}\,\\ 
-\begin{enumerate}
-	\item mit den Wänden 
-	\item mit Gitterfehlern
-	\item mit anderen Phononen
-\end{enumerate}
-$$
-\frac{1}{\lambda} = \frac{1}{\lambda_{\text{a)}}} + \frac{1}{\lambda_{\text{b)}}} + \frac{1}{\lambda_{\text{c)}}}
-$$ 
-Prozess, der zur stärksten Streuung führt bestimmt, $\lambda$.\\
-bei harmonischen Potential besteht keine Phonon-Phonon-Wechselwirkung und somit keine Wärmeleitung, wohingegen bei anhorminischen Potential Phonon-Phonon-Wechselwirkung besteht.
-
-\begin{figure}[H]
-    \centering
-    \incfig{vl24_abbildung_4}
-    \label{fig:vl24_abbildung_4}
-\end{figure}
-
-\paragraph{Normalprozess: N-Prozess}\,\\ 
-Hier hat man einen energiefluss von links nach rechts, kein Temperaturgradient
-$$
-\begin{aligned}
-	\hbar \Vec{k}_{1} + \hbar \Vec{k}_{2} &= \hbar \Vec{k}_{3} \\
-	\hbar \omega_{1} + \hbar \omega_{2} &= \hbar \omega_{3} 
-\end{aligned}
-$$ 
-
-\paragraph{Umklappprozesse: U-Prozess}\,\\ 
-Ein Temperaturgradient entsteht!
-\begin{figure}[H]
-    \centering
-    \incfig{vl24_abbildung_5}
-    \label{fig:vl24_abbildung_5}
-\end{figure}
-
-$$
-\hbar \Vec{k}_{1} + \hbar \Vec{k}_{2} &=  \hbar \Vec{k}_{3} + \hbar \Vec{G} \\
-\hbar  \omega_1 + \hbar \omega_{2} &= \hbar \omega_3
-$$ 
-U-Prozesse können nur die phononen machen für die gilt
+\paragraph{Diskussion:}
 \begin{enumerate}
 	\item 
+		\textbf{Klassisches Resultat:} Für $T\gg\Theta$ ist $x_{D} \ll 1$. Wegen $e^{x} \approx 1$ und $e^{x}-1\approx x$ gilt
 		$$
-		k_{1,2} \ge \frac{\pi/a}{2} = \frac{k_{\text{max}}}{2}
+		\int_{0}^{x_{D}} x^2 \mathrm{d}x = \frac{x_{D}^3}{3} = \frac{1}{3} \left( \frac{\Theta}{T} \right) ^3
 		$$ 
-	\item $\omega = v_{\text{g}} k$ (Debye Modell) $\omega_{\text{max}}= \omega_{D}$ 
+		und es folgt die
+		\begin{important}
+			Wärmekapazität nach der klassichen Thermodynamik
+			\begin{equation}
+				\label{eq:II.6.22}
+				C_{V} = 3R.
+			\end{equation}
+		\end{important}
+	\item 
+		\textbf{Debye'sche $T^3$ Gesetz:} Für $T \ll \Theta$ ist $x_{D} \gg 1$. Die Integrationsgrenze geht gegen unendlich und es ist 
+		$$
+		\int_{0}^{\infty} \frac{x^{4} e^{x}}{\left( e^{x} -1 \right) ^2} \mathrm{d}x = \frac{4\pi^{4}}{15}.
+		$$ 
+		Daraus folgt das 
+		\begin{important}
+			Debye'sche $T^3$ Gesetz\\
+			\begin{equation}
+				\label{eq:II.6.23}
+				C_{V}= \frac{12 \pi^{4}R}{5 \Theta^3} T^3 
+			\end{equation}
+			für $T\le \num{0,1}\,\Theta$.
+		\end{important}
+	\item 
+		\textbf{Experimentelle Bestimmung 1:} Die Wärmekapazität kann experimentell gemessen werden. 
+		Für $T\leq0.1\,\Theta$ können die Messwerte gegen das $T^3$ Modell gefittet werden. 
+		So kann die Debyetemperatur und -frequenz experimentell bestimmt werden.
+		In \autoref{tab:vl24_debye_temp_freq_bsp} sind Beispielwerte aus solchen Bestimmungen aufgeführt.
+		\begin{table}[H]
+			\centering
+			\caption{Beispielwerte für die Debyetemperatur $\Theta$ und -frequenz $\omega_\mathrm D$.}
+			\label{tab:vl24_debye_temp_freq_bsp}
+			\begin{tabular}{ccc}
+				\toprule
+				Stoff & $\Theta$ & $\omega_\mathrm{D}$ \\
+				\midrule
+				Natrium & \SI{158}{\kelvin} & \SI{2 e13}{\hertz} \\
+				Kupfer & \SI{343}{\kelvin} & \SI{4,5 e 13}{\hertz}\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+	\item \textbf{Eperimentelle Bestimmung 2:} Die Debyetemperatur $\Theta$ ist von der Gruppengeschwindigkeit $v_\mathrm g$ abhängig, kann also auch auf diesem Weg bestimmt werden. 
+		Diese Bestimmung liefert andere Ergebnisse als durch das $T^3$ Modell, da in beiden Modellen unterschiedliche Näherungen getroffen werden (vgl. \autoref{tab:vl24_vergleich}).
+		\begin{table}[H]
+			\centering
+			\caption{Debyetemperatur $\Theta$ von Natriumchlorid \ce{NaCl} durch Ermittlung mit erschiedenen Methoden.}
+			\label{tab:vl24_vergleich}
+			\begin{tabular}{lc}
+				\toprule
+				Ermittlung über... & $\Theta$ in K\\
+				\midrule
+				die Wärmekapazität $C_\mathrm V$ & 308\\
+				die Gruppengeschwindigkeit $v_\mathrm g$ & 320\\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+		
+	\item Die vollständige Messkurve der Wärmekapazität $C_\mathrm V(T)$ (für alle Temperaturen) kann besser an das Modell angepasst werden, wenn die gesamte Dispersionsbeziehung $\omega(k)$ betrachtet wird.
+	\item \textbf{Abweichung:} Auch für kleine Temperaturen gibt es Abweichunen vom $T^3$ Gesetz, da auch die Elektronen zur Wärmekapazität beitragen.
+	\item \textbf{Phononenanzahl:} Die Zahl der Phonen $N_\mathrm{ph}$ ist
+			$$
+			N_{\text{Ph}} \sim 
+			\begin{cases}
+				T^3 &\text{~für~} T\ll \Theta_{D} \\
+				T & \text{~für~} T\gg \Theta_{D}
+			\end{cases},
+			$$ 
+			was bei verschiedenen Phänomenen eine Rolle spielt.
+	\item \textbf{Grenzfall $\bm T=\Theta$:} An der Debyetemperatur $T=\Theta$ ist $U_{\text{th}}\simeq 2 U_{0}$ mit der thermischen Energie $U_0$ der Nullpunktsschwankung.
+	\item \textbf{Weitere Grenzfälle:} \\
+	Bei $T<\Theta_\mathrm{D}$ frieren die Schwingungsmoden aus - dieses Verhalten ist nur quantenmechanisch erklärbar.\\
+	Bei $T > \Theta_{D}$ werden alle Moden angeregt - sie verhalten sich klassisch.
+\end{enumerate} 
+
+
+\subsection{Wärmeleitung des Kristallgitters}
+	Die Stromdichte $j$ ist die Energie, welche pro Zeiteinheit durch ein Flächenelement hindruchtritt. Für sie gilt
+	\begin{equation}
+		\label{eq:II.6.24}
+		\frac{\dot{Q}}{F} = j = - k \frac{\mathrm{d}T}{\mathrm{d}x}
+	\end{equation}
+	mit der Fläche $F$, der Energie pro Zeiteinheit $\dot{Q}$ und dem Wärmeleitvermögen $k$.
+
+\paragraph{Messung}
+	Die Messung erfolgt mit der in \autoref{fig:vl24_abbildung_2} schematisch abgebildeten Apparatur.
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{0.59\columnwidth}
+		\subimport{figures/}{vl24_abbildung_2.pdf_tex}
+		\caption{Schematischer Aufbau zur Messung der Wärmleitfähigkeit.}
+		\label{fig:vl24_abbildung_2}
+	\end{figure}
+
+	Dabei wird auf einen stationären Zustand gewartet, bei welchem
+	$$
+	\dot{Q} = U I = - k F \frac{\Delta T}{l}
+	$$ 
+	gilt.
+
+\paragraph{Wärmeleitung (Phononen als ideales Glas)}
+	Die statistische Natur des Leitungsprozesses bringt den Temperaturgradienten in die Gleichung \eqref{eq:II.6.24}. Die Energie diffundiert also durch die Probe.
+
+	Phänomenologisch beobachtet man für die Phononen:
+	\begin{itemize}
+		\item ein mittlere Lebensdauer $\tau$
+		\item eine freie Weglänge $\lambda = v_{\text{g}} \tau$. Hier spielen insbesondere Umklappprozesse eine Rolle.
+		\item eine Energie $\hbar\omega$
+	\end{itemize}
+	Wir betrachten eine Querschnittsfläche im Festkörper.
+	Vereinfacht sollen nur die Phononen in $x$-Richtung betrachtet werden - die Fläche liegt also orthogonal zu $x$.
+	Auf der einen Seite wird die Fläche von $\langle n\rangle$ Phononen durchsetzt, auf der anderen von $\langle n\rangle + \Delta\langle n\rangle$ (vgl \autoref{fig:vl24_abbildung_3}).
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{0.369\columnwidth}
+		\subimport{figures/}{vl24_abbildung_3.pdf_tex}
+		\caption{Eine Querschnittsfläche im Festkörper wird aus den verschiedenen Richtungen von unterschiedlich vielen Phononen durchsetzt.}
+		\label{fig:vl24_abbildung_3}
+	\end{figure}
+
+	Die Stromdichte in $x$-Richtung beträgt also
+	$$
+	j_{x} = \underbrace{\underbrace{- \frac{1}{V} \Delta \left< n \right>}_{\text{Teilchendichte}} \hbar \omega}_{\text{Energiedichte}} v_{\text{g}x}.
+	$$  
+	Mit
+	$$
+	\Delta \left<n \right> = \frac{\mathrm{d}\left<n \right>}{\mathrm{d}x} \Delta x \qquad \text{und}\qquad \Delta x = \lambda = v_{\text{g}} \tau
+	$$
+	ist
+	$$
+	\begin{aligned}
+		j_{x} &= - \frac{1}{V} \hbar  \omega \frac{\mathrm{d}\left< n \right>}{\mathrm{d}x} v_{\text{g}x}^2 \tau  \\
+		&= -\frac{1}{V} \hbar \omega \frac{\mathrm{d} \left< n \right>}{\mathrm{d}T} \frac{\mathrm{d}T}{\mathrm{d}x} v_{\text{g}x}^2 \tau   
+	\end{aligned}
+	$$
+	\begin{verbal}
+		$\lambda$ bezeichnet hier die freie Phononenweglänge in Bezug auf die Umklappprozesse.
+	\end{verbal}
+	Um die Stromdichte genau zu berechnen, benötigen wir die Summation über alle Schwingungsmoden mit $k_{j}$ und $\omega\left( k_{j} \right) $ der $j$ Äste. Dann ist
+	\begin{equation}
+		\label{eq:II.6.25}
+		j_{x} = - \underbrace{\frac{1}{V} \sum_{\Vec{k}, j}^{} \hbar \omega_{j} \left( k_{j} \right) \tau_{j} (k_{j}) v_{\text{g},x,j}^2 (k_{j}) \frac{\mathrm{d} \left<n_{j} (k_{j}) \right>}{\mathrm{d}T}}_{k} \frac{\mathrm{d}T}{\mathrm{d}x}.
+	\end{equation}
+	\begin{verbal}
+		$j_x$ bezeichnet die Stromdichte der Energie in $x$-Richtung, während $j$ den Index eines Astes (transversal-akustisch, etc.) ausdrückt.
+	\end{verbal}
+	Mit Gleichung \eqref{eq:II.6.24} erhalten wir für isotrope Materialien
+	$$
+	\left<v_{x}^2 \right> = \frac{1}{3} v_{\text{g}}^2
+	$$ 
+	und mit $\lambda = v_{\text{g}} \tau $ folgt
+	\begin{equation}
+		\label{eq:II.6.26}
+		k = \frac{1}{3} \sum_{\Vec{k}, j}^{}  v_{\text{g},j} \lambda_{j} \underbrace{\frac{1}{V} \frac{\partial }{\partial T} \varepsilon(\omega_{j}, T)}_{C_{V,j}}
+	\end{equation}
+	Für die weitere Diskussion berücksichtigt man einen Phononenast (Debye-Näherung) und wendet die \textbf{dominante Phononennäherung} an, d.h. das Frequenzspektrum wird vernachlässigt und man betrachtet nur Phononen, die am meisten zum Wärmetransport beitragen ($\hbar \overline{\omega} \simeq p k_{\mathrm{B}} T$ mit $1 \le p \le 3$).
+	Damit erhalten wir das
+	\begin{important}
+		Wärmeleitvermögen
 		\begin{equation}
-			\label{eq:II.6.28}
-			\hbar \omega_{1 /2} = \frac{\hbar  \omega_{\text{max}}}{2} = \frac{k_{\mathrm{B}} \Theta}{2}
+			\label{eq:II.6.27}
+			k = \frac{1}{3} v_{\mathrm{g}} \lambda C_{V}.
 		\end{equation}
-\end{enumerate}
+	\end{important}
+	
 
-\paragraph{Abschätzung für $k$ für einen Isolator}\,\\ 
-Die Phononengeschwindigkeit sei konstant mit $v_{\text{g}} = \SI{5 e5}{\centi \meter \per \second}$. Es gilt $C_{V} = \SI{24,9}{\joule \mol^{-1} \kelvin^{-1}}$ $T \gg \Theta$, und $C_{V} \sim T^3$ für $T\ll\Theta$. Die Wechselwirkung mit Phononen ist proportional zur mittleren Phononenzahl
-\begin{equation}
-	\label{eq:II.6.29}
-	\lambda = \lambda(T) \sim \frac{1}{\left< w \right>} \sim e^{\Theta / 2T} -1
-\end{equation}
+\paragraph{Stöße} Phononen machen Stöße \ldots
+	\begin{enumerate}[label=\alph*)]
+		\item mit den Wänden.
+		\item mit Gitterfehlern.
+		\item mit anderen Phononen.
+	\end{enumerate}
+	Die Wellenlänge des Phonons nach dem Stoß ist
+	$$
+		\frac{1}{\lambda} = \frac{1}{\lambda_{\text{a)}}} + \frac{1}{\lambda_{\text{b)}}} + \frac{1}{\lambda_{\text{c)}}}.
+	$$
+	D.h. der Prozess, welcher zur stärksten Streuung führt, bestimmt $\lambda$.
+	Bei harmonischen Potentialen besteht keine Phonon-Phonon-Wechselwirkung und somit keine Wärmeleitung, wohingegen bei anharmonischen Potentialen Phonon-Phonon-Wechselwirkung existieren.
 
-$$
-\left< n \right> = \frac{1}{e^{\hbar \omega / k_{\mathrm{B}}T}} \simeq \frac{1}{e^{\hbar  \omega_{\text{max} / 2 k_{\mathrm{B}}T}}-1} = \frac{1}{e^{k_{\mathrm{B}} \Theta /2 k_{B}T} - 1}
-$$ 
-Für
-\begin{enumerate}
-	\item $T\gg\Theta$ gilt
-		$$
+	
+
+\paragraph{Normalprozess: N-Prozess} Bei Normalprozessen gibt es einen Energiefluss von links nach rechts und somit keinen Temperaturgradienten. Der Stoßprozess ist beschrieben durch
+	$$		
 		\begin{aligned}
-			C_{V} &= \text{konst.}(T) \\
-			\lambda &\sim \frac{\Theta}{2T} \sim \frac{1}{T} \\
-			k &\sim \frac{1}{T} \\
+			\hbar \Vec{k}_{1} + \hbar \Vec{k}_{2} &= \hbar \Vec{k}_{3} \qquad\text{und}\\
+			\hbar \omega_{1} + \hbar \omega_{2} &= \hbar \omega_{3}.
 		\end{aligned}
-		$$ 
-	\item $T \le \Theta$ gilt
-		$$
-		\begin{aligned}
-			C_{V} &\simeq \text{konst}(T) \\
-			\lambda &\sim e^{\Theta /2T}\\
-			k &\sim e^{\Theta/2T}\\
-		\end{aligned}
-		$$ 
-	\item $T\ll\Theta$ gilt
-		$$
-		\begin{aligned}
-			C_{V} &\sim T^3 \\
-			\lambda &\sim e^{\Theta /2T} > d = \, \text{Probedimension}\\
-			k &\sim \mathrm{d} T^3 \, \text{(Casimir-Bereich)}
-		\end{aligned}
-		$$ 
-\end{enumerate}
+	$$ 
+	\begin{figure}[H]
+		\centering
+		\incfig{vl24_abbildung_4}
+		\caption{Normalprozess. Zwei Phononen $\vec k_1$, $\vec k_2$ stoßen zu $\vec k_3$, welches in der ersten Brillouinzone liegt. Deshalb gibt es keinen Umklappprozess.}
+		\label{fig:vl24_abbildung_4}
+	\end{figure}
+	
 
-\begin{figure}[H]
-    \centering
-    \incfig{vl24_abbildung_6}
-    \label{fig:vl24_abbildung_6}
-\end{figure}
+\paragraph{Umklappprozesse: U-Prozess} Bei Umklappprozessen entsteht ein Temperaturgradient. Diese werden beschrieben durch
+	$$
+		\begin{aligned}
+			\hbar \Vec{k}_{1} + \hbar \Vec{k}_{2} &=  \hbar \Vec{k}_{3} + \hbar \Vec{G}\qquad\text{und}\\
+			\hbar  \omega_1 + \hbar \omega_{2} &= \hbar \omega_3.
+		\end{aligned}
+	$$
+	Der Gittervektor $\vec G$ muss so gewählt werden, dass $\vec k$ in der ersten Brillouinzone liegt (vgl. \autoref{fig:vl24_abbildung_5}).
+	\begin{figure}[H]
+		\centering
+		\incfig{vl24_abbildung_5}
+		\caption{Umklappprozess mit $\vec G=-g_1$.}
+		\label{fig:vl24_abbildung_5}
+	\end{figure}
 
-Unreine Kristalle: $a$ mittlerer Abstand zwischen 2 Fehlstellen, $T\ll \Theta$ $\lambda \sim a$ $k \sim aT^3$, $a<d$
+	U-Prozesse können nur die Phononen machen, für die gilt:
+	\begin{enumerate}
+		\item Die Wellenzahl der Phononen vor dem Stoß ist
+			$$
+			k_{1,2} \ge \frac{\pi/a}{2} = \frac{k_{\text{max}}}{2}
+			$$ 
+		\item Nach dem Debye-Modell ist die Frequenz $\omega = v_{\text{g}} k$ mit der maximalen Frequenz $\omega_{\text{max}}= \omega_{D}$. Die Energie $\hbar\omega_i$ der Phononen vor dem Stoß ist also
+			\begin{equation}
+				\label{eq:II.6.28}
+				\hbar \omega_{1 /2} = \frac{\hbar  \omega_{\text{max}}}{2} = \frac{k_{\mathrm{B}} \Theta}{2}.
+			\end{equation}
+	\end{enumerate}
+
+\paragraph{Abschätzung des Wärmeleitvermögens für einen Isolator} 
+	Die Phononengeschwindigkeit sei konstant mit 
+	$$
+		{v_{\text{g}} = \SI{5 e5}{\centi \meter \per \second}=\text{const}(T)}.
+	$$ 
+	Dann ist
+	$$
+		C_{V} = \SI{24,9}{\joule \mol^{-1} \kelvin^{-1}} \qquad\text{für }T \gg \Theta
+	$$
+	und
+	$$
+		C_{V}\sim T^3 \qquad\text{für }T\ll\Theta.
+	$$ 
+	Die Wechselwirkung mit Phononen ist proportional zur mittleren Phononenzahl, also
+	\begin{equation}
+		\label{eq:II.6.29}
+		\lambda = \lambda(T) \sim \frac{1}{\left< w \right>} \sim e^{\Theta / 2T} -1.
+	\end{equation}
+	Das folgt aus der Bose-Statistik
+	$$
+	\left< n \right> = \frac{1}{e^{\hbar \omega / k_{\mathrm{B}}T}} \overset{\text{Umklappprozesse}}{\simeq} \frac{1}{e^{\hbar  \omega_{\text{max} / 2 k_{\mathrm{B}}T}}-1} \overset{\text{Debye}}= \frac{1}{e^{k_{\mathrm{B}} \Theta /2 k_{B}T} - 1}.
+	$$ 
+	Für verschiedene Temperaturbereiche lassen sich Näherungen treffen:
+	\begin{enumerate}
+		\item Für $T\gg\Theta$ gilt
+			$$
+			\begin{aligned}
+				C_{V} &= \text{const.}(T) \\
+				\lambda &\sim \frac{\Theta}{2T} \sim \frac{1}{T} \\
+				k &\sim \frac{1}{T} \\
+			\end{aligned}
+			$$ 
+		\item Für $T \le \Theta$ gilt
+			$$
+			\begin{aligned}
+				C_{V} &\simeq \text{const}(T) \\
+				\lambda &\sim e^{\Theta /2T}\\
+				k &\sim e^{\Theta/2T}\\
+			\end{aligned}
+			$$ 
+		\item Für $T\ll\Theta$ gilt
+			$$
+			\begin{aligned}
+				C_{V} &\sim T^3 \\
+				\lambda &\sim e^{\Theta /2T} > d = \, \text{Probendimension}\\
+				k &\sim \mathrm{d} T^3 \, \text{(Casimir-Bereich)}
+			\end{aligned}
+			$$ 
+	\end{enumerate}
+	Der Gesamtverlauf des Wärmeleitvermögens ist in \autoref{fig:vl24_abbildung_6} dargestellt.
+
+	\begin{figure}[H]
+		\centering
+		\incfig{vl24_abbildung_6}
+		\caption{Temperaturverlauf des Wärmeleitvermögens $K$.}
+		\label{fig:vl24_abbildung_6}
+	\end{figure}
+
+	Bei unreinen Kristalle sei $a$ der mittlerer Abstand zwischen 2 Fehlstellen. Dann ist für $T\ll \Theta$ 
+	$$\lambda \sim a$$
+	und
+	$$k \sim aT^3.$$ 
+	Somit ist $a$ kleiner als die Probendimension $d$.
+	
