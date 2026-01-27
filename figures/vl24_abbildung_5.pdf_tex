@@ -57,7 +57,7 @@
     \put(0.54904144,0.13425664){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Vec{k}_{x}$\end{tabular}}}}%
     \put(0.40708285,0.29944792){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Vec{k}_{y}$\end{tabular}}}}%
     \put(0.33178086,0.1643027){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{k}_{2}}$\end{tabular}}}}%
-    \put(0.30518945,0.12104141){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{k}}$\end{tabular}}}}%
+    \put(0.30518945,0.12104141){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{k}_1}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl24_abbildung_5.pdf}}%
     \put(0.47969671,0.0299198){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Vec{g}_{1}}$\end{tabular}}}}%
     \put(0.32467864,0.07746481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{-\Vec{g}_{1}}$\end{tabular}}}}%

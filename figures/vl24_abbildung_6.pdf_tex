@@ -60,7 +60,7 @@
     \put(0.35048784,0.15285788){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\sim  T^3}$\end{tabular}}}}%
     \put(0.56678409,0.05598709){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\sim 1 /T}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl24_abbildung_6.pdf}}%
-    \put(0.30733024,0.24407205){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$k$\end{tabular}}}}%
+    \put(0.30733024,0.24407205){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$K$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl24_abbildung_6.pdf}}%
     \put(0.62621576,0.00318843){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$T$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{vl24_abbildung_6.pdf}}%
