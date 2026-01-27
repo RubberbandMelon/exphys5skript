@@ -1,0 +1,228 @@
+\setcounter{section}{5}
+\setcounter{subsection}{1}
+\setcounter{equation}{6}
+\setcounter{figure}{6}
+
+\subsection{Welle in Atomreihe, 2 Atome mit verschiedenen Massen}
+	\begin{figure}[H]
+		\centering
+		\incfig{vl21_abbildung_1}
+		\label{fig:vl21_abbildung_1}
+	\end{figure}
+
+	Zur Untersuchung dieses Modells werden zwei Annahmen gemacht:
+	\begin{enumerate}
+		\item Wechselwirkungen bestehen nur mit dem nächsten Nachbarn.
+		\item Es gilt das Hook'sche Gesetz.
+	\end{enumerate}
+	Es folgen die Bewegungsgleichungen
+	\begin{equation}
+		\label{eq:II.5.7}
+		\begin{split}
+			M_1 \frac{\mathrm{d}^2 u_{n}}{\text{d}t^2} &= \beta \left( v_{n} + v_{n-1} - 2u_{n} \right),  \\
+			M_2 \frac{\mathrm{d}^2 v_{n}}{\mathrm{d}t^2} &= \beta \left( u_{n+1} + u_{n} - 2v_{n}  \right).
+		\end{split}
+	\end{equation}
+
+	Wir suchen nach Lösungen in der Form von laufenden Wellen, jedoch mit verschiedenen Amplituden $u$ und $v$. Wir wählen den Ansatz
+	\begin{equation}
+		\label{eq:II.5.8}
+		\begin{split}
+			u_{n} &= u_0 e^{inka} e^{-i \omega t} \\
+			v_{n} &= v_0 e^{inka} e^{-i \omega t} .
+		\end{split}
+	\end{equation}
+
+	Einsetzen des Ansatzes \eqref{eq:II.5.8} in \eqref{eq:II.5.7} liefert
+	\begin{equation}
+		\label{eq:II.5.9}
+		\begin{split}
+			- \omega^2 M_1 u_0 &=  \beta v_0 \left[ 1 + e^{-ika} \right] - 2 \beta u_0 \\
+			- \omega^2 M_2 v_0 &= \beta u_0 \left[ e^{ika} + 1 \right] - 2\beta v_0 .
+		\end{split}
+	\end{equation}
+	Dieses homogene lineare Gleichungssystem besitzt dann eine nichtlineare Lösung, wenn die Determinante der Koeffizienten $u_0$, $v_0$ verschwindet, also
+	$$
+	\det
+	\begin{vmatrix}
+		2 \beta - M_1 \omega^2 & - \beta \left[ 1 + e^{ika} \right] \\
+		-\beta \left[ 1 + e^{ika}\right] & 2 \beta - M_2 \omega^2
+	\end{vmatrix} = 0.
+	$$
+	Es folgt die Lösung
+	\begin{important}
+		\begin{equation}
+			\label{eq:II.5.10}
+			\omega_{\pm}^2 (k) = \frac{\beta\left( M_1 + M_2 \right) }{M_1 \cdot M_2} \pm \frac{\beta }{M_1M_2} \sqrt{M_1^2 + M_2^2 + 2M_1M_2 \cos\left( ka \right) } 
+		\end{equation}
+	\end{important}
+
+\paragraph{Bemerkung 1: Dispersion}
+	Die Dispersion ist periodisch in $k$. Die erste Brillouinzone liegt bei
+	$$
+	- \frac{\pi}{a} \le k \le \frac{\pi}{a}.
+	$$ 
+
+\paragraph{Bemerkung 2: Frequenzen}
+	Zu jedem $k$ gehören 2 mögliche Frequenzen, $\omega_+$ und $\omega_-$.
+
+\paragraph{Bemerkung 3: Große Wellenlängen}
+	Für große Wellenlängen $\lambda$ ist $ak \ll 1$. Die Lösungen $\omega_\pm$ aus \eqref{eq:II.5.10} können mit $\cos(ka)\approx 1$ genähert werden zu
+	\begin{align}
+		\label{eq:II.5.11}
+		\omega_{+}^2 &\simeq 2\beta \left( \frac{1}{M_1} + \frac{1}{M_2} \right) \qquad \text{(optischer Ast)},\\
+		\label{eq:II.5.12}
+		\omega_{-}^2 &\simeq \frac{\beta}{2\left( M_1 + M_2 \right) } k^2 a^2 \qquad \text{(akustischer Ast)}.
+	\end{align}
+	Die Lösungen werden dann als optischer und akustischer Ast unterschieden.
+
+\paragraph{Bemerkung 4: Kleine Wellenlängen}
+	Mit $k=\frac{\pi}{a}$ und $\lambda = 2a$ folgt
+	$$
+	\omega_{+}^2 = \frac{2\beta}{M_2}\qquad\text{und}\qquad \omega_{-}^2 = \frac{2\beta}{M_1}\qquad\text{bei} \qquad M_1>M_2.
+	$$
+	Die Lösung $\omega_+$ heißt hier optischer Zweig und $\omega_-$ akustischer Zweig. 
+	Diese sind in \autoref{fig:vl21_abbildung_2} dargestellt.
+	\begin{figure}[H]
+		\centering
+		\incfig{vl21_abbildung_2}
+		\caption{Optischer und akustischer Zweig in der ersten Brillouinzone.}
+		\label{fig:vl21_abbildung_2}
+	\end{figure}
+	
+\paragraph{Bemerkung 5: Akustischer Zweig $\bm\omega_-$}
+	Im akustischen Zweig ist für $ka\ll 1$: $\omega_{-}\simeq 0$.
+	Daraus folgt aus Gleichung \eqref{eq:II.5.9} $u_0 \simeq v_0$.
+	Die schweren und leichten Atome bewegen sich also mit nahezu gleicher Phase in derselben Welle (vgl. \autoref{fig:vl21_abbildung_3}).
+	\begin{figure}[H]
+		\centering
+		\incfig{vl21_abbildung_3}
+		\caption{Welle im akustischen Zweig.}
+		\label{fig:vl21_abbildung_3}
+	\end{figure}
+
+\paragraph{Bemerkung 6: Optischer Zweig $\bm\omega_+$}
+	Im optischen Zweig ist für $k\to 0$: $\omega_{+}^2 = \frac{2\beta}{\mu}$ mit reduzierter Masse $\mu$. 
+	Aus Gleichung \eqref{eq:II.5.9} folgt $u_0 = - \frac{M_2}{M_1} v_0$.
+	Die schweren und leichten Atome schwingen gegeneinander (vgl. \autoref{fig:vl21_abbildung_4}).
+	\begin{figure}[H]
+		\centering
+		\incfig{vl21_abbildung_4}
+		\caption{Welle im optischen Zweig.}
+		\label{fig:vl21_abbildung_4}
+	\end{figure}
+	Wellen im optischen Zweig sind mit Infrarotstrahlung anregbar, falls beide Atome ungleiche Ladungen besitzen.
+
+\paragraph{Bemerkung 7: Normale Temperatur}
+	Bei Raumtemperatur gilt $k_{\mathrm{B}}T\ll \hbar \omega_{+}$, d.h. es wird überwiegend nur der akustische Zweig angeregt.
+
+\paragraph{Bemerkung 8: Randbedingungen}
+	Aufgrund der Randbedingungen erhält man diskrete $k$-Werte (siehe Diskussion vorheriges Kapitel, jetzt mit optischen und akustischen Phononen).
+
+\paragraph{Bemerkung 9: Erweiterung auf 3D}~\\
+	Eine 2-atomige Kette hat
+	\begin{itemize}
+		\item 3 akustische Zweige (einen longitudinalen, zwei transversale) und
+		\item 3 optische Zweige (einen longitudinalen, zwei transversale).
+	\end{itemize}
+	Eine $p$-atomige Kette hat allgemein
+	\begin{itemize}
+		\item 3 akustische Zweige und
+		\item $3p-3$ optische Zweige.
+	\end{itemize}
+	In beliebige Raumrichtungen ergibt sich eine Mischform von Schwingungen und es gelten komplizierte Verhältnisse.
+
+\subsection{Anharmonische Anteile, Umklappprozesse} 
+	Wären die Gitterschwingungen ideal harmonisch, so würde 
+	\begin{itemize}
+		\item es zu idealer Entkopplung kommen,
+		\item eine Mode beliebig hoch angeregt werden und
+		\item kein thermisches Gleichgewicht mit anderen Schwingungsmoden zustande kommen.
+	\end{itemize}
+	In der Realität findet jedoch Kopplung statt! 
+	Ursache dafür sind anharmonische Anteile in allen Schwingungen, welche v.A. durch Wechselwirkung mit übernächsten Nachbarn entstehen. 
+	Da die Schwingungen miteinander koppeln, findet ein Energieübertrag durch die Wellen statt.
+	
+	\paragraph{Erhaltungssätze}
+	Für Wellen im Festkörper lassen sich zwei Erhaltungssätze formulieren:
+	\begin{important}
+		Energieerhaltung
+		\begin{equation}
+			\label{eq:II.5.23}
+			\hbar \omega_1 \iff \hbar \omega_2 + \hbar \omega_3
+		\end{equation}
+	\end{important}
+	\begin{important}
+		Impulserhaltung
+		\begin{equation}
+			\label{eq:II.5.24}
+			\Vec{k}_{1} = \Vec{k}_{2} + \Vec{k}_{3} + m \Vec{g}_{h,k,l} \quad m  \in \mathbb{Z}
+		\end{equation}
+	\end{important}
+
+	Der Impulserhaltungssatz ist mehrdeutig, da die $\Vec{k}_{i}$ nur bis auf einen beliebigen Vektor $m \Vec{g}_{h,k,l}$ im reziproken Gitter bestimmt sind, der so gewählt werden muss, dass alle $\Vec{k}_{i}$ in der \textbf{ersten Brillouinzone} liegen.
+	\begin{verbal}
+		Wird beim Koppeln zweier Wellen $\vec k_1$ und $\vec k_2$ zu $\vec k$ nach der Impulserhaltung \eqref{eq:II.5.24} ein $m\vec g_{h,k,l}\neq0$ gewählt, \glqq klappt\grqq~der neue Wellenvektor $\vec k$ \glqq um\grqq.
+		Deshalb wird dieser Prozess Umklappprozess genannt.
+	\end{verbal}
+	\autoref{fig:vl21_umklappprozesse} verdeutlicht die korrekte Wahl des Vektors $m\vec g_{h,k,l}$.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{figures/vl21/umklappprozesse.png}
+		\caption{Umklappprozesse im zweidimensionalen reziproken Gitter \cite{Hellwege}.
+			Die Wellenvektoren $q_{1,2}$ liegen in der ersten Brillouinzone, welche von den Gittervektoren $g_{10}$ und $g_{01}$ aufgespannt wird.
+			In (a) und (b) wird $m\vec g_{h,k,l}=0$ gewählt, da $q=q_1+q_2$ schon in der ersten Brillouinzone (1. BZ) liegt.
+			In (c) wird $m\vec g_{h,k,l} = g_{10}$ gewählt und in (d) $m\vec g_{h,k,l} = -g_{01}$, damit der resultierende Wellenvektor $q = q_1+q_2+m\vec g_{h,k,l}$ in der 1. BZ liegt.
+		}
+		\label{fig:vl21_umklappprozesse}
+	\end{figure} 
+	Die nichtlinearen Kräfte bedeuten eine asymmetrische Potentialkurve. Dadurch verschiebt sich der mittlere Abstand $\overline r$ zwischen den Atomen (vgl. \autoref{fig:vl21_abbildung_5}).
+	\begin{figure}[H]
+		\centering
+		\incfig{vl21_abbildung_5}
+		\caption{Wegen der nichtlinearen Kräfte im Festkörper verschiebt sich der mittlere Atomabstand $\overline r$.}
+		\label{fig:vl21_abbildung_5}
+	\end{figure}
+	Die Betrachtung der Anhamonizitäten und der nichtlinearen Gitterkräfte sind für zwei physikalische Effekte notwendig:
+	\begin{itemize}
+		\item Die thermische Ausdehnung von Festkörpern findet aufgrund der Nichtlinearität der Gitterkräfte statt, indem der mittlere Abstand $\overline r$ der Gitteratome zunimmt.
+		\item Die Wärmeleitung kann nur mit Hilfe der Nichtlinearität erklärt werden (siehe Kapitel \autoref{sec:waermeleitung}).
+	\end{itemize}
+
+\subsection{Phononenspektroskopie}
+\subsubsection{Spektroskopie mit Licht}
+	Die Notation erfolgt gemäß folgender Konvention:
+	\begin{itemize}
+		\item Photonen haben Frequenz $\omega$ und Wellenvektor $\Vec{k}$ 
+		\item Phononen haben Frequenz $\Omega$ und Wellenvektor $\Vec{K}$
+	\end{itemize}
+
+	Es werden zwei Frequenzbereiche unterschieden:
+	\begin{enumerate}
+		\item {Raman- und Brillouinstreuung:}
+			Bei dieser Untersuchungsform gilt $\omega \gg \Omega$. Das Streulicht enthält Anteile mit $\omega \pm \Omega$.
+		\item {Ultrarotspektroskopie:}
+			Hier gilt $\omega = \Omega$ und es besteht ein vollständige Umwandlung zwischen Photonen und Phononen
+	\end{enumerate}
+
+\paragraph{Raman- und Brillouinstreuung}
+	Betrachte den \quickdef{Stokes Prozess} in \autoref{fig:vl21_abbildung_6}.
+	\begin{figure}[H]
+		\centering
+		\incfig{vl21_abbildung_6}
+		\caption{Stokes Prozess. Ein Lichtstrahl $\vec k_{0\mathrm v}, \omega_{0\mathrm v}$ im Vakuum tritt in einen Festkörper mit Brechungsindex $n$ ein.
+			Dort hat er Wellenzahl $k_0$ und Frequenz $\omega_0$.
+			Der Strahl wird gestreut zu einem Photon $\vec k, \omega$ und einem Phonon $\vec K, \Omega$.
+			Das gestreute Photon verlässt den Festkörper mit $\vec k_\mathrm v$ und $\omega_\mathrm v$.
+		}
+		\label{fig:vl21_abbildung_6}
+	\end{figure}
+
+	Das ungestreute Photon hat im Festkörper die Frequenz
+	$$
+	\omega_0 = \omega_{0\mathrm v}
+	$$
+	und die Wellenzahl
+	$$
+	k_{0} = \frac{2\pi}{\lambda_0} = n k_{0\mathrm v} = n \frac{\omega_0}{\mathrm{c}}.
+	$$ 
