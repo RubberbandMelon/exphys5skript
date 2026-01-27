@@ -1,0 +1,268 @@
+\clearpage
+\setcounter{section}{4}
+
+\section{Gitterdynamik des Festkörpers}
+	Die kollektive Bewegung der Bausteine im Festkörper auf atomischer Grundlage lässt sich als Vielkörperproblem mit $N$ Atomen betrachten.
+
+\paragraph{Adiabatische Näherung}\,\\
+	Die Bewegung der Atomkerne im Kristallgitter ist ungleich langsamer als die der Elektronen, da die Kerne weitaus höhere Massen besitzen. 
+	Bei einer Verschiebung der Kerne bewegen sich die Elektronen somit instantan mit, wobei der umgekehrte Fall nicht gilt. 
+	Es ist somit eine getrennte Betrachtung der Elektronen und Kernbewegung nötig.
+
+\paragraph{Bewegung der Kerne}\,\\
+	Die Bewegung der Kerne bestimmt folgende Eigenschaften:
+	\begin{itemize}
+		\item Schallausbreitung
+		\item Thermische Ausdehnung
+		\item Gitteranteil der spezifischen Wärme
+		\item Temperaturabhängigkeit der elektrischen Leitfähigkeit
+		\item Supraleitfähigkeit von Metallen
+	\end{itemize}
+Atome sind über Bindungskräfte gekoppelt.
+
+
+\paragraph{Modell des Festkörpers}\,\\
+	Das Bindungspotential eines Atoms im Festkörper lässt sich um den Gleichgewichtspunkt als quadratisches Potential nähern (vgl. \autoref{fig:vl20_abbildung_1}).
+	Diese Näherung entspricht dem klassischen Potential einer Feder.
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{0.483\textwidth}
+		\subimport{figures/}{vl20_abbildung_1.pdf_tex}
+		\caption{Bindungspotential (schwarz) mit quadratischer Näherung (rot).}
+		\label{fig:vl20_abbildung_1}
+	\end{figure}
+	Beim Fehlermodell des Festkörpers werden Atome als Punktmassen angesehen, welche über Federn mit ihren Nachbarn verbunden sind (vgl. \autoref{fig:vl20_federmodell}).
+	Die Federn repräsentieren die Kräfte zwischen den Atomen.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{figures/vl20/federmodell.png}
+		\caption{Federmodell des Festkörpers.}
+		\label{fig:vl20_federmodell}
+	\end{figure}
+	Folgende Punkte sind zu beachten:
+	\begin{enumerate}
+		\item Bei kleinen Auslenkungen eines Atoms wird linear elastisch genähert
+		\item Beim realistischen Modell ist ein Atom nicht nur mit seinen direkten Nachbarn über Federn verbunden, sondern auch mit dem 2. oder 3. Nachbarn.
+		\item Bei dreidimensionaler Betrachtung von Gittern kommt es zu unübersichtlichen Ausdrücken und Mehrfachindizes. Aus diesem Grund beginnt man mit eindimensionalen Betrachtungen, welche man versucht auf 3D zu erweitern.
+	\end{enumerate}
+
+\subsection{Welle in einer Atomreihe mit Atomen gleicher Massen}
+	Die Betrachtung einer Welle in einer Atomreihe entspricht der Betrachtung entlang einer speziellen Richtung eines Kristalls wie bspw. $\left[ 100 \right] $, $\left[ 110 \right] $ und $\left[ 111 \right] $ im kubischen Kristall. 
+	Sind die Netzebenen in Phase, so reicht eine Koordinate zur Beschreibung der Welle aus.
+
+	\begin{figure}[H]
+		\centering
+		\incfig{vl20_abbildung_2}
+		\caption{Atomreihe. Die Atome stehen im Abstand $a$ und werden mit $\ldots~{n-2,}~{n-1,}~{n,}~{n+1,}~{n+2,~\ldots}$ benannt. Jedes Atom $i$ hat eine Auslenkung $u_i$.}
+		\label{fig:vl20_abbildung_2}
+	\end{figure}
+	Bei dieser eindimensionalen Betrachtung werden zwei Annahmen gemacht:
+	\begin{enumerate}
+		\item Ein Atom wechselwirkt nur mit seinem nächsten Nachbarn.
+		\item Es besteht ein lineares Kraftgesetz.
+	\end{enumerate}
+
+	Die Kraft auf das $n$-te Atom ist jeweils
+	\begin{equation}
+		\label{eq:II.5.1}
+		K_{n} = \beta \left( u_{n+1} - u_{n} \right) + \beta\left( u_{n-1}-u_{n} \right).
+	\end{equation}
+	Die Bewegungsgleichung lautet somit
+	\begin{equation}
+		\label{eq:II.5.2}
+		m \frac{\mathrm{d}^2 u_{n}}{\mathrm{d}t^2} = \beta \left( u_{n+1} + u_{n-1} - 2 u_{n} \right).
+	\end{equation}
+	Wir wählen den Ansatz einer laufenden Welle
+	\begin{equation}
+		\label{eq:II.5.3}
+		u_{n} = u_0 \mathrm e^{i \left| k_{n} a - \omega t \right| }.
+	\end{equation}
+	Gleichung \eqref{eq:II.5.3} in \eqref{eq:II.5.2} eingesetzt liefert
+	$$
+	- m\omega^2 = \beta\left(\mathrm e^{ika} + \mathrm e^{-ika} - 2 \right) = - 4\beta \sin^2\left( \frac{ka}{2} \right) .
+	$$
+	Mit den Identitäten
+	$$
+		\mathrm e^{ika}+\mathrm e^{-ika} = 2\cos(ka) \quad\text{und}\quad \cos^2 (\alpha) = 1 - \sin^2(\alpha)
+	$$
+	folgt die 
+	\begin{important}
+		Dispersionsrelation 
+		\begin{equation}
+			\label{eq:II.5.4}
+			\omega = \sqrt{ \frac{4 \beta}{m}} \left| \sin\left( \frac{ka}{2} \right)  \right| . 
+		\end{equation}
+	\end{important}
+	In \autoref{fig:vl20_abbildung_3} ist die Dispersionsrelation als $k$-$\omega$-Diagramm aufgezeichnet.
+	\begin{figure}[H]
+		\centering
+		\incfig{vl20_abbildung_3}
+		\caption{Wellenzahlabhängigkeit der Schwingungsfrequenz $\omega$ nach der Dispersionsrelation \eqref{eq:II.5.4}.
+			Die Funktion setzt sich periodisch fort.
+			Die Länge $G=\frac{2\pi}{a}$ ist der reziproke Gittervektor.
+			Die erste Brillouinzone (1. BZ) liegt zwischen $-\frac\pi a$ und $\frac\pi a$.	
+		}
+		\label{fig:vl20_abbildung_3}
+	\end{figure}
+	Im Plot erkennt man, dass es eine maximale Freqenz gibt mit
+	$$
+	\omega_{\text{max}} = \sqrt{ \frac{4\beta}{m}}.
+	$$ 
+	Nur $k$-Werte, die innerhalb der ersten Brillouinzone liegen, haben physikalische Bedeutung. 
+	Wellen mit größerer Wellenzahl lassen sich nicht über die Atome übertragen, da die Wellenberge/täler nicht mit Massen belegt sind (vgl. \autoref{fig:vl20_wellen}).
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = 10cm]{figures/vl20/wellen.pdf}
+		\caption{Die Gitteratome sind als schwarze Punkte eingezeichnet. 
+			Eine Welle mit $\lambda = 2a$ (blau) liegt genau auf den Atomen.
+			Die Wellenberge der rote Welle mit $\lambda > 2a$ sind nicht mit Massen belegt.
+		}
+		\label{fig:vl20_wellen}
+	\end{figure}
+
+	Das Verhältnis der Auslenkungen benachbarter Atome beträgt
+	$$
+	\frac{u_{n+1}}{u_{n}} = e^{ika}.
+	$$ 
+	Der Bereich $\left[ -\pi, \pi \right] $ für die Phase $ka$ umfasst alle unabhängigen Werte der Exponentialfunktion. 
+	Es sind somit positive und negative Werte von $k$ möglich, da sich die Wellen nach rechts oder links ausbreiten können.
+
+\paragraph{Bemerkung 1:}
+	Betrachte die Grenzen der Brillouin-Zone bei $k = \pm \pi /a$. Die Gruppengeschwindigkeit ist allgemein
+	$$
+	v_{\text{gr}} = \frac{\text{d}\omega}{\text{d}k} = \sqrt{ \frac{\beta}{m}} a \cos\left( \frac{ka}{2} \right),
+	$$
+	an der Grenze der Brillouinzone also
+	$$
+	v_{\text{gr}} \left( \frac{\pi}{a} \right) = 0.
+	$$
+	Es besteht eine stehende Welle, da benachbarte Atome in entgegengesetzer Phase sind. 
+	Diese Situation ist äquivalent zur Bragg-Reflexion von Röntgenstrahlen \eqref{eq.II.3.22} 
+	$$
+	2d \sin\left( \frac{\theta}{2} \right) = m \lambda
+	$$ 
+	mit $d=a$, $\theta = \pi$ und $m=1$.
+	Wenn ein $k$-Vektor auf das Ende der Brillouin-Zone stößt, gibt es Braggreflexionen und es entsteht eine stehende Welle.
+	Die gesamte Physik spielt sich somit in der 1. BZ ab!
+\paragraph{Bemerkung 2:}
+	Es sind beliebig große $\lambda \gg a$ mit $ak \ll 1$ möglich. Für große $\lambda$ gilt die Kleinwinkelnäherung
+	$$
+	\omega \approx \sqrt{\frac{\beta}{m}} ak
+	$$ 
+	mit der Phasengeschwindigkeit 
+	$$
+	v_{\text{ph}} = \frac{\omega}{k} = \sqrt{\frac{\beta}{m} a} 
+	$$ 
+	und der Gruppengeschwindigkeit
+	$$
+	v_{\text{gr}} = \frac{\text{d} \omega}{\text{d}k} = v_{\text{ph}}.
+	$$ 
+	Für die Längendichte gilt
+	$$
+	\rho' = \frac{m}{a} \quad \to \quad v_{\text{ph}} = \sqrt{ \frac{a \beta}{\rho'}} = \sqrt{ \frac{E'}{\rho'}} 
+	$$ 
+	mit dem linearen Elastizitätsmodul $E'=a \beta$. 
+	Die Phasengeschwindigkeit $v_\mathrm{ph}$ erfüllt also die Kontinuumstheorie der elastischen Welle.
+	Die Schallgeschwindigkeit ist für große Wellenlängen also unabhängig von der Frequenz.
+	Sie entspricht der Steigung der Dispersionsrelation an $k=0$ (vgl. \autoref{fig:vl20_abbildung_5}).
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{0.464\columnwidth}
+		\subimport{figures/}{vl20_abbildung_5.pdf_tex}
+		\caption{Für große $\lambda$ gilt die Kontinuumstheorie. Die Schallgeschwindigkeit ist somit gleich der Steigung in $k=0$ (blau).}
+		\label{fig:vl20_abbildung_5}
+	\end{figure}
+
+\paragraph{Bemerkung 3:}
+	Die maximale Freqenz
+	$$
+	\omega_{\text{max}} = \sqrt{ \frac{4 \beta}{m}}
+	$$
+	liegt bei den meisten Feststoffen bei
+	$$
+	\omega_{\text{max}} \sim  \SI{5e13}{\hertz}
+	$$
+	und ist damit im Infrarot-Bereich.
+
+\paragraph{Bemerkung 4:}
+	Bisher wurden nur longitudinale Wellen betrachtet.
+	Transversale Wellen folgen analog mit schwächerer Kopplung
+	$$
+	\beta_{\text{trans}} < \beta_{\text{long}}
+	$$
+	und somit niedrigeren Frequenzen
+	$$
+	\omega_{\text{trans}} (k) < w_{\text{long}}(k).
+	$$
+
+\paragraph{Bemerkung 5:}
+	Wird die Betrachtung von einer Dimension auf drei übertragen, müssen folgende Anpassungen getroffen werden:
+	\begin{enumerate}
+		\item Die Welle breitet sich in beliebige Richtungen $\Vec{k} = \left( k_{x}, k_{y}, k_{z} \right) $ aus.
+		\item Die erste Brillouinzone ist komplizierter, d.h. ein dreidimensionalen Körper.
+		\item In den drei Freiheitsgraden gibt es drei Polarisationen, davon eine longitudinal und zwei transversal.
+		\item Die Schallfrequenz $w(k)$ wird richtungsabhängig.
+	\end{enumerate}
+
+\paragraph{Bemerkung 6:}
+	Bisher wurden unendlich lange Ketten betrachtet, daher waren $k$, $\omega$, und $\lambda$ kontinuierlich.
+	Bei endlich langen Ketten folgen aus den Randbedingungen diskrete $k$, $w$ und $\lambda$. 
+	Die Länge der Kette bei $n=1,\ldots,N$ Atomen ist $L= \left( N-1 \right) a \approx Na$. 
+	Die periodische Randbedingung lautet
+	$$
+	u\left( na \right)  = u\left( na + L \right)  = u\left( na + Na \right).
+	$$ 
+	Einsetzen in den Wellenansatz \eqref{eq:II.5.3} liefert
+	$$
+	e^{i\left( -\omega t + kna \right) } = e^{i\left( -i\omega t + kna + kL \right) }.
+	$$ 
+	Damit dies gilt wird
+	$$
+	kL = \pm 2 \pi n\quad\text{mit}\quad n \in \mathbb{N}_{0}
+	$$ 
+	gesetzt, damit
+	$$
+	e^{ikL} =1.
+	$$
+	Somit folgt
+	$$
+	k= \pm \frac{n 2\pi}{L} \quad n = 1,\ldots, \frac{N}{2}.
+	$$ 
+	Es ergibt sich
+	$$
+	k = \pm \frac{2\pi}{L}, \pm \frac{4\pi}{L}, \ldots , \frac{N\pi}{L} =\pm \frac{\pi}{a}
+	$$ 
+	und 
+	$$
+	\lambda_{k} = L, \frac{L}{2},\ldots, 2a.
+	$$
+
+
+
+\paragraph{Phononen}\,\\
+	Aus der Quantenmechanik sind die Energieeigenwerte des harmonsichen Oszillators 
+	\begin{equation}
+		\label{eq:II.5.5}
+		E_{r} = \hbar \omega_{k} \left( r +\frac{1}{2} \right) \quad r \in \mathbb{N}
+	\end{equation}
+	bekannt. 
+	\begin{important}
+		Die Energie einer wellenförmigen Gitterschwingung (Anregung) ist gequantelt mit
+		$$
+		E = \hbar \omega_{k}.
+		$$ 
+	\end{important}
+	Analogie: Während es sich bei der Hohlraumstrahlung bzw. Schwarzkörperstrahlung um thermisch angeregte Photonen handelt, handelt es sich bei thermischen Schwingungen in Kristallen um thermisch angeregte Phononen.
+	
+	Die spezifische Wärme und die Ergebnisse verschiedener Streuexperimente mit Photonen, Neutronen etc. sind Zeugniss der Existenz von Phononen.
+	Dennoch sind sie nur Quasiteilchen und keine echten Teilchen.
+
+\paragraph{Impuls der Phononen}\,\\
+	\begin{equation}
+		\label{eq:II.5.6}
+		\Vec{p}_{k} = \hbar \Vec{k}
+	\end{equation}
+	bezeichnet man als den Quasiimpuls bzw. Kristallimpuls. 
+	Ein Phonon mit dem Wellenvektor $\Vec{k}$ tritt mit Teilchen wie Photonen, Neutronen, Elektronen etc. in Wechselwirkung, als hätte es einen Impuls $\hbar  \Vec{k}$. 
+	Phononen besitzen jedoch \textbf{keinen} physikalischen Impuls (Beweis: siehe Hunklinger, Gross).
+
