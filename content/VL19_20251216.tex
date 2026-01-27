@@ -1,0 +1,315 @@
+\setcounter{section}{4}
+\setcounter{subsection}{2}
+\setcounter{equation}{0}
+\setcounter{figure}{4}
+
+\subsection{Fehlordnung in Kristallen}
+	Viele wichtige Eigenschaften der Kristalle (mechanische, optische, elektrische, magnetische) sind in ebenso starken Maße durch Kristallfehler bestimmt wie durch die Natur des Wirtskristalls selber. 
+	Ein Beispiel dafür ist die Leitfähigkeit von Halbleitern, welche durch die Dotierung, also Verunreinigung, mit Fremdatomen ermöglicht wird. 
+	Auch die Farbe und Lumineszenz vieler Kristalle kommt so durch Verunreinigungen und Defekte zustande.
+
+	Man unterscheidet folgende Fehlordnungen von Kristallen:
+	\begin{enumerate}
+		\item Nulldimensionale Punktdefekte (atomare Baufehler)
+			\begin{enumerate}
+				\item Eigenfehlstellen
+				\item Fremdstörstellen
+				\item Zwischengitteratome
+			\end{enumerate}
+		\item Eindimensionale (linienförmige) Fehler, also Versetzungen im Kristall
+		\item Zweidimensionale (flächenhafte) Fehlerm, also Korngrenzen
+		\item Dreidimensionale Fehler, also ganze Cluster aus Fremdatomen
+	\end{enumerate}
+
+\subsubsection{Eigenfehlstellen}
+	Laut der statistischen Thermodynamik steht der Energieaufwand $W_\mathrm{D}$ für die Bildung einer Fehlstelle dem Entropiegewinn gegenüber. 
+	Es können sich also Atome aus dem Kristallgitter lösen, wie in \autoref{fig:vl19_abbildung_1} dargestellt.
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\begin{scope}[scale = 0.8]
+				\def\r{0.13}
+
+				\foreach \x/\y in {
+					0/0,1/0,2/0,3/0,4/0,
+					0/1,1/1,2/1,3/1,4/1,
+					0/2,    2/2,3/2,4/2,
+					0/3,1/3,2/3,3/3,4/3,
+					-1/2
+				}{
+					\draw (\x, \y) circle[radius=\r, very thick];
+				}
+				\draw (0.6, 2.4) rectangle (1.4, 1.6);
+				\draw[->, thick] (0.6,2.1) .. controls (0,2.4) .. (-0.75,2.1);
+			\end{scope}
+		\end{tikzpicture}
+		\caption{Einzelne Atome können ihren Gitterplatz verlassen und erzeugen dadurch Eigenfehlstellen.}
+		\label{fig:vl19_abbildung_1}
+	\end{figure}
+
+\paragraph{Berechnung der Konzentration von Leerstellen im thermodynamischen Gleichgewicht} 
+	Bei einer Temperaturänderung bleibt das Volumen eines Festkörpers nahezu konstant.
+	Die Volumenänderung wird deshalb im Folgenden vernachlässigt.
+	Um die Konzentration der Fehlstellen zu bestimmen, ermittelt man die Änderung der \textbf{freien Energie} $F$ bei der Bildung von $N_\mathrm{D}$ Leerstellen
+	\begin{equation}
+		\label{eq:II.4.1}
+		\Delta F = N_\mathrm{D} W_\mathrm{D} - T \Delta S_\mathrm{D}
+	\end{equation}
+	mit dem insgesamt erzielten Entropiegewinn $\Delta S_\mathrm{D}$ (es wird die Konfigurationsentropie betrachtet). 
+	Die Änderung der Schwingungsentropie ($\Delta S_\mathrm{S} = N_\mathrm{D} \sigma_{\text{schw}}$) wird im Weiteren vernachlässigt, da sie nicht temperaturabhängig ist und nur einen kleinen Beitrag liefert.
+
+	Die Wahrscheinlichkeit für die Entstehung der Defekte wird durch die Anzahl $G$ der Möglichkeien gegeben, $N_\mathrm{D}$ Teilchen von $N$ Gitteratomen herauszugreifen:
+	\begin{equation}
+		\label{eq:II.4.2}
+		G = \frac{N\left( N-1 \right) \ldots \left( N-N_{D}+1 \right) }{N_\mathrm{D} !} 
+		= \frac{N!}{\left( N-N_\mathrm{D} \right) ! N_\mathrm{D} !},
+	\end{equation}
+	wobei das Teilen durch $N_\mathrm{D}!$ die Realisierungsmöglichkeiten ausschließt, die nur auf unterschiedlichen Reihenfolgen des Herausgreifens von $N_\mathrm{D}$ Teilchen beruhen.\\
+	Mit der aus der statistischen Thermodynamik bekannten Boltzman-Gleichung gilt
+	$$
+	\Delta S_\mathrm{D} = \mathrm{k}_{\mathrm{B}} \ln\left( G \right) = \mathrm{k}_{\mathrm{B}} \ln\left( \frac{N!}{\left( N-N_\mathrm{D} \right) ! N_\mathrm{D} !} \right).
+	$$ 
+	Da $N_\mathrm{D}$ und $N$ sehr groß sind, lässt sich die Stirling'sche Näherung ${\ln\left( x! \right) = x\ln(x) - x}$ anwenden und es folgt
+	$$
+	\Delta S_\mathrm{D} = \mathrm{k}_{\mathrm{B}} \Big( N \ln\left( N \right)  - \left( N-N_\mathrm{D} \right) \ln\left( N-N_\mathrm{D} \right) - N_\mathrm{D} \ln\left( N_\mathrm{D} \right)  \Big) .
+	$$ 
+	Im thermodynamischen Gleichgewicht muss die freie Energie und damit ihr Zuwachs eine Minimum erreichen
+	$$
+	\left( \frac{\partial \Delta F}{\partial N_\mathrm{D}}  \right) _{T} = W_\mathrm{D} - \mathrm{k}_{\mathrm{B}} T \ln\left( \frac{N -N_\mathrm{D}}{N_\mathrm{D}} \right) = 0,
+	$$ 
+	da $N_\mathrm{D} \ll N$. Es folgt
+	\setcounter{equation}{3}
+	\begin{important}
+		\begin{equation}
+			\label{eq:II.4.3}
+			N_\mathrm{D} = N e^{- \frac{W_\mathrm{D}}{\mathrm{k}_{\mathrm{B}} T}}.
+		\end{equation}
+		Die Anzahl der Leerstellen (Lücken) sind im thermodynamischen Gleichgewicht stark temperaturabhängig und Defekte sind natürlich.
+	\end{important}
+	Beispiele:
+	\begin{itemize}
+		\item $T = \SI{1000}{\kelvin}$, $W_{D} = \SI{1}{\electronvolt}$, $N_{D}\sim \SI{e-5}{N}$. \\
+			Mit Berücksichtigung der Schwingungsentropie ist $N_{D}\sim \SI{e-4}{N}$.
+		\item $T = \SI{3000}{\kelvin}$, $W_{D} = \SI{1}{\electronvolt}$, $N_{D}\sim \SI{e-17}{N}$. \\
+			Mit Berücksichtigung der Schwingungsentropie ist $N_{D}\sim \SI{e-16}{N}$
+	\end{itemize}
+
+\paragraph{Schottky-Defekt}\,\\[1em]
+	\begin{minipage}{0.3\linewidth}
+		\centering
+		\begin{tikzpicture}
+			\begin{scope}[scale = 0.8]
+				\def\r{0.13}
+				\def\boxsize{0.35}
+
+				\foreach \x/\y in {
+					0/0,1/0,2/0,
+					0/1,    2/1,3/1,
+					0/2,1/2,2/2
+				}{
+					\draw (\x, \y) circle[radius=\r, very thick];
+				}
+				\draw (1-\boxsize, 1-\boxsize) rectangle (1+\boxsize, 1+\boxsize);
+				\draw[->, thick] (1.1+\boxsize,1) .. controls (2,1.4) .. (2.9-\r,1);
+			\end{scope}
+		\end{tikzpicture}
+		\captionof{figure}{Schottky-Defekt.}
+		\label{fig:vl19_abbildung_2}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.65\linewidth}
+		Beim Schottky-Defekt geht ein Atom aus dem Kristallgitter auf die Oberfläche des Festkörpers (vgl. \autoref{fig:vl19_abbildung_2}). Die notwendige Energie ist
+		$$
+			W_\mathrm{D}^{\text{Sch}} = W_\mathrm{B} - W_\mathrm{ob} \quad(W_\mathrm{D} >0)
+		$$ 
+		mit der Bindungsenergie des Teilchens im Kristallverband $W_\mathrm{B}$ und der Bindungsenergie auf der Oberfläche $W_{\text{ob}}$. Die Anzahl der Defektatome ist
+		$$
+		N_\mathrm{D} = N e^{- \frac{-W_\mathrm{D}^{\text{Sch}}}{\mathrm{k}_\mathrm{B}T}}.
+		$$
+	\end{minipage}
+	\vspace{1em}
+	\hrule
+	
+\paragraph{Frenkel-Defekt}\,\\[1em]
+	\begin{minipage}{0.65\linewidth}
+		Lücke und Zwischengitterplatz treten paarweise auf (vgl \autoref{fig:vl19_abbildung_3}). Die notwendige Energie für den Frenkel-Defekt ist
+		$$
+			W_\mathrm{D}^{\text{Fr}} = W_\mathrm{B} - W_\mathrm{Zg}.
+		$$
+		mit der Bindungsenergie des Zwischengitterplatzes $W_\mathrm{Zg}$. Die Zahl der Defektatome ist
+		$$
+			N_{D} = N e^{- \frac{W_{D}^{\text{Fr}}}{2 \mathrm{k}_{\mathrm{B}} T}}.
+		$$
+		Die $2$ im Exponenten berücksichtigt die Zahl der verfügbaren Zwischengitterplätze.
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\begin{tikzpicture}
+			\begin{scope}[scale = 0.8]
+				\def\r{0.13}
+				\def\boxsize{0.35}
+
+				\foreach \x/\y in {
+					0/0,1/0,2/0,
+					0/1,    2/1,
+					0/2,1/2,2/2,
+					0.5/2.5,
+					0/3,1/3,2/3
+				}{
+					\draw (\x, \y) circle[radius=\r, very thick];
+				}
+				\draw (1-\boxsize, 1-\boxsize) rectangle (1+\boxsize, 1+\boxsize);
+				\draw[->, thick] (1-\boxsize, 1.1+\boxsize) .. controls (0.5,2) .. (0.5,2.4-\r);
+			\end{scope}
+		\end{tikzpicture}
+		\captionof{figure}{Frenkel-Defekt.}
+		\label{fig:vl19_abbildung_3}
+	\end{minipage}
+	\vspace{1em}
+	\hrule
+
+\paragraph{Antiside-Defekt}\,\\[1em]
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\begin{tikzpicture}
+			\begin{scope}[scale = 0.8]
+				\def\r{0.13}
+				\def\boxsize{0.35}
+
+				\foreach \x/\y in {
+					0/0,    2/0,
+					    1/1,    3/1,
+					0/2,1/2,
+					    1/3,    3/3
+				}{
+					\draw (\x, \y) circle[radius=\r, very thick];
+				}
+				\foreach \x/\y in {
+					    1/0,    3/0,
+					0/1,    2/1,
+					    2/2,3/2,
+					0/3,    2/3
+				}{
+					\filldraw (\x, \y) circle[radius=\r, very thick];
+				}
+				\draw[<->, thick] (1,2.1+\r) .. controls (1.5,2.6) .. (2,2.1+\r);
+			\end{scope}
+		\end{tikzpicture}
+		\captionof{figure}{Antiside-Defekt.}
+		\label{fig:vl19_abbildung_4}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.65\linewidth}
+		Der Antiside-Defekt ist ein Ordnungs-Unordnungsdefekt, bei dem zwei unterschiedliche Atome im mehratomigen Gitter ihren Standort vertauschen. 
+	\end{minipage}
+	\vspace{1em}
+	\hrule
+
+	In der Praxis ist die tatsächliche Zahl der Baufehler fast immer größer als die berechnete. 
+	Dies liegt an äußeren Einflüßen wie Bestrahlung und mechnischen Einflüssen, kann aber auch Resultat zu schneller Abkühlung sein, bei welcher Defekte mit eingefroren werden.
+
+\subsubsection{Fremdstörstellen}
+	Die Klassifizierung von Fremdstörstellen erfolgt durch dem Einbauort. Befindet sich das Fremdatom auf einem regulären Gitterplatz handelt es sich um eine substitutionelle, bei einem Zwischengitterplatz um ein interstitionelle Störstelle. Die typische Konzentration dieser Störstellen beträgt $\sim \SI{e15}{\centi \meter ^{-3}}$.
+	
+	\paragraph{Faustregel:}
+	Fremdatome mit geringem Radius bevorzugen oft Zwischengitterplätze, während ähnliche Atome, d.h. ähnlicher Radius und Struktur der Elektronenhüllen, reguläre Gitterplätze präferieren.
+	
+	Man unterscheidet zwischen
+	\begin{enumerate}
+		\item isoelektrischen Fremdstörstellen, welche gleiche Wertigkeit wie das zu substituierende Atom besitzen wie bspw. \ce{Zn^2+} in \ce{Cd^2+S^2-},
+		\item Donatoren, also Fremdatome mit höherer Wertigkeit bspw. \ce{As+} bei vierwertigem \ce{Si} und
+		\item Akzeptoren mit geringerer Wertigkeit, bspw. \ce{B-} in vierwertigem \ce{Si}.
+	\end{enumerate}
+
+\paragraph{Einbau von Fremdatomen}\,\\
+	Der Einbau von Fremdatomen erfolgt entweder bei der Epitaxie (MBE, MOVPE) oder mittels Ionenimplantation.
+
+	Bei der Ionenimplantation werden Ionen mit einer kinetischen Energie im \unit{\kilo \electronvolt}- bis \unit{\mega \electronvolt}-Bereich auf die Bereiche geschossen, in welchen Ionen implantiert werden sollen. 
+	
+	Der Nachteil der Ionenimplantation ist, dass die eintretenden Ionen Defekte im Gitter durch Kollision mit Gitteratomen verursachen bevor sie zum Stillstand kommen.
+	Diese verursachten Schäden nehmen mit höherer gewünschter Eindringtiefe zu. 
+	Der Kristall muss deshalb in einem Folgeschritt ausgeheilt werden, indem die Temperatur erhöht wird und die Gitteratome überwiegend in ihre Ausgangspositionen zurückkehren.
+	\autoref{fig:vl19_defekterzeugung_implantation} zeigt schematisch, wie Defekte durch den Ionenbeschuss entstehen.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = 0.5\linewidth]{figures/vl19/defekterzeugung_implantation.png}
+		\caption{Defekterzeugung in Festkörpern durch Ionenbeschuss \cite{Hamann}.}
+		\label{fig:vl19_defekterzeugung_implantation}
+	\end{figure}
+
+\subsubsection{Eindimensionale Fehlordnung: Versetzungen}
+	Bei eindimensionalen Fehlordnungen werden zwei Typen unterschieden:
+	\begin{itemize}
+		\item Stufenversetzung
+		\item Schraubenversetzung
+	\end{itemize}
+\paragraph{Stufenversetzung}\,\\
+	Bei der Stufenversetzung handelt es sich um den Einschub einer Gitterebene.\\[1ex]
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\begin{tikzpicture}
+			\begin{scope}[scale = 0.8]
+				\def\r{0.13}
+				\def\rext{0.23}
+				\def\offset{0.5}
+
+				\foreach \x/\y in {
+					0/0,1/0,2/0,    4/0,5/0,
+					0/1,1/1,2/1,3/1,4/1,5/1,
+					0/2,1/2,2/2,3/2,4/2,5/2,
+					0+\offset/-1,1+\offset/-1,2+\offset/-1,3+\offset/-1,4+\offset/-1,
+					0+\offset/-2,1+\offset/-2,2+\offset/-2,3+\offset/-2,4+\offset/-2
+				}{
+					\draw (\x, \y) circle[radius=\r, very thick];
+				}
+				\node[red] at (3,0) {$\bm\times$};
+				\node[red, anchor = south west] at (3,0) {Versetzungslinie};
+
+				\draw (0.1,0-\rext) -- (-0.1+\offset,-1+\rext);
+				\draw (1.1,0-\rext) -- (0.9+\offset,-1+\rext);
+				\draw (2.1,0-\rext) -- (1.9+\offset,-1+\rext);
+				\draw (3.9,0-\rext) -- (4.1-\offset,-1+\rext);
+				\draw (4.9,0-\rext) -- (5.1-\offset,-1+\rext);
+			\end{scope}
+		\end{tikzpicture}
+		\captionof{figure}{Stufenversetzung.}
+		\label{fig:vl19_abbildung_5}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.5\linewidth}
+		\centering
+		\includegraphics[width = 0.8\linewidth]{figures/vl19/stufenversetzung.png}
+		\captionof{figure}{Stufenversetzung in einem kubischen Kristall \cite{Hamann}.}
+		\label{fig:vl19_stufenversetzung_3d}
+	\end{minipage}
+	\vspace{1ex}
+	
+	Senkrecht zur Bildebene setzt sich die \textbf{Versetzungslinie} zur Kristalloberfäche fort. 
+	Ursache der Versetzungen sind Druck und Verspannungen im Kristall, welche bspw. durch das Aufwachsen zweier Materialien mit leicht unterschiedlichen Gitterkonstanten zustande kommt.
+
+\paragraph{Schraubenversetzung}\,\\
+	In bestimmten Bereichen sind die Gitterebenen um einen oder mehrere Gitterbausteine verschoben (vgl \autoref{fig:vl19_schraubenversetzung}). 
+	Es kommt auch zu komplexen Linienversetzungen durch Kombination von Stufen- und Schraubenversetzungen.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = 0.6\linewidth]{figures/vl19/schraubenversetzung.png}
+		\caption{Schraubenversetzung.}
+		\label{fig:vl19_schraubenversetzung}
+	\end{figure}
+
+\subsubsection{Zweidimensionale Fehlordnung}
+	Zweidimensionale Fehlordnungen werden in Stapelfehler, Zwillingsbildung und Kleinwinkelkorngrenzen unterteilt. 
+	Solche Kristalle sind typischerweise für optoelektronische Anwendungen nicht brauchbar.\\
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{figures/vl19/zwilling.png}
+		\captionof{figure}{Zwillingsbildung \cite{Hamann}.}
+		\label{fig:vl19_zwilling}
+	\end{minipage}
+	\begin{minipage}{0.6\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{figures/vl19/kleinwinkelkorngrenze.png}
+		\captionof{figure}{Kleinwinkelkorngrenze \cite{Hamann}.}
+		\label{fig:vl19_kleinwinkelkorngrenze}
+	\end{minipage}
