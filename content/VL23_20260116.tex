@@ -22,7 +22,7 @@
 		\label{fig:vl23_abbildung_1}
 	\end{figure}
 
-	Der Platz für ein $k$ in dreidimensionalen Raum ist
+	Der Platz für einen $k$-Zustand im dreidimensionalen Raum ist
 	$$
 	\left( \frac{2\pi}{L} \right) ^3 \quad \text{bzw.} \quad
 	\left( \frac{L}{2\pi} \right) ^3 = \frac{V}{8\pi^3}.
@@ -39,6 +39,7 @@
 		\label{eq:II.6.1}
 		D(\omega) = \frac{\mathrm{d}N}{\mathrm{d}\omega} = \frac{Vk^2}{2\pi^2} \frac{\mathrm{d} k}{\mathrm{d}\omega}.
 	\end{equation}
+	Bei bekannter Dispersionsrelation könnte man somit $D(\omega)$ berechnen.
 
 \subsection{Allgemeine Behandlung von $D(\omega)$}
 	Die Anzahl der erlaubten $k$-Werte mit Phononenfrequenzen zwischen $\omega $ und $\omega + \mathrm{d} \omega$ ist
@@ -82,14 +83,14 @@
 		\end{equation}
 	\end{important}
 
-	Diese Gleichung ermöglicht die Bestimmung der Zustandsdichte aus der Dispersionsrelation und macht erkennbar, dass sich für flache Stellen der Dispersionsrelation hohe Zustandsdichten ergeben, da $\left| \nabla _{k} (\omega) \right| $ klein wird. Es entstehen bestehen sogenannte \quickdef{Van-Hove Singularitäten} für $\left| \nabla _{k}(\omega) \right| \to 0$.
+	Diese Gleichung ermöglicht die Bestimmung der Zustandsdichte aus der Dispersionsrelation und macht erkennbar, dass sich für flache Stellen der Dispersionsrelation hohe Zustandsdichten ergeben, da $\left| \nabla _{k} (\omega) \right| $ klein wird. Es entstehen sogenannte \quickdef{Van-Hove Singularitäten} für $\left| \nabla _{k}(\omega) \right| \to 0$.
 
 \paragraph{Anmerkung}\,\\ 
 	Bei 1D divergiert die Zustandsdichte. Bei 3D hingegen divergiert der Integrand, aber nicht das Integral \eqref{eq:II.6.2}, es ergeben sich Spitzen in der Zustandsdichte.
 
 	Ein Nachteil von Gleichung \eqref{eq:II.6.2} ist, dass die Disperionsrelation $\omega(k)$ bekannt sein muss, wobei diese sehr stark systemabhängig ist. 
 	Wünschenswert wäre es also, aus \eqref{eq:II.6.2} allgemeingültige Informationen bzw. Erkenntnisse zu ziehen. 
-	Dies ist mit dem Debye'schen Modell möglich für niedrige Temperaturen ($T \le \SI{300}{\kelvin}$). 
+	Dies ist mit dem Debye'schen Modell für niedrige Temperaturen ($T \le \SI{300}{\kelvin}$) möglich. 
 
 \paragraph{Debye'sches Modell der Zustandsdichte}\,\\ 
 	Der Kristall befindet sich im thermischen Gleichgewicht, d.h. Phononen werden nur thermisch angeregt, also $k_{\mathrm{B}}T \le \omega_{\text{opt}} (k)$. 
@@ -105,7 +106,7 @@
 				k = \omega / c_{i}.
 			\end{equation} 
 	\end{enumerate}
-	Setzt man Gleichung \eqref{eq:II.6.1} oder \eqref{eq:II.6.3} in \eqref{eq:II.6.2} ein, ergibt sich
+	Nimmt man Gleichung \eqref{eq:II.6.1} oder setzt man \eqref{eq:II.6.3} in \eqref{eq:II.6.2} ein, ergibt sich
 	\begin{align}
 		\nonumber
 		D_{i}(\omega) \mathrm{d}\omega &= \frac{V}{\left( 2\pi \right) ^3} \mathrm{d} \omega \frac{1}{c_{i}} 4 \pi k^2\\
@@ -153,11 +154,14 @@
 		\label{eq:II.6.7}
 		\omega_\mathrm{D} = v_{\mathrm{g}} \sqrt[3]{ \frac{6\pi^2N}{V}} 
 	\end{equation}
-	und für die Debye-Temperatur $\Theta_\mathrm{D}$ 
-	\begin{equation}
-		\label{eq:II.6.8}
-		\hbar \omega_\mathrm{D} = k_{\mathrm{B}}\Theta_\mathrm{D}.
-	\end{equation}
+	und für die 
+	\begin{important}
+		Debye-Temperatur $\Theta_\mathrm{D}$ 
+		\begin{equation}
+			\label{eq:II.6.8}
+			\hbar \omega_\mathrm{D} = k_{\mathrm{B}}\Theta_\mathrm{D}.
+		\end{equation}
+	\end{important}
 
 \subsection{Spezifische Wärmekapazität des Kristallgitters}
 \paragraph{a) Klassische Behandlung}\,\\
