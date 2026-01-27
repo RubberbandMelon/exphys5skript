@@ -59,7 +59,7 @@
     \put(0.57492522,0.11466552){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textcolor{red}{Photon}\end{tabular}}}}%
     \put(0.36343901,0.01179033){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$n$\end{tabular}}}}%
     \put(0.21452872,0.11478008){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Vec{k}_{0v}, \omega_{0v}$\end{tabular}}}}%
-    \put(0.39705048,0.11478196){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Vec{k}_{v}, \omega_{v}$\end{tabular}}}}%
+    \put(0.39705048,0.11478196){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Vec{k}_{0}, \omega_{0}$\end{tabular}}}}%
     \put(0.49277334,0.02899117){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Vec{K}, \Omega}$\end{tabular}}}}%
     \put(0.49986846,0.14602833){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{\Vec{k}, \omega}$\end{tabular}}}}%
   \end{picture}%
