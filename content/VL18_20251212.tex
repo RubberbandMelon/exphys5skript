@@ -1,0 +1,212 @@
+\setcounter{section}{3}
+\setcounter{subsection}{3}
+\setcounter{figure}{9}
+
+\subsection{Methoden der Strukturanalyse}
+    Die Braggbedingung lautet
+    $$
+    2d_{hkl} \sin\left( \frac{\vartheta}{2} \right) = m \lambda,
+    $$ 
+    woraus 
+    $$\lambda \le 2 d_{hkl}$$
+    folgt. Andererseits rücken die Reflexe für abnehmende Wellenlängen $\lambda$ immer dichter zusammen. Somit gibt es für die Strukturanalyse einen optimalen Bereich für die Wellenlänge von \SI{0,01}{\nano \meter} bis \SI{0,1}{\nano \meter}. 
+
+\subsubsection{Röntgenstrukturuntersuchung}
+\paragraph{a) Laue-Verfahren}~
+
+    Beim Laue-Verfahren wird ein Primärstrahl mit kontinuierlichem Spektrum $h\nu$ zur Strukturuntersuchung verwendet. 
+    Dieser entsteht aus dem Bremsspektrum von Elektronen in einer Röntgenröhre.
+    Die Wellenzahlen des Primärstrahles sind durch eine Unter- und Obergrenze
+    $$
+    \big| \Vec{k}_{\text{min}} \big| \le \big| \Vec{k} \big| \le \big| \Vec{k}_{\text{max}} \big| 
+    $$ 
+    eingegrenzt. $\big| \Vec{k}_{\text{min}} \big|$ ist durch die Braggbedingung gegeben und $\big| \Vec{k}_{\text{max}} \big|$ durch die Beschleunigungsspannung der Röntgenröhre.
+    
+    \autoref{fig:vl18_abbildung_1} zeigt schematisch, wie ein Versuchsaufbau für das Laue-Verfahren aufgebaut ist.
+
+    \begin{figure}[H]
+        \centering
+        \incfig{vl18_abbildung_1}
+        \caption{Schematischer Versuchsaufbau des Laue-Verfahrens.}
+        \label{fig:vl18_abbildung_1}
+    \end{figure}
+    Jede Netzebene des Kristalls kann eine einzelne Frequenz des Lichtspektrums reflektieren. 
+    Dadurch gibt es viele Reflexe, welche allerdings nicht den entsprechenden Wellenlängen zugeordnet werden können. 
+    Dennoch erhält man Information über die Symmetrie des Kristalls.
+    Durch Umorientierung der Probe können genauere Informationen über die Struktur erhalten werden.
+    Dazu wir das Bragg'sche Drehkristallverfahren verwendet.
+
+\paragraph{b) Das Bragg'sche Drehkristallverfahren}~
+
+    Die Probe wird im monochromatischen Röntgenlicht gedreht.
+    \autoref{fig:vl18_abbildung_2} zeigt einen schematischen Versuchsaufbau.
+    \begin{figure}[H]
+        \centering
+        \incfig{vl18_abbildung_2}
+        \caption{Schematischer Versuchsaufbau des Bragg'schen Drehkristallverfahrens.}
+        \label{fig:vl18_abbildung_2}
+    \end{figure}
+    Bei diesem Verfahren wird zuerst nach dem Laue-Verfahren der Kristall so orientiert, dass die kristallographische Achse mit der Drehachse zusammenfällt.
+    Der Kristall wird anschließend gedreht. 
+    Dadurch dreht sich auch das reziproke Gitter durch die feste Ewaldkugel, womit die Gitterpunkte nacheinander auf der Kugel liegen und Reflexe ergeben.
+
+    Die für diese Methode notwendigen Geräte sind das Röntgendiffraktometer und ein Monochromator für Röntgenstrahlung.
+
+\paragraph{c) Debye-Scherer-Methode}~
+
+    In \autoref{fig:vl18_abbildung_3} wird der Versuchsaufbau der Debye-Scherer-Methode skizziert. Hierbei wird als Probe ein Kristallpulver verwendet.
+    \begin{figure}[H]
+        \centering
+        \incfig{vl18_abbildung_3}
+        \caption{Schematischer Versuchsaufbau der Debye-Scherer-Methode.}
+        \label{fig:vl18_abbildung_3}
+    \end{figure}
+    Alle solche Kristalle geben Reflexe, deren $(hkl)$-Ebene zufällig so liegen, dass das einfallende Röntgenlicht im Winkel  $\vartheta/2$ der Bragg-Bedingung auftritt.
+    In \autoref{fig:vl18_debye_scherer_reziprok} ist diese geometrische Eigenschaft dargestellt.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.5\linewidth]{figures/vl18/debye-scherer-reziprok.png}
+    \caption{Die Lichtreflektion im Kristallpulver ist rotationssymmetrisch, da es immer Kristallebenen gibt, welche die Braggbedingung erfüllen.}
+    \label{fig:vl18_debye_scherer_reziprok}
+\end{figure}
+
+\subsubsection{Strukturanalyse mit Teilchenstrahlen}
+
+\paragraph{a) Elektronen} werden bei Drehkristallen und Debye-Scherrer-Techniken eingesetzt. Gegenüber Röntgestrahlen weisen Elektronen eine ca. $\num{e4}$-fach stärkere Wechselwirkung mit den Gitterbausteinen auf. 
+    Die Elektronen dringen also nur sehr dünn in den Kristall ein. 
+    Deshalb sind Verfahren mit Elektronen besonders oberflächensensitiv.
+
+\paragraph{b) Atomstrahlen} werden ähnlich wie Elektronen eingesetzt, sind allerdings noch oberflächensensitiver als Elektronen.
+
+\paragraph{c) Neutronen} besitzen auch ein magnetisches Moment. Somit wechselwirken sie sowohl mit den Kernen, als auch mit den magnetischen Momenten der Gitteratome.
+
+\section{Kristallwachstum}
+    Beim Kristallwachstum unterscheidet man zwischen zwei Arten: 
+    \begin{enumerate}
+        \item die Zucht von dreidimensional wachsenden Einkristallen und
+        \item die Epitaxie. Diese unterteilt sich in
+        \begin{itemize}
+            \item das zweidimensionale Wachstum von dünnen Schichten und
+            \item das nulldimensionale Wachstum einzelner Punkte, wie bspw. bei Halbleiter-Quantenpunkten.
+        \end{itemize}
+    \end{enumerate}
+
+\subsection{Züchtung von Einkristallen}
+\paragraph{Geschlossenes System}
+    In einer geschlossenen Kanüle wird ein Temperaturgradient von $T_1$ nach $T_2 \ll T_1$ aufgebaut.
+    An der wärmeren Temperatur $T_1$ wird ein polykristallines Ausgangsmaterial verdampft.
+    Bei der kühleren Temperatur $T_2$ scheiden sich aus diesem Gas kristalline Plättchen ab.
+    \begin{figure}[H]
+        \centering
+        \incfig{vl18-abbildung-4}
+        \caption{Kristallzüchtung im geschlossenen System.}
+        \label{fig:vl18-abbildung-4}
+    \end{figure}
+
+\paragraph{Offenes System}
+    Das polykristalline Ausgangsmaterial $A$ geht bei $T_1$ eine chemische Bindung mit einem gasförmigen Transportmittel $B$ ein. 
+    An der niedrigeren Temperatur $T_2$ scheiden sich monokristalline Plättchen $A$ ab.
+    \begin{figure}[H]
+        \centering
+        \incfig{vl18-abbildung-5}
+        \caption{Kristallzüchtung im offenen System.}
+        \label{fig:vl18-abbildung-5}
+    \end{figure}
+\paragraph{Beispiel:} In einem offenen System sollen Einkristalle von Cadmiumsulfid \ce{CdS} gezüchtet werden.
+    Dazu wird Jod \ce{J2} als Transportgas verwendet.
+    An der hohen Temperatur $T_1$ reagieren polykristallines Cadmiumsulfid und das Jod zu Cadmiumiodid:
+    $$
+        \ce{CdS \text{ (polykristallin)} + J2 -> CdJ2 + \frac{1}{2} S2}
+    $$
+    An der niedrigeren Temperatur $T_2$ setzt sich einkristallines Cadmiumsulfid ab:
+    $$ 
+        \ce{CdJ2 + \frac{1}{2} S2 -> CdS \text{ (einkristallin)} + J2}
+    $$ 
+
+\stepcounter{subsubsection}
+\subsubsection{Züchtung aus der Schmelze}
+    In der Praxis werden große Einkristalle benötigt, insb. in der Mikroelektronik. Diese werden mit der Bridgeman-, bzw. Gradiententechnik oder dem Ziehverfahren hergestellt.
+\paragraph{Bridgeman- oder Gradiententechnik}
+    In einem vertikalen Temperaturgradienten befindet sich ein Schmelztiegel.
+    Dieser ist nach unten verjüngt und hat am unteren Ende eine schmale Kapillare.
+
+    Im oberen Bereich des Temperaturgradienten schmilzt das Ausgangsmaterial.
+    Nun wird der Tiegel langsam nach unten bewegt.
+    Da die Temperatur nach unten abnimmt, kristallisiert das Material.
+    Wegen der Kapillare werden querwachsende Keime unterdrückt und es ensteht ein Einkristall.
+    \autoref{fig:vl18-abbildung-6} zeigt den Aufbau dieser Technik.
+    \begin{figure}[H]
+        \centering
+        \incfig{vl18-abbildung-6}
+        \caption{Schematischer Aufbau der Bridgeman-/Gradiententechnik.}
+        \label{fig:vl18-abbildung-6}
+    \end{figure}
+    Der Tiegel wird mit einer Geschwindigkeit von \SI{1}{\milli \meter \per \hour} bis \SI{5}{\cm \per \hour} gezogen bei einem Temperaturprofil von \SI{100}{ \celsius \per \centi \meter} und einer Ausgangstemperatur von $T_0 \ge \SI{750}{\celsius}$.
+
+    Mit dieser Methode werden bspw. metallische Kristalle (\ce{Al}, \ce{Cd}, \ce{Fe}, \ce{Te}, \ce{Zn}) und ionische Kristalle (\ce{LiF}, \ce{NaCl}, \ce{AgCl}) hergestellt.
+
+\paragraph{Ziehverfahren} 
+    Beim Ziehverfahren wird ein Impfling, also ein kleiner Einkristall in eine Schmelze getunkt.
+    Am Impfling wächst der weitere Kristall heran.
+    Dieser wird dabei ständig rotiert und bei geringer Ziehgeschwindigkeit von \SI{10}{\milli \meter \per \hour} bis \SI{100}{\milli \meter \per \hour} herausgezogen.
+    \autoref{fig:vl18-abbildung-7} zeigt den Aufbau dieser Technik
+    \begin{figure}[H]
+        \centering
+        \incfig{vl18-abbildung-7}
+        \caption{Schematischer Aufbau des Ziehverfahrens.}
+        \label{fig:vl18-abbildung-7}
+    \end{figure}
+
+    Mit diesem Verfahren können Einkristalle mit einem Durchmesser zwischen \SI{25}{\milli \meter} bis \SI{100}{\milli \meter} und einer Länge zwischen \SI{200}{\milli \meter} und \SI{600}{\milli \meter} gebildet werden. 
+    Für die Chipindustrie sind insbesondere Siliziumkristalle wichtig, welche zu großen Wafern geschnitten werden können. 
+    Mit modernen Ziehverfahren können Siliziumkristalle mit etwa \SI{300}{\milli \meter} Durchmesser hergestellt werden.
+
+\subsection{Epitaxie}
+    Die Epitaxie wird zur Herstellung hochreiner, dünner Schichten unterschiedlicher Materialien verwendet. 
+    Bei diesen Verfahren wird eine atomlagengenaue Kontrolle und Steuerung der Zucht benötigt.
+    Die Epitaxie ist ein zweidimensionales Wachstum, der Kristall wird also schichtweise aufgebaut.
+
+    Als Ausgangspunkt wird ein Substrat verwendet. 
+    Dieses ist ein konventionell hergestellter, in dünne Plättchen geschnittener Einkristall.
+    Die verwendeten Spaltflächen haben häufig die Indizes $(100)$,  $(001)$,  $(110)$ oder $(111)$.
+    
+    Solche Substrate können käuflich erworben werden und werden u.A. durch Ätzen gereinigt, bevor die Schichten abgeschieden werden.
+
+
+\paragraph{Metallorganische Gasphasenepitaxie (MOVPE)} (engl.: \underline{m}etal\underline{o}rganic \underline{V}apor-\underline{p}hase \-\underline{e}pitaxy).
+
+    Bei diesem Verfahren sind die Ausgangselemente zunächst in gasförmigen Verbindungen gebunden.
+    Das Substrat wird erhitzt und geht daher eine chemische Bindung mit den Ausgangselementen ein.
+
+    \textbf{Beispiel:} Herstellung von Galiumarsenid aus Trimethtylgallium \ce{TMGa} (Substrat) und Arsin \ce{AsH3} (Gas, giftig!): 
+    $$
+    \ce{TMGa + AsH3 -> GaAs + 3CH4}
+    $$
+    Typische Substrattemperaturen sind \SI{450}{\celsius} bis \SI{1000}{\celsius}. 
+    Der Druck liegt dabei zwischen \SI{e-3}{\bar} und dem Atmosphärendruck. 
+    Als Hintegrundgas wird häufig Wasserstoff \ce{H2} verwendet.
+
+    So können Wachstumsraten von \SI{0,1}{\micro\meter \per \hour} bis einige \unit{\micro\meter \per \hour} erreicht werden.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width = 0.8\linewidth]{figures/vl18/movpe.png}
+        \caption{Schematischer Aufbau der MOVPE.}
+    \end{figure}
+
+\paragraph{Molekularstrahlepitaxie MBE} (engl. \underline{m}olecular-\underline{b}eam \underline{e}pitaxie)
+
+    Herzstück der MBE ist erneut ein Wafer (zB. aus Galiumarsenid \ce{GaAs}).
+    Die Ausgangselemente liegen elementar vor.
+    Diese werden als gerichtete Atom- oder Molekülstrahlen auf das Substrat aufgetragen.
+    Dazu werden Strahlen mit Drücken $\sim\SI{e-6}{Torr}$ verwendet.
+    In der Kammer herrscht ein Ultrahochvakuum bei \SI{e-8}{Torr} bis \SI{e-10}{Torr}.
+
+    Mit der MBE werden Wachstumsraten von \SI{0,1}{\micro \meter \per \hour} bis \SI{0,5}{\micro \meter \per \hour} erreicht.
+    Besonders ist, dass bei der MBE eine in-situ Wachstumskontrolle möglich ist via  RHEED (\underline{R}eflection \underline{H}igh \underline{E}nergy \underline{E}lectron \underline{D}eflection).
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width = 0.8\linewidth]{figures/vl18/mbe.png}
+        \caption{Schematischer Aufbau der MBE.}
+    \end{figure}
