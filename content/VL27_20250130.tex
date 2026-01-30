@@ -1,0 +1,175 @@
+\clearpage
+\setcounter{section}{7}
+
+\section{Elektronen im Festkörper - Energiebänder}
+\subsection{Adiabatische Näherung}
+Die Bewegung der Rumpfionenn und der Elektronen im Festkörper können unabhängig voneinander betrachtet werden. Zur Näherung betrachten wir ein Elektron im effektiven Potential aller anderen Teilchen (mean-field approximation)\\
+$\to $ Ein-Elektron Hamilton-Operator\\
+SHG:
+\begin{equation}
+	\label{eq:II.8.2}
+	\left[ - \frac{\hbar^2}{2m} \Delta + V(\Vec{r}) \right] \psi(\Vec{r}) = E \psi(\Vec{r})
+\end{equation}
+mit dem Gitterperiodischen Potential
+\begin{equation}
+	\label{eq:II.8.3}
+	V(\Vec{r}) = V(\Vec{r} + \Vec{t})
+\end{equation}
+wobei die geneaure Form dieses Potentials vorerst nicht von Interesse für uns ist.
+
+$$
+t = t_1 \Vec{a}_{1} + t_2 \Vec{a}_{2} + t_3 \Vec{a}_{3}
+$$ 
+Da Potential $V(\Vec{r})$ gitterperiodisch ist, lässt es sich in eine Fourierreihe entwickeln mit
+\begin{equation}
+	\label{eq:II.8.4}
+	V(\Vec{r}) = \sum_{\Vec{G}}^{} V_{\Vec{G}} e^{i \Vec{G} \Vec{r}} 
+\end{equation}
+wobei $\Vec{G} = h\Vec{g}_{1} + h\Vec{g}_{2} + l\Vec{g}_{3}$ ein reziproker Gittervektor ist. $V_{\Vec{G}}$ ist ein für den Kristall charakteristischer Fourierkoeffizient. $\psi(\Vec{r})$ kann als Entwicklung nach ebenen Wellen angesehen werden mit
+\begin{equation}
+	\label{eq:II.8.5}
+	\psi(\Vec{r}) = \sum_{\Vec{k} }^{} e^{i \Vec{k} \Vec{r}} 
+\end{equation}
+
+Periodische Randbedingung:\\
+Diskrete WErte für $k_{i}$ : da $\psi_{\Vec{k}}(\Vec{r}) = \psi_{\Vec{k}}(\Vec{r} + \Vec{L})$ mit der makroskopischen Länge des Kristallverbandes $L = n_{i} a$, wobei $N$ der Zahl der Elementarzellen und $a$ der Gitterkonstanten entspricht.
+$$
+\begin{aligned}
+	k_{x} &= 0, \pm \frac{2\pi}{L}, \pm \frac{4\pi}{L}, \ldots, \frac{2\pi n_{x}}{L} \\
+	k_{y} &= 0,\ldots, \frac{2\pi n_{y}}{L} \\
+	k_{z} &= 0, \ldots, \frac{2\pi n_{z}}{L}
+\end{aligned}
+$$ 
+mit $n_{x}, n_{y}, n_{z} = 0, \pm 1, \ldots$. Einsetzen von \ref{eq:II.8.4} und \ref{eq:II.8.5} in \ref{eq:II.8.2} liefert
+$$
+\sum_{\Vec{k} }^{} \frac{\hbar ^2 k^2}{2m} C_{\Vec{k}} e^{i \Vec{k} \Vec{r}} + \sum_{\Vec{k} \Vec{G}}^{} C_{\Vec{k}} V_{\Vec{G}} e^{i (\Vec{k} + \Vec{G}) \Vec{r}}= E \sum_{\Vec{k}}^{}  C_{\Vec{k}} e^{i\Vec{k}\Vec{r}} 
+$$ 
+
+Umbennenung des Summationsindex $\Vec{k} \to \Vec{k} -\Vec{G}$ 
+$$
+\sum_{\Vec{k} \Vec{G}}^{} C_{\Vec{k} - \Vec{G}} V_{\Vec{G}} e^{i\Vec{k} \Vec{r}} 
+$$ 
+
+\begin{equation}
+	\label{eq:II.8.6}
+	\sum_{\Vec{k} }^{} e^{i\Vec{k} \Vec{r}} \left[ \left( \frac{\hbar ^2 k^2}{2m} - E \right) C_{\Vec{k}} + \sum_{\Vec{G} }^{}  V_{\Vec{G}} C_{\Vec{k} -\Vec{G}}  \right] = 0  
+\end{equation}
+da es sich bei $\exp(i\Vec{k}\Vec{r})$ um einen orthogonalen Satz von Funktionen handelt, müssen alle Entwicklungskoeffizienten Null sein.
+
+$$
+\left( \frac{\hbar ^2 k^2}{2m} - E \right) C_{\Vec{k}} + \sum_{\Vec{G} }^{} V_{\Vec{G}} C_{\Vec{k} -\Vec{G}} = 0  
+$$ 
+
+Satz von algebraischen Gleichungen\\
+$\to $ andere Darstellung der Schrödingergleichung im Wellenzahlraum ($\Vec{k}$-Raum) liefert für jedes $\Vec{k}$ eine Lösung $\psi_{\Vec{k}}$ mit zugehörigem Eigenwert $E_{\Vec{k}}$ \\
+
+Koppelt nur solche Entwicklungskoeffizienten $C_{\Vec{k}}$ deren $\Vec{k}$-Vektoren sich um jeweils reziproke Gittervektoren $\Vec{G}$ von diesen unterscheiden
+$$
+C_{k} \leftrightarrow C_{\Vec{k} - G}, C_{\Vec{k}- \Vec{G}} , \ldots
+$$ 
+daraus ergibt sich eine Bestimmungsgleichung für $C_{k}$.\\
+
+Jedes der $N$ Gleichungssysteme liefert eine Lösung, die sich als Superposition von ebenen Wellen darstellen lässt
+\begin{equation}
+	\label{eq:II.8.8}
+	\psi_{\Vec{k}}(\Vec{r}) = \sum_{G }^{} C_{\Vec{k} -\Vec{G}} e^{i(\Vec{k}-\Vec{G}) \Vec{r}} 
+\end{equation}
+ mit $E_{\Vec{k}} = E(k)$, oder auch (Bloch'sches Theorem)
+\begin{equation}
+	\label{eq:II.8.9}
+	\psi_{\Vec{k}} (\Vec{r}) = \sum_{\Vec{G}}^{} C_{\Vec{k} -\Vec{G}} e^{-i \Vec{G}\Vec{r}} e^{i\Vec{k}\Vec{r}} = U_{\Vec{k}} (\Vec{r}) e^{i\Vec{k}\Vec{r}} 
+\end{equation}
+mit 
+\begin{equation}
+	\label{eq:II.8.10}
+	U_{\Vec{k}}(\Vec{r}) = U_{\Vec{k}}(\Vec{r} + \Vec{t}) .
+\end{equation}
+Die Lösung ist das Produkt aus einenr ebenen Wellen und einer gitterperiodischen Funktion.
+
+\paragraph{Nachweis der Translationsinvarianz}\,\\ 
+$$
+U_{\Vec{k}}(\Vec{r} + \Vec{t}) = \sum_{}^{} C_{\Vec{k}-\Vec{G}} e^{-i\Vec{G}(\Vec{r}+\Vec{t})} = \underbrace{e^{i\Vec{G}\Vec{t}}}_{=1} U_{\Vec{k}}(\Vec{r}) 
+$$
+$$
+U_{\Vec{k}}(\Vec{r}+\Vec{t}) = U_{\Vec{k}}(\Vec{r})
+$$ 
+
+\paragraph{Weitere Konsequenzen}\,\\ 
+Die Wellenfunktion erfüllt insbesondere
+\begin{equation}
+	\label{eq:II.8.11}
+	\psi_{\Vec{k}}(\Vec{r}) = \psi_{\Vec{k}+\Vec{G}} (\Vec{r}).
+\end{equation}
+Einsetzen der Schrödingergleichung $H\psi_{\Vec{k}}(\Vec{r}) = E(\Vec{k}) \psi_{\Vec{k}}(\Vec{r})$ gibt
+$$
+\begin{aligned}
+	H \psi_{\Vec{k}+\Vec{G}} (\Vec{r}) &= E(\Vec{k}+\Vec{G}) \psi_{\Vec{k}+\Vec{G}}(\Vec{r}) = \\
+	H \psi_{\Vec{k}}(\Vec{r}) &= E(\Vec{k}+\Vec{G}) \psi_{\Vec{k}}(\Vec{r}) 
+\end{aligned}
+$$ 
+\begin{equation}
+	\label{eq:II.8.12}
+	E(\Vec{k}) = E(\Vec{k} + \Vec{G})
+\end{equation}
+Die Wellenfunktionen der Elektronen und ihre Eigenwerte wiederholen sich im $\Vec{k}$-Raum periodisch. Es reicht, sich auf Lösungen in der 1.BZ zu beschränken.\\
+Es gibt zu jedem $\Vec{k}$-Vektor unendlich viele Lösungen $E_{n}(\Vec{k}) = E(\Vec{k}+\Vec{G}_{n})$, wobei $\Vec{G}_{n}$ der zum Energieeigenwert $E_{n}$ gehörige reziproke Gittervektor ist.\\
+$n\to $ Bandindex
+$$
+E_{1}(\Vec{k}) \le E_2(\Vec{k}) \ldots E_{n}(\Vec{k})
+$$ 
+
+\subsection{Bänderschema 1}
+\subsubsection{Näherung von quasie-freien Elektronen}
+\textbf{Bragg-Reflexion} ist ein charakteristisches Kennzeichen für die Ausbreitung von Wellen in Kristallen\\
+$\to $ \textbf{Ursache der Energielücke}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.193\columnwidth}
+    \import{figures/}{vl27_abbildung_1.pdf_tex}
+    \label{fig:vl27_abbildung_1}
+\end{figure}
+
+$$
+\begin{aligned}
+	2d \sin\left( \frac{\theta}{2} \right) &= m \lambda \\
+	2a &= m \lambda \\
+	\lambda &= \frac{2a}{m} \\
+	k = \frac{2\pi}{\lambda} &= \pm \frac{\pi}{a} m \\
+\end{aligned}
+$$ 
+Bei $k=\pm \pi /a$ gibt es keine laufenden Wellen, d.h. Gleiche Anteile von nach links und nach rechts laufenden Wellen müssen bestehen, es handelt sich also um eine stehende Welle.
+
+Zwei verschiedene stehende Wellen
+$$
+\begin{aligned}
+	\psi^{(+)} &= e^{i \frac{\pi}{a} x} + e^{- i \frac{\pi}{a} x} = \cos\left( \frac{\pi}{a} x \right)  \\
+	\psi^{(-)} &= e^{i\frac{\pi}{a} x} - e^{-i \frac{\pi}{a} x} = 2i \sin \left( \frac{\pi}{a}x \right)  
+\end{aligned}
+$$ 
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl27_abbildung_2}
+    \label{fig:vl27_abbildung_2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \incfig{vl27_abbildung_3}
+    \label{fig:vl27_abbildung_3}
+\end{figure}
+
+\subsubsection{Bänderschema 2: Näherung fest gebundener Elektronen}
+Idee: Stark an Atomrümpfe gebundene Elektronen werden ihre Eigenschaften auch im Kristallverband weitgehend behalten.
+
+Für ein Atom:
+$$
+\hat{H}_{A}(\Vec{r} -\Vec{r}_{n}) \varphi_{i} (\Vec{r}-\Vec{r}_{n}) = E_{i} \varphi_{i}(\Vec{r}-\Vec{r}_{n}) 
+$$ 
+mit dem Hamilton-Operator für freies Atom am Gitterplatz $n$ $\hat{H}_{A}(\Vec{r}- \Vec{r}_{n})$ und der Wellenfunktion eines Elektrons im Zustand $i$ am Atom $r_{n}$ $\varphi_{i}(\Vec{r}-\Vec{r}_{n})$ \\
+Kristallverband:\\
+Potentiale der übrigen Atome als Störung zu $\hat{H}_{A}$
+$$
+\hat{H} = \hat{H}_{A} + V(r-r_{n)} = - \frac{\hbar^2}{2m} \Delta + V_{A} (r-r_{n}) + V(r-r_{n})
+$$ 
