@@ -1,0 +1,150 @@
+\clearpage
+
+\setcounter{section}{8}
+\setcounter{subsection}{2}
+
+Wir betrachten nun die Lösung der Schrödingergleichung über \textbf{Testfunktionen} $\psi_{k}$ mit Hilfe des \textbf{Variationsprinzips}. Das Variationsprinzip besagt
+$$
+E(k) \ge \frac{\big<\psi_{k}  | \hat{H}  | \psi_{k} \big>}{\left<\psi_{k}  \middle| \psi_{k} \right>}.
+$$
+Für die Testfunktionen benutzen wir den Ansatz der linearen Superposition von Atomeigenfunktionen (LCAO) $\varphi_{i} (\Vec{r}-\Vec{r}_{n})$ 
+$$
+\begin{aligned}
+	\to \psi_{k} &= \sum_{n}^{} a_{n} \varphi_{i} (\Vec{r}-\Vec{r}_{n}) 
+\\
+&= \frac{1}{\sqrt{N} } \sum_{n}^{} e^{i\Vec{k}\Vec{r}_{n}} \varphi_{i} (\Vec{r}-\Vec{r}_{n}) ,
+\end{aligned}
+$$
+wobei der Faktor $e^{i\Vec{k}\Vec{r}_{n}}$ in der Summe aus der Forderung folgt, dass $\psi_{k}$ eine \textbf{Blochwelle} ist.
+
+\paragraph{Ergebnis}\,\\ 
+Für kugelsymmetrische s-artige Atomzustände findet man für die Gesamtenergie (siehe Gross) $E(k)$ 
+$$
+E(\Vec{k}) = E_{i} - A - B \sum_{m }^{} e^{i\Vec{k}(r_{n} - r_{m})} 
+$$ 
+wobei der Index $m$ für eine Summation der übernächsten Nachbarn steht. $A$ und $B$ stehen für 
+$$
+\begin{aligned}
+	A &= \hspace{8pt}\text{Coulomb-Integral} &&= - \int \text{d}\Vec{r} \varphi_{i} ^{*} (\Vec{r}-\Vec{r}_{n}) V(\Vec{r}-\Vec{r}_{n}) \varphi_{i} (\Vec{r}-\Vec{r}_{n}) \\
+	B &= \begin{array}{c} \text{Austausch-Integral} \\ \text{Transfer-Integral}\\ \end{array} \hspace{-9pt}  &&= - \int \text{d}\Vec{r} \varphi_{i}^{*} (\Vec{r}-\Vec{r}_{m})V(\Vec{r}-\Vec{r}_{n}) \varphi_{i}(\Vec{r}-\Vec{r}_{n}).
+\end{aligned}
+$$
+Speziell: für \textbf{primitiv kubisches} Gitter ist (6 nächste Nachbarn)
+$$
+\Vec{r}_{n} - \Vec{r}_{m} = (\pm a, 0, 0);\, (0, \pm a, 0);\, (0, 0, \pm a)
+$$
+$$
+\implies E(\Vec{k}) = E_{i} - A - 2B \left( \cos\left( k_{x} a \right) + \cos\left( k_{y}a \right) + \cos\left( k_{z}a \right)  \right) 
+$$  
+Elektronisches Band, dessen Schwerpunkt um $A$ gegenüber $E_{i}$ abgesenkt ist und dessen Breite $12B$ ist.
+
+\paragraph{Bemerkung}\, Periodische Randbedingung\\
+Jede primitive Elementarzelle trägt genau einen unabhängigen Wert von $k$ zu jedem Energieband bei.\\
+\textcolor{red}{bisschen Text, bei dem ich nicht wusste wie ich formatieren soll fehlt}.\\
+Ein volles Band trägt zur Leitfähigkeit nicht bei, da alle Zustände besetzt sind.
+
+\paragraph{Beispiel}\, primitive Elementarzelle
+\begin{enumerate}
+	\item Einwertiges Atom: $1\mathrm{e}^{-}$/Atom $\to $ Band halbvoll
+	\item Zweiwertiges Atom: $2\mathrm{e}^{-}$/Atom $\to $ Band voll
+	\item Zwei einwertige Atome: $2 \times 1\mathrm{e}^{-}$/Atom $\to $ Band voll 
+\end{enumerate}
+
+\begin{itemize}
+	\item Alkali-Metalle wie \ce{Na} ($3\mathrm{s}^{1}$), \ce{K} ($4\mathrm{s}^{1}$), \ce{Rb} ($5\mathrm{s}^{1}$) und Edelmetalle wie \ce{Cu} ($4\mathrm{s}^{1}$), \ce{Ag}($5\mathrm{s}^{1}$), \ce{Au} ($6\mathrm{s}^{1}$) besitzen $1\mathrm{e}^{-}$/Atom. Es handelt sich um Metalle
+	
+	\item Erdalkalimetalle besitzen $2\mathrm{e}^{-}$-Atome aber mit Bändern, die sich überlappen. Es handelt sich um Halb-Metalle.
+
+	\item Diamant, Silizium, Germanium besitzen $\mathrm{sp}^{3}$-Hybridorbitale, d.h. pro Atom gibt es vier verfügbare Elektronen; das Valenzband ist ist und das Leitungsband leer. Es handelt sich um einen Isolator bzw. Halbleiter.
+\end{itemize}
+
+\subsection{Experimentelle Bestimmung von Bandstrukturen}
+\subsubsection{Photoemissionsspektroskopie}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.433\columnwidth}
+    \import{figures/}{vl28_abbildung_1.pdf_tex}
+    \caption{mit der Austrittsarbeit $\varphi_{A}$ und $E_{B}$, was die Energiedifferenz eines tiefer gebundenenen Elektrons zu $E_{F}$ repräsentiert.}
+    \label{fig:vl28_abbildung_1}
+\end{figure}
+
+\paragraph{Lichtquellen}\,\\ 
+Es werden, je nach Art der Spektroskopie, verschiedene UV-Quellen verwendet. So kommen bei der UPS (\textbf{U}V \textbf{P}hotoemissions\textbf{S}pektroskopie) \ce{He-} Gasentladungsröhren zum einsatz. Bei der XPS (\textbf{X}-Ray \textbf{P}hotoemissions\textbf{S}pektroskopie) hingegen werden Röntgenröhren eingesetzt. 
+
+\begin{equation}
+	\label{eq:II.8.14}
+	\hbar \omega = E_{\text{kin}} + \varphi_{A} + E_{B}
+\end{equation}
+Für ein festes $\hbar \omega$: Spektrum von Elektron mit verschiedenen $E_{\text{kin}} \sim  n ( E_{\text{kin}} ) $ 
+$$
+E_{B} \text{(variabel)} = \hbar \omega_{\text{fest}} - \varphi_{A} \text{(const)} - E_{\text{kin}} \text{(variabel)}
+$$ 
+$\implies n(E_{\text{kin}})$  ist ein Maß der Zustandsdichte!
+
+\paragraph{Synchrotron-Strahlungsquellen (UV, XUV, Rö)}\,\\ 
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.246\columnwidth}
+    \import{figures/}{vl28_abbildung_2.pdf_tex}
+    \label{fig:vl28_abbildung_2}
+\end{figure}
+$\to $ variables $\lambda$ bei hoher Intensität\\
+Der klassischen Elektrodynamik zufolge ist die Synchrotronstrahlung ein Resultat dessen, dass jede beschleunigte Ladung strahlt.
+
+\paragraph{Beispiel 1}\, Dipolstrahlung (oszillierende Elektronen)
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.131\columnwidth}
+    \import{figures/}{vl28_abbildung_3.pdf_tex}
+    \label{fig:vl28_abbildung_3}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \def\svgwidth{.204\columnwidth}
+    \import{figures/}{vl28_abbildung_4.pdf_tex}
+    \label{fig:vl28_abbildung_4}
+\end{figure}
+
+\subsection{Die effektive Musternäherung}
+Elektronen als Materiewellenpackete mit Wellenvektoren der nächsten Umgebung von $k$ :
+$$
+\psi_{n} (\Vec{r},t) = \sum_{k- \frac{\Delta k}{2}}^{k+ \frac{\Delta k}{2}} a(\Vec{k}) u_{\Vec{k}} (\Vec{r}) \exp\left( i \left( \Vec{k}\Vec{r} - \frac{E_{n}(\Vec{k})}{\hbar }t \right)  \right) 
+$$ 
+
+Gruppengeschwindigkeit:
+\begin{equation}
+	\label{eq:II.8.15}
+	\Vec{v}_{g}(\Vec{k}) = \frac{\mathrm{d}\omega(\Vec{k})}{\mathrm{d}\Vec{k}} = \frac{1}{\hbar } \frac{\mathrm{d}E(\Vec{k})}{\mathrm{d}\Vec{k}}
+\end{equation}
+
+$\to $ Einfluss des Kristalls über die Disperionsrelation $E(\Vec{k})$, d.h. Bandstruktur. Andererseits ist der Energieübertrag $\mathrm{d}E(\Vec{k})$ in einem Feld
+\begin{equation}
+	\label{eq:II.8.16}
+	\mathrm{d} E(\Vec{k}) = \Vec{F} \cdot \mathrm{d}\Vec{r} = \Vec{F} \Vec{v}_{\mathrm{g}} \mathrm{d}t
+\end{equation}
+mit \ref{eq:II.8.15} folgt
+\begin{equation}
+	\label{eq:II.8.17}
+	\hbar  \frac{\mathrm{d}\Vec{k}}{\mathrm{d}t} = \Vec{F}
+\end{equation}
+
+Bewegungsgleichung für $\Vec{k}$-Vektoren im Impulsraum aus \ref{eq:II.8.15}
+$$
+\frac{\mathrm{d}\Vec{v}_{\mathrm{g}}}{\mathrm{d}t} = \frac{1}{\hbar } \frac{\mathrm{d}^2 E}{\mathrm{d}k \mathrm{d}t} = \frac{1}{\hbar } \frac{\mathrm{d}^2 E}{\mathrm{d}k^2} \frac{\mathrm{d}k}{\mathrm{d}t}
+$$ 
+mit \ref{eq:II.8.17} folgt
+$$
+\frac{\mathrm{d} \Vec{v}_{\mathrm{g}}}{\mathrm{d}t} = \left( \frac{1}{\hbar ^2} \frac{\mathrm{d}^2 E}{\mathrm{d}k^2} \right) \Vec{F}
+$$ 
+was nach umformen zu
+\begin{equation}
+	\label{eq:II.8.18}
+	F = \frac{\hbar ^2}{ \frac{\mathrm{d}^2 E}{\mathrm{d} \Vec{k}^2}} \cdot \frac{\mathrm{d} \Vec{v}_{\mathrm{g}}}{\mathrm{d}t}
+\end{equation}
+die Form des 2. Newton'schen Gesetzes annimmt mit der effektiven Masse
+$$
+m^{*} = \frac{\hbar ^2}{ \frac{\mathrm{d}^2 E}{\mathrm{d}\Vec{k}^2}}
+$$ 
+welche in erster Näherung proportional zur Inversen des Krümmungsradius der Bande ist.
