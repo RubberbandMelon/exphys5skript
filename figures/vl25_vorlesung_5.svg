@@ -81,9 +81,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="195.86858"
-     inkscape:cy="119.32427"
+     inkscape:zoom="4"
+     inkscape:cx="323.375"
+     inkscape:cy="61.125001"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -176,7 +176,7 @@
          style="stroke-width:0.264583">$\textcolor{blue}{T=0\,\mathrm{K}}$</tspan></text>
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none;stop-color:#000000"
-       d="m 37.549145,184.53273 h 31.548761 c 1.931135,0 4.878215,6.09647 5.744652,9.95003 0.907428,4.03587 1.587604,9.90317 7.57813,9.90317"
+       d="m 37.549145,184.53273 h 31.548761 c 1.931135,0 4.878215,6.09647 5.744652,9.95003 0.907428,4.03587 3.848807,9.90317 6.041439,9.90317"
        id="path553"
        sodipodi:nodetypes="cssc" />
     <path
@@ -200,8 +200,8 @@
          y="198.05479"
          style="stroke-width:0.264583">$\textcolor{red}{T&gt;0\,\mathrm{K}}$</tspan></text>
     <path
-       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1744);marker-end:url(#Arrow5);stop-color:#000000"
-       d="m 70.403068,181.92564 h 6.196758"
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff2a2a;stroke-width:0.505817;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1744);marker-end:url(#Arrow5);stop-color:#000000"
+       d="m 70.587469,182.08285 h 8.931504"
        id="path746"
        sodipodi:nodetypes="cc" />
     <g
@@ -223,17 +223,6 @@
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
-       id="text1957"
-       y="179.75694"
-       x="70.767426"><tspan
-         sodipodi:role="line"
-         id="tspan1955"
-         x="70.767426"
-         y="179.75694"
-         style="stroke-width:0.264583">$\textcolor{red}{k_{\mathrm{B}}T}$</tspan></text>
-    <text
-       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       xml:space="preserve"
        id="text142"
        y="208.18924"
        x="69.927162"><tspan
@@ -242,5 +231,16 @@
          x="69.927162"
          y="208.18924"
          style="stroke-width:0.264583">$\textcolor{blue}{E_{\mathrm{F}}} = \mu$</tspan></text>
+    <text
+       style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"
+       id="text432"
+       y="179.929"
+       x="70.75161"><tspan
+         sodipodi:role="line"
+         id="tspan430"
+         x="70.75161"
+         y="179.929"
+         style="stroke-width:0.264583">$\textcolor{red}{\sim k_{\mathrm{B}}T}$</tspan></text>
   </g>
 </svg>

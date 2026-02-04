@@ -61,7 +61,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl25_vorlesung_5.pdf}}%
     \put(0.63397161,0.08710824){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{T>0\,\mathrm{K}}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl25_vorlesung_5.pdf}}%
-    \put(0.58006087,0.23709063){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{k_{\mathrm{B}}T}$\end{tabular}}}}%
     \put(0.57317346,0.00403901){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{E_{\mathrm{F}}} = \mu$\end{tabular}}}}%
+    \put(0.57993123,0.23568031){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{\sim k_{\mathrm{B}}T}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
