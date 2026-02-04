@@ -56,9 +56,9 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{vl16_abbildung_4.pdf}}%
     \put(0.67602358,0.08131937){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$d_{hkl}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl16_abbildung_4.pdf}}%
-    \put(0.64969397,0.23494198){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Delta \Vec{k}}$\end{tabular}}}}%
-    \put(0.51974178,0.14814424){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Vec{k}_0}$\end{tabular}}}}%
-    \put(0.5415722,0.24993024){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Vec{k}\,'}$\end{tabular}}}}%
+    \put(0.63290086,0.23494198){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Delta \Vec{k}}$\end{tabular}}}}%
+    \put(0.53481899,0.14814424){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Vec{k}_0}$\end{tabular}}}}%
+    \put(0.54192896,0.24993024){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{\Vec{k}\,'}$\end{tabular}}}}%
     \put(0.58490403,0.22339596){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\vartheta$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl16_abbildung_4.pdf}}%
     \put(0.50573558,0.22640131){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\varphi$\end{tabular}}}}%
@@ -68,5 +68,6 @@
     \put(0,0){\includegraphics[width=\unitlength,page=5]{vl16_abbildung_4.pdf}}%
     \put(0.69965969,0.43803159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}\,'}$\end{tabular}}}}%
     \put(0.2350619,0.30595226){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}_0}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{vl16_abbildung_4.pdf}}%
   \end{picture}%
 \endgroup%
