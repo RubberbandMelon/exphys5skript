@@ -3,9 +3,12 @@
 
 \section{Elektronen im Festkörper - Energiebänder}
 \subsection{Adiabatische Näherung}
-Die Bewegung der Rumpfionenn und der Elektronen im Festkörper können unabhängig voneinander betrachtet werden. Zur Näherung betrachten wir ein Elektron im effektiven Potential aller anderen Teilchen (mean-field approximation)\\
-$\to $ Ein-Elektron Hamilton-Operator\\
-SHG:
+Die Bewegung der Rumpfionen und der Elektronen im Festkörper können unabhängig voneinander betrachtet werden. 
+Im Rahmen der mean-field approximation betrachten wir näherungsweise ein einzelnes Elektron im effektiven Potential aller anderen Teilchen.
+Zur Beschreibung reicht hier also ein Ein-Elektron-Hamiltonoperator.
+
+Diesen setzen wir in die Schrödingergleichung ein und erhalten
+\stepcounter{equation}
 \begin{equation}
 	\label{eq:II.8.2}
 	\left[ - \frac{\hbar^2}{2m} \Delta + V(\Vec{r}) \right] \psi(\Vec{r}) = E \psi(\Vec{r})
@@ -13,52 +16,58 @@ SHG:
 mit dem Gitterperiodischen Potential
 \begin{equation}
 	\label{eq:II.8.3}
-	V(\Vec{r}) = V(\Vec{r} + \Vec{t})
+	V(\Vec{r}) = V(\Vec{r} + \Vec{t}),
 \end{equation}
-wobei die geneaure Form dieses Potentials vorerst nicht von Interesse für uns ist.
-
+wobei die geneaure Form dieses Potentials vorerst nicht von Interesse für uns ist. $\vec t$ ist dabei ein beliebiger Translationsvektor im Gitter mit
 $$
-t = t_1 \Vec{a}_{1} + t_2 \Vec{a}_{2} + t_3 \Vec{a}_{3}
+\vec t = t_1 \Vec{a}_{1} + t_2 \Vec{a}_{2} + t_3 \Vec{a}_{3}.
 $$ 
-Da Potential $V(\Vec{r})$ gitterperiodisch ist, lässt es sich in eine Fourierreihe entwickeln mit
+Da das Potential $V(\Vec{r})$ gitterperiodisch ist, lässt es sich in eine Fourierreihe entwickeln mit
 \begin{equation}
 	\label{eq:II.8.4}
-	V(\Vec{r}) = \sum_{\Vec{G}}^{} V_{\Vec{G}} e^{i \Vec{G} \Vec{r}} 
+	V(\Vec{r}) = \sum_{\Vec{G}}^{} V_{\Vec{G}} e^{i \Vec{G} \Vec{r}},
 \end{equation}
-wobei $\Vec{G} = h\Vec{g}_{1} + h\Vec{g}_{2} + l\Vec{g}_{3}$ ein reziproker Gittervektor ist. $V_{\Vec{G}}$ ist ein für den Kristall charakteristischer Fourierkoeffizient. $\psi(\Vec{r})$ kann als Entwicklung nach ebenen Wellen angesehen werden mit
+wobei $\Vec{G} = h\Vec{g}_{1} + h\Vec{g}_{2} + l\Vec{g}_{3}$ ein reziproker Gittervektor ist. 
+$V_{\Vec{G}}$ ist ein für den Kristall charakteristischer Fourierkoeffizient.
+ $\psi(\Vec{r})$ kann als Entwicklung nach ebenen Wellen angesehen werden mit
 \begin{equation}
 	\label{eq:II.8.5}
-	\psi(\Vec{r}) = \sum_{\Vec{k} }^{} e^{i \Vec{k} \Vec{r}} 
+	\psi(\Vec{r}) = \sum_{\Vec{k} }^{} C_{\vec k} e^{i \Vec{k} \Vec{r}} 
 \end{equation}
 
-Periodische Randbedingung:\\
-Diskrete WErte für $k_{i}$ : da $\psi_{\Vec{k}}(\Vec{r}) = \psi_{\Vec{k}}(\Vec{r} + \Vec{L})$ mit der makroskopischen Länge des Kristallverbandes $L = n_{i} a$, wobei $N$ der Zahl der Elementarzellen und $a$ der Gitterkonstanten entspricht.
+Die periodischen Randbedingungen im Kristall erzwingen diskrete Werte für $k_{i}$, da ${\psi_{\Vec{k}}(\Vec{r}) = \psi_{\Vec{k}}(\Vec{r} + \Vec{L})}$ mit der makroskopischen Länge des Kristallverbandes $L = n_{i} a$. 
+Dabei ist $N$ die Zahl der Elementarzellen und $a$ die Gitterkonstanten.
+Erlaubte Wellenzahlen sind somit
 $$
 \begin{aligned}
-	k_{x} &= 0, \pm \frac{2\pi}{L}, \pm \frac{4\pi}{L}, \ldots, \frac{2\pi n_{x}}{L} \\
-	k_{y} &= 0,\ldots, \frac{2\pi n_{y}}{L} \\
-	k_{z} &= 0, \ldots, \frac{2\pi n_{z}}{L}
+	k_{x} &= 0, \pm \frac{2\pi}{L}, \pm \frac{4\pi}{L}, \ldots&, \frac{2\pi n_{x}}{L} \\
+	k_{y} &= 0,\ldots, &, \frac{2\pi n_{y}}{L} \\
+	k_{z} &= 0, \ldots, &, \frac{2\pi n_{z}}{L}
 \end{aligned}
 $$ 
-mit $n_{x}, n_{y}, n_{z} = 0, \pm 1, \ldots$. Einsetzen von \ref{eq:II.8.4} und \ref{eq:II.8.5} in \ref{eq:II.8.2} liefert
+mit $n_{x}, n_{y}, n_{z} = 0, \pm 1, \ldots$. 
+
+Einsetzen von \eqref{eq:II.8.4} und \eqref{eq:II.8.5} in \eqref{eq:II.8.2} liefert
 $$
-\sum_{\Vec{k} }^{} \frac{\hbar ^2 k^2}{2m} C_{\Vec{k}} e^{i \Vec{k} \Vec{r}} + \sum_{\Vec{k} \Vec{G}}^{} C_{\Vec{k}} V_{\Vec{G}} e^{i (\Vec{k} + \Vec{G}) \Vec{r}}= E \sum_{\Vec{k}}^{}  C_{\Vec{k}} e^{i\Vec{k}\Vec{r}} 
+\sum_{\Vec{k} }^{} \frac{\hbar ^2 k^2}{2m} C_{\Vec{k}} e^{i \Vec{k} \Vec{r}} + \underbrace{\sum_{\Vec{k} \Vec{G}}^{} C_{\Vec{k}} V_{\Vec{G}} e^{i (\Vec{k} + \Vec{G}) \Vec{r}}}_{(\ast)}= E \sum_{\Vec{k}}^{}  C_{\Vec{k}} e^{i\Vec{k}\Vec{r}} 
 $$ 
 
-Umbennenung des Summationsindex $\Vec{k} \to \Vec{k} -\Vec{G}$ 
+Durch die Umbennenung des Summationsindex $\Vec{k} \to \Vec{k} -\Vec{G}$ lässt sich umschreiben
 $$
-\sum_{\Vec{k} \Vec{G}}^{} C_{\Vec{k} - \Vec{G}} V_{\Vec{G}} e^{i\Vec{k} \Vec{r}} 
+(\ast) = \sum_{\Vec{k} \Vec{G}}^{} C_{\Vec{k} - \Vec{G}} V_{\Vec{G}} e^{i\Vec{k} \Vec{r}}.
 $$ 
-
+Damit folgt
 \begin{equation}
 	\label{eq:II.8.6}
-	\sum_{\Vec{k} }^{} e^{i\Vec{k} \Vec{r}} \left[ \left( \frac{\hbar ^2 k^2}{2m} - E \right) C_{\Vec{k}} + \sum_{\Vec{G} }^{}  V_{\Vec{G}} C_{\Vec{k} -\Vec{G}}  \right] = 0  
+	\sum_{\Vec{k} }^{} e^{i\Vec{k} \Vec{r}} \left[ \left( \frac{\hbar ^2 k^2}{2m} - E \right) C_{\Vec{k}} + \sum_{\Vec{G} }^{}  V_{\Vec{G}} C_{\Vec{k} -\Vec{G}}  \right] = 0.
 \end{equation}
-da es sich bei $\exp(i\Vec{k}\Vec{r})$ um einen orthogonalen Satz von Funktionen handelt, müssen alle Entwicklungskoeffizienten Null sein.
+Da es sich bei $\exp(i\Vec{k}\Vec{r})$ um einen orthogonalen Satz von Funktionen handelt, müssen alle Entwicklungskoeffizienten Null sein:
 
-$$
-\left( \frac{\hbar ^2 k^2}{2m} - E \right) C_{\Vec{k}} + \sum_{\Vec{G} }^{} V_{\Vec{G}} C_{\Vec{k} -\Vec{G}} = 0  
-$$ 
+\begin{important}
+	$$
+	\left( \frac{\hbar ^2 k^2}{2m} - E \right) C_{\Vec{k}} + \sum_{\Vec{G} }^{} V_{\Vec{G}} C_{\Vec{k} -\Vec{G}} = 0  
+	$$ 
+\end{important}
 
 Satz von algebraischen Gleichungen\\
 $\to $ andere Darstellung der Schrödingergleichung im Wellenzahlraum ($\Vec{k}$-Raum) liefert für jedes $\Vec{k}$ eine Lösung $\psi_{\Vec{k}}$ mit zugehörigem Eigenwert $E_{\Vec{k}}$ \\
