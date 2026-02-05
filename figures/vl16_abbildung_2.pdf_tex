@@ -57,13 +57,11 @@
     \put(0.74196675,0.11684627){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}\,'}$\end{tabular}}}}%
     \put(0.74196675,0.05686472){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}\,'}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{vl16_abbildung_2.pdf}}%
-    \put(0.36138647,0.0089855){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$O$\end{tabular}}}}%
+    \put(0.36138647,0.00898552){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$O$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl16_abbildung_2.pdf}}%
-    \put(0.44324537,0.01490216){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{a}$\end{tabular}}}}%
-    \put(0.47985117,0.13010176){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{b}$\end{tabular}}}}%
-    \put(0.38305929,0.20195965){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}}$\end{tabular}}}}%
-    \put(0.30771461,0.10970989){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}}$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{vl16_abbildung_2.pdf}}%
-    \put(0.49500612,0.17799835){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Streuzentren\end{tabular}}}}%
+    \put(0.44324537,0.01490218){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{a}$\end{tabular}}}}%
+    \put(0.47985118,0.13010178){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{green}{b}$\end{tabular}}}}%
+    \put(0.3830593,0.20195967){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}}$\end{tabular}}}}%
+    \put(0.30771462,0.10970991){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\Vec{s}}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
