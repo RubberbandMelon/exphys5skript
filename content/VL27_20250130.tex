@@ -69,38 +69,46 @@ Da es sich bei $\exp(i\Vec{k}\Vec{r})$ um einen orthogonalen Satz von Funktionen
 	$$ 
 \end{important}
 
-Satz von algebraischen Gleichungen\\
-$\to $ andere Darstellung der Schrödingergleichung im Wellenzahlraum ($\Vec{k}$-Raum) liefert für jedes $\Vec{k}$ eine Lösung $\psi_{\Vec{k}}$ mit zugehörigem Eigenwert $E_{\Vec{k}}$ \\
+Dieser Satz von algebraischen Gleichungen ist eine andere Darstelung der Schrödingergleichung im Wellenzahlraum ($\Vec{k}$-Raum).
+Er liefert für jedes $\Vec{k}$ eine Lösung $\psi_{\Vec{k}}$ mit zugehörigem Eigenwert $E_{\Vec{k}}$.
 
-Koppelt nur solche Entwicklungskoeffizienten $C_{\Vec{k}}$ deren $\Vec{k}$-Vektoren sich um jeweils reziproke Gittervektoren $\Vec{G}$ von diesen unterscheiden
+Die Gleichungen koppeln nur solche Entwicklungskoeffizienten $C_{\Vec{k}}$, deren $\Vec{k}$-Vektoren sich um jeweils reziproke Gittervektoren $\Vec{G}$ von diesen unterscheiden:
 $$
-C_{k} \leftrightarrow C_{\Vec{k} - G}, C_{\Vec{k}- \Vec{G}} , \ldots
+C_{k} \quad\leftrightarrow\quad C_{\Vec{k} - \vec G}\;,\;C_{\Vec{k}- \Vec{G}'}\;,\;\ldots
 $$ 
-daraus ergibt sich eine Bestimmungsgleichung für $C_{k}$.\\
+Der Gleichungssatz enthält also Bestimmungsgleichungen von $C_{\vec k}$.
 
-Jedes der $N$ Gleichungssysteme liefert eine Lösung, die sich als Superposition von ebenen Wellen darstellen lässt
+Jedes der $N$ Gleichungssysteme liefert eine Lösung, die sich als Superposition von ebenen Wellen darstellen lässt.
+Zu einer Energie
+$$E_{\Vec{k}} = E(k)$$
+gehört eine Wellenfunktion
 \begin{equation}
 	\label{eq:II.8.8}
-	\psi_{\Vec{k}}(\Vec{r}) = \sum_{G }^{} C_{\Vec{k} -\Vec{G}} e^{i(\Vec{k}-\Vec{G}) \Vec{r}} 
-\end{equation}
- mit $E_{\Vec{k}} = E(k)$, oder auch (Bloch'sches Theorem)
-\begin{equation}
-	\label{eq:II.8.9}
-	\psi_{\Vec{k}} (\Vec{r}) = \sum_{\Vec{G}}^{} C_{\Vec{k} -\Vec{G}} e^{-i \Vec{G}\Vec{r}} e^{i\Vec{k}\Vec{r}} = U_{\Vec{k}} (\Vec{r}) e^{i\Vec{k}\Vec{r}} 
-\end{equation}
-mit 
-\begin{equation}
-	\label{eq:II.8.10}
-	U_{\Vec{k}}(\Vec{r}) = U_{\Vec{k}}(\Vec{r} + \Vec{t}) .
-\end{equation}
-Die Lösung ist das Produkt aus einenr ebenen Wellen und einer gitterperiodischen Funktion.
+	\psi_{\Vec{k}}(\Vec{r}) = \sum_{G }^{} C_{\Vec{k} -\Vec{G}} e^{i(\Vec{k}-\Vec{G}) \Vec{r}}.
+\end{equation} 
+Die Wellenfunktion hat auch eine Formulierung nach dem
+\begin{important}
+	\textbf{Bloch'schen Theorem}
+	\vspace{1ex}
+	\begin{equation}
+		\label{eq:II.8.9}
+		\psi_{\Vec{k}} (\Vec{r}) = \sum_{\Vec{G}}^{} C_{\Vec{k} -\Vec{G}} e^{-i \Vec{G}\Vec{r}} e^{i\Vec{k}\Vec{r}} = U_{\Vec{k}} (\Vec{r}) e^{i\Vec{k}\Vec{r}} 
+	\end{equation}
+	mit 
+	\begin{equation}
+		\label{eq:II.8.10}
+		U_{\Vec{k}}(\Vec{r}) = U_{\Vec{k}}(\Vec{r} + \Vec{t}) .
+	\end{equation}
+\end{important}
 
-\paragraph{Nachweis der Translationsinvarianz}\,\\ 
+Die Lösung ist das Produkt aus einer ebenen Wellen und einer gitterperiodischen Funktion.
+
+Die Lösung ist translationsinvariant:
 $$
 U_{\Vec{k}}(\Vec{r} + \Vec{t}) = \sum_{}^{} C_{\Vec{k}-\Vec{G}} e^{-i\Vec{G}(\Vec{r}+\Vec{t})} = \underbrace{e^{i\Vec{G}\Vec{t}}}_{=1} U_{\Vec{k}}(\Vec{r}) 
 $$
 $$
-U_{\Vec{k}}(\Vec{r}+\Vec{t}) = U_{\Vec{k}}(\Vec{r})
+\Rightarrow U_{\Vec{k}}(\Vec{r}+\Vec{t}) = U_{\Vec{k}}(\Vec{r})
 $$ 
 
 \paragraph{Weitere Konsequenzen}\,\\ 
@@ -109,57 +117,66 @@ Die Wellenfunktion erfüllt insbesondere
 	\label{eq:II.8.11}
 	\psi_{\Vec{k}}(\Vec{r}) = \psi_{\Vec{k}+\Vec{G}} (\Vec{r}).
 \end{equation}
-Einsetzen der Schrödingergleichung $H\psi_{\Vec{k}}(\Vec{r}) = E(\Vec{k}) \psi_{\Vec{k}}(\Vec{r})$ gibt
-$$
-\begin{aligned}
-	H \psi_{\Vec{k}+\Vec{G}} (\Vec{r}) &= E(\Vec{k}+\Vec{G}) \psi_{\Vec{k}+\Vec{G}}(\Vec{r}) = \\
-	H \psi_{\Vec{k}}(\Vec{r}) &= E(\Vec{k}+\Vec{G}) \psi_{\Vec{k}}(\Vec{r}) 
-\end{aligned}
-$$ 
-\begin{equation}
+Einsetzen in die Schrödingergleichung $H\psi_{\Vec{k}}(\Vec{r}) = E(\Vec{k}) \psi_{\Vec{k}}(\Vec{r})$ gibt
+\begin{align}
+	\nonumber
+	\Leftrightarrow&& H \psi_{\Vec{k}+\Vec{G}} (\Vec{r}) =& E(\Vec{k}+\Vec{G}) \psi_{\Vec{k}+\Vec{G}}(\Vec{r})\\
+	\nonumber
+	\Leftrightarrow&&  H \psi_{\Vec{k}}(\Vec{r}) =& E(\Vec{k}+\Vec{G}) \psi_{\Vec{k}}(\Vec{r})\\
 	\label{eq:II.8.12}
-	E(\Vec{k}) = E(\Vec{k} + \Vec{G})
-\end{equation}
-Die Wellenfunktionen der Elektronen und ihre Eigenwerte wiederholen sich im $\Vec{k}$-Raum periodisch. Es reicht, sich auf Lösungen in der 1.BZ zu beschränken.\\
+	\Leftrightarrow&&  E(\Vec{k}) =& E(\Vec{k} + \Vec{G})
+\end{align}
+Die Wellenfunktionen der Elektronen und ihre Eigenwerte wiederholen sich im $\Vec{k}$-Raum periodisch. 
+Es reicht deshalb, sich auf Lösungen in der ersten Brillouinzone zu beschränken.
+
 Es gibt zu jedem $\Vec{k}$-Vektor unendlich viele Lösungen $E_{n}(\Vec{k}) = E(\Vec{k}+\Vec{G}_{n})$, wobei $\Vec{G}_{n}$ der zum Energieeigenwert $E_{n}$ gehörige reziproke Gittervektor ist.\\
-$n\to $ Bandindex
+$n$ ist also der Bandindex mit
 $$
-E_{1}(\Vec{k}) \le E_2(\Vec{k}) \ldots E_{n}(\Vec{k})
+E_{1}(\Vec{k}) \le E_2(\Vec{k}) \ldots E_{n}(\Vec{k}).
 $$ 
 
 \subsection{Bänderschema 1}
-\subsubsection{Näherung von quasie-freien Elektronen}
-\textbf{Bragg-Reflexion} ist ein charakteristisches Kennzeichen für die Ausbreitung von Wellen in Kristallen\\
-$\to $ \textbf{Ursache der Energielücke}
+\subsubsection{Näherung von quasi-freien Elektronen}
+Die \textbf{Bragg-Reflexion} ist ein charakteristisches Kennzeichen für die Ausbreitung von Wellen in Kristallen.
+Deshalb ist sie die \textbf{Ursache der Energielücke}.
 
-\begin{figure}[H]
-    \centering
-    \def\svgwidth{.193\columnwidth}
-    \import{figures/}{vl27_abbildung_1.pdf_tex}
-    \label{fig:vl27_abbildung_1}
-\end{figure}
 
+Wir betrachten einen kubischen Kristall mit der Netzebene $[100]$ und der Gitterkonstante $a$ (vgl \autoref{fig:vl27_abbildung_1}).\\[1ex]
+\begin{minipage}{0.5\linewidth}
+	Wir erhalten bei einer \SI{180}{\degree}-Streuung aus der Bragg-Bedingung
+	$$
+	\begin{aligned}
+		2d \sin\left( \frac{\theta}{2} \right) &= m \lambda \\
+		2a &= m \lambda \\
+		\lambda &= \frac{2a}{m} \\
+		k = \frac{2\pi}{\lambda} &= \pm \frac{\pi}{a} m .\\
+	\end{aligned}
+	$$ 
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+	\begin{figure}[H]
+		\centering
+		\def\svgwidth{.386\columnwidth}
+		\import{figures/}{vl27_abbildung_1.pdf_tex}
+		\caption{Netzebenen $[100]$ im Abstand $d$. In blau ist eine Streuung um \SI{180}{\degree} eingezeichnet.}
+		\label{fig:vl27_abbildung_1}
+	\end{figure}
+\end{minipage}
+
+Bei $k=\pm \pi /a$ gibt es keine laufenden Wellen, d.h. gleiche Anteile von nach links und nach rechts laufenden Wellen müssen bestehen. Es handelt sich also um eine stehende Welle.
+
+Es existieren zwei Lösungen stehender Wellen mit
 $$
 \begin{aligned}
-	2d \sin\left( \frac{\theta}{2} \right) &= m \lambda \\
-	2a &= m \lambda \\
-	\lambda &= \frac{2a}{m} \\
-	k = \frac{2\pi}{\lambda} &= \pm \frac{\pi}{a} m \\
-\end{aligned}
-$$ 
-Bei $k=\pm \pi /a$ gibt es keine laufenden Wellen, d.h. Gleiche Anteile von nach links und nach rechts laufenden Wellen müssen bestehen, es handelt sich also um eine stehende Welle.
-
-Zwei verschiedene stehende Wellen
-$$
-\begin{aligned}
-	\psi^{(+)} &= e^{i \frac{\pi}{a} x} + e^{- i \frac{\pi}{a} x} = \cos\left( \frac{\pi}{a} x \right)  \\
-	\psi^{(-)} &= e^{i\frac{\pi}{a} x} - e^{-i \frac{\pi}{a} x} = 2i \sin \left( \frac{\pi}{a}x \right)  
+	\psi^{(+)} &= e^{i \frac{\pi}{a} x} + e^{- i \frac{\pi}{a} x} = \cos\left( \frac{\pi}{a} x \right),  \\
+	\psi^{(-)} &= e^{i\frac{\pi}{a} x} - e^{-i \frac{\pi}{a} x} = 2i \sin \left( \frac{\pi}{a}x \right).  
 \end{aligned}
 $$ 
 
 \begin{figure}[H]
     \centering
     \incfig{vl27_abbildung_2}
+	\caption{Die Lösungen für stehende Wellen $|\psi^{(+)}|^2$ und $|\psi^{(-)}|^2$. Ihre physikalische Interpretation sind räumlich modulierte Ladungsdichten.}
     \label{fig:vl27_abbildung_2}
 \end{figure}
 
