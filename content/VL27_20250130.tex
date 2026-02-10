@@ -35,7 +35,7 @@ $V_{\Vec{G}}$ ist ein für den Kristall charakteristischer Fourierkoeffizient.
 \end{equation}
 
 Die periodischen Randbedingungen im Kristall erzwingen diskrete Werte für $k_{i}$, da \\${\psi_{\Vec{k}}(\Vec{r}) = \psi_{\Vec{k}}(\Vec{r} + \Vec{L})}$ mit der makroskopischen Länge des Kristallverbandes $L = n_{i} a$. 
-Dabei ist $N$ die Zahl der Elementarzellen und $a$ die Gitterkonstanten.
+Dabei ist $N$ die Zahl der Elementarzellen und $a$ die Gitterkonstante.
 Erlaubte Wellenzahlen sind somit
 $$
 \begin{aligned}
@@ -99,14 +99,14 @@ Die Wellenfunktion hat auch eine Formulierung nach dem
 	\end{equation}
 \end{important}
 
-Die Lösung ist das Produkt aus einer ebenen Wellen und einer gitterperiodischen Funktion.
+Die Lösung ist das Produkt aus einer ebenen Welle und einer gitterperiodischen Funktion.
 
 Die Lösung ist translationsinvariant:
 $$
 u_{\Vec{k}}(\Vec{r} + \Vec{t}) = \sum_{}^{} C_{\Vec{k}-\Vec{G}} e^{-i\Vec{G}(\Vec{r}+\Vec{t})} = \underbrace{e^{i\Vec{G}\Vec{t}}}_{=1} u_{\Vec{k}}(\Vec{r}) 
 $$
 $$
-\Rightarrow U_{\Vec{k}}(\Vec{r}+\Vec{t}) = U_{\Vec{k}}(\Vec{r})
+\Rightarrow u_{\Vec{k}}(\Vec{r}+\Vec{t}) = u_{\Vec{k}}(\Vec{r})
 $$ 
 
 \paragraph{Weitere Konsequenzen}\,\\ 
@@ -136,8 +136,7 @@ $$
 \subsection{Bänderschema 1}
 \subsubsection{Näherung von quasi-freien Elektronen}
 Die \textbf{Bragg-Reflexion} ist ein charakteristisches Kennzeichen für die Ausbreitung von Wellen in Kristallen.
-Deshalb ist sie die \textbf{Ursache der Energielücke}.
-
+Im Weiteren wird gezeigt, wie dies zu einer Energielücke im Energiespektrum der Elektronen führt.
 
 Wir betrachten einen kubischen Kristall mit der Netzebene $[100]$ und der Gitterkonstante $a$ (vgl. \autoref{fig:vl27_abbildung_1}).\\[1ex]
 \begin{minipage}{0.5\linewidth}
@@ -163,7 +162,7 @@ Wir betrachten einen kubischen Kristall mit der Netzebene $[100]$ und der Gitter
 
 Bei $k=\pm \pi /a$ gibt es keine laufenden Wellen, d.h. gleiche Anteile von nach links und nach rechts laufenden Wellen müssen bestehen. Es handelt sich also um eine stehende Welle.
 
-Es existieren zwei Lösungen stehender Wellen mit
+Diese stehenden Wellen erhalten wir durch symmetrische und antisymmetrische Überlagerung:
 $$
 \begin{aligned}
 	\psi^{(+)} &= e^{i \frac{\pi}{a} x} + e^{- i \frac{\pi}{a} x} = \cos\left( \frac{\pi}{a} x \right),  \\
@@ -174,7 +173,12 @@ $$
 \begin{figure}[H]
     \centering
     \incfig{vl27_abbildung_2}
-	\caption{Die Lösungen für stehende Wellen $|\psi^{(+)}|^2$ und $|\psi^{(-)}|^2$. Ihre physikalische Interpretation sind räumlich modulierte Ladungsdichten.}
+	\caption{Die Abbildung zeigt die Lösungen für stehende Wellen $|\psi^{(+)}|^2$ und $|\psi^{(-)}|^2$. 
+		Ihre physikalische Interpretation sind räumlich modulierte Ladungsdichten.
+		Die Atome sind in der Skizze an 0, $a$, $2a$ lokalisiert.
+		Daraus folgt, dass $|\psi^{(+)}|$ eine hohe Aufenthaltswahrscheinlichkeit am Kernort hat ($E_\mathrm{pot}$ klein) und $|\psi^{(-)}|$ eine geringe Aufenthaltswahrscheinlichkeit.
+		Dies ist die Ursache der Energielücke.
+	}
     \label{fig:vl27_abbildung_2}
 \end{figure}
 
@@ -182,9 +186,9 @@ $$
     \centering
     \incfig{vl27_abbildung_3}
 	\caption{Energie-Dispersionsrelation im Band. 
-		In grün sind die stehenden Wellenlösungen eingezeichnet.
-		Wegen der Periodizität lassen sich alle stehenden Wellen in die erste Brillouinzone übertragen (rot).
-		Zwischen den Bändern exisiteren Energielücken.
+		In grün ist das erweiterte Zonenschema und in rot das reduzierte Zonenschema skizziert.
+		Am Rand der Brillouinzone sind die Bänder flach (stehende Wellen) und es tritt eine Bandlücke auf.
+		Die Energielücke ist so groß wie die zweifache Fourierkomponente des Kristallpotentials $E_\mathrm g = 2V_\mathrm g$.
 	}
     \label{fig:vl27_abbildung_3}
 \end{figure}
