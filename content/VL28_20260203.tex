@@ -26,7 +26,7 @@
 	$$
 	E(\Vec{k}) = E_{i} - A - B \sum_{m }^{} e^{i\Vec{k}(r_{n} - r_{m})} ,
 	$$ 
-	wobei der Index $m$ für eine Summation der übernächsten Nachbarn steht.
+	wobei der Index $m$ für eine Summation über die nächsten Nachbarn steht.
 	\begin{verbal}
 		Die Herleitung ist in \textit{Festkörperphysik} von Gross und Marx zu finden.
 	\end{verbal}
@@ -65,6 +65,21 @@
 		\item Zwei einwertige Atome: $2 \times 1$ Elektron pro Atom $\to $ Das Band ist voll 
 	\end{enumerate}
 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = 0.7\linewidth]{figures/vl28/baender_einatomige_basis.png}
+		\caption{Dispersionsrelation und Bänderbesetzung zweier Kristalle mit einatomiger Basis \cite{Hunklinger}. 
+			Die oberen Bandstrukturen zeigen ein Metall mit vollen Valenzbändern und halbvollem Leitungsband.
+			Unten ist ein Isolator zu sehen mit vollen Valenzbändern und leerem Leitungsband.
+		}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = 0.6\linewidth]{figures/vl28/band_richtungsabhaengig.png}
+		\caption{Richtungsabhängige Dispersionskurve \cite{Hunklinger}. Die Bänder $i=3$ und $4$ überlappen und es können Elektronen übertreten.
+		Ist der Überlapp nur klein, handelt es sich nur um ein Halbmetall.}
+	\end{figure}
+
 \paragraph{Beispiel} Stoffe:
 	\begin{itemize}
 		\item \textbf{Alkalimetalle} \big[z.B. \ce{Na} ($3\mathrm{s}^{1}$), \ce{K} ($4\mathrm{s}^{1}$), \ce{Rb} ($5\mathrm{s}^{1}$)\big] und \textbf{Edelmetalle} \big[z.B. \ce{Cu} ($4\mathrm{s}^{1}$), \ce{Ag}($5\mathrm{s}^{1}$), \ce{Au} ($6\mathrm{s}^{1}$)\big] besitzen ein Valenzlektron pro Atom. Es handelt sich um Metalle.
@@ -83,8 +98,8 @@
 		\import{figures/}{vl28_abbildung_1.pdf_tex}
 		\caption{Energieschema. 
 			Ein Elektron der Energie $E_\mathrm i$ wird mit Licht der Energie $\hbar\omega$ aus dem Festkörper gelöst.
-			Dazu überwindet das Elektron die Energie $E_\mathrm B$ von $E_\mathrm i$ zur Fermienergie $E_\mathrm F$, die Austrittsenergie $\varphi_A$, und die kinetische Energie $E_\mathrm{kin}$ nach dem Austritt.
-			Durch Messung der kinetischen Energie können Rückschlüsse auf die Bandenstruktur und die Austrittsarbeit gemacht werden.
+			Dazu überwindet das Elektron die Energie $E_\mathrm B$ von $E_\mathrm i$ zur Fermienergie $E_\mathrm F$, die Austrittsenergie $\varphi_A$, und besitzt die kinetische Energie $E_\mathrm{kin}$ nach dem Austritt.
+			Durch Messung der kinetischen Energie können Rückschlüsse auf die Bandenstruktur und die Zustandsdichte gemacht werden.
 			}
 		\label{fig:vl28_abbildung_1}
 	\end{figure}
@@ -93,7 +108,7 @@
 	Die Photoemissionsspektroskopie kann mit UV-Licht (UPS, \textbf{U}V \textbf{P}hotoemissions-\textbf{S}pektroskopie) oder Röntgenlicht (XPS, \textbf{X}-Ray \textbf{P}hotoemissions-\textbf{S}pektroskopie) durchgeführt werden.
 	Bei der UPS werden bspw. \ce{He-}-Gasentladungslampen verwendet, bei der XPS bspw. Röntgenröhren.
 
-	Zur Bestimmung der Bandstruktur verwenden wir
+	Zur Bestimmung der Bandstruktur verwenden wir den Zusammenhang
 	\begin{equation}
 		\label{eq:II.8.14}
 		\hbar \omega = E_{\text{kin}} + \varphi_{A} + E_{B}.
@@ -106,6 +121,11 @@
 	$$ 
 	$n(E_{\text{kin}})$ ist somit ein Maß der Zustandsdichte!
 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width = 0.8\linewidth]{figures/vl28/kupfer_zstdichte_baender.png}
+		\caption{Zustandsdichte und Bandstruktur von Kupfer \cite{Gross}.}
+	\end{figure}
 \paragraph{Synchrotron-Strahlungsquellen (UV, XUV, Rö)}\,\\ 
 	\begin{figure}[H]
 		\centering
@@ -113,7 +133,7 @@
 		\import{figures/}{vl28_abbildung_2.pdf_tex}
 		\caption{Schematischer Aufbau eines Synchrotrons. 
 			Elektronen werden auf einer Kreisbahn mit Radius $R$ beschleunigt. 
-			Bei hohen Geschwindigkeiten bildet das elektrische Feld des Elektrons eine Keule mit Öffnungswinkel $\theta$.
+			Bei hohen Geschwindigkeiten bildet das abgestrahlte elektromagnetische Feld des Elektrons eine Keule mit Öffnungswinkel $\theta$.
 		}
 		\label{fig:vl28_abbildung_2}
 	\end{figure}
@@ -162,7 +182,7 @@
 	
 	Synchrotrons wie das DORIS in Hamburg erzeugen Elektronen mit $E=\SI{3,5}{\giga\electronvolt}$ und $\theta=\SI{0,1}{\milli\radian}$ bei $R=\SI{12.2}{\meter}$.
 	
-\subsection{Die effektive Musternäherung}
+\subsection{Die effektive Massennäherung}
 	Wir betrachten Elektronen als Materiewellenpackete mit Wellenvektoren der nächsten Umgebung von $k$:
 	$$
 	\psi_{n} (\Vec{r},t) = \sum_{k- \frac{\Delta k}{2}}^{k+ \frac{\Delta k}{2}} a(\Vec{k}) u_{\Vec{k}} (\Vec{r}) \exp\left[ i \left( \Vec{k}\Vec{r} - \frac{E_{n}(\Vec{k})}{\hbar }t \right)  \right]
