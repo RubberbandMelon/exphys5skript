@@ -162,9 +162,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="289.75"
-     inkscape:cy="163.25"
+     inkscape:zoom="5.6568542"
+     inkscape:cx="331.36792"
+     inkscape:cy="85.825086"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -330,12 +330,12 @@
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
        id="text1061"
-       y="201.7545"
-       x="103.57017"><tspan
+       y="194.92499"
+       x="81.260391"><tspan
          sodipodi:role="line"
          id="tspan1059"
-         x="103.57017"
-         y="201.7545"
+         x="81.260391"
+         y="194.92499"
          style="stroke-width:0.264583">stehende</tspan></text>
     <text
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -377,22 +377,23 @@
        style="font-size:2.64583px;font-family:monospace;-inkscape-font-specification:'monospace, Normal';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"
        id="text1125"
-       y="205.07855"
-       x="105.34008"><tspan
+       y="198.24904"
+       x="83.030304"><tspan
          sodipodi:role="line"
          id="tspan1123"
-         x="105.34008"
-         y="205.07855"
+         x="83.030304"
+         y="198.24904"
          style="stroke-width:0.264583">Wellen</tspan></text>
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:url(#marker-arrow-1.5923999999999998);stop-color:#000000"
-       d="m 102.77651,201.08243 c 0,0 -2.42469,-2.7201 -2.932589,-5.41111"
+       d="m 94.45444,194.41741 c 0,0 2.485643,-0.78109 3.214051,1.26659"
        id="path1187"
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:url(#marker-arrow-1.5923999999999998);stop-color:#000000"
-       d="m 102.69141,201.79196 c 0,0 -6.482775,2.6464 -7.866797,5.6816"
-       id="path1262" />
+       d="m 88.022233,199.08771 c 0,0 -4.180139,11.73769 -4.177842,15.73126"
+       id="path1262"
+       sodipodi:nodetypes="cc" />
     <path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#00ff00;stroke-width:0.421322;stroke-dasharray:none;stroke-opacity:1;marker-start:none;marker-end:none;stop-color:#000000"
        d="m 78.761495,216.74879 c 10.7251,0 7.698291,-8.48649 17.612243,-8.48649"
