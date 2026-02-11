@@ -55,8 +55,9 @@
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{vl28_abbildung_2.pdf}}%
     \put(0.51151218,0.52452316){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$R$\end{tabular}}}}%
-    \put(0.9081131,0.63797938){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{\Theta}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl28_abbildung_2.pdf}}%
     \put(0.24567698,0.0143837){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{blue}{\mathrm{e}^{-}}$\end{tabular}}}}%
+    \put(0.97494392,0.68412094){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{\theta}$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{vl28_abbildung_2.pdf}}%
   \end{picture}%
 \endgroup%
