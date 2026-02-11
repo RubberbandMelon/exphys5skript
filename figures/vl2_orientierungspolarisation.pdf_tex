@@ -54,20 +54,20 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{vl2_orientierungspolarisation.pdf}}%
-    \put(0.34746676,0.18018081){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}%
-    \put(0.34746676,0.11760039){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}%
+    \put(0.34440626,0.18018085){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}%
+    \put(0.34440626,0.11760043){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{vl2_orientierungspolarisation.pdf}}%
-    \put(0.61004218,0.1073827){\color[rgb]{0,0,0}\rotatebox{27.31184}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
-    \put(0.63875615,0.0517786){\color[rgb]{0,0,0}\rotatebox{27.31184}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
+    \put(0.60654217,0.10461803){\color[rgb]{0,0,0}\rotatebox{27.31184}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
+    \put(0.63525614,0.04901392){\color[rgb]{0,0,0}\rotatebox{27.31184}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl2_orientierungspolarisation.pdf}}%
-    \put(0.42446316,0.08666332){\color[rgb]{0,0,0}\rotatebox{-18.6722}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
-    \put(0.40442783,0.02737677){\color[rgb]{0,0,0}\rotatebox{-18.6722}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
+    \put(0.42071611,0.08855527){\color[rgb]{0,0,0}\rotatebox{-18.6722}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
+    \put(0.40068077,0.02926872){\color[rgb]{0,0,0}\rotatebox{-18.6722}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{vl2_orientierungspolarisation.pdf}}%
-    \put(0.60120513,0.19101957){\color[rgb]{0,0,0}\rotatebox{42.595693}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
-    \put(0.64356085,0.14495112){\color[rgb]{0,0,0}\rotatebox{42.595693}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
+    \put(0.60551476,0.19035491){\color[rgb]{0,0,0}\rotatebox{42.595693}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
+    \put(0.64787048,0.14428646){\color[rgb]{0,0,0}\rotatebox{42.595693}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{vl2_orientierungspolarisation.pdf}}%
-    \put(0.54441317,0.12383966){\color[rgb]{0,0,0}\rotatebox{-14.301625}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
-    \put(0.52895415,0.06319868){\color[rgb]{0,0,0}\rotatebox{-14.301625}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
-    \put(0.44201035,0.21185922){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{\underline{E}}$\end{tabular}}}}%
+    \put(0.54116888,0.12526229){\color[rgb]{0,0,0}\rotatebox{-14.301625}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$+$\end{tabular}}}}}%
+    \put(0.52570986,0.06462131){\color[rgb]{0,0,0}\rotatebox{-14.301625}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$-$\end{tabular}}}}}%
+    \put(0.46544351,0.22883512){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\textcolor{red}{\underline{E}}$\end{tabular}}}}%
   \end{picture}%
 \endgroup%
