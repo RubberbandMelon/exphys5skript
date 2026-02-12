@@ -60,10 +60,10 @@
     \put(0.88143464,0.46515127){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}freie\end{tabular}}}}%
     \put(0.84910533,0.43567067){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Elektronen\end{tabular}}}}%
     \put(0.84610842,0.36242072){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textcolor{green}{erweitertes}\end{tabular}}}}%
-    \put(0.8489358,0.27713522){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}stehende\end{tabular}}}}%
+    \put(0.66606878,0.33311484){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}stehende\end{tabular}}}}%
     \put(0.83380296,0.33523269){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textcolor{green}{Zonenschema}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{vl27_abbildung_3.pdf}}%
-    \put(0.86344328,0.2498889){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Wellen\end{tabular}}}}%
+    \put(0.68057626,0.30586852){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Wellen\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{vl27_abbildung_3.pdf}}%
     \put(0.56692886,0.2381115){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\Vec{G}$\end{tabular}}}}%
     \put(0.65271853,0.40619006){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textcolor{red}{reduziertes}\end{tabular}}}}%
